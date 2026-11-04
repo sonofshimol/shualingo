@@ -249,7 +249,7 @@
     },
     {
       "id": "stella",
-      "lemma": "stēlla",
+      "lemma": "stella",
       "dictionary_form": "stella -ae f.",
       "pos": "noun",
       "meaning_he": "כוכב",
@@ -260,18 +260,18 @@
       "exception_reason": null,
       "element": "aether",
       "forms": {
-        "abl.pl": "stēllīs",
-        "abl.sg": "stēllā",
-        "acc.pl": "stēllās",
-        "acc.sg": "stēllam",
-        "dat.pl": "stēllīs",
-        "dat.sg": "stēllae",
-        "gen.pl": "stēllārum",
-        "gen.sg": "stēllae",
-        "nom.pl": "stēllae",
-        "nom.sg": "stēlla",
-        "voc.pl": "stēllae",
-        "voc.sg": "stēlla"
+        "abl.pl": "stellīs",
+        "abl.sg": "stellā",
+        "acc.pl": "stellās",
+        "acc.sg": "stellam",
+        "dat.pl": "stellīs",
+        "dat.sg": "stellae",
+        "gen.pl": "stellārum",
+        "gen.sg": "stellae",
+        "nom.pl": "stellae",
+        "nom.sg": "stella",
+        "voc.pl": "stellae",
+        "voc.sg": "stella"
       },
       "family": {
         "en": [

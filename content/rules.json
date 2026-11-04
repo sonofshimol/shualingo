@@ -1,0 +1,95 @@
+{
+  "rules": [
+    {
+      "id": "nom-sg-1",
+      "title_he": "מי? יחסת הנושא (יחיד)",
+      "explain_he": "הנושא הוא מי או מה שעושה או שמתואר במשפט. בנטייה הראשונה הוא נגמר ב-a ביחיד.",
+      "examples": [{ "la": "Puella parva est.", "he": "הנערה קטנה." }],
+      "drill": { "form": "nom.sg", "prompt_he": "מי? (נושא, יחיד)" }
+    },
+    {
+      "id": "nom-pl-1",
+      "title_he": "מי? יחסת הנושא (רבים)",
+      "explain_he": "ברבים הנושא בנטייה הראשונה נגמר ב-ae: puellae = נערות, silvae = יערות.",
+      "examples": [{ "la": "Stellae magnae sunt.", "he": "הכוכבים גדולים." }],
+      "drill": { "form": "nom.pl", "prompt_he": "מי? (נושא, רבים)" }
+    },
+    {
+      "id": "est-sunt",
+      "title_he": "est ו-sunt",
+      "explain_he": "est פירושו 'הוא/היא' (בעברית לרוב לא אומרים את זה), ו-sunt פירושו 'הם/הן'. בדרך כלל הפועל בא בסוף המשפט.",
+      "examples": [{ "la": "Silva magna est.", "he": "היער גדול." }, { "la": "Silvae magnae sunt.", "he": "היערות גדולים." }]
+    },
+    {
+      "id": "adj-agree",
+      "title_he": "שם תואר מתאים את עצמו",
+      "explain_he": "שם התואר מקבל את אותה סיומת כמו שם העצם שהוא מתאר: silva magna (יחיד), silvae magnae (רבים).",
+      "examples": [{ "la": "Umbra parva est.", "he": "הצל קטן." }]
+    },
+    {
+      "id": "verb-3",
+      "title_he": "פועל בהווה: ‎-at ו-‎-ant",
+      "explain_he": "הסיומת של הפועל אומרת מי עושה: ‎-at = הוא/היא (portat, נושאת), ‎-ant = הם/הן (portant, נושאות).",
+      "examples": [{ "la": "Puella spectat.", "he": "הנערה מסתכלת." }, { "la": "Puellae spectant.", "he": "הנערות מסתכלות." }]
+    },
+    {
+      "id": "non",
+      "title_he": "nōn — לא",
+      "explain_he": "nōn בא ממש לפני הפועל ושולל אותו: nōn amat = לא אוהבת.",
+      "examples": [{ "la": "Puella umbram nōn amat.", "he": "הנערה לא אוהבת את הצל." }]
+    },
+    {
+      "id": "acc-sg-1",
+      "title_he": "את מי? יחסת המושא (יחיד)",
+      "explain_he": "המושא הוא מי או מה שהפעולה נעשית עליו. בנטייה הראשונה הוא נגמר ב-am ביחיד: aquam, puellam.",
+      "examples": [{ "la": "Puella aquam portat.", "he": "הנערה נושאת מים." }],
+      "drill": { "form": "acc.sg", "prompt_he": "את מי? (מושא, יחיד)" }
+    },
+    {
+      "id": "acc-pl-1",
+      "title_he": "את מי? יחסת המושא (רבים)",
+      "explain_he": "ברבים המושא בנטייה הראשונה נגמר ב-ās: stellās, puellās.",
+      "examples": [{ "la": "Fēmina stellās spectat.", "he": "האישה מסתכלת על הכוכבים." }],
+      "drill": { "form": "acc.pl", "prompt_he": "את מי? (מושא, רבים)" }
+    },
+    {
+      "id": "word-order",
+      "title_he": "הסיומת קובעת, לא המקום",
+      "explain_he": "בלטינית סדר המילים חופשי. הסיומת, ולא המקום במשפט, אומרת מי עושה ועל מי: Puella aquam portat = Aquam puella portat.",
+      "examples": [{ "la": "Fēminam puella vocat.", "he": "הנערה קוראת לאישה." }]
+    },
+    {
+      "id": "dat-sg-1",
+      "title_he": "למי? יחסת הנתינה (יחיד)",
+      "explain_he": "יחסת הנתינה עונה על השאלה 'למי?'. בנטייה הראשונה ביחיד היא נגמרת ב-ae: puellae dat = נותנת לנערה. זו אותה סיומת כמו נושא ברבים, והפועל עוזר להבדיל: dat (יחיד) לעומת dant (רבים).",
+      "examples": [{ "la": "Fēmina puellae aquam dat.", "he": "האישה נותנת מים לנערה." }],
+      "drill": { "form": "dat.sg", "prompt_he": "למי? (נתינה, יחיד)" }
+    },
+    {
+      "id": "dat-pl-1",
+      "title_he": "למי? יחסת הנתינה (רבים)",
+      "explain_he": "ברבים יחסת הנתינה נגמרת ב-īs: puellīs = לנערות.",
+      "examples": [{ "la": "Fēmina puellīs fābulās narrat.", "he": "האישה מספרת סיפורים לנערות." }],
+      "drill": { "form": "dat.pl", "prompt_he": "למי? (נתינה, רבים)" }
+    },
+    {
+      "id": "mihi-tibi",
+      "title_he": "mihi ו-tibi",
+      "explain_he": "mihi = לי, tibi = לך. אלה צורות הנתינה של ego (אני) ושל tū (אתה/את).",
+      "examples": [{ "la": "Aquam mihi dā!", "he": "תן לי מים!" }]
+    },
+    {
+      "id": "imperative",
+      "title_he": "ציווי: פקודה",
+      "explain_he": "פקודה לאדם אחד: הפועל נגמר ב-ā (portā! שא!, dā! תן!). לכמה אנשים: ‎-āte (portāte!). afferō יוצא דופן וקצר במיוחד: affer! (הבא!). כל לחש הוא פקודה כזאת.",
+      "examples": [{ "la": "Fābulam narrā!", "he": "ספר סיפור!" }, { "la": "Lignum mihi affer!", "he": "הבא לי עצים!" }],
+      "drill": { "form": "imp.2sg", "prompt_he": "פקודה לאדם אחד" }
+    },
+    {
+      "id": "neuter",
+      "title_he": "lignum — מילה בסתמי",
+      "explain_he": "lignum שייכת למין סתמי (neuter). במילים כאלה צורת המושא זהה לצורת הנושא, ולכן 'הבא עצים' הוא פשוט lignum affer.",
+      "examples": [{ "la": "Lignum mihi affer!", "he": "הבא לי עצים!" }]
+    }
+  ]
+}

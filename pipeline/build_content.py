@@ -231,9 +231,16 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
     family.update({lang: words for lang, words in extract_descendants(entry).items()
                    if lang not in family})
 
+    lemma = canonical(entry)
+    forms = extract_forms(entry, item["pos"])
+    # Optional textbook respelling, e.g. Wiktionary's hidden-quantity "stēlla" -> D'Ooge's "stella".
+    for old, new in item.get("respell", []):
+        lemma = lemma.replace(old, new)
+        forms = {key: value.replace(old, new) for key, value in forms.items()}
+
     return {
         "id": item["id"],
-        "lemma": canonical(entry),
+        "lemma": lemma,
         "dictionary_form": item.get("dictionary_form") or headword,
         "pos": item["pos"],
         "meaning_he": item["meaning_he"],
@@ -243,7 +250,7 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
         "dcc_group": row["Semantic Group"].strip() if row else None,
         "exception_reason": item.get("exception_reason"),
         "element": item["element"],
-        "forms": extract_forms(entry, item["pos"]),
+        "forms": forms,
         "family": family,
         "expressions": item.get("expressions", []),
         "etymology_en": entry.get("etymology_text"),
