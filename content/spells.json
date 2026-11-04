@@ -1,0 +1,17 @@
+{
+  "spells": [
+    {
+      "id": "gather-wood",
+      "school": "basic",
+      "text": "Lignum mihi affer!",
+      "meaning_he": "הבא לי עצים!",
+      "answer": ["lignum", "mihi", "affer"],
+      "any_order": true,
+      "extra": ["lignō", "tibi", "affert", "ego", "lignī"],
+      "effect": { "type": "gather", "resource": "fuel", "amount": 3 },
+      "unlocked_by": "u3-l3",
+      "explain_he": "lignum במושא (מה להביא), mihi בנתינה (למי), affer בציווי (הפקודה).",
+      "effect_he": "ערימת עצים מרחפת אל המדורה, והאש מתלקחת."
+    }
+  ]
+}

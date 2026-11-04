@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dev-dist/
+*.log
+.DS_Store
+pipeline/sources/
+__pycache__/
+test-results/
+playwright-report/

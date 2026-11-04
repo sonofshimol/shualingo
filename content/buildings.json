@@ -1,0 +1,11 @@
+{
+  "buildings": [
+    { "id": "focus", "name_la": "focus", "name_he": "אח המחנה", "description_he": "המדורה, הלב של המחנה. היא דועכת לאט, ולחש האיסוף מחזיר אותה לבעור.", "stage": 1, "initial": true },
+    { "id": "tentorium", "name_la": "tentorium", "name_he": "אוהל", "description_he": "האוהל של השועלה. בהמשך הגדלה שלו תגדיל את האחסון.", "stage": 1, "initial": true },
+    { "id": "circulus", "name_la": "circulus", "name_he": "מעגל הלחשים", "description_he": "כאן השועלה מרכיבה לחשים מאריחי מילים.", "stage": 1, "initial": true, "unlocked_by": "u3-l3" },
+    { "id": "hortus", "name_la": "hortus", "name_he": "גינת צמחי מרפא", "description_he": "גינה שמייצרת צמחי מרפא.", "stage": 2, "initial": false },
+    { "id": "fons", "name_la": "fons", "name_he": "מעיין", "description_he": "מקור מים קבוע למחנה.", "stage": 2, "initial": false },
+    { "id": "bibliotheca", "name_la": "bibliotheca", "name_he": "ספרייה", "description_he": "פותחת יחידות לימוד חדשות.", "stage": 2, "initial": false },
+    { "id": "turris", "name_la": "turris", "name_he": "מגדל הקוסמת", "description_he": "פותח לחשים חדשים.", "stage": 2, "initial": false }
+  ]
+}

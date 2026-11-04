@@ -1,0 +1,12 @@
+{
+  "elements": [
+    { "id": "terra", "name_he": "אדמה", "mystic": false, "stage": 1, "color": "#8a5a2b", "source_he": "תרגילי אוצר מילים (התאמה ובחירה)", "use_he": "יסודות, גינות, חומות" },
+    { "id": "aqua", "name_he": "מים", "mystic": false, "stage": 1, "color": "#3d7cc9", "source_he": "חזרה על מילים חלשות", "use_he": "גידול צמחים, ריפוי" },
+    { "id": "aer", "name_he": "אוויר", "mystic": false, "stage": 1, "color": "#8fb8c9", "source_he": "תרגילי בניית משפט", "use_he": "תנועה, מסחר עם יצורי היער" },
+    { "id": "ignis", "name_he": "אש", "mystic": false, "stage": 1, "color": "#d9572b", "source_he": "תרגילי דקדוק וסיומות", "use_he": "אור, מלאכה, הגנה" },
+    { "id": "aether", "name_he": "אתר", "mystic": false, "stage": 1, "color": "#b58ce0", "source_he": "השיעור הראשון שמסיימים בכל יום", "use_he": "לחשים גדולים ועליית דרגה" },
+    { "id": "lux", "name_he": "אור", "mystic": true, "stage": 3, "color": "#f2d65c", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" },
+    { "id": "umbra", "name_he": "צל", "mystic": true, "stage": 3, "color": "#4b3f72", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" },
+    { "id": "spiritus", "name_he": "רוח", "mystic": true, "stage": 3, "color": "#e6e6f0", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" }
+  ]
+}
