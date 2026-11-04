@@ -1,0 +1,2008 @@
+{
+  "_meta": {
+    "generated_by": "pipeline/build_content.py — do not edit by hand",
+    "sources": [
+      {
+        "name": "DCC Latin Core Vocabulary",
+        "url": "https://dcc.dickinson.edu/latin-core-list1",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "name": "Wiktionary via kaikki.org",
+        "url": "https://kaikki.org/dictionary/Latin/",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "words": [
+    {
+      "id": "silva",
+      "lemma": "silva",
+      "dictionary_form": "silva -ae f.",
+      "pos": "noun",
+      "meaning_he": "יער",
+      "meaning_en": "forest, grove",
+      "ipa": "[ˈsɪɫ.wa]",
+      "dcc_rank": 234,
+      "dcc_group": "Animals/Plants",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "silvīs",
+        "abl.sg": "silvā",
+        "acc.pl": "silvās",
+        "acc.sg": "silvam",
+        "dat.pl": "silvīs",
+        "dat.sg": "silvae",
+        "gen.pl": "silvārum",
+        "gen.sg": "silvae",
+        "nom.pl": "silvae",
+        "nom.sg": "silva",
+        "voc.pl": "silvae",
+        "voc.sg": "silva"
+      },
+      "family": {
+        "en": [
+          "sylvan",
+          "Pennsylvania",
+          "Transylvania"
+        ],
+        "he": [
+          "סילבסטר"
+        ],
+        "note_he": "Pennsylvania היא 'היער של פן', ו-Transylvania היא 'הארץ שמעבר ליער'. סילבסטר (ערב השנה החדשה) נקרא על שם האפיפיור Silvester, שפירוש שמו 'איש היער'.",
+        "es": [
+          "selva"
+        ],
+        "it": [
+          "selva"
+        ],
+        "fr": [
+          "sylve"
+        ],
+        "pt": [
+          "silva",
+          "selva"
+        ],
+        "ro": [
+          "silvă"
+        ],
+        "ca": [
+          "selva"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Traditionally derived from Proto-Indo-European *sel-, *swel- (“firewood, wood, beam, board, frame, threshold”), and compared with Ancient Greek ὕλη (húlē, “wood, timber”) and Old English syl (“sill, threshold, foundation”). However, De Vaan is implicitly skeptical of this derivation, and leaves the origin open."
+    },
+    {
+      "id": "terra",
+      "lemma": "terra",
+      "dictionary_form": "terra -ae f.",
+      "pos": "noun",
+      "meaning_he": "אדמה, ארץ",
+      "meaning_en": "land",
+      "ipa": "[ˈtɛr.ra]",
+      "dcc_rank": 70,
+      "dcc_group": "Earth and Water",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "terrīs",
+        "abl.sg": "terrā",
+        "acc.pl": "terrās",
+        "acc.sg": "terram",
+        "dat.pl": "terrīs",
+        "dat.sg": "terrae",
+        "gen.pl": "terrārum",
+        "gen.sg": "terrae",
+        "nom.pl": "terrae",
+        "nom.sg": "terra",
+        "voc.pl": "terrae",
+        "voc.sg": "terra"
+      },
+      "family": {
+        "en": [
+          "terrain",
+          "territory",
+          "terrace",
+          "terrestrial",
+          "Mediterranean"
+        ],
+        "he": [
+          "טריטוריה",
+          "טרסה",
+          "טרקוטה"
+        ],
+        "note_he": "הים התיכון באנגלית הוא Mediterranean, כלומר 'הים שבאמצע הארץ' (medius + terra). טרקוטה היא 'אדמה שרופה' באיטלקית.",
+        "fr": [
+          "terre"
+        ],
+        "it": [
+          "terra"
+        ],
+        "ro": [
+          "țară"
+        ],
+        "es": [
+          "tierra"
+        ],
+        "pt": [
+          "terra"
+        ],
+        "ca": [
+          "terra"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "terra incognita",
+          "meaning_he": "ארץ לא נודעת — כך סימנו במפות עתיקות אזורים שלא נחקרו"
+        },
+        {
+          "text": "terra firma",
+          "meaning_he": "קרקע מוצקה, אדמה יציבה (בניגוד לים)"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *ters-\nProto-Indo-European *ters-eh₂\nProto-Italic *tersā\nLatin terra\nInherited from Proto-Italic *tersā, from Proto-Indo-European *ters-eh₂ (“dry land”), from *ters- (“dry”). Doublet of torreō. Cognate with Ancient Greek τέρσομαι (térsomai), Old Irish tír, Sanskrit तृषा (tṛ́ṣā), Old English þurst (whence English thirst). Compare the semantics of Ancient Greek χέρσος (khérsos)."
+    },
+    {
+      "id": "aqua",
+      "lemma": "aqua",
+      "dictionary_form": "aqua -ae f.",
+      "pos": "noun",
+      "meaning_he": "מים",
+      "meaning_en": "water",
+      "ipa": "[ˈa.kʷa]",
+      "dcc_rank": 272,
+      "dcc_group": "Earth and Water",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "abl.pl": "aquīs",
+        "abl.sg": "aquā",
+        "acc.pl": "aquās",
+        "acc.sg": "aquam",
+        "dat.pl": "aquīs",
+        "dat.sg": "aquae",
+        "gen.pl": "aquārum",
+        "gen.sg": "aquae",
+        "nom.pl": "aquae",
+        "nom.sg": "aqua",
+        "voc.pl": "aquae",
+        "voc.sg": "aqua"
+      },
+      "family": {
+        "en": [
+          "aquarium",
+          "aquatic",
+          "aqueduct",
+          "aquamarine"
+        ],
+        "he": [
+          "אקווריום",
+          "אקוודוקט",
+          "אקוורל"
+        ],
+        "note_he": "אקוורל הוא ציור בצבעי מים. אקוודוקט הוא 'מוביל מים' (aqua + ducere, להוביל).",
+        "fr": [
+          "eau"
+        ],
+        "es": [
+          "agua"
+        ],
+        "it": [
+          "acqua"
+        ],
+        "pt": [
+          "água"
+        ],
+        "ro": [
+          "apă"
+        ],
+        "ca": [
+          "aigua"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "aqua vitae",
+          "meaning_he": "מי חיים — כינוי עתיק למשקאות חריפים מזוקקים"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *akʷā, from Proto-Indo-European *h₂ékʷeh₂. Cognate with Proto-Germanic *ahwō (“water, stream”).\nThe few cognates in other Indo-European branches point to a narrower original meaning of \"running water\". See Umbrian 𐌖𐌕𐌖𐌓 (utur, “water”), which instead represents a remnant Italic continuation of Proto-Indo-European *wódr̥, the more widespread word for water in Indo-European languages."
+    },
+    {
+      "id": "puella",
+      "lemma": "puella",
+      "dictionary_form": "puella -ae f.",
+      "pos": "noun",
+      "meaning_he": "נערה, ילדה",
+      "meaning_en": "girl; girl-friend",
+      "ipa": "[puˈɛl.la]",
+      "dcc_rank": 233,
+      "dcc_group": "People",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "puellīs",
+        "abl.sg": "puellā",
+        "acc.pl": "puellās",
+        "acc.sg": "puellam",
+        "dat.pl": "puellīs",
+        "dat.sg": "puellae",
+        "gen.pl": "puellārum",
+        "gen.sg": "puellae",
+        "nom.pl": "puellae",
+        "nom.sg": "puella",
+        "voc.pl": "puellae",
+        "voc.sg": "puella"
+      },
+      "family": {
+        "en": [
+          "puerile"
+        ],
+        "he": [],
+        "note_he": "puella היא צורת הקטנה של puer (ילד, נער). מ-puer הגיעה המילה האנגלית puerile, ילדותי."
+      },
+      "expressions": [],
+      "etymology_en": "From puellus (“a little boy”), contracted from puerulus (“little boy, little slave”), the diminutive of puer (“boy”)."
+    },
+    {
+      "id": "stella",
+      "lemma": "stēlla",
+      "dictionary_form": "stella -ae f.",
+      "pos": "noun",
+      "meaning_he": "כוכב",
+      "meaning_en": "star",
+      "ipa": "[ˈsteːl.la]",
+      "dcc_rank": 934,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "stēllīs",
+        "abl.sg": "stēllā",
+        "acc.pl": "stēllās",
+        "acc.sg": "stēllam",
+        "dat.pl": "stēllīs",
+        "dat.sg": "stēllae",
+        "gen.pl": "stēllārum",
+        "gen.sg": "stēllae",
+        "nom.pl": "stēllae",
+        "nom.sg": "stēlla",
+        "voc.pl": "stēllae",
+        "voc.sg": "stēlla"
+      },
+      "family": {
+        "en": [
+          "stellar",
+          "constellation",
+          "Stella"
+        ],
+        "he": [
+          "קונסטלציה"
+        ],
+        "note_he": "קונסטלציה היא 'קבוצת כוכבים' (con, יחד + stella).",
+        "fr": [
+          "étoile",
+          "Estelle"
+        ],
+        "es": [
+          "estrella",
+          "Estela"
+        ],
+        "it": [
+          "stella"
+        ],
+        "pt": [
+          "estrela"
+        ],
+        "ro": [
+          "stea"
+        ],
+        "ca": [
+          "estela",
+          "estel"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Stella Maris",
+          "meaning_he": "כוכב הים — כינוי עתיק לכוכב הצפון, שהנחה יורדי ים"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *stērlā, diminutive of Proto-Indo-European *h₂stḗr."
+    },
+    {
+      "id": "luna",
+      "lemma": "lūna",
+      "dictionary_form": "lūna -ae f.",
+      "pos": "noun",
+      "meaning_he": "ירח",
+      "meaning_en": "moon",
+      "ipa": "[ˈɫuː.na]",
+      "dcc_rank": 902,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "lūnīs",
+        "abl.sg": "lūnā",
+        "acc.pl": "lūnās",
+        "acc.sg": "lūnam",
+        "dat.pl": "lūnīs",
+        "dat.sg": "lūnae",
+        "gen.pl": "lūnārum",
+        "gen.sg": "lūnae",
+        "nom.pl": "lūnae",
+        "nom.sg": "lūna",
+        "voc.pl": "lūnae",
+        "voc.sg": "lūna"
+      },
+      "family": {
+        "en": [
+          "lunar",
+          "lunatic"
+        ],
+        "he": [
+          "לונה פארק"
+        ],
+        "note_he": "lunatic (מטורף) בא מהאמונה העתיקה שהירח משגע אנשים. לונה פארק הוא 'פארק הירח', על שם פארק שעשועים בניו יורק.",
+        "fr": [
+          "lune"
+        ],
+        "es": [
+          "luna"
+        ],
+        "it": [
+          "luna"
+        ],
+        "ro": [
+          "lună"
+        ],
+        "ca": [
+          "lluna"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Luna",
+          "meaning_he": "הירח — גם שמו של אחד מקלפי הטארוט"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *louksnā, from Proto-Indo-European *lówksneh₂, which is derived from Proto-Indo-European *lewk-. By surface analysis, lūx + -na.\nCognates include Proto-Slavic *luna."
+    },
+    {
+      "id": "umbra",
+      "lemma": "umbra",
+      "dictionary_form": "umbra -ae f.",
+      "pos": "noun",
+      "meaning_he": "צל",
+      "meaning_en": "shade, shadow",
+      "ipa": "[ˈʊm.bra]",
+      "dcc_rank": 257,
+      "dcc_group": "Vision",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "umbrīs",
+        "abl.sg": "umbrā",
+        "acc.pl": "umbrās",
+        "acc.sg": "umbram",
+        "dat.pl": "umbrīs",
+        "dat.sg": "umbrae",
+        "gen.pl": "umbrārum",
+        "gen.sg": "umbrae",
+        "nom.pl": "umbrae",
+        "nom.sg": "umbra",
+        "voc.pl": "umbrae",
+        "voc.sg": "umbra"
+      },
+      "family": {
+        "en": [
+          "umbrella",
+          "umbrage",
+          "penumbra"
+        ],
+        "he": [],
+        "note_he": "umbrella (מטרייה) הגיעה מאיטלקית ופירושה 'צל קטן'. penumbra היא 'כמעט-צל', חצי-הצל בליקוי ירח.",
+        "es": [
+          "sombra",
+          "umbra"
+        ],
+        "it": [
+          "ombra"
+        ],
+        "fr": [
+          "sombre",
+          "ombre"
+        ],
+        "pt": [
+          "sombra"
+        ],
+        "ro": [
+          "umbră"
+        ],
+        "ca": [
+          "ombra"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *(H)wenk-der.?\nProto-Italic *unksrā?\nLatin umbra\nGenerally connected with Lithuanian unksnà (“shade”), from Proto-Indo-European *unksrā-. This term is tentatively derived from Proto-Indo-European *(H)wenk- (“to bend”); however, the semantic leaps required to go from “bend” to “shade” are large and unlikely.\nAlternatively, if from Old Latin *omra, possibly from a Proto-Indo-European *h₂mr-u-, *h₂mrup-; related to Ancient Greek ἀμαυρός (amaurós, “dark”), Luwian 𒈠𒅈𒉿𒄿𒀀 (“rot”), and 𒈠𒊒𒉿𒄿 (“rotten”) (also see Hittite Maraššantiya, their name for the Kızılırmak River), and this Indo-European source is said to be a possible borrowing from a Semitic root *ḥ-m-r (“be red”), compare Arabic ح م ر (ḥ m r)."
+    },
+    {
+      "id": "sum",
+      "lemma": "sum",
+      "dictionary_form": "sum esse fuī futūrum",
+      "pos": "verb",
+      "meaning_he": "להיות",
+      "meaning_en": "be, exist; fut. infin. often = fore, impf. subj. often = forem for essem",
+      "ipa": "[ˈsũː]",
+      "dcc_rank": 2,
+      "dcc_group": "Life and Being",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "imp.2pl": "este",
+        "imp.2sg": "es",
+        "inf": "esse",
+        "pres.1pl": "sumus",
+        "pres.1sg": "sum",
+        "pres.2pl": "estis",
+        "pres.2sg": "es",
+        "pres.3pl": "sunt",
+        "pres.3sg": "est"
+      },
+      "family": {
+        "en": [
+          "essence",
+          "essential",
+          "present",
+          "absent",
+          "future"
+        ],
+        "he": [
+          "אסנס"
+        ],
+        "note_he": "הפועל החשוב ביותר בלטינית. est = הוא/היא, sunt = הם/הן. גם future באנגלית בא ממנו (futūrum, 'מה שיהיה').",
+        "es": [
+          "ser"
+        ],
+        "it": [
+          "essere"
+        ],
+        "fr": [
+          "être"
+        ],
+        "pt": [
+          "ser"
+        ],
+        "ro": [
+          "fi"
+        ],
+        "ca": [
+          "ésser",
+          "esse",
+          "ser"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Cogito, ergo sum",
+          "meaning_he": "אני חושב, משמע אני קיים — דקארט"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *h₁es-\nProto-Indo-European *h₁ésti\nProto-Indo-European *bʰuH-\nProto-Indo-European *-t\nProto-Indo-European *bʰúHt\nProto-Italic *ezom~*som\nArchaic Latin 𐌄𐌔𐌏𐌌 (esom)\nOld Latin esum\nLatin sum\nFrom Proto-Italic *esom~*som, from Proto-Indo-European *h₁ésti (“be”) + *bʰúHt (“become”). From the latter of the two derive all the /f-/ forms of Latin sum (including fore), the separate verb fīō (“become”), and the verb-endings -bō (future) and -bam (past imperfect). Clipped conjugations with /s-/, such as sum itself, occurred alongside more conservative equivalents with /es-/ in early Latin, such as the archaic esum. The clipped forms likely arose as unstressed clitics."
+    },
+    {
+      "id": "et",
+      "lemma": "et",
+      "dictionary_form": "et",
+      "pos": "conj",
+      "meaning_he": "ו-, וגם",
+      "meaning_en": "and",
+      "ipa": "[ˈɛt]",
+      "dcc_rank": 1,
+      "dcc_group": "Conjunctions/Adverbs",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {},
+      "family": {
+        "en": [
+          "&",
+          "etc."
+        ],
+        "he": [],
+        "note_he": "הסימן & הוא בעצם האותיות e ו-t שהתמזגו בכתב יד. etc. הוא קיצור של et cetera.",
+        "es": [
+          "y"
+        ],
+        "it": [
+          "e"
+        ],
+        "fr": [
+          "et"
+        ],
+        "pt": [
+          "e"
+        ],
+        "ca": [
+          "i"
+        ],
+        "ro": []
+      },
+      "expressions": [
+        {
+          "text": "et cetera",
+          "meaning_he": "ושאר הדברים, וכולי"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *et, from Proto-Indo-European *(h₁)éti.\nCognate with Ancient Greek ἔτι (éti), Sanskrit अति (ati), Gothic 𐌹𐌸 (iþ, “and, but, however, yet”), Old English prefix ed- (“re-”). More at ed-."
+    },
+    {
+      "id": "magnus",
+      "lemma": "magnus",
+      "dictionary_form": "māgnus -a -um",
+      "pos": "adj",
+      "meaning_he": "גדול",
+      "meaning_en": "great",
+      "ipa": "[ˈmaŋ.nʊs]",
+      "dcc_rank": 25,
+      "dcc_group": "Measurement",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "abl.pl.m": "magnīs",
+        "abl.sg.f": "magnā",
+        "abl.sg.m": "magnō",
+        "abl.sg.n": "magnō",
+        "acc.pl.f": "magnās",
+        "acc.pl.m": "magnōs",
+        "acc.pl.n": "magna",
+        "acc.sg.f": "magnam",
+        "acc.sg.m": "magnum",
+        "acc.sg.n": "magnum",
+        "dat.pl.m": "magnīs",
+        "dat.sg.f": "magnae",
+        "dat.sg.m": "magnō",
+        "dat.sg.n": "magnō",
+        "gen.pl.f": "magnārum",
+        "gen.pl.m": "magnōrum",
+        "gen.pl.n": "magnōrum",
+        "gen.sg.f": "magnae",
+        "gen.sg.m": "magnī",
+        "gen.sg.n": "magnī",
+        "nom.pl.f": "magnae",
+        "nom.pl.m": "magnī",
+        "nom.pl.n": "magna",
+        "nom.sg.f": "magna",
+        "nom.sg.m": "magnus",
+        "nom.sg.n": "magnum",
+        "voc.pl.f": "magnae",
+        "voc.pl.m": "magnī",
+        "voc.pl.n": "magna",
+        "voc.sg.f": "magna",
+        "voc.sg.m": "magne",
+        "voc.sg.n": "magnum"
+      },
+      "family": {
+        "en": [
+          "magnify",
+          "magnitude",
+          "magnificent",
+          "magnate"
+        ],
+        "he": [
+          "מגנום"
+        ],
+        "note_he": "שם תואר: הסיומת משתנה לפי המילה שהוא מתאר. silva magna (יער גדול, נקבה), magnum opus (יצירה גדולה, סתמי).",
+        "es": [
+          "magno"
+        ],
+        "it": [
+          "magno"
+        ],
+        "fr": [
+          "Charlemagne"
+        ],
+        "pt": [
+          "magno"
+        ],
+        "ca": []
+      },
+      "expressions": [
+        {
+          "text": "magnum opus",
+          "meaning_he": "היצירה הגדולה — יצירת המופת של אמן"
+        },
+        {
+          "text": "Magna Carta",
+          "meaning_he": "המגילה הגדולה — מסמך זכויות מאנגליה של 1215"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *magnos, from Proto-Indo-European *m̥ǵh₂nós, from *méǵh₂s (“great”).\nCognates include Ancient Greek μέγᾰς (mégăs, “big; large”), Sanskrit म॒ह (mahá, “great; mighty; strong; abundant”), Middle Persian ms (meh/mah, “great”) (from earlier *maθ and whence Persian مه (meh)), Avestan 𐬨𐬀𐬰- (maz-, “large”), Tocharian B māka (“large”), Hittite [script needed] (mēkkis, “much; many; numerous”), Old Armenian մեծ (mec), Old Irish maige (“great, large”), Albanian madh (“large”) and Old English micel (English much)."
+    },
+    {
+      "id": "parvus",
+      "lemma": "parvus",
+      "dictionary_form": "parvus -a -um",
+      "pos": "adj",
+      "meaning_he": "קטן",
+      "meaning_en": "small",
+      "ipa": "[ˈpar.wʊs]",
+      "dcc_rank": 143,
+      "dcc_group": "Measurement",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl.m": "parvīs",
+        "abl.sg.f": "parvā",
+        "abl.sg.m": "parvō",
+        "abl.sg.n": "parvō",
+        "acc.pl.f": "parvās",
+        "acc.pl.m": "parvōs",
+        "acc.pl.n": "parva",
+        "acc.sg.f": "parvam",
+        "acc.sg.m": "parvum",
+        "acc.sg.n": "parvum",
+        "dat.pl.m": "parvīs",
+        "dat.sg.f": "parvae",
+        "dat.sg.m": "parvō",
+        "dat.sg.n": "parvō",
+        "gen.pl.f": "parvārum",
+        "gen.pl.m": "parvōrum",
+        "gen.pl.n": "parvōrum",
+        "gen.sg.f": "parvae",
+        "gen.sg.m": "parvī",
+        "gen.sg.n": "parvī",
+        "nom.pl.f": "parvae",
+        "nom.pl.m": "parvī",
+        "nom.pl.n": "parva",
+        "nom.sg.f": "parva",
+        "nom.sg.m": "parvus",
+        "nom.sg.n": "parvum",
+        "voc.pl.f": "parvae",
+        "voc.pl.m": "parvī",
+        "voc.pl.n": "parva",
+        "voc.sg.f": "parva",
+        "voc.sg.m": "parve",
+        "voc.sg.n": "parvum"
+      },
+      "family": {
+        "en": [
+          "parvovirus"
+        ],
+        "he": [],
+        "note_he": "פרבו-וירוס נקרא כך כי הוא נגיף קטן מאוד."
+      },
+      "expressions": [
+        {
+          "text": "multum in parvo",
+          "meaning_he": "הרבה בתוך מעט"
+        }
+      ],
+      "etymology_en": "From Old Latin parvos, from Proto-Italic *pauros (“few, small”) with sonority hierarchy-related metathesis, from Proto-Indo-European *peh₂u-rós, suffixed form of *peh₂w-. Cognate with Ancient Greek παῦρος (paûros), Old Armenian փոքր (pʻokʻr), and the Germanic cognates under Proto-Germanic *fawaz."
+    },
+    {
+      "id": "femina",
+      "lemma": "fēmina",
+      "dictionary_form": "fēmina -ae f.",
+      "pos": "noun",
+      "meaning_he": "אישה",
+      "meaning_en": "woman",
+      "ipa": "[ˈfeː.mɪ.na]",
+      "dcc_rank": 501,
+      "dcc_group": "People",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "fēminīs",
+        "abl.sg": "fēminā",
+        "acc.pl": "fēminās",
+        "acc.sg": "fēminam",
+        "dat.pl": "fēminīs",
+        "dat.sg": "fēminae",
+        "gen.pl": "fēminārum",
+        "gen.sg": "fēminae",
+        "nom.pl": "fēminae",
+        "nom.sg": "fēmina",
+        "voc.pl": "fēminae",
+        "voc.sg": "fēmina"
+      },
+      "family": {
+        "en": [
+          "feminine",
+          "female",
+          "feminism"
+        ],
+        "he": [
+          "פמיניזם",
+          "פמיניסטית"
+        ],
+        "note_he": "female בא מצורת ההקטנה femella, ורק בגלל הדמיון למילה male השתנה האיות שלו באנגלית.",
+        "es": [
+          "hembra",
+          "fémina"
+        ],
+        "it": [
+          "femmina"
+        ],
+        "fr": [
+          "femme"
+        ],
+        "pt": [
+          "fêmea"
+        ],
+        "ro": [],
+        "ca": []
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *dʰeh₁(y)-der.\nProto-Indo-European *dʰeh₁-m̥h₁n-éh₂\nProto-Italic *θēmanā\nProto-Italic *fēmanā\nLatin fēmina\nFrom Proto-Italic *fēmanā, from earlier *θēmanā, from Proto-Indo-European *dʰeh₁-m̥h₁n-éh₂ (“[the one] nursing, breastfeeding”), the feminine mediopassive participle of *dʰeh₁(y)- (“to suck, suckle”). Related to fellō, fētus, fīlius. Displaced Proto-Indo-European *gʷḗn (“woman”)."
+    },
+    {
+      "id": "anima",
+      "lemma": "anima",
+      "dictionary_form": "anima -ae f.",
+      "pos": "noun",
+      "meaning_he": "נשימה, נפש",
+      "meaning_en": "breath, spirit",
+      "ipa": "[ˈa.nɪ.ma]",
+      "dcc_rank": 493,
+      "dcc_group": "Life and Being",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "animīs",
+        "abl.sg": "animā",
+        "acc.pl": "animās",
+        "acc.sg": "animam",
+        "dat.pl": "animīs",
+        "dat.sg": "animae",
+        "gen.pl": "animārum",
+        "gen.sg": "animae",
+        "nom.pl": "animae",
+        "nom.sg": "anima",
+        "voc.pl": "animae",
+        "voc.sg": "anima"
+      },
+      "family": {
+        "en": [
+          "animal",
+          "animate",
+          "animation",
+          "unanimous"
+        ],
+        "he": [
+          "אנימציה",
+          "אנימטור"
+        ],
+        "note_he": "animal הוא 'יצור שנושם'. אנימציה היא 'הפחת נשמה' בציורים. unanimous הוא 'בנפש אחת' (unus + anima). ברומנית inimă פירושו 'לב'.",
+        "es": [
+          "alma",
+          "ánima"
+        ],
+        "it": [
+          "alma",
+          "anima"
+        ],
+        "fr": [
+          "âme"
+        ],
+        "pt": [
+          "alma",
+          "anima"
+        ],
+        "ro": [
+          "inimă"
+        ],
+        "ca": [
+          "ànima"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "anima mundi",
+          "meaning_he": "נשמת העולם — רעיון מרכזי במסורת ההרמטית"
+        }
+      ],
+      "etymology_en": "Derived from animus."
+    },
+    {
+      "id": "aura",
+      "lemma": "aura",
+      "dictionary_form": "aura -ae f.",
+      "pos": "noun",
+      "meaning_he": "רוח קלה, משב",
+      "meaning_en": "breeze",
+      "ipa": "[ˈau̯.ra]",
+      "dcc_rank": 420,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "aurīs",
+        "abl.sg": "aurā",
+        "acc.pl": "aurās",
+        "acc.sg": "auram",
+        "dat.pl": "aurīs",
+        "dat.sg": "aurae",
+        "gen.pl": "aurārum",
+        "gen.sg": "aurae",
+        "nom.pl": "aurae",
+        "nom.sg": "aura",
+        "voc.pl": "aurae",
+        "voc.sg": "aura"
+      },
+      "family": {
+        "en": [
+          "aura"
+        ],
+        "he": [
+          "אורה"
+        ],
+        "note_he": "המילה הגיעה ללטינית מיוונית (αὔρα, משב רוח). בעברית ובאנגלית 'אורה' היא ההילה הבלתי נראית סביב אדם.",
+        "es": [
+          "aura"
+        ],
+        "it": [
+          "ora",
+          "aura"
+        ],
+        "fr": [
+          "aura"
+        ],
+        "pt": [
+          "oura",
+          "oira",
+          "aura"
+        ],
+        "ro": [
+          "aură"
+        ],
+        "ca": [
+          "ora",
+          "aura"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *h₂ews-\nProto-Indo-European *-r\nProto-Indo-European *h₂ewsér\nProto-Indo-European *-h₂\nProto-Indo-European *h₂éwsr̥h₂\nProto-Hellenic *auhrā\nAncient Greek αὔρα (aúra)bor.\nLatin aura\nBorrowed from Ancient Greek αὔρα (aúra)."
+    },
+    {
+      "id": "flamma",
+      "lemma": "flamma",
+      "dictionary_form": "flamma -ae f.",
+      "pos": "noun",
+      "meaning_he": "להבה",
+      "meaning_en": "flame, fire",
+      "ipa": "[ˈfɫam.ma]",
+      "dcc_rank": 298,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "abl.pl": "flammīs",
+        "abl.sg": "flammā",
+        "acc.pl": "flammās",
+        "acc.sg": "flammam",
+        "dat.pl": "flammīs",
+        "dat.sg": "flammae",
+        "gen.pl": "flammārum",
+        "gen.sg": "flammae",
+        "nom.pl": "flammae",
+        "nom.sg": "flamma",
+        "voc.pl": "flammae",
+        "voc.sg": "flamma"
+      },
+      "family": {
+        "en": [
+          "flame",
+          "flamingo",
+          "inflammation",
+          "flamboyant"
+        ],
+        "he": [
+          "פלמינגו"
+        ],
+        "note_he": "פלמינגו נקרא כך בגלל צבע הנוצות שלו, 'בצבע להבה'.",
+        "fr": [
+          "flamme"
+        ],
+        "es": [
+          "llama",
+          "flama"
+        ],
+        "it": [
+          "fiamma"
+        ],
+        "pt": [
+          "chama",
+          "flama"
+        ],
+        "ro": [
+          "flamă"
+        ],
+        "ca": [
+          "flama"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "From Proto-Italic *flagmā, from Proto-Indo-European *bʰl̥-g-mh₂, from Proto-Indo-European *bʰl̥g- (“to shimmer, gleam, shine”). Compare flagrō (“to blaze”) and fulgō (“to flash, shine”) from the same root, as well as Ancient Greek φλογμός (phlogmós, “flame”)."
+    },
+    {
+      "id": "porto",
+      "lemma": "portō",
+      "dictionary_form": "portō -āre",
+      "pos": "verb",
+      "meaning_he": "לשאת, לסחוב",
+      "meaning_en": "carry a load",
+      "ipa": "[ˈpɔr.toː]",
+      "dcc_rank": 853,
+      "dcc_group": "Measurement",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "imp.2pl": "portāte",
+        "imp.2sg": "portā",
+        "inf": "portāre",
+        "pres.1pl": "portāmus",
+        "pres.1sg": "portō",
+        "pres.2pl": "portātis",
+        "pres.2sg": "portās",
+        "pres.3pl": "portant",
+        "pres.3sg": "portat"
+      },
+      "family": {
+        "en": [
+          "portable",
+          "transport",
+          "import",
+          "export",
+          "porter"
+        ],
+        "he": [
+          "פורטפוליו",
+          "טרנספורט"
+        ],
+        "note_he": "פורטפוליו הוא 'נושא דפים' (portare + foglio באיטלקית). transport הוא 'לשאת אל מעבר'.",
+        "es": [
+          "portar"
+        ],
+        "it": [
+          "portare"
+        ],
+        "fr": [
+          "porter"
+        ],
+        "pt": [
+          "portar"
+        ],
+        "ro": [
+          "purta",
+          "purtare"
+        ],
+        "ca": [
+          "portar"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Perhaps from Proto-Italic *portāō. Alternatively, it may derive from *poritō, frequentative of Proto-Indo-European *poréyeti (“to make go through”). However, De Vaan rejects the latter explanations and supports the former. Either way, ultimately from *per- (“to go through”). Cognate with porta, portus."
+    },
+    {
+      "id": "amo",
+      "lemma": "amō",
+      "dictionary_form": "amō -āre",
+      "pos": "verb",
+      "meaning_he": "לאהוב",
+      "meaning_en": "to love; amāns -ntis m./f.: lover",
+      "ipa": "[ˈa.moː]",
+      "dcc_rank": 219,
+      "dcc_group": "Love",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "imp.2pl": "amāte",
+        "imp.2sg": "amā",
+        "inf": "amāre",
+        "pres.1pl": "amāmus",
+        "pres.1sg": "amō",
+        "pres.2pl": "amātis",
+        "pres.2sg": "amās",
+        "pres.3pl": "amant",
+        "pres.3sg": "amat"
+      },
+      "family": {
+        "en": [
+          "amorous",
+          "amateur",
+          "amiable"
+        ],
+        "he": [],
+        "note_he": "amateur (חובב) הוא בצרפתית 'מי שאוהב' — עושה משהו מאהבה, לא בשביל כסף. amō, amās, amat היא הנטייה המפורסמת ביותר בלטינית.",
+        "es": [
+          "amar"
+        ],
+        "it": [
+          "amare"
+        ],
+        "fr": [
+          "aimer"
+        ],
+        "pt": [
+          "amar"
+        ],
+        "ca": [
+          "amar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Omnia vincit Amor",
+          "meaning_he": "האהבה מנצחת הכול — וירגיליוס (amor, 'אהבה', מאותו שורש)"
+        }
+      ],
+      "etymology_en": "Perhaps inherited from Proto-Italic *amāō, from Proto-Indo-European *h₃emh₃- (“to take hold of”). Schrijver alternatively proposes that the term reflects an *ē-stative formed to a root present, adducing as evidence amor (“love”). Formations in -or are otherwise rare beside ā-verbs, but are common beside second conjugation stative verbs."
+    },
+    {
+      "id": "voco",
+      "lemma": "vocō",
+      "dictionary_form": "vocō -āre",
+      "pos": "verb",
+      "meaning_he": "לקרוא (למישהו)",
+      "meaning_en": "call",
+      "ipa": "[ˈwɔ.koː]",
+      "dcc_rank": 158,
+      "dcc_group": "Speech/Oratory",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "imp.2pl": "vocāte",
+        "imp.2sg": "vocā",
+        "inf": "vocāre",
+        "pres.1pl": "vocāmus",
+        "pres.1sg": "vocō",
+        "pres.2pl": "vocātis",
+        "pres.2sg": "vocās",
+        "pres.3pl": "vocant",
+        "pres.3sg": "vocat"
+      },
+      "family": {
+        "en": [
+          "vocal",
+          "vocation",
+          "invoke",
+          "advocate",
+          "vocabulary"
+        ],
+        "he": [
+          "ווקאלי",
+          "ווקאליסט"
+        ],
+        "note_he": "vocation (ייעוד) הוא 'קריאה' — מה שקורא לך. invoke הוא 'לקרוא פנימה', למשל להזעיק כוח קסום.",
+        "es": [
+          "vocación"
+        ],
+        "it": [
+          "vocazione"
+        ],
+        "fr": [
+          "vocation"
+        ],
+        "pt": [
+          "vocação"
+        ],
+        "ca": []
+      },
+      "expressions": [
+        {
+          "text": "advocatus diaboli",
+          "meaning_he": "פרקליט השטן — מי שטוען בכוונה את העמדה ההפוכה"
+        }
+      ],
+      "etymology_en": "Denominal from the oblique Proto-Indo-European stem *wokʷ- of vōx (“voice, speech”)."
+    },
+    {
+      "id": "specto",
+      "lemma": "spectō",
+      "dictionary_form": "spectō -āre",
+      "pos": "verb",
+      "meaning_he": "להסתכל, לצפות",
+      "meaning_en": "look at, consider",
+      "ipa": "[ˈspɛk.toː]",
+      "dcc_rank": 473,
+      "dcc_group": "Vision",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "imp.2pl": "spectāte",
+        "imp.2sg": "spectā",
+        "inf": "spectāre",
+        "pres.1pl": "spectāmus",
+        "pres.1sg": "spectō",
+        "pres.2pl": "spectātis",
+        "pres.2sg": "spectās",
+        "pres.3pl": "spectant",
+        "pres.3sg": "spectat"
+      },
+      "family": {
+        "en": [
+          "spectator",
+          "spectacle",
+          "inspect",
+          "respect",
+          "perspective"
+        ],
+        "he": [
+          "ספקטקל",
+          "פרספקטיבה",
+          "ספקטרום"
+        ],
+        "note_he": "respect הוא 'להביט שוב' במישהו. perspective הוא 'להביט דרך'.",
+        "es": [
+          "espectador"
+        ],
+        "it": [
+          "spettatore"
+        ],
+        "fr": [
+          "spectateur"
+        ],
+        "pt": [
+          "espectador"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Frequentative of speciō (“look at”) via its passive participle spectus."
+    },
+    {
+      "id": "paro",
+      "lemma": "parō",
+      "dictionary_form": "parō -āre",
+      "pos": "verb",
+      "meaning_he": "להכין",
+      "meaning_en": "prepare, acquire; parātus -a -um, ready",
+      "ipa": "[ˈpa.roː]",
+      "dcc_rank": 160,
+      "dcc_group": "Making/Doing",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "imp.2pl": "parāte",
+        "imp.2sg": "parā",
+        "inf": "parāre",
+        "pres.1pl": "parāmus",
+        "pres.1sg": "parō",
+        "pres.2pl": "parātis",
+        "pres.2sg": "parās",
+        "pres.3pl": "parant",
+        "pres.3sg": "parat"
+      },
+      "family": {
+        "en": [
+          "prepare",
+          "repair",
+          "apparatus",
+          "parachute"
+        ],
+        "he": [],
+        "note_he": "parachute (מצנח) הוא בצרפתית 'מגן מנפילה' — parer, מאותו שורש, קיבל גם את המשמעות 'להדוף, להגן'.",
+        "es": [
+          "parar"
+        ],
+        "it": [
+          "parare"
+        ],
+        "fr": [
+          "parer"
+        ],
+        "pt": [
+          "parar"
+        ],
+        "ca": [
+          "parar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Si vis pacem, para bellum",
+          "meaning_he": "אם אתה רוצה שלום, היכון למלחמה"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *perh₃-\nProto-Indo-European *pr̥h₃o-\nProto-Italic *paro-\nProto-Indo-European *-h₂\nProto-Indo-European *-éh₂\nProto-Indo-European *-yéti\nProto-Indo-European *-eh₂yéti\nProto-Indo-European *-h₂tiinflu.\nProto-Italic *-ājō\nProto-Italic *-āō\nLatin -ō\nLatin parō\nDenominative to Proto-Indo-European *pr̥h₃-o- (“providing”), from *perh₃- (“to grant”). Cognate with pariō (“to produce”), properus (“ready”), Ancient Greek ἔπορον (époron, “to give, furnish”), Old Irish ernaid (“to grant, bestow”) Sanskrit पृणाति (pṛṇā́ti, “to grant, bestow”).\nFor etymology 1 sense 5 compare typologically Latin ōrnō, Russian наряжа́ть (narjažátʹ) (akin to поря́док (porjádok))."
+    },
+    {
+      "id": "servo",
+      "lemma": "servō",
+      "dictionary_form": "servō -āre",
+      "pos": "verb",
+      "meaning_he": "לשמור, להציל",
+      "meaning_en": "save, watch over",
+      "ipa": "[ˈsɛr.woː]",
+      "dcc_rank": 289,
+      "dcc_group": "The Household",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "imp.2pl": "servāte",
+        "imp.2sg": "servā",
+        "inf": "servāre",
+        "pres.1pl": "servāmus",
+        "pres.1sg": "servō",
+        "pres.2pl": "servātis",
+        "pres.2sg": "servās",
+        "pres.3pl": "servant",
+        "pres.3sg": "servat"
+      },
+      "family": {
+        "en": [
+          "conserve",
+          "preserve",
+          "reserve",
+          "observe",
+          "reservation"
+        ],
+        "he": [
+          "קונסרבה",
+          "קונסרבטיבי",
+          "קונסרבטוריון"
+        ],
+        "note_he": "קונסרבה היא אוכל 'שמור' בקופסה. קונסרבטיבי הוא מי ששומר על הקיים.",
+        "es": [
+          "conservar"
+        ],
+        "it": [
+          "conservare"
+        ],
+        "fr": [
+          "conserver"
+        ],
+        "pt": [
+          "conservar"
+        ],
+        "ro": []
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *ser-der.?\nProto-Italic *serwos\nLatin servus\nProto-Indo-European *-h₂\nProto-Indo-European *-éh₂\nProto-Indo-European *-yéti\nProto-Indo-European *-eh₂yéti\nProto-Indo-European *-h₂tiinflu.\nProto-Italic *-ājō\nProto-Italic *-āō\nLatin -ō\nLatin servo\nBy surface analysis, servus + -ō. According to Rix, the term may have originated as a denominative to an older noun *serwā or *serwom, both of which may have meant something akin to \"observation, heedance.\" Ultimately from Proto-Indo-European *ser-."
+    },
+    {
+      "id": "non",
+      "lemma": "nōn",
+      "dictionary_form": "nōn",
+      "pos": "adv",
+      "meaning_he": "לא",
+      "meaning_en": "not",
+      "ipa": "[ˈnoːn]",
+      "dcc_rank": 6,
+      "dcc_group": "Conjunctions/Adverbs",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {},
+      "family": {
+        "en": [
+          "nonsense",
+          "nonetheless",
+          "non-stop"
+        ],
+        "he": [
+          "נון-סטופ"
+        ],
+        "note_he": "בלטינית nōn בא לפני המילה שהוא שולל: nōn amat, הוא לא אוהב.",
+        "es": [
+          "no",
+          "non"
+        ],
+        "it": [
+          "no",
+          "non"
+        ],
+        "fr": [
+          "non",
+          "ne"
+        ],
+        "pt": [
+          "não"
+        ],
+        "ro": [
+          "nu"
+        ],
+        "ca": [
+          "no"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "persona non grata",
+          "meaning_he": "אדם לא רצוי"
+        },
+        {
+          "text": "sine qua non",
+          "meaning_he": "תנאי שבלעדיו אין — דבר הכרחי לגמרי"
+        }
+      ],
+      "etymology_en": "Uncertain. Maybe from Old Latin noenum, from Proto-Indo-European *né (“not”) + *óynos (“one”). Equivalent to ne + ūnus. Alternatively from Proto-Indo-European *nó-h₁ ne (“not at all”) and cognate with the uncertain Gaulish nane (“not”) and Luwian [Term?] (/⁠nā̆na⁠/, “not”)."
+    },
+    {
+      "id": "do",
+      "lemma": "dō",
+      "dictionary_form": "dō dare dedī datum",
+      "pos": "verb",
+      "meaning_he": "לתת",
+      "meaning_en": "give",
+      "ipa": "[ˈdoː]",
+      "dcc_rank": 28,
+      "dcc_group": "Social Life",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "imp.2pl": "date",
+        "imp.2sg": "dā",
+        "inf": "dare",
+        "pres.1pl": "damus",
+        "pres.1sg": "dō",
+        "pres.2pl": "datis",
+        "pres.2sg": "dās",
+        "pres.3pl": "dant",
+        "pres.3sg": "dat"
+      },
+      "family": {
+        "en": [
+          "data",
+          "date",
+          "donate"
+        ],
+        "he": [
+          "דאטה"
+        ],
+        "note_he": "data פירושו 'דברים שניתנו'. date (תאריך) בא מ-data, המילה שפתחה מכתבים רומיים: 'נמסר ביום...'.",
+        "es": [
+          "dar"
+        ],
+        "it": [
+          "dare"
+        ],
+        "pt": [
+          "dar"
+        ],
+        "ro": [
+          "da",
+          "dare"
+        ],
+        "ca": [
+          "dar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "do ut des",
+          "meaning_he": "אני נותן כדי שתיתן — עיקרון של הדדיות"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *didō, from Proto-Indo-European *dédeh₃ti, from the root *deh₃- (“give”). The reduplication was lost in Latin in the present tense, but is preserved in the perfect tense and in other Italic languages. A root aorist (from Proto-Indo-European *déh₃t) is preserved in Venetic 𐌆𐌏𐌕𐌏 (doto); the other Italic perfect forms reflect a reduplicated stative, *dedai. However, the root aorist possibly served as the source of the Latin present forms.\nThe form duim may reflect earlier Proto-Italic *dū-ī-, from the optative of an older Proto-Indo-European aorist *déwh₃-t. The stem of this aorist perhaps derives the metathesis of *dh₃u-, itself perhaps derives from the root *deh₃- with a u-extension. Sihler, however, dismisses the proposed root extension as \"ad hoc\" and arguing that the proposed cognates, δοϝέναι (dowénai) and दावने (dāváne), have more plausible explanations within their own branches, thus leaving the Italic forms isolated. Another theory, advanced by the linguist Jay H. Jasanoff, suggests that the form derives from Proto-Italic *dōwīm, itself from Proto-Indo-European *déh₃-ih₁-m̥, with a glide inserted to break the hiatus. The term escaped the effects of Thurneysen-Havet's Law due to the root accent.\nCognates include Ancient Greek δίδωμι (dídōmi), Sanskrit ददाति (dádāti), Old Persian 𐎭𐎭𐎠𐎬𐎢𐎺 (d-d-a-tu-u-v).\nThe derivatives of dō are not always easy to distinguish from those of -dō (“put”) < *dʰeh₁-."
+    },
+    {
+      "id": "affero",
+      "lemma": "afferō",
+      "dictionary_form": "afferō afferre attulī allātum",
+      "pos": "verb",
+      "meaning_he": "להביא",
+      "meaning_en": "bring to",
+      "ipa": "[ˈaf.fɛ.roː]",
+      "dcc_rank": 514,
+      "dcc_group": "Verbs of Transport",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "imp.2pl": "afferte",
+        "imp.2sg": "affer",
+        "inf": "afferre",
+        "pres.1pl": "afferimus",
+        "pres.1sg": "afferō",
+        "pres.2pl": "affertis",
+        "pres.2sg": "affers",
+        "pres.3pl": "afferunt",
+        "pres.3sg": "affert"
+      },
+      "family": {
+        "en": [
+          "afferent",
+          "transfer",
+          "offer",
+          "refer",
+          "fertile"
+        ],
+        "he": [
+          "טרנספר",
+          "רפרנדום"
+        ],
+        "note_he": "afferō = ad (אל) + ferō (לשאת): 'לשאת אל'. הציווי שלו קצר במיוחד: affer! (הבא!). מ-ferō באו transfer, offer ו-refer."
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *h₂éd\nProto-Italic *ad\nProto-Italic *ad-\nLatin ad-\nProto-Indo-European *bʰer-\nProto-Indo-European *-eti\nProto-Indo-European *bʰéreti\nProto-Italic *ferō\nLatin ferō\nLatin afferō\nFrom ad- + ferō (“bear, carry”)."
+    },
+    {
+      "id": "ego",
+      "lemma": "ego",
+      "dictionary_form": "ego meī mihi mē",
+      "pos": "pron",
+      "meaning_he": "אני",
+      "meaning_en": "I, me",
+      "ipa": "[ˈɛ.ɡoː]",
+      "dcc_rank": 11,
+      "dcc_group": "Pronouns/Interrogatives",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.sg": "mē",
+        "acc.sg": "mē",
+        "dat.sg": "mihi",
+        "gen.sg": "meī",
+        "nom.sg": "ego",
+        "voc.sg": "ego"
+      },
+      "family": {
+        "en": [
+          "ego",
+          "egoist",
+          "egocentric"
+        ],
+        "he": [
+          "אגו",
+          "אגואיסט",
+          "אגוצנטרי"
+        ],
+        "note_he": "mihi פירושו 'לי' — צורת הנתינה של ego, והיא חשובה מאוד בלחשים.",
+        "es": [
+          "yo",
+          "ego"
+        ],
+        "it": [
+          "io",
+          "ego"
+        ],
+        "fr": [
+          "ego"
+        ],
+        "pt": [
+          "eu",
+          "ego"
+        ],
+        "ro": [
+          "eu"
+        ],
+        "ca": [
+          "jo",
+          "ego"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "alter ego",
+          "meaning_he": "אני אחר — זהות שנייה של אותו אדם"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *éǵh₂\nProto-Italic *egō\nArchaic Latin eco\nLatin egō̆\nInherited from Archaic Latin eco, from Proto-Italic *egō. Compare Ancient Greek ἐγώ (egṓ)."
+    },
+    {
+      "id": "tu",
+      "lemma": "tū",
+      "dictionary_form": "tū tuī tibi tē",
+      "pos": "pron",
+      "meaning_he": "אתה, את",
+      "meaning_en": "you (sing.)",
+      "ipa": "[ˈtuː]",
+      "dcc_rank": 9,
+      "dcc_group": "Pronouns/Interrogatives",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.sg": "tē",
+        "acc.sg": "tē",
+        "dat.sg": "tibi",
+        "gen.sg": "tuī",
+        "nom.sg": "tū",
+        "voc.sg": "tū"
+      },
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "המילה האנגלית העתיקה thou היא 'בת דודה' של tū: שתיהן ירשו את המילה משפת אם קדומה משותפת, ואחת לא נלקחה מהשנייה. tibi פירושו 'לך'.",
+        "es": [
+          "tú"
+        ],
+        "it": [
+          "tu"
+        ],
+        "fr": [
+          "tu"
+        ],
+        "pt": [
+          "tu"
+        ],
+        "ro": [
+          "tu"
+        ],
+        "ca": [
+          "tu"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Et tu, Brute?",
+          "meaning_he": "גם אתה, ברוטוס? — מילותיו של יוליוס קיסר במחזה של שייקספיר"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *tū, from Proto-Indo-European *túh₂ or *tū."
+    },
+    {
+      "id": "lignum",
+      "lemma": "lignum",
+      "dictionary_form": "lignum -ī n.",
+      "pos": "noun",
+      "meaning_he": "עצים להסקה, בול עץ",
+      "meaning_en": "firewood",
+      "ipa": "[ˈlɪŋ.nũː]",
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Not in the DCC core list; needed for the stage-1 gathering spell 'Lignum mihi affer!' (approved by the user).",
+      "element": "terra",
+      "forms": {
+        "abl.pl": "lignīs",
+        "abl.sg": "lignō",
+        "acc.pl": "ligna",
+        "acc.sg": "lignum",
+        "dat.pl": "lignīs",
+        "dat.sg": "lignō",
+        "gen.pl": "lignōrum",
+        "gen.sg": "lignī",
+        "nom.pl": "ligna",
+        "nom.sg": "lignum",
+        "voc.pl": "ligna",
+        "voc.sg": "lignum"
+      },
+      "family": {
+        "en": [
+          "ligneous",
+          "lignin"
+        ],
+        "he": [
+          "ליגנין"
+        ],
+        "note_he": "lignum הוא עץ כחומר — עצים להסקה ולבנייה, לא עץ חי (עץ חי הוא arbor). ליגנין הוא החומר שמקשיח את העץ. זו מילה בסתמי (neuter), ולכן צורת המושא שלה זהה לצורת הנושא: lignum.",
+        "es": [
+          "leño",
+          "leña"
+        ],
+        "it": [
+          "legno",
+          "legna"
+        ],
+        "pt": [
+          "lenha",
+          "lenho"
+        ],
+        "ro": [
+          "lemn"
+        ],
+        "ca": [
+          "llenya"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "lignum vitae",
+          "meaning_he": "עץ החיים — גם שמו של עץ טרופי קשה במיוחד"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *legnom, from Proto-Indo-European *leǵ-no-m (“that which is collected”), from *leǵ- (“to collect”), with the Italic form interpreted as \"wood collected for firemaking\".\nAn alternative derivation from Proto-Indo-European *legʰ- (“to lie”), and associated interpretation as \"stray wood\", seems equally possible, phonetically and semantically."
+    },
+    {
+      "id": "dea",
+      "lemma": "dea",
+      "dictionary_form": "dea -ae f.",
+      "pos": "noun",
+      "meaning_he": "אלה",
+      "meaning_en": "god; goddess",
+      "ipa": "[ˈde.a]",
+      "dcc_rank": 42,
+      "dcc_group": "Religion",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "deābus",
+        "abl.sg": "deā",
+        "acc.pl": "deās",
+        "acc.sg": "deam",
+        "dat.pl": "deābus",
+        "dat.sg": "deae",
+        "gen.pl": "deārum",
+        "gen.sg": "deae",
+        "nom.pl": "deae",
+        "nom.sg": "dea",
+        "voc.pl": "deae",
+        "voc.sg": "dea"
+      },
+      "family": {
+        "en": [
+          "deity",
+          "deify"
+        ],
+        "he": [],
+        "note_he": "dea היא צורת הנקבה של deus (אל).",
+        "es": [
+          "diosa"
+        ],
+        "it": [
+          "dea"
+        ],
+        "fr": [
+          "déesse"
+        ],
+        "pt": [
+          "deusa"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "deus ex machina",
+          "meaning_he": "האל מן המכונה — פתרון פתאומי ומלאכותי בעלילה"
+        }
+      ],
+      "etymology_en": "From Old Latin deivā, from Proto-Italic *deiwā."
+    },
+    {
+      "id": "fabula",
+      "lemma": "fābula",
+      "dictionary_form": "fābula -ae f.",
+      "pos": "noun",
+      "meaning_he": "סיפור, אגדה",
+      "meaning_en": "account, tale, story",
+      "ipa": "[ˈfaː.bʊ.ɫa]",
+      "dcc_rank": 966,
+      "dcc_group": "Writing/Poetry",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "fābulīs",
+        "abl.sg": "fābulā",
+        "acc.pl": "fābulās",
+        "acc.sg": "fābulam",
+        "dat.pl": "fābulīs",
+        "dat.sg": "fābulae",
+        "gen.pl": "fābulārum",
+        "gen.sg": "fābulae",
+        "nom.pl": "fābulae",
+        "nom.sg": "fābula",
+        "voc.pl": "fābulae",
+        "voc.sg": "fābula"
+      },
+      "family": {
+        "en": [
+          "fable",
+          "fabulous",
+          "fabled"
+        ],
+        "he": [
+          "פאבולה"
+        ],
+        "note_he": "fabulous היה פעם 'כמו באגדה'. בתורת הספרות, פאבולה היא רצף האירועים של הסיפור. בספרדית habla (דיבור) באה מאותו שורש.",
+        "fr": [
+          "fable"
+        ],
+        "es": [
+          "habla",
+          "fábula"
+        ],
+        "it": [
+          "favola",
+          "fiaba",
+          "fola"
+        ],
+        "pt": [
+          "fala",
+          "fábula"
+        ],
+        "ro": [
+          "faulă",
+          "fabulă"
+        ],
+        "ca": [
+          "faula",
+          "fàbula"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "De te fabula narratur",
+          "meaning_he": "הסיפור מסופר עליך — הורטיוס"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *bʰeh₂-\nProto-Indo-European *-ti\nProto-Indo-European *bʰéh₂ti\nProto-Italic *fāōr\nLatin for, fā-\nProto-Indo-European *-dʰlomder.\nLatin -bula\nLatin fābula\nFrom for, fā- (“to speak, say”) + -bula (instrument noun suffix)."
+    },
+    {
+      "id": "narro",
+      "lemma": "narrō",
+      "dictionary_form": "narrō -āre",
+      "pos": "verb",
+      "meaning_he": "לספר",
+      "meaning_en": "relate, recount",
+      "ipa": "[ˈnar.roː]",
+      "dcc_rank": 910,
+      "dcc_group": "Speech/Oratory",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "imp.2pl": "narrāte",
+        "imp.2sg": "narrā",
+        "inf": "narrāre",
+        "pres.1pl": "narrāmus",
+        "pres.1sg": "narrō",
+        "pres.2pl": "narrātis",
+        "pres.2sg": "narrās",
+        "pres.3pl": "narrant",
+        "pres.3sg": "narrat"
+      },
+      "family": {
+        "en": [
+          "narrate",
+          "narrator",
+          "narrative"
+        ],
+        "he": [
+          "נרטיב"
+        ],
+        "note_he": "נרטיב הוא 'סיפור' — הדרך שבה מספרים את מה שקרה.",
+        "es": [
+          "narrar"
+        ],
+        "it": [
+          "narrare"
+        ],
+        "fr": [
+          "narrer"
+        ],
+        "pt": [
+          "narrar"
+        ],
+        "ro": [
+          "nara"
+        ],
+        "ca": [
+          "narrar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "De te fabula narratur",
+          "meaning_he": "הסיפור מסופר עליך — הורטיוס"
+        }
+      ],
+      "etymology_en": "From earlier nārō, for Proto-Italic *gnārāō (“to make known, tell”), denominal from gnārus; or less likely for Proto-Italic *gnārurāō. Ultimately from Proto-Indo-European *ǵneh₃- (“to know”). The /V:C/~/VCC/ vacillation is similar to, but probably a different phenomenon from, the so-called 'Littera Rule', as in Iūpiter > Iuppiter."
+    },
+    {
+      "id": "filia",
+      "lemma": "fīlia",
+      "dictionary_form": "fīlia -ae f.",
+      "pos": "noun",
+      "meaning_he": "בת",
+      "meaning_en": "daughter; son",
+      "ipa": "[ˈfiː.li.a]",
+      "dcc_rank": 909,
+      "dcc_group": "The Household",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "fīliīs",
+        "abl.sg": "fīliā",
+        "acc.pl": "fīliās",
+        "acc.sg": "fīliam",
+        "dat.pl": "fīliīs",
+        "dat.sg": "fīliae",
+        "gen.pl": "fīliārum",
+        "gen.sg": "fīliae",
+        "nom.pl": "fīliae",
+        "nom.sg": "fīlia",
+        "voc.pl": "fīliae",
+        "voc.sg": "fīlia"
+      },
+      "family": {
+        "en": [
+          "filial",
+          "affiliate"
+        ],
+        "he": [],
+        "note_he": "affiliate הוא 'לאמץ כבן' — לצרף משהו כחלק מהמשפחה.",
+        "ro": [
+          "fiică"
+        ],
+        "es": [
+          "hija"
+        ],
+        "it": [
+          "figlia"
+        ],
+        "fr": [
+          "fille"
+        ],
+        "pt": [
+          "filha"
+        ],
+        "ca": [
+          "filla"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "From fīlius (“son”). Displaced the Proto-Italic descendant of Proto-Indo-European *dʰugh₂tḗr, which is attested in Oscan 𐌚𐌖𐌕𐌝𐌓 (futír)."
+    },
+    {
+      "id": "ignis",
+      "lemma": "ignis",
+      "dictionary_form": "ignis -is m.",
+      "pos": "noun",
+      "meaning_he": "אש",
+      "meaning_en": "fire",
+      "ipa": "[ˈɪŋ.nɪs]",
+      "dcc_rank": 151,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "abl.pl": "ignibus",
+        "abl.sg": "ignī",
+        "acc.pl": "ignēs",
+        "acc.sg": "ignem",
+        "dat.pl": "ignibus",
+        "dat.sg": "ignī",
+        "gen.pl": "ignium",
+        "gen.sg": "ignis",
+        "nom.pl": "ignēs",
+        "nom.sg": "ignis",
+        "voc.pl": "ignēs",
+        "voc.sg": "ignis"
+      },
+      "family": {
+        "en": [
+          "ignite",
+          "ignition",
+          "igneous"
+        ],
+        "he": [],
+        "note_he": "אחד מחמשת האלמנטים במשחק. igneous rock הוא סלע שנוצר מאש, מלבה. בשפות הרומאניות ignis כמעט נעלמה, ובמקומה נכנסה focus (אח, מדורה): fuego, fuoco, feu — ו-focus הוא גם שם המדורה במחנה של השועלה.",
+        "it": []
+      },
+      "expressions": [
+        {
+          "text": "ignis fatuus",
+          "meaning_he": "אש שוטה — אור מרצד ומטעה שנראה בביצות"
+        }
+      ],
+      "etymology_en": "Inherited from Proto-Indo-European *h₁n̥gʷnís (“fire”). The exact phonological development of this term is slightly unclear. De Vaan suggests that Proto-Indo-European *h₁n̥gʷnís yielded *Həngni-, whence *engni- or *ingni-, which dissimilated into *egni- or *igni-. This term constitutes an issue for the Latin sound law *CCCC > CaCCC, leading Schrijver to argue that *h₁ must have lost phonemic status by the time of epenthesis. Thus, Schrijver ultimately suggests a development *h₁n̥gʷni- > *h₁əngʷni- > *əngʷni- > ignis. In any case, the term displaced Proto-Italic *pūr.\nCognate with Lithuanian ugnis, Sanskrit अग्नि (agní), Hittite 𒀀𒀝𒉌𒅖 (akniš) (an Indo-Iranian borrowing), Old Church Slavonic огнь (ognĭ) and Old Prussian ugnis."
+    },
+    {
+      "id": "aer",
+      "lemma": "āēr",
+      "dictionary_form": "āēr āeris m.",
+      "pos": "noun",
+      "meaning_he": "אוויר",
+      "meaning_en": "air",
+      "ipa": "[ˈaː.eːr]",
+      "dcc_rank": 845,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "āeribus",
+        "abl.sg": "āere",
+        "acc.pl": "āerēs",
+        "acc.sg": "āera",
+        "dat.pl": "āeribus",
+        "dat.sg": "āerī",
+        "gen.pl": "āerum",
+        "gen.sg": "āeris",
+        "nom.pl": "āerēs",
+        "nom.sg": "āēr",
+        "voc.pl": "āerēs",
+        "voc.sg": "āēr"
+      },
+      "family": {
+        "en": [
+          "air",
+          "aerial",
+          "aerobic",
+          "aeroplane"
+        ],
+        "he": [
+          "אוויר",
+          "אווירודינמי",
+          "אירובי"
+        ],
+        "note_he": "גם המילה העברית 'אוויר' הגיעה מהיוונית ἀήρ, בדיוק כמו הלטינית āēr. אחד מחמשת האלמנטים במשחק.",
+        "es": [
+          "aire"
+        ],
+        "it": [
+          "aere",
+          "aiere",
+          "aire"
+        ],
+        "fr": [
+          "air"
+        ],
+        "pt": [
+          "ar"
+        ],
+        "ro": [
+          "aer"
+        ],
+        "ca": [
+          "aire"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *h₂ews-\nProto-Indo-European *-r\nProto-Indo-European *h₂ewsér\nProto-Hellenic *auhḗr\nAncient Greek ᾱ̓ήρ (āḗr)bor.\nLatin āēr\nBorrowed from Ancient Greek ᾱ̓ήρ (āḗr, “air”)."
+    },
+    {
+      "id": "aether",
+      "lemma": "aethēr",
+      "dictionary_form": "aethēr aetheris n.",
+      "pos": "noun",
+      "meaning_he": "אתר, האוויר העליון והטהור",
+      "meaning_en": "pure upper air, ether, heaven, sky",
+      "ipa": "[ˈae̯.tʰeːr]",
+      "dcc_rank": 851,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "aetheribus",
+        "abl.sg": "aethere",
+        "acc.pl": "aetherēs",
+        "acc.sg": "aethera",
+        "dat.pl": "aetheribus",
+        "dat.sg": "aetherī",
+        "gen.pl": "aetherum",
+        "gen.sg": "aetheris",
+        "nom.pl": "aetherēs",
+        "nom.sg": "aethēr",
+        "voc.pl": "aetherēs",
+        "voc.sg": "aethēr"
+      },
+      "family": {
+        "en": [
+          "ether",
+          "ethereal",
+          "quintessence"
+        ],
+        "he": [
+          "אתר",
+          "אתרי"
+        ],
+        "note_he": "האלמנט החמישי (quinta essentia), שממנו לפי הקדמונים עשויים הכוכבים. מכאן quintessence, 'התמצית החמישית'.",
+        "es": [
+          "éter"
+        ],
+        "it": [
+          "etere"
+        ],
+        "fr": [
+          "éther",
+          "æther"
+        ],
+        "pt": [
+          "éter"
+        ],
+        "ro": [
+          "eter"
+        ],
+        "ca": [
+          "èter"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "quinta essentia",
+          "meaning_he": "המהות החמישית — האלמנט שמעל אדמה, מים, אוויר ואש"
+        }
+      ],
+      "etymology_en": "Derived from Ancient Greek αἰθήρ (aithḗr, “sky; ether”)."
+    }
+  ]
+}

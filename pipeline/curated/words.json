@@ -1,0 +1,919 @@
+{
+  "_about": "Hand-written layer merged by pipeline/build_content.py. Everything that DCC and kaikki do not provide lives here: Hebrew meanings, English/Hebrew related words, familiar expressions, notes, game element. See content/SCHEMA.md.",
+  "words": [
+    {
+      "id": "silva",
+      "pos": "noun",
+      "dcc_headword": "silva -ae f.",
+      "meaning_he": "יער",
+      "element": "terra",
+      "family": {
+        "en": [
+          "sylvan",
+          "Pennsylvania",
+          "Transylvania"
+        ],
+        "he": [
+          "סילבסטר"
+        ],
+        "note_he": "Pennsylvania היא 'היער של פן', ו-Transylvania היא 'הארץ שמעבר ליער'. סילבסטר (ערב השנה החדשה) נקרא על שם האפיפיור Silvester, שפירוש שמו 'איש היער'."
+      },
+      "expressions": []
+    },
+    {
+      "id": "terra",
+      "pos": "noun",
+      "dcc_headword": "terra -ae f.",
+      "meaning_he": "אדמה, ארץ",
+      "element": "terra",
+      "family": {
+        "en": [
+          "terrain",
+          "territory",
+          "terrace",
+          "terrestrial",
+          "Mediterranean"
+        ],
+        "he": [
+          "טריטוריה",
+          "טרסה",
+          "טרקוטה"
+        ],
+        "note_he": "הים התיכון באנגלית הוא Mediterranean, כלומר 'הים שבאמצע הארץ' (medius + terra). טרקוטה היא 'אדמה שרופה' באיטלקית.",
+        "fr": [
+          "terre"
+        ],
+        "it": [
+          "terra"
+        ],
+        "ro": [
+          "țară"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "terra incognita",
+          "meaning_he": "ארץ לא נודעת — כך סימנו במפות עתיקות אזורים שלא נחקרו"
+        },
+        {
+          "text": "terra firma",
+          "meaning_he": "קרקע מוצקה, אדמה יציבה (בניגוד לים)"
+        }
+      ]
+    },
+    {
+      "id": "aqua",
+      "pos": "noun",
+      "dcc_headword": "aqua -ae f.",
+      "meaning_he": "מים",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "aquarium",
+          "aquatic",
+          "aqueduct",
+          "aquamarine"
+        ],
+        "he": [
+          "אקווריום",
+          "אקוודוקט",
+          "אקוורל"
+        ],
+        "note_he": "אקוורל הוא ציור בצבעי מים. אקוודוקט הוא 'מוביל מים' (aqua + ducere, להוביל).",
+        "fr": [
+          "eau"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "aqua vitae",
+          "meaning_he": "מי חיים — כינוי עתיק למשקאות חריפים מזוקקים"
+        }
+      ]
+    },
+    {
+      "id": "puella",
+      "pos": "noun",
+      "dcc_headword": "puella -ae f.",
+      "meaning_he": "נערה, ילדה",
+      "element": "terra",
+      "family": {
+        "en": [
+          "puerile"
+        ],
+        "he": [],
+        "note_he": "puella היא צורת הקטנה של puer (ילד, נער). מ-puer הגיעה המילה האנגלית puerile, ילדותי."
+      },
+      "expressions": []
+    },
+    {
+      "id": "stella",
+      "pos": "noun",
+      "dcc_headword": "stella -ae f.",
+      "meaning_he": "כוכב",
+      "element": "aether",
+      "family": {
+        "en": [
+          "stellar",
+          "constellation",
+          "Stella"
+        ],
+        "he": [
+          "קונסטלציה"
+        ],
+        "note_he": "קונסטלציה היא 'קבוצת כוכבים' (con, יחד + stella).",
+        "fr": [
+          "étoile",
+          "Estelle"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Stella Maris",
+          "meaning_he": "כוכב הים — כינוי עתיק לכוכב הצפון, שהנחה יורדי ים"
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "pos": "noun",
+      "dcc_headword": "lūna -ae f.",
+      "meaning_he": "ירח",
+      "element": "aether",
+      "family": {
+        "en": [
+          "lunar",
+          "lunatic"
+        ],
+        "he": [
+          "לונה פארק"
+        ],
+        "note_he": "lunatic (מטורף) בא מהאמונה העתיקה שהירח משגע אנשים. לונה פארק הוא 'פארק הירח', על שם פארק שעשועים בניו יורק.",
+        "fr": [
+          "lune"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Luna",
+          "meaning_he": "הירח — גם שמו של אחד מקלפי הטארוט"
+        }
+      ]
+    },
+    {
+      "id": "umbra",
+      "pos": "noun",
+      "dcc_headword": "umbra -ae f.",
+      "meaning_he": "צל",
+      "element": "aer",
+      "family": {
+        "en": [
+          "umbrella",
+          "umbrage",
+          "penumbra"
+        ],
+        "he": [],
+        "note_he": "umbrella (מטרייה) הגיעה מאיטלקית ופירושה 'צל קטן'. penumbra היא 'כמעט-צל', חצי-הצל בליקוי ירח."
+      },
+      "expressions": []
+    },
+    {
+      "id": "sum",
+      "pos": "verb",
+      "dcc_headword": "sum esse fuī futūrum",
+      "meaning_he": "להיות",
+      "element": "aer",
+      "family": {
+        "en": [
+          "essence",
+          "essential",
+          "present",
+          "absent",
+          "future"
+        ],
+        "he": [
+          "אסנס"
+        ],
+        "note_he": "הפועל החשוב ביותר בלטינית. est = הוא/היא, sunt = הם/הן. גם future באנגלית בא ממנו (futūrum, 'מה שיהיה').",
+        "es": [
+          "ser"
+        ],
+        "it": [
+          "essere"
+        ],
+        "fr": [
+          "être"
+        ],
+        "pt": [
+          "ser"
+        ],
+        "ro": [
+          "fi"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Cogito, ergo sum",
+          "meaning_he": "אני חושב, משמע אני קיים — דקארט"
+        }
+      ]
+    },
+    {
+      "id": "et",
+      "pos": "conj",
+      "dcc_headword": "et",
+      "meaning_he": "ו-, וגם",
+      "element": "aer",
+      "family": {
+        "en": [
+          "&",
+          "etc."
+        ],
+        "he": [],
+        "note_he": "הסימן & הוא בעצם האותיות e ו-t שהתמזגו בכתב יד. etc. הוא קיצור של et cetera.",
+        "es": [
+          "y"
+        ],
+        "it": [
+          "e"
+        ],
+        "fr": [
+          "et"
+        ],
+        "pt": [
+          "e"
+        ],
+        "ca": [
+          "i"
+        ],
+        "ro": []
+      },
+      "expressions": [
+        {
+          "text": "et cetera",
+          "meaning_he": "ושאר הדברים, וכולי"
+        }
+      ]
+    },
+    {
+      "id": "magnus",
+      "pos": "adj",
+      "dcc_headword": "māgnus -a -um",
+      "meaning_he": "גדול",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "magnify",
+          "magnitude",
+          "magnificent",
+          "magnate"
+        ],
+        "he": [
+          "מגנום"
+        ],
+        "note_he": "שם תואר: הסיומת משתנה לפי המילה שהוא מתאר. silva magna (יער גדול, נקבה), magnum opus (יצירה גדולה, סתמי).",
+        "es": [
+          "magno"
+        ],
+        "it": [
+          "magno"
+        ],
+        "fr": [
+          "Charlemagne"
+        ],
+        "pt": [
+          "magno"
+        ],
+        "ca": []
+      },
+      "expressions": [
+        {
+          "text": "magnum opus",
+          "meaning_he": "היצירה הגדולה — יצירת המופת של אמן"
+        },
+        {
+          "text": "Magna Carta",
+          "meaning_he": "המגילה הגדולה — מסמך זכויות מאנגליה של 1215"
+        }
+      ]
+    },
+    {
+      "id": "parvus",
+      "pos": "adj",
+      "dcc_headword": "parvus -a -um",
+      "meaning_he": "קטן",
+      "element": "terra",
+      "family": {
+        "en": [
+          "parvovirus"
+        ],
+        "he": [],
+        "note_he": "פרבו-וירוס נקרא כך כי הוא נגיף קטן מאוד."
+      },
+      "expressions": [
+        {
+          "text": "multum in parvo",
+          "meaning_he": "הרבה בתוך מעט"
+        }
+      ]
+    },
+    {
+      "id": "femina",
+      "pos": "noun",
+      "dcc_headword": "fēmina -ae f.",
+      "meaning_he": "אישה",
+      "element": "terra",
+      "family": {
+        "en": [
+          "feminine",
+          "female",
+          "feminism"
+        ],
+        "he": [
+          "פמיניזם",
+          "פמיניסטית"
+        ],
+        "note_he": "female בא מצורת ההקטנה femella, ורק בגלל הדמיון למילה male השתנה האיות שלו באנגלית.",
+        "es": [
+          "hembra",
+          "fémina"
+        ],
+        "it": [
+          "femmina"
+        ],
+        "fr": [
+          "femme"
+        ],
+        "pt": [
+          "fêmea"
+        ],
+        "ro": [],
+        "ca": []
+      },
+      "expressions": []
+    },
+    {
+      "id": "anima",
+      "pos": "noun",
+      "dcc_headword": "anima -ae f.",
+      "meaning_he": "נשימה, נפש",
+      "element": "aer",
+      "family": {
+        "en": [
+          "animal",
+          "animate",
+          "animation",
+          "unanimous"
+        ],
+        "he": [
+          "אנימציה",
+          "אנימטור"
+        ],
+        "note_he": "animal הוא 'יצור שנושם'. אנימציה היא 'הפחת נשמה' בציורים. unanimous הוא 'בנפש אחת' (unus + anima). ברומנית inimă פירושו 'לב'."
+      },
+      "expressions": [
+        {
+          "text": "anima mundi",
+          "meaning_he": "נשמת העולם — רעיון מרכזי במסורת ההרמטית"
+        }
+      ]
+    },
+    {
+      "id": "aura",
+      "pos": "noun",
+      "dcc_headword": "aura -ae f.",
+      "meaning_he": "רוח קלה, משב",
+      "element": "aer",
+      "family": {
+        "en": [
+          "aura"
+        ],
+        "he": [
+          "אורה"
+        ],
+        "note_he": "המילה הגיעה ללטינית מיוונית (αὔρα, משב רוח). בעברית ובאנגלית 'אורה' היא ההילה הבלתי נראית סביב אדם."
+      },
+      "expressions": []
+    },
+    {
+      "id": "flamma",
+      "pos": "noun",
+      "dcc_headword": "flamma -ae f.",
+      "meaning_he": "להבה",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "flame",
+          "flamingo",
+          "inflammation",
+          "flamboyant"
+        ],
+        "he": [
+          "פלמינגו"
+        ],
+        "note_he": "פלמינגו נקרא כך בגלל צבע הנוצות שלו, 'בצבע להבה'.",
+        "fr": [
+          "flamme"
+        ]
+      },
+      "expressions": []
+    },
+    {
+      "id": "porto",
+      "pos": "verb",
+      "dcc_headword": "portō -āre",
+      "meaning_he": "לשאת, לסחוב",
+      "element": "terra",
+      "family": {
+        "en": [
+          "portable",
+          "transport",
+          "import",
+          "export",
+          "porter"
+        ],
+        "he": [
+          "פורטפוליו",
+          "טרנספורט"
+        ],
+        "note_he": "פורטפוליו הוא 'נושא דפים' (portare + foglio באיטלקית). transport הוא 'לשאת אל מעבר'."
+      },
+      "expressions": []
+    },
+    {
+      "id": "amo",
+      "pos": "verb",
+      "dcc_headword": "amō -āre",
+      "meaning_he": "לאהוב",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "amorous",
+          "amateur",
+          "amiable"
+        ],
+        "he": [],
+        "note_he": "amateur (חובב) הוא בצרפתית 'מי שאוהב' — עושה משהו מאהבה, לא בשביל כסף. amō, amās, amat היא הנטייה המפורסמת ביותר בלטינית."
+      },
+      "expressions": [
+        {
+          "text": "Omnia vincit Amor",
+          "meaning_he": "האהבה מנצחת הכול — וירגיליוס (amor, 'אהבה', מאותו שורש)"
+        }
+      ]
+    },
+    {
+      "id": "voco",
+      "pos": "verb",
+      "dcc_headword": "vocō -āre",
+      "meaning_he": "לקרוא (למישהו)",
+      "element": "aer",
+      "family": {
+        "en": [
+          "vocal",
+          "vocation",
+          "invoke",
+          "advocate",
+          "vocabulary"
+        ],
+        "he": [
+          "ווקאלי",
+          "ווקאליסט"
+        ],
+        "note_he": "vocation (ייעוד) הוא 'קריאה' — מה שקורא לך. invoke הוא 'לקרוא פנימה', למשל להזעיק כוח קסום.",
+        "es": [
+          "vocación"
+        ],
+        "it": [
+          "vocazione"
+        ],
+        "fr": [
+          "vocation"
+        ],
+        "pt": [
+          "vocação"
+        ],
+        "ca": []
+      },
+      "expressions": [
+        {
+          "text": "advocatus diaboli",
+          "meaning_he": "פרקליט השטן — מי שטוען בכוונה את העמדה ההפוכה"
+        }
+      ]
+    },
+    {
+      "id": "specto",
+      "pos": "verb",
+      "dcc_headword": "spectō -āre",
+      "meaning_he": "להסתכל, לצפות",
+      "element": "aer",
+      "family": {
+        "en": [
+          "spectator",
+          "spectacle",
+          "inspect",
+          "respect",
+          "perspective"
+        ],
+        "he": [
+          "ספקטקל",
+          "פרספקטיבה",
+          "ספקטרום"
+        ],
+        "note_he": "respect הוא 'להביט שוב' במישהו. perspective הוא 'להביט דרך'.",
+        "es": [
+          "espectador"
+        ],
+        "it": [
+          "spettatore"
+        ],
+        "fr": [
+          "spectateur"
+        ],
+        "pt": [
+          "espectador"
+        ]
+      },
+      "expressions": []
+    },
+    {
+      "id": "paro",
+      "pos": "verb",
+      "dcc_headword": "parō -āre",
+      "meaning_he": "להכין",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "prepare",
+          "repair",
+          "apparatus",
+          "parachute"
+        ],
+        "he": [],
+        "note_he": "parachute (מצנח) הוא בצרפתית 'מגן מנפילה' — parer, מאותו שורש, קיבל גם את המשמעות 'להדוף, להגן'."
+      },
+      "expressions": [
+        {
+          "text": "Si vis pacem, para bellum",
+          "meaning_he": "אם אתה רוצה שלום, היכון למלחמה"
+        }
+      ]
+    },
+    {
+      "id": "servo",
+      "pos": "verb",
+      "dcc_headword": "servō -āre",
+      "meaning_he": "לשמור, להציל",
+      "element": "terra",
+      "family": {
+        "en": [
+          "conserve",
+          "preserve",
+          "reserve",
+          "observe",
+          "reservation"
+        ],
+        "he": [
+          "קונסרבה",
+          "קונסרבטיבי",
+          "קונסרבטוריון"
+        ],
+        "note_he": "קונסרבה היא אוכל 'שמור' בקופסה. קונסרבטיבי הוא מי ששומר על הקיים.",
+        "es": [
+          "conservar"
+        ],
+        "it": [
+          "conservare"
+        ],
+        "fr": [
+          "conserver"
+        ],
+        "pt": [
+          "conservar"
+        ],
+        "ro": []
+      },
+      "expressions": []
+    },
+    {
+      "id": "non",
+      "pos": "adv",
+      "kaikki_pos": "particle",
+      "dcc_headword": "nōn",
+      "meaning_he": "לא",
+      "element": "aer",
+      "family": {
+        "en": [
+          "nonsense",
+          "nonetheless",
+          "non-stop"
+        ],
+        "he": [
+          "נון-סטופ"
+        ],
+        "note_he": "בלטינית nōn בא לפני המילה שהוא שולל: nōn amat, הוא לא אוהב."
+      },
+      "expressions": [
+        {
+          "text": "persona non grata",
+          "meaning_he": "אדם לא רצוי"
+        },
+        {
+          "text": "sine qua non",
+          "meaning_he": "תנאי שבלעדיו אין — דבר הכרחי לגמרי"
+        }
+      ]
+    },
+    {
+      "id": "do",
+      "pos": "verb",
+      "dcc_headword": "dō dare dedī datum",
+      "meaning_he": "לתת",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "data",
+          "date",
+          "donate"
+        ],
+        "he": [
+          "דאטה"
+        ],
+        "note_he": "data פירושו 'דברים שניתנו'. date (תאריך) בא מ-data, המילה שפתחה מכתבים רומיים: 'נמסר ביום...'."
+      },
+      "expressions": [
+        {
+          "text": "do ut des",
+          "meaning_he": "אני נותן כדי שתיתן — עיקרון של הדדיות"
+        }
+      ]
+    },
+    {
+      "id": "affero",
+      "pos": "verb",
+      "dcc_headword": "afferō afferre attulī allātum",
+      "meaning_he": "להביא",
+      "element": "aer",
+      "family": {
+        "en": [
+          "afferent",
+          "transfer",
+          "offer",
+          "refer",
+          "fertile"
+        ],
+        "he": [
+          "טרנספר",
+          "רפרנדום"
+        ],
+        "note_he": "afferō = ad (אל) + ferō (לשאת): 'לשאת אל'. הציווי שלו קצר במיוחד: affer! (הבא!). מ-ferō באו transfer, offer ו-refer."
+      },
+      "expressions": []
+    },
+    {
+      "id": "ego",
+      "pos": "pron",
+      "dcc_headword": "ego meī mihi mē",
+      "meaning_he": "אני",
+      "element": "aer",
+      "family": {
+        "en": [
+          "ego",
+          "egoist",
+          "egocentric"
+        ],
+        "he": [
+          "אגו",
+          "אגואיסט",
+          "אגוצנטרי"
+        ],
+        "note_he": "mihi פירושו 'לי' — צורת הנתינה של ego, והיא חשובה מאוד בלחשים."
+      },
+      "expressions": [
+        {
+          "text": "alter ego",
+          "meaning_he": "אני אחר — זהות שנייה של אותו אדם"
+        }
+      ]
+    },
+    {
+      "id": "tu",
+      "pos": "pron",
+      "dcc_headword": "tū tuī tibi tē",
+      "meaning_he": "אתה, את",
+      "element": "aer",
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "המילה האנגלית העתיקה thou היא 'בת דודה' של tū: שתיהן ירשו את המילה משפת אם קדומה משותפת, ואחת לא נלקחה מהשנייה. tibi פירושו 'לך'."
+      },
+      "expressions": [
+        {
+          "text": "Et tu, Brute?",
+          "meaning_he": "גם אתה, ברוטוס? — מילותיו של יוליוס קיסר במחזה של שייקספיר"
+        }
+      ]
+    },
+    {
+      "id": "lignum",
+      "pos": "noun",
+      "dcc_headword": null,
+      "exception_reason": "Not in the DCC core list; needed for the stage-1 gathering spell 'Lignum mihi affer!' (approved by the user).",
+      "dictionary_form": "lignum -ī n.",
+      "meaning_he": "עצים להסקה, בול עץ",
+      "element": "terra",
+      "family": {
+        "en": [
+          "ligneous",
+          "lignin"
+        ],
+        "he": [
+          "ליגנין"
+        ],
+        "note_he": "lignum הוא עץ כחומר — עצים להסקה ולבנייה, לא עץ חי (עץ חי הוא arbor). ליגנין הוא החומר שמקשיח את העץ. זו מילה בסתמי (neuter), ולכן צורת המושא שלה זהה לצורת הנושא: lignum."
+      },
+      "expressions": [
+        {
+          "text": "lignum vitae",
+          "meaning_he": "עץ החיים — גם שמו של עץ טרופי קשה במיוחד"
+        }
+      ]
+    },
+    {
+      "id": "dea",
+      "pos": "noun",
+      "dcc_headword": "deus -ī m.; dea -ae f.",
+      "dictionary_form": "dea -ae f.",
+      "meaning_he": "אלה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "deity",
+          "deify"
+        ],
+        "he": [],
+        "note_he": "dea היא צורת הנקבה של deus (אל).",
+        "es": [
+          "diosa"
+        ],
+        "it": [
+          "dea"
+        ],
+        "fr": [
+          "déesse"
+        ],
+        "pt": [
+          "deusa"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "deus ex machina",
+          "meaning_he": "האל מן המכונה — פתרון פתאומי ומלאכותי בעלילה"
+        }
+      ]
+    },
+    {
+      "id": "fabula",
+      "pos": "noun",
+      "dcc_headword": "fābula -ae f.",
+      "meaning_he": "סיפור, אגדה",
+      "element": "aer",
+      "family": {
+        "en": [
+          "fable",
+          "fabulous",
+          "fabled"
+        ],
+        "he": [
+          "פאבולה"
+        ],
+        "note_he": "fabulous היה פעם 'כמו באגדה'. בתורת הספרות, פאבולה היא רצף האירועים של הסיפור. בספרדית habla (דיבור) באה מאותו שורש.",
+        "fr": [
+          "fable"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "De te fabula narratur",
+          "meaning_he": "הסיפור מסופר עליך — הורטיוס"
+        }
+      ]
+    },
+    {
+      "id": "narro",
+      "pos": "verb",
+      "dcc_headword": "narrō -āre",
+      "meaning_he": "לספר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "narrate",
+          "narrator",
+          "narrative"
+        ],
+        "he": [
+          "נרטיב"
+        ],
+        "note_he": "נרטיב הוא 'סיפור' — הדרך שבה מספרים את מה שקרה."
+      },
+      "expressions": [
+        {
+          "text": "De te fabula narratur",
+          "meaning_he": "הסיפור מסופר עליך — הורטיוס"
+        }
+      ]
+    },
+    {
+      "id": "filia",
+      "pos": "noun",
+      "dcc_headword": "fīlia -ae f.; fīlius -ī m.",
+      "dictionary_form": "fīlia -ae f.",
+      "meaning_he": "בת",
+      "element": "terra",
+      "family": {
+        "en": [
+          "filial",
+          "affiliate"
+        ],
+        "he": [],
+        "note_he": "affiliate הוא 'לאמץ כבן' — לצרף משהו כחלק מהמשפחה.",
+        "ro": [
+          "fiică"
+        ]
+      },
+      "expressions": []
+    },
+    {
+      "id": "ignis",
+      "pos": "noun",
+      "dcc_headword": "ignis -is m.",
+      "meaning_he": "אש",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "ignite",
+          "ignition",
+          "igneous"
+        ],
+        "he": [],
+        "note_he": "אחד מחמשת האלמנטים במשחק. igneous rock הוא סלע שנוצר מאש, מלבה. בשפות הרומאניות ignis כמעט נעלמה, ובמקומה נכנסה focus (אח, מדורה): fuego, fuoco, feu — ו-focus הוא גם שם המדורה במחנה של השועלה.",
+        "it": []
+      },
+      "expressions": [
+        {
+          "text": "ignis fatuus",
+          "meaning_he": "אש שוטה — אור מרצד ומטעה שנראה בביצות"
+        }
+      ]
+    },
+    {
+      "id": "aer",
+      "pos": "noun",
+      "dcc_headword": "āēr āeris m.",
+      "meaning_he": "אוויר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "air",
+          "aerial",
+          "aerobic",
+          "aeroplane"
+        ],
+        "he": [
+          "אוויר",
+          "אווירודינמי",
+          "אירובי"
+        ],
+        "note_he": "גם המילה העברית 'אוויר' הגיעה מהיוונית ἀήρ, בדיוק כמו הלטינית āēr. אחד מחמשת האלמנטים במשחק."
+      },
+      "expressions": []
+    },
+    {
+      "id": "aether",
+      "pos": "noun",
+      "dcc_headword": "aethēr aetheris n.",
+      "meaning_he": "אתר, האוויר העליון והטהור",
+      "element": "aether",
+      "family": {
+        "en": [
+          "ether",
+          "ethereal",
+          "quintessence"
+        ],
+        "he": [
+          "אתר",
+          "אתרי"
+        ],
+        "note_he": "האלמנט החמישי (quinta essentia), שממנו לפי הקדמונים עשויים הכוכבים. מכאן quintessence, 'התמצית החמישית'."
+      },
+      "expressions": [
+        {
+          "text": "quinta essentia",
+          "meaning_he": "המהות החמישית — האלמנט שמעל אדמה, מים, אוויר ואש"
+        }
+      ]
+    }
+  ]
+}
