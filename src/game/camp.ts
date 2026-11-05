@@ -3,21 +3,26 @@
  * closed — computed lazily from the last burn time. An empty fire is only a look, never a penalty.
  */
 import { CONFIG, HOUR_MS } from '../config';
-import type { CampState } from './state';
+/** The part of the camp the fire needs. */
+export interface FireState {
+  fuel: number;
+  lastBurnAt: number;
+}
 
 const BURN_MS = CONFIG.FIRE_BURN_HOURS * HOUR_MS;
 
-export function burnFire(camp: CampState, now: number): CampState {
-  if (camp.fuel <= 0) return { fuel: 0, lastBurnAt: now };
+export function burnFire<T extends FireState>(camp: T, now: number): T {
+  if (camp.fuel <= 0) return camp.lastBurnAt === now ? camp : { ...camp, fuel: 0, lastBurnAt: now };
   const burned = Math.floor(Math.max(0, now - camp.lastBurnAt) / BURN_MS);
   if (burned === 0) return camp;
-  if (burned >= camp.fuel) return { fuel: 0, lastBurnAt: now };
-  return { fuel: camp.fuel - burned, lastBurnAt: camp.lastBurnAt + burned * BURN_MS };
+  if (burned >= camp.fuel) return { ...camp, fuel: 0, lastBurnAt: now };
+  return { ...camp, fuel: camp.fuel - burned, lastBurnAt: camp.lastBurnAt + burned * BURN_MS };
 }
 
-export function addFuel(camp: CampState, amount: number, now: number): CampState {
+export function addFuel<T extends FireState>(camp: T, amount: number, now: number): T {
   const current = burnFire(camp, now);
   return {
+    ...current,
     fuel: Math.min(CONFIG.FIRE_MAX_FUEL, current.fuel + amount),
     lastBurnAt: current.fuel === 0 ? now : current.lastBurnAt,
   };

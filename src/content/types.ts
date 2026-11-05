@@ -115,6 +115,8 @@ export interface Lesson {
 
 export interface Unit {
   id: string;
+  /** The unit stays locked until this building stands in the camp. */
+  requires?: { building: string };
   title_he: string;
   subtitle_he: string;
   dooge?: string;
@@ -122,10 +124,25 @@ export interface Unit {
   lessons: Lesson[];
 }
 
-export interface SpellEffect {
-  type: 'gather';
-  resource: 'fuel';
-  amount: number;
+export type ElementCost = Partial<Record<ElementId, number>>;
+
+export type SpellEffect =
+  | { type: 'gather'; resource: 'fuel'; amount: number }
+  | { type: 'build'; building: string }
+  | { type: 'grow'; reward: ElementCost; final_reward: ElementCost }
+  | { type: 'light'; hours: number }
+  | { type: 'rank' };
+
+export type RankId = 'discipula' | 'maga' | 'magistra';
+
+export interface Rank {
+  id: RankId;
+  name_he: string;
+  order: number;
+  description_he: string;
+  unlocks_he: string;
+  cost: ElementCost;
+  requires: { buildings?: string[]; all_lessons?: boolean };
 }
 
 export interface Spell {
@@ -139,6 +156,8 @@ export interface Spell {
   extra: string[];
   effect: SpellEffect;
   unlocked_by: string;
+  /** Extra conditions before the spell can be cast (it is already in the spellbook). */
+  requires?: { rank?: RankId; building?: string };
   explain_he: string;
   effect_he: string;
 }
@@ -161,4 +180,12 @@ export interface Building {
   stage: number;
   initial: boolean;
   unlocked_by?: string;
+  /** Elements produced over time (also while the app is closed). */
+  produces?: { element: ElementId; every_hours: number; needs_fire?: boolean };
+  /** Materials paid on top of the build spell's word cost. */
+  build_cost?: ElementCost;
+  /** Upgrade materials for level 2, 3, … (index 0 = going to level 2). */
+  upgrade_costs?: ElementCost[];
+  /** Content this building opens. */
+  unlocks?: { unit?: string };
 }

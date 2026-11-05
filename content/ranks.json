@@ -1,0 +1,49 @@
+{
+  "ranks": [
+    {
+      "id": "discipula",
+      "name_he": "תלמידה",
+      "order": 0,
+      "description_he": "קוסמת צעירה שרק התחילה ללמוד.",
+      "unlocks_he": "",
+      "cost": {},
+      "requires": {}
+    },
+    {
+      "id": "maga",
+      "name_he": "קוסמת",
+      "order": 1,
+      "description_he": "השועלה בונה מגדל ושולטת בלחשי בנייה.",
+      "unlocks_he": "אסכולת האור: הלחש Lūcem fac!",
+      "cost": {
+        "aether": 3
+      },
+      "requires": {
+        "buildings": [
+          "turris"
+        ]
+      }
+    },
+    {
+      "id": "magistra",
+      "name_he": "רבת-אמן",
+      "order": 2,
+      "description_he": "המחנה כולו נבנה, וכל השיעורים הושלמו.",
+      "unlocks_he": "הלחש הגדול Multa ligna mihi affer!",
+      "cost": {
+        "aether": 6
+      },
+      "requires": {
+        "buildings": [
+          "focus",
+          "tentorium",
+          "hortus",
+          "fons",
+          "bibliotheca",
+          "turris"
+        ],
+        "all_lessons": true
+      }
+    }
+  ]
+}

@@ -7,8 +7,9 @@ import rulesJson from '../../content/rules.json';
 import spellsJson from '../../content/spells.json';
 import elementsJson from '../../content/elements.json';
 import buildingsJson from '../../content/buildings.json';
+import ranksJson from '../../content/ranks.json';
 import type {
-  Building, ElementDef, Exercise, Lesson, Rule, Spell, Unit, Word,
+  Building, ElementDef, Exercise, Lesson, Rank, Rule, Spell, Unit, Word,
 } from './types';
 
 export const words = wordsJson.words as unknown as Word[];
@@ -16,12 +17,16 @@ export const units = unitsJson.units as unknown as Unit[];
 export const rules = rulesJson.rules as Rule[];
 export const spells = spellsJson.spells as unknown as Spell[];
 export const elementDefs = elementsJson.elements as ElementDef[];
-export const buildings = buildingsJson.buildings as Building[];
+export const buildings = buildingsJson.buildings as unknown as Building[];
+export const ranks = (ranksJson.ranks as unknown as Rank[]).sort((a, b) => a.order - b.order);
 
 export const wordById = new Map(words.map((w) => [w.id, w]));
 export const ruleById = new Map(rules.map((r) => [r.id, r]));
 export const spellById = new Map(spells.map((s) => [s.id, s]));
 export const elementById = new Map(elementDefs.map((e) => [e.id, e]));
+export const buildingById = new Map(buildings.map((b) => [b.id, b]));
+export const rankById = new Map(ranks.map((r) => [r.id, r]));
+export const unitById = new Map(units.map((u) => [u.id, u]));
 
 /** Every lesson in course order. */
 export const lessons: Lesson[] = units.flatMap((u) => u.lessons);

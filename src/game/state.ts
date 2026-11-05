@@ -3,10 +3,10 @@
  * Changing this shape? Bump SAVE_VERSION and add a step in src/storage/migrations.ts.
  */
 import { CONFIG } from '../config';
-import type { ElementId } from '../content/types';
+import type { ElementId, RankId } from '../content/types';
 import type { StoredCard } from '../learning/srs';
 
-export const SAVE_VERSION = 1;
+export const SAVE_VERSION = 2;
 
 export type ElementBag = Record<ElementId, number>;
 
@@ -23,11 +23,27 @@ export interface LessonRecord {
   timesCompleted: number;
 }
 
+export interface BuildingState {
+  level: number;
+  builtAt: number;
+}
+
 export interface CampState {
   /** Fuel units in the fire (focus). */
   fuel: number;
   /** When the fire last burned a unit (epoch ms); burning is computed lazily from this. */
   lastBurnAt: number;
+  /** Buildings that stand in the camp. */
+  buildings: Record<string, BuildingState>;
+  /** Produced but not yet harvested, per building (fractions accumulate). */
+  pending: Record<string, number>;
+  /** Production is computed lazily from this time. */
+  lastProductionAt: number;
+  /** How much was harvested on `day` (the daily cap). */
+  harvest: { day: string | null; amount: number };
+  tree: { stage: number; lastWateredAt: number | null };
+  /** Active light spell (Lūcem fac!), or null. */
+  light: { from: number; until: number } | null;
 }
 
 export interface SaveState {
@@ -42,12 +58,29 @@ export interface SaveState {
   tasks: Record<string, TaskState>;
   /** Spell ids the fox knows (liber incantationum). */
   spellbook: string[];
+  rank: RankId;
   daily: { lastLessonDay: string | null };
-  stats: { spellsCast: number; reviewsDone: number; lessonsFailed: number };
+  stats: { spellsCast: number; reviewsDone: number; lessonsFailed: number; harvested: number };
+  settings: { sound: boolean; vibration: boolean };
 }
 
 export function emptyElements(): ElementBag {
   return { terra: 0, aqua: 0, aer: 0, ignis: 0, aether: 0 };
+}
+
+export const INITIAL_BUILDINGS = ['focus', 'tentorium', 'circulus'];
+
+export function newCamp(now: number): CampState {
+  return {
+    fuel: CONFIG.FIRE_START_FUEL,
+    lastBurnAt: now,
+    buildings: Object.fromEntries(INITIAL_BUILDINGS.map((id) => [id, { level: 1, builtAt: now }])),
+    pending: {},
+    lastProductionAt: now,
+    harvest: { day: null, amount: 0 },
+    tree: { stage: 0, lastWateredAt: null },
+    light: null,
+  };
 }
 
 export function newSave(now: number): SaveState {
@@ -57,11 +90,13 @@ export function newSave(now: number): SaveState {
     lessons: {},
     cards: {},
     elements: emptyElements(),
-    camp: { fuel: CONFIG.FIRE_START_FUEL, lastBurnAt: now },
+    camp: newCamp(now),
     tasks: {},
     spellbook: [],
+    rank: 'discipula',
     daily: { lastLessonDay: null },
-    stats: { spellsCast: 0, reviewsDone: 0, lessonsFailed: 0 },
+    stats: { spellsCast: 0, reviewsDone: 0, lessonsFailed: 0, harvested: 0 },
+    settings: { sound: true, vibration: true },
   };
 }
 
