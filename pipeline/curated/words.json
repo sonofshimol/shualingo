@@ -920,6 +920,514 @@
           "meaning_he": "המהות החמישית — האלמנט שמעל אדמה, מים, אוויר ואש"
         }
       ]
+    },
+    {
+      "id": "hortus",
+      "pos": "noun",
+      "dcc_headword": null,
+      "meaning_he": "גינה, גן",
+      "element": "terra",
+      "family": {
+        "en": [
+          "horticulture"
+        ],
+        "he": [],
+        "note_he": "horticulture (גננות) היא 'גידול גינות': hortus + cultūra. hortus שייך לנטייה השנייה: hortus, hortum, hortō."
+      },
+      "expressions": [
+        {
+          "text": "hortus conclusus",
+          "meaning_he": "גן נעול — מתוך שיר השירים בתרגום הלטיני: 'גן נעול אחותי כלה'"
+        }
+      ],
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "dictionary_form": "hortus -ī m."
+    },
+    {
+      "id": "tentorium",
+      "pos": "noun",
+      "dcc_headword": null,
+      "meaning_he": "אוהל",
+      "element": "terra",
+      "family": {
+        "en": [
+          "tent",
+          "tension",
+          "extend"
+        ],
+        "he": [],
+        "note_he": "tentōrium בא מ-tendō, למתוח: אוהל הוא בד מתוח. מאותו שורש באו tent, tension ו-extend. זו מילה בסתמי, ולכן המושא שלה זהה לנושא: tentōrium."
+      },
+      "expressions": [],
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "dictionary_form": "tentōrium -ī n."
+    },
+    {
+      "id": "aedifico",
+      "pos": "verb",
+      "dcc_headword": null,
+      "meaning_he": "לבנות",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "edifice",
+          "edify"
+        ],
+        "he": [],
+        "note_he": "aedēs (בית) + faciō (לעשות): 'לעשות בית'. edifice באנגלית הוא בניין גדול ומרשים. הציווי aedificā! (בנה!) הוא הלב של כל לחשי הבנייה."
+      },
+      "expressions": [],
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "dictionary_form": "aedificō -āre"
+    },
+    {
+      "id": "donum",
+      "pos": "noun",
+      "dcc_headword": "dōnum -ī n.",
+      "meaning_he": "מתנה",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "donate",
+          "donation",
+          "donor"
+        ],
+        "he": [],
+        "note_he": "dōnum היא מילה בסתמי כמו lignum. מכאן donate (לתרום) ו-donor (תורם)."
+      },
+      "expressions": [
+        {
+          "text": "Timeo Danaos et dona ferentes",
+          "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות — על הסוס הטרויאני, וירגיליוס"
+        }
+      ]
+    },
+    {
+      "id": "amicus",
+      "pos": "noun",
+      "dcc_headword": "amīcus -a -um",
+      "meaning_he": "חבר, ידיד",
+      "element": "aer",
+      "family": {
+        "en": [
+          "amicable",
+          "amiable"
+        ],
+        "he": [],
+        "note_he": "amīcus קרוב ל-amō (לאהוב): חבר הוא מי שאוהבים. בספרדית amigo, באיטלקית amico, בצרפתית ami."
+      },
+      "expressions": [
+        {
+          "text": "Amicus certus in re incerta cernitur",
+          "meaning_he": "חבר אמת נראה בעת צרה — אניוס"
+        }
+      ],
+      "kaikki_pos": "noun",
+      "dictionary_form": "amīcus -ī m."
+    },
+    {
+      "id": "deus",
+      "pos": "noun",
+      "dcc_headword": "deus -ī m.; dea -ae f.",
+      "meaning_he": "אל",
+      "element": "aether",
+      "family": {
+        "en": [
+          "deity",
+          "adieu"
+        ],
+        "he": [],
+        "note_he": "צורת הזכר של dea (אלה). בצרפתית adieu הוא 'לאל' (à Dieu) — ברכת פרידה."
+      },
+      "expressions": [
+        {
+          "text": "Deo gratias",
+          "meaning_he": "תודה לאל"
+        }
+      ],
+      "dictionary_form": "deus -ī m."
+    },
+    {
+      "id": "bonus",
+      "pos": "adj",
+      "dcc_headword": "bonus -a -um",
+      "meaning_he": "טוב",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "bonus",
+          "bona fide",
+          "bonanza"
+        ],
+        "he": [
+          "בונוס"
+        ],
+        "note_he": "בונוס הוא פשוט 'טוב' בלטינית: תוספת טובה. שם תואר משנה סיומת: hortus bonus, dōnum bonum."
+      },
+      "expressions": [
+        {
+          "text": "bona fide",
+          "meaning_he": "בתום לב — 'באמונה טובה'"
+        }
+      ]
+    },
+    {
+      "id": "novus",
+      "pos": "adj",
+      "dcc_headword": "novus -a -um",
+      "meaning_he": "חדש",
+      "element": "aer",
+      "family": {
+        "en": [
+          "novel",
+          "novice",
+          "innovation",
+          "renovate",
+          "nova"
+        ],
+        "he": [
+          "אינובציה",
+          "רנובציה"
+        ],
+        "note_he": "nova בשמיים היא 'כוכב חדש' שפתאום מבהיק. novice הוא מתחיל, 'חדש'."
+      },
+      "expressions": [
+        {
+          "text": "Novus ordo seclorum",
+          "meaning_he": "סדר חדש של הדורות — כתוב על שטר הדולר"
+        }
+      ]
+    },
+    {
+      "id": "liber",
+      "pos": "noun",
+      "dcc_headword": "liber librī m.",
+      "meaning_he": "ספר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "library",
+          "librarian",
+          "libretto"
+        ],
+        "he": [
+          "ליברית"
+        ],
+        "note_he": "library באה מ-liber. אבל ספרייה בלטינית היא דווקא bibliothēca, מיוונית. במקור liber הוא הקליפה הפנימית של העץ, שעליה כתבו פעם. הגזע הוא libr-: librum, librō."
+      },
+      "expressions": [
+        {
+          "text": "liber incantationum",
+          "meaning_he": "ספר הלחשים — הספר של השועלה, שאליו נכנסים הלחשים שלה"
+        }
+      ],
+      "kaikki_nth": 0,
+      "dictionary_form": "liber librī m."
+    },
+    {
+      "id": "fons",
+      "pos": "noun",
+      "dcc_headword": "fōns fontis m.",
+      "meaning_he": "מעיין",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "fountain",
+          "font"
+        ],
+        "he": [],
+        "note_he": "fountain באה מ-fōns. שימו לב לצורות: fōns, אבל fontem ו-fontī — הגזע האמיתי הוא font-."
+      },
+      "expressions": [
+        {
+          "text": "fons et origo",
+          "meaning_he": "המקור והמוצא של משהו"
+        }
+      ]
+    },
+    {
+      "id": "turris",
+      "pos": "noun",
+      "dcc_headword": null,
+      "meaning_he": "מגדל",
+      "element": "terra",
+      "family": {
+        "en": [
+          "tower",
+          "turret"
+        ],
+        "he": [],
+        "note_he": "tower ו-turret באים מ-turris. Turris הוא גם שמו של אחד מקלפי הטארוט (המגדל)."
+      },
+      "expressions": [
+        {
+          "text": "turris eburnea",
+          "meaning_he": "מגדל השן — מתוך שיר השירים: 'צווארך כמגדל השן'"
+        }
+      ],
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "dictionary_form": "turris -is f."
+    },
+    {
+      "id": "arbor",
+      "pos": "noun",
+      "dcc_headword": "arbor arboris f.",
+      "meaning_he": "עץ (חי)",
+      "element": "terra",
+      "family": {
+        "en": [
+          "arbor",
+          "arboretum",
+          "arboreal"
+        ],
+        "he": [],
+        "note_he": "arbor הוא עץ חי שגדל, לעומת lignum, שהוא עץ כחומר. arboretum הוא גן עצים."
+      },
+      "expressions": [
+        {
+          "text": "arbor vitae",
+          "meaning_he": "עץ החיים"
+        }
+      ]
+    },
+    {
+      "id": "lux",
+      "pos": "noun",
+      "dcc_headword": "lūx lūcis f.",
+      "meaning_he": "אור",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "lucid",
+          "elucidate",
+          "translucent",
+          "Lucifer"
+        ],
+        "he": [
+          "לוקס",
+          "לוציפר"
+        ],
+        "note_he": "Lucifer הוא 'נושא האור' (lūx + ferō), כינוי עתיק לכוכב השחר. הגזע הוא lūc-: lūcem, lūcī."
+      },
+      "expressions": [
+        {
+          "text": "Fiat lux",
+          "meaning_he": "יהי אור — מתוך ספר בראשית בתרגום הלטיני"
+        }
+      ]
+    },
+    {
+      "id": "nox",
+      "pos": "noun",
+      "dcc_headword": "nox noctis f.",
+      "meaning_he": "לילה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "nocturnal",
+          "nocturne",
+          "equinox"
+        ],
+        "he": [
+          "נוקטורן"
+        ],
+        "note_he": "equinox הוא 'לילה שווה' (aequus + nox): היום שבו היום והלילה שווים. הגזע הוא noct-: noctem."
+      },
+      "expressions": []
+    },
+    {
+      "id": "facio",
+      "pos": "verb",
+      "dcc_headword": "faciō facere fēcī factum",
+      "meaning_he": "לעשות",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "fact",
+          "factory",
+          "faculty",
+          "manufacture",
+          "effect"
+        ],
+        "he": [
+          "פקטור",
+          "פקולטה"
+        ],
+        "note_he": "הציווי של faciō קצר במיוחד: fac! (עשה!). manufacture הוא 'עשוי ביד' (manus + faciō)."
+      },
+      "expressions": [
+        {
+          "text": "Facta, non verba",
+          "meaning_he": "מעשים, לא מילים"
+        }
+      ]
+    },
+    {
+      "id": "bibliotheca",
+      "pos": "noun",
+      "dcc_headword": null,
+      "meaning_he": "ספרייה",
+      "element": "aer",
+      "family": {
+        "en": [
+          "bibliography",
+          "Bible"
+        ],
+        "he": [
+          "ביבליוגרפיה"
+        ],
+        "note_he": "מילה שהלטינית שאלה מיוונית: biblion (ספר) + thēkē (מקום אחסון). גם Bible, 'הספרים', מאותו שורש."
+      },
+      "expressions": [],
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "dictionary_form": "bibliothēca -ae f."
+    },
+    {
+      "id": "cresco",
+      "pos": "verb",
+      "dcc_headword": "crēscō crēscere crēvī crētum",
+      "meaning_he": "לגדול",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "crescent",
+          "increase",
+          "crescendo"
+        ],
+        "he": [
+          "קרשנדו",
+          "קרואסון"
+        ],
+        "note_he": "קרואסון נקרא כך בגלל צורת הסהר: ירח 'גדל' (crescent). crescendo במוזיקה הוא 'מתגבר'. הציווי: crēsce! (גדל!)."
+      },
+      "expressions": [
+        {
+          "text": "Crescit eundo",
+          "meaning_he": "גדל ככל שהוא הולך — לוקרטיוס"
+        }
+      ]
+    },
+    {
+      "id": "multus",
+      "pos": "adj",
+      "dcc_headword": "multus -a -um",
+      "meaning_he": "הרבה, רב",
+      "element": "terra",
+      "family": {
+        "en": [
+          "multiply",
+          "multitude"
+        ],
+        "he": [
+          "מולטימדיה"
+        ],
+        "note_he": "ברבים: multī, multae, multa. multa ligna = הרבה עצים (ligna היא צורת הרבים של lignum)."
+      },
+      "expressions": [
+        {
+          "text": "Non multa, sed multum",
+          "meaning_he": "לא דברים רבים, אלא הרבה — איכות ולא כמות"
+        }
+      ]
+    },
+    {
+      "id": "muto",
+      "pos": "verb",
+      "dcc_headword": "mūtō -āre",
+      "meaning_he": "לשנות",
+      "element": "aether",
+      "family": {
+        "en": [
+          "mutate",
+          "mutation",
+          "commute"
+        ],
+        "he": [
+          "מוטציה",
+          "מוטנט"
+        ],
+        "note_he": "מוטציה בביולוגיה היא 'שינוי'. בלחש Mē mūtā! השועלה מבקשת: 'שנה אותי!' — וכך היא עולה בדרגה."
+      },
+      "expressions": [
+        {
+          "text": "Tempora mutantur, et nos mutamur in illis",
+          "meaning_he": "הזמנים משתנים, ואנחנו משתנים בתוכם"
+        }
+      ]
+    },
+    {
+      "id": "sol",
+      "pos": "noun",
+      "dcc_headword": "sōl sōlis m.",
+      "meaning_he": "שמש",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "solar",
+          "solstice",
+          "parasol"
+        ],
+        "he": [
+          "סולארי"
+        ],
+        "note_he": "solstice הוא 'השמש עומדת' (sōl + sistō): היום הארוך או הקצר בשנה. Sol הוא גם קלף טארוט."
+      },
+      "expressions": [
+        {
+          "text": "Sol invictus",
+          "meaning_he": "השמש הבלתי מנוצחת"
+        }
+      ]
+    },
+    {
+      "id": "vita",
+      "pos": "noun",
+      "dcc_headword": "vīta -ae f.",
+      "meaning_he": "חיים",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "vital",
+          "vitamin",
+          "vitality"
+        ],
+        "he": [
+          "ויטמין",
+          "ויטלי"
+        ],
+        "note_he": "ויטמין הוא 'חומר של חיים'."
+      },
+      "expressions": [
+        {
+          "text": "curriculum vitae",
+          "meaning_he": "מהלך החיים — קורות חיים"
+        }
+      ]
+    },
+    {
+      "id": "curo",
+      "pos": "verb",
+      "dcc_headword": "cūrō -āre",
+      "meaning_he": "לטפל, לדאוג ל-",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "cure",
+          "curator",
+          "accurate",
+          "secure"
+        ],
+        "he": [
+          "אוצר (קורטור)"
+        ],
+        "note_he": "curator (אוצר במוזיאון) הוא 'מי שמטפל'. secure הוא 'בלי דאגה' (sē + cūra)."
+      },
+      "expressions": [
+        {
+          "text": "Cura te ipsum",
+          "meaning_he": "טפל בעצמך — 'רופא, רפא את עצמך'"
+        }
+      ]
     }
   ]
 }

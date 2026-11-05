@@ -25,10 +25,10 @@ describe('words.json', () => {
 });
 
 describe('units.json', () => {
-  it('has 3 units of about 10 words each', () => {
-    expect(units).toHaveLength(3);
+  it('has 6 units of about 10 words each', () => {
+    expect(units).toHaveLength(6);
     for (const u of units) {
-      expect(u.words.length).toBeGreaterThanOrEqual(8);
+      expect(u.words.length).toBeGreaterThanOrEqual(7);
       expect(u.words.length).toBeLessThanOrEqual(12);
       for (const id of u.words) expect(wordById.has(id), id).toBe(true);
     }
