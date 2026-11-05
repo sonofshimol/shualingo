@@ -8,7 +8,7 @@ import { dueCards, rateCard } from '../learning/srs';
 import { castSpell, finishLesson, finishReview, lessonState, tick } from './actions';
 import { addFuel, burnFire, fireLevel } from './camp';
 import { spellCost } from './spells';
-import { newSave, type SaveState } from './state';
+import { newCamp, newSave, type SaveState } from './state';
 import { recordFailure, taskStatus } from './tasks';
 
 const T0 = Date.parse('2026-11-05T09:00:00Z');
@@ -86,24 +86,24 @@ describe('lessons', () => {
 
   it('completing unit 3 puts the gathering spell in the spellbook', () => {
     let save = newSave(T0);
-    for (const lesson of lessons) save = passLesson(save, lesson.id, T0).save;
+    for (const lesson of lessons.slice(0, 9)) save = passLesson(save, lesson.id, T0).save;
     expect(save.spellbook).toEqual(['gather-wood']);
   });
 });
 
 describe('camp fire and the gathering spell', () => {
   it('burns while the app is closed, never below zero', () => {
-    const camp = { fuel: 3, lastBurnAt: T0 };
+    const camp = { ...newCamp(T0), fuel: 3 };
     expect(burnFire(camp, T0 + CONFIG.FIRE_BURN_HOURS * HOUR_MS).fuel).toBe(2);
     expect(burnFire(camp, T0 + 100 * HOUR_MS).fuel).toBe(0);
     expect(fireLevel(0)).toBe('out');
-    expect(addFuel({ fuel: 5, lastBurnAt: T0 }, 3, T0).fuel).toBe(CONFIG.FIRE_MAX_FUEL);
+    expect(addFuel({ ...newCamp(T0), fuel: 5 }, 3, T0).fuel).toBe(CONFIG.FIRE_MAX_FUEL);
   });
 
   it('costs each word its element and feeds the fire when cast correctly', () => {
     const spell = spellById.get('gather-wood')!;
     expect(spellCost(spell)).toEqual({ terra: 1, aer: 2 });
-    let save: SaveState = { ...newSave(T0), spellbook: ['gather-wood'], camp: { fuel: 0, lastBurnAt: T0 } };
+    let save: SaveState = { ...newSave(T0), spellbook: ['gather-wood'], camp: { ...newCamp(T0), fuel: 0 } };
     expect(castSpell(save, 'gather-wood', ['lignum', 'mihi', 'affer'], T0).outcome).toBe('poor');
     save = { ...save, elements: { ...save.elements, terra: 1, aer: 2 } };
     const result = castSpell(save, 'gather-wood', ['mihi', 'lignum', 'affer'], T0);

@@ -5,37 +5,251 @@
       "title_he": "מי? יחסת הנושא",
       "subtitle_he": "היער, המים והכוכבים: מילים ראשונות ומשפטים עם est ו-sunt",
       "dooge": "Lessons IV–V: first declension, nominative; sum",
-      "words": ["silva", "terra", "aqua", "puella", "stella", "luna", "umbra", "sum", "et", "magnus", "parvus"],
+      "words": [
+        "silva",
+        "terra",
+        "aqua",
+        "puella",
+        "stella",
+        "luna",
+        "umbra",
+        "sum",
+        "et",
+        "magnus",
+        "parvus"
+      ],
       "lessons": [
         {
           "id": "u1-l1",
           "title_he": "מילים ראשונות ביער",
-          "rules_intro": ["nom-sg-1"],
+          "rules_intro": [
+            "nom-sg-1"
+          ],
           "exercises": [
-            { "type": "match", "words": ["silva", "terra", "aqua", "puella"] },
-            { "type": "choice", "direction": "la-he", "prompt": "silva", "answer": "יער", "distractors": ["אדמה", "ירח"] },
-            { "type": "match", "words": ["stella", "luna", "umbra", "aqua"] },
-            { "type": "choice", "direction": "he-la", "prompt": "ירח", "answer": "lūna", "distractors": ["stella", "umbra"] },
-            { "type": "choice", "direction": "la-he", "prompt": "aqua et terra", "answer": "מים ואדמה", "distractors": ["יער ואדמה", "מים וירח"] },
-            { "type": "build", "prompt_he": "נערה וירח", "answer": ["puella", "et", "lūna"], "extra": ["stella", "silva"] },
-            { "type": "match", "words": ["puella", "stella", "terra", "umbra"] },
-            { "type": "choice", "direction": "he-la", "prompt": "צל", "answer": "umbra", "distractors": ["aqua", "terra"] }
+            {
+              "type": "match",
+              "words": [
+                "silva",
+                "terra",
+                "aqua",
+                "puella"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "silva",
+              "answer": "יער",
+              "distractors": [
+                "אדמה",
+                "ירח"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "stella",
+                "luna",
+                "umbra",
+                "aqua"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "ירח",
+              "answer": "lūna",
+              "distractors": [
+                "stella",
+                "umbra"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "aqua et terra",
+              "answer": "מים ואדמה",
+              "distractors": [
+                "יער ואדמה",
+                "מים וירח"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "נערה וירח",
+              "answer": [
+                "puella",
+                "et",
+                "lūna"
+              ],
+              "extra": [
+                "stella",
+                "silva"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "puella",
+                "stella",
+                "terra",
+                "umbra"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "צל",
+              "answer": "umbra",
+              "distractors": [
+                "aqua",
+                "terra"
+              ]
+            }
           ]
         },
         {
           "id": "u1-l2",
           "title_he": "גדול, קטן, הוא והם",
-          "rules_intro": ["est-sunt", "nom-pl-1", "adj-agree"],
+          "rules_intro": [
+            "est-sunt",
+            "nom-pl-1",
+            "adj-agree"
+          ],
           "exercises": [
-            { "type": "match", "words": ["magnus", "parvus", "sum", "et"] },
-            { "type": "choice", "direction": "la-he", "prompt": "Silva magna est.", "answer": "היער גדול.", "distractors": ["היער קטן.", "הירח גדול."], "rules": ["est-sunt"] },
-            { "type": "choice", "direction": "la-he", "prompt": "Stellae parvae sunt.", "answer": "הכוכבים קטנים.", "distractors": ["הכוכב קטן.", "הכוכבים גדולים."], "rules": ["nom-pl-1"] },
-            { "type": "ending", "before": "", "stem": "Silv", "after": "magnae sunt.", "answer": "ae", "options": ["a", "ae"], "translation_he": "היערות גדולים.", "rules": ["nom-pl-1"], "explain_he": "sunt (הם) מראה שמדובר ברבים, ולכן silvae." },
-            { "type": "ending", "before": "", "stem": "Lūn", "after": "magna est.", "answer": "a", "options": ["a", "ae"], "translation_he": "הירח גדול.", "rules": ["nom-sg-1"], "explain_he": "est (הוא) מראה שמדובר ביחיד, ולכן lūna." },
-            { "type": "build", "prompt_he": "האדמה גדולה.", "answer": ["terra", "magna", "est"], "any_order": true, "extra": ["sunt", "parva"], "rules": ["est-sunt"] },
-            { "type": "ending", "before": "Umbra", "stem": "parv", "after": "est.", "answer": "a", "options": ["a", "ae", "us"], "translation_he": "הצל קטן.", "rules": ["adj-agree"], "explain_he": "umbra נגמרת ב-a, ולכן גם שם התואר: parva." },
-            { "type": "choice", "direction": "he-la", "prompt": "הנערות קטנות.", "answer": "Puellae parvae sunt.", "distractors": ["Puella parva est.", "Puellae magnae sunt."], "rules": ["nom-pl-1"] },
-            { "type": "build", "prompt_he": "הכוכבים גדולים.", "answer": ["stellae", "magnae", "sunt"], "any_order": true, "extra": ["est", "stella", "magna"], "rules": ["nom-pl-1", "adj-agree"] }
+            {
+              "type": "match",
+              "words": [
+                "magnus",
+                "parvus",
+                "sum",
+                "et"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Silva magna est.",
+              "answer": "היער גדול.",
+              "distractors": [
+                "היער קטן.",
+                "הירח גדול."
+              ],
+              "rules": [
+                "est-sunt"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Stellae parvae sunt.",
+              "answer": "הכוכבים קטנים.",
+              "distractors": [
+                "הכוכב קטן.",
+                "הכוכבים גדולים."
+              ],
+              "rules": [
+                "nom-pl-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Silv",
+              "after": "magnae sunt.",
+              "answer": "ae",
+              "options": [
+                "a",
+                "ae"
+              ],
+              "translation_he": "היערות גדולים.",
+              "rules": [
+                "nom-pl-1"
+              ],
+              "explain_he": "sunt (הם) מראה שמדובר ברבים, ולכן silvae."
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Lūn",
+              "after": "magna est.",
+              "answer": "a",
+              "options": [
+                "a",
+                "ae"
+              ],
+              "translation_he": "הירח גדול.",
+              "rules": [
+                "nom-sg-1"
+              ],
+              "explain_he": "est (הוא) מראה שמדובר ביחיד, ולכן lūna."
+            },
+            {
+              "type": "build",
+              "prompt_he": "האדמה גדולה.",
+              "answer": [
+                "terra",
+                "magna",
+                "est"
+              ],
+              "any_order": true,
+              "extra": [
+                "sunt",
+                "parva"
+              ],
+              "rules": [
+                "est-sunt"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Umbra",
+              "stem": "parv",
+              "after": "est.",
+              "answer": "a",
+              "options": [
+                "a",
+                "ae",
+                "us"
+              ],
+              "translation_he": "הצל קטן.",
+              "rules": [
+                "adj-agree"
+              ],
+              "explain_he": "umbra נגמרת ב-a, ולכן גם שם התואר: parva."
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הנערות קטנות.",
+              "answer": "Puellae parvae sunt.",
+              "distractors": [
+                "Puella parva est.",
+                "Puellae magnae sunt."
+              ],
+              "rules": [
+                "nom-pl-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "הכוכבים גדולים.",
+              "answer": [
+                "stellae",
+                "magnae",
+                "sunt"
+              ],
+              "any_order": true,
+              "extra": [
+                "est",
+                "stella",
+                "magna"
+              ],
+              "rules": [
+                "nom-pl-1",
+                "adj-agree"
+              ]
+            }
           ]
         },
         {
@@ -43,14 +257,117 @@
           "title_he": "משפטים ביער",
           "rules_intro": [],
           "exercises": [
-            { "type": "choice", "direction": "la-he", "prompt": "Lūna et stellae magnae sunt.", "answer": "הירח והכוכבים גדולים.", "distractors": ["הירח והכוכבים קטנים.", "הירח גדול."], "rules": ["est-sunt"] },
-            { "type": "build", "prompt_he": "היערות גדולים.", "answer": ["silvae", "magnae", "sunt"], "any_order": true, "extra": ["silva", "est"], "rules": ["nom-pl-1"] },
-            { "type": "ending", "before": "", "stem": "Puell", "after": "parvae sunt.", "answer": "ae", "options": ["a", "ae"], "translation_he": "הנערות קטנות.", "rules": ["nom-pl-1"] },
-            { "type": "match", "words": ["silva", "umbra", "magnus", "parvus"] },
-            { "type": "choice", "direction": "he-la", "prompt": "הצל גדול.", "answer": "Umbra magna est.", "distractors": ["Umbrae magnae sunt.", "Umbra parva est."], "rules": ["est-sunt"] },
-            { "type": "build", "prompt_he": "נערה וכוכבים", "answer": ["puella", "et", "stellae"], "extra": ["stella", "puellae"], "rules": ["nom-pl-1"] },
-            { "type": "ending", "before": "", "stem": "Stell", "after": "parva est.", "answer": "a", "options": ["a", "ae"], "translation_he": "הכוכב קטן.", "rules": ["nom-sg-1"] },
-            { "type": "choice", "direction": "la-he", "prompt": "Silvae et umbrae magnae sunt.", "answer": "היערות והצללים גדולים.", "distractors": ["היער והצל גדולים.", "היערות והצללים קטנים."], "rules": ["nom-pl-1"] }
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Lūna et stellae magnae sunt.",
+              "answer": "הירח והכוכבים גדולים.",
+              "distractors": [
+                "הירח והכוכבים קטנים.",
+                "הירח גדול."
+              ],
+              "rules": [
+                "est-sunt"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "היערות גדולים.",
+              "answer": [
+                "silvae",
+                "magnae",
+                "sunt"
+              ],
+              "any_order": true,
+              "extra": [
+                "silva",
+                "est"
+              ],
+              "rules": [
+                "nom-pl-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Puell",
+              "after": "parvae sunt.",
+              "answer": "ae",
+              "options": [
+                "a",
+                "ae"
+              ],
+              "translation_he": "הנערות קטנות.",
+              "rules": [
+                "nom-pl-1"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "silva",
+                "umbra",
+                "magnus",
+                "parvus"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הצל גדול.",
+              "answer": "Umbra magna est.",
+              "distractors": [
+                "Umbrae magnae sunt.",
+                "Umbra parva est."
+              ],
+              "rules": [
+                "est-sunt"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "נערה וכוכבים",
+              "answer": [
+                "puella",
+                "et",
+                "stellae"
+              ],
+              "extra": [
+                "stella",
+                "puellae"
+              ],
+              "rules": [
+                "nom-pl-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Stell",
+              "after": "parva est.",
+              "answer": "a",
+              "options": [
+                "a",
+                "ae"
+              ],
+              "translation_he": "הכוכב קטן.",
+              "rules": [
+                "nom-sg-1"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Silvae et umbrae magnae sunt.",
+              "answer": "היערות והצללים גדולים.",
+              "distractors": [
+                "היער והצל גדולים.",
+                "היערות והצללים קטנים."
+              ],
+              "rules": [
+                "nom-pl-1"
+              ]
+            }
           ]
         }
       ]
@@ -60,51 +377,396 @@
       "title_he": "את מי? יחסת המושא",
       "subtitle_he": "פעלים בהווה, והסיומת ‎-am שמסמנת על מה עושים את הפעולה",
       "dooge": "Lessons VI–VIII: first conjugation present; accusative",
-      "words": ["femina", "anima", "aura", "flamma", "porto", "amo", "voco", "specto", "paro", "servo", "non"],
+      "words": [
+        "femina",
+        "anima",
+        "aura",
+        "flamma",
+        "porto",
+        "amo",
+        "voco",
+        "specto",
+        "paro",
+        "servo",
+        "non"
+      ],
       "lessons": [
         {
           "id": "u2-l1",
           "title_he": "פעלים ראשונים",
-          "rules_intro": ["verb-3", "non"],
+          "rules_intro": [
+            "verb-3",
+            "non"
+          ],
           "exercises": [
-            { "type": "match", "words": ["femina", "anima", "aura", "flamma"] },
-            { "type": "match", "words": ["porto", "amo", "voco", "specto"] },
-            { "type": "choice", "direction": "la-he", "prompt": "servat", "answer": "היא שומרת", "distractors": ["היא קוראת", "היא נושאת"], "rules": ["verb-3"] },
-            { "type": "choice", "direction": "he-la", "prompt": "הן אוהבות", "answer": "amant", "distractors": ["amat", "portant"], "rules": ["verb-3"] },
-            { "type": "match", "words": ["paro", "servo", "non", "femina"] },
-            { "type": "ending", "before": "Fēmina", "stem": "spect", "after": ".", "answer": "at", "options": ["at", "ant"], "translation_he": "האישה מסתכלת.", "rules": ["verb-3"] },
-            { "type": "ending", "before": "Puellae", "stem": "voc", "after": ".", "answer": "ant", "options": ["at", "ant"], "translation_he": "הנערות קוראות.", "rules": ["verb-3"], "explain_he": "puellae הן רבות, ולכן הפועל ברבים: vocant." },
-            { "type": "choice", "direction": "la-he", "prompt": "Flamma nōn magna est.", "answer": "הלהבה לא גדולה.", "distractors": ["הלהבה גדולה.", "הלהבות לא גדולות."], "rules": ["non"] }
+            {
+              "type": "match",
+              "words": [
+                "femina",
+                "anima",
+                "aura",
+                "flamma"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "porto",
+                "amo",
+                "voco",
+                "specto"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "servat",
+              "answer": "היא שומרת",
+              "distractors": [
+                "היא קוראת",
+                "היא נושאת"
+              ],
+              "rules": [
+                "verb-3"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הן אוהבות",
+              "answer": "amant",
+              "distractors": [
+                "amat",
+                "portant"
+              ],
+              "rules": [
+                "verb-3"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "paro",
+                "servo",
+                "non",
+                "femina"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "spect",
+              "after": ".",
+              "answer": "at",
+              "options": [
+                "at",
+                "ant"
+              ],
+              "translation_he": "האישה מסתכלת.",
+              "rules": [
+                "verb-3"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Puellae",
+              "stem": "voc",
+              "after": ".",
+              "answer": "ant",
+              "options": [
+                "at",
+                "ant"
+              ],
+              "translation_he": "הנערות קוראות.",
+              "rules": [
+                "verb-3"
+              ],
+              "explain_he": "puellae הן רבות, ולכן הפועל ברבים: vocant."
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Flamma nōn magna est.",
+              "answer": "הלהבה לא גדולה.",
+              "distractors": [
+                "הלהבה גדולה.",
+                "הלהבות לא גדולות."
+              ],
+              "rules": [
+                "non"
+              ]
+            }
           ]
         },
         {
           "id": "u2-l2",
           "title_he": "את מי? הסיומת ‎-am",
-          "rules_intro": ["acc-sg-1", "word-order"],
+          "rules_intro": [
+            "acc-sg-1",
+            "word-order"
+          ],
           "exercises": [
-            { "type": "choice", "direction": "la-he", "prompt": "Puella aquam portat.", "answer": "הנערה נושאת מים.", "distractors": ["המים נושאים את הנערה.", "הנערות נושאות מים."], "rules": ["acc-sg-1"] },
-            { "type": "role", "sentence": "Puella aquam portat.", "target": 1, "answer": "object", "options": ["subject", "object"], "translation_he": "הנערה נושאת מים.", "rules": ["acc-sg-1"] },
-            { "type": "ending", "before": "Fēmina", "stem": "lūn", "after": "spectat.", "answer": "am", "options": ["a", "am", "ae"], "translation_he": "האישה מסתכלת על הירח.", "rules": ["acc-sg-1"] },
-            { "type": "build", "prompt_he": "הנערה קוראת לאישה.", "answer": ["puella", "fēminam", "vocat"], "any_order": true, "extra": ["fēmina", "puellam"], "rules": ["acc-sg-1"] },
-            { "type": "role", "sentence": "Fēminam puella vocat.", "target": 0, "answer": "object", "options": ["subject", "object"], "translation_he": "הנערה קוראת לאישה.", "rules": ["word-order"], "explain_he": "הסיומת ‎-am מסמנת מושא, גם כשהמילה עומדת בתחילת המשפט." },
-            { "type": "choice", "direction": "la-he", "prompt": "Aquam fēmina servat.", "answer": "האישה שומרת את המים.", "distractors": ["המים שומרים את האישה.", "האישה שומרת על הנערה."], "rules": ["word-order"] },
-            { "type": "ending", "before": "Puella", "stem": "umbr", "after": "amat.", "answer": "am", "options": ["a", "am", "ae"], "translation_he": "הנערה אוהבת את הצל.", "rules": ["acc-sg-1"] },
-            { "type": "build", "prompt_he": "האישה מסתכלת על הכוכב.", "answer": ["fēmina", "stellam", "spectat"], "any_order": true, "extra": ["stella", "spectant"], "rules": ["acc-sg-1"] }
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Puella aquam portat.",
+              "answer": "הנערה נושאת מים.",
+              "distractors": [
+                "המים נושאים את הנערה.",
+                "הנערות נושאות מים."
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Puella aquam portat.",
+              "target": 1,
+              "answer": "object",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "translation_he": "הנערה נושאת מים.",
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "lūn",
+              "after": "spectat.",
+              "answer": "am",
+              "options": [
+                "a",
+                "am",
+                "ae"
+              ],
+              "translation_he": "האישה מסתכלת על הירח.",
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "הנערה קוראת לאישה.",
+              "answer": [
+                "puella",
+                "fēminam",
+                "vocat"
+              ],
+              "any_order": true,
+              "extra": [
+                "fēmina",
+                "puellam"
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Fēminam puella vocat.",
+              "target": 0,
+              "answer": "object",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "translation_he": "הנערה קוראת לאישה.",
+              "rules": [
+                "word-order"
+              ],
+              "explain_he": "הסיומת ‎-am מסמנת מושא, גם כשהמילה עומדת בתחילת המשפט."
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Aquam fēmina servat.",
+              "answer": "האישה שומרת את המים.",
+              "distractors": [
+                "המים שומרים את האישה.",
+                "האישה שומרת על הנערה."
+              ],
+              "rules": [
+                "word-order"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Puella",
+              "stem": "umbr",
+              "after": "amat.",
+              "answer": "am",
+              "options": [
+                "a",
+                "am",
+                "ae"
+              ],
+              "translation_he": "הנערה אוהבת את הצל.",
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "האישה מסתכלת על הכוכב.",
+              "answer": [
+                "fēmina",
+                "stellam",
+                "spectat"
+              ],
+              "any_order": true,
+              "extra": [
+                "stella",
+                "spectant"
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            }
           ]
         },
         {
           "id": "u2-l3",
           "title_he": "רבים: ‎-ās ו-‎-ant",
-          "rules_intro": ["acc-pl-1"],
+          "rules_intro": [
+            "acc-pl-1"
+          ],
           "exercises": [
-            { "type": "choice", "direction": "la-he", "prompt": "Puellae stellās spectant.", "answer": "הנערות מסתכלות על הכוכבים.", "distractors": ["הנערה מסתכלת על הכוכבים.", "הכוכבים מסתכלים על הנערות."], "rules": ["acc-pl-1"] },
-            { "type": "ending", "before": "Fēmina", "stem": "stell", "after": "amat.", "answer": "ās", "options": ["am", "ās", "ae"], "translation_he": "האישה אוהבת את הכוכבים.", "rules": ["acc-pl-1"] },
-            { "type": "role", "sentence": "Stellās puellae spectant.", "target": 1, "answer": "subject", "options": ["subject", "object"], "translation_he": "הנערות מסתכלות על הכוכבים.", "rules": ["nom-pl-1", "word-order"], "explain_he": "puellae עם הפועל spectant: הנערות הן אלה שמסתכלות. stellās (‎-ās) הוא המושא." },
-            { "type": "build", "prompt_he": "הנערות נושאות מים.", "answer": ["puellae", "aquam", "portant"], "any_order": true, "extra": ["portat", "aqua"], "rules": ["verb-3"] },
-            { "type": "ending", "before": "Fēminae silvam", "stem": "serv", "after": ".", "answer": "ant", "options": ["at", "ant"], "translation_he": "הנשים שומרות על היער.", "rules": ["verb-3"] },
-            { "type": "choice", "direction": "he-la", "prompt": "הנערה לא אוהבת את הצל.", "answer": "Puella umbram nōn amat.", "distractors": ["Puellam umbra nōn amat.", "Puella umbram amat."], "rules": ["non"] },
-            { "type": "role", "sentence": "Puella flammās parat.", "target": 1, "answer": "object", "options": ["subject", "object"], "translation_he": "הנערה מכינה להבות.", "rules": ["acc-pl-1"] },
-            { "type": "build", "prompt_he": "האישה לא קוראת לנערות.", "answer": ["fēmina", "puellās", "nōn", "vocat"], "alternatives": [["puellās", "fēmina", "nōn", "vocat"]], "extra": ["puellae", "vocant"], "rules": ["non", "acc-pl-1"], "explain_he": "nōn בא ממש לפני הפועל." }
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Puellae stellās spectant.",
+              "answer": "הנערות מסתכלות על הכוכבים.",
+              "distractors": [
+                "הנערה מסתכלת על הכוכבים.",
+                "הכוכבים מסתכלים על הנערות."
+              ],
+              "rules": [
+                "acc-pl-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "stell",
+              "after": "amat.",
+              "answer": "ās",
+              "options": [
+                "am",
+                "ās",
+                "ae"
+              ],
+              "translation_he": "האישה אוהבת את הכוכבים.",
+              "rules": [
+                "acc-pl-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Stellās puellae spectant.",
+              "target": 1,
+              "answer": "subject",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "translation_he": "הנערות מסתכלות על הכוכבים.",
+              "rules": [
+                "nom-pl-1",
+                "word-order"
+              ],
+              "explain_he": "puellae עם הפועל spectant: הנערות הן אלה שמסתכלות. stellās (‎-ās) הוא המושא."
+            },
+            {
+              "type": "build",
+              "prompt_he": "הנערות נושאות מים.",
+              "answer": [
+                "puellae",
+                "aquam",
+                "portant"
+              ],
+              "any_order": true,
+              "extra": [
+                "portat",
+                "aqua"
+              ],
+              "rules": [
+                "verb-3"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēminae silvam",
+              "stem": "serv",
+              "after": ".",
+              "answer": "ant",
+              "options": [
+                "at",
+                "ant"
+              ],
+              "translation_he": "הנשים שומרות על היער.",
+              "rules": [
+                "verb-3"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הנערה לא אוהבת את הצל.",
+              "answer": "Puella umbram nōn amat.",
+              "distractors": [
+                "Puellam umbra nōn amat.",
+                "Puella umbram amat."
+              ],
+              "rules": [
+                "non"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Puella flammās parat.",
+              "target": 1,
+              "answer": "object",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "translation_he": "הנערה מכינה להבות.",
+              "rules": [
+                "acc-pl-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "האישה לא קוראת לנערות.",
+              "answer": [
+                "fēmina",
+                "puellās",
+                "nōn",
+                "vocat"
+              ],
+              "alternatives": [
+                [
+                  "puellās",
+                  "fēmina",
+                  "nōn",
+                  "vocat"
+                ]
+              ],
+              "extra": [
+                "puellae",
+                "vocant"
+              ],
+              "rules": [
+                "non",
+                "acc-pl-1"
+              ],
+              "explain_he": "nōn בא ממש לפני הפועל."
+            }
           ]
         }
       ]
@@ -114,51 +776,1392 @@
       "title_he": "למי? נתינה וציווי",
       "subtitle_he": "לתת, לספר ולהביא — והלחש הראשון של השועלה",
       "dooge": "Lessons IX–XI: dative; imperative; personal pronouns",
-      "words": ["do", "affero", "ego", "tu", "lignum", "dea", "fabula", "narro", "filia"],
+      "words": [
+        "do",
+        "affero",
+        "ego",
+        "tu",
+        "lignum",
+        "dea",
+        "fabula",
+        "narro",
+        "filia"
+      ],
       "lessons": [
         {
           "id": "u3-l1",
           "title_he": "לי ולך",
-          "rules_intro": ["mihi-tibi"],
+          "rules_intro": [
+            "mihi-tibi"
+          ],
           "exercises": [
-            { "type": "match", "words": ["do", "affero", "ego", "tu"] },
-            { "type": "match", "words": ["lignum", "dea", "fabula", "narro"] },
-            { "type": "choice", "direction": "la-he", "prompt": "mihi", "answer": "לי", "distractors": ["לך", "אני"], "rules": ["mihi-tibi"] },
-            { "type": "choice", "direction": "he-la", "prompt": "לך", "answer": "tibi", "distractors": ["tū", "mihi"], "rules": ["mihi-tibi"] },
-            { "type": "match", "words": ["filia", "fabula", "dea", "lignum"] },
-            { "type": "choice", "direction": "la-he", "prompt": "Fīlia fābulam narrat.", "answer": "הבת מספרת סיפור.", "distractors": ["הסיפור מספר על הבת.", "הבנות מספרות סיפורים."], "rules": ["acc-sg-1"] },
-            { "type": "build", "prompt_he": "האלה נותנת מים.", "answer": ["dea", "aquam", "dat"], "any_order": true, "extra": ["aqua", "dant"], "rules": ["acc-sg-1"] },
-            { "type": "ending", "before": "Fīlia", "stem": "fābul", "after": "narrat.", "answer": "am", "options": ["a", "am", "ās"], "translation_he": "הבת מספרת סיפור.", "rules": ["acc-sg-1"] }
+            {
+              "type": "match",
+              "words": [
+                "do",
+                "affero",
+                "ego",
+                "tu"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "lignum",
+                "dea",
+                "fabula",
+                "narro"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "mihi",
+              "answer": "לי",
+              "distractors": [
+                "לך",
+                "אני"
+              ],
+              "rules": [
+                "mihi-tibi"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "לך",
+              "answer": "tibi",
+              "distractors": [
+                "tū",
+                "mihi"
+              ],
+              "rules": [
+                "mihi-tibi"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "filia",
+                "fabula",
+                "dea",
+                "lignum"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Fīlia fābulam narrat.",
+              "answer": "הבת מספרת סיפור.",
+              "distractors": [
+                "הסיפור מספר על הבת.",
+                "הבנות מספרות סיפורים."
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "האלה נותנת מים.",
+              "answer": [
+                "dea",
+                "aquam",
+                "dat"
+              ],
+              "any_order": true,
+              "extra": [
+                "aqua",
+                "dant"
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fīlia",
+              "stem": "fābul",
+              "after": "narrat.",
+              "answer": "am",
+              "options": [
+                "a",
+                "am",
+                "ās"
+              ],
+              "translation_he": "הבת מספרת סיפור.",
+              "rules": [
+                "acc-sg-1"
+              ]
+            }
           ]
         },
         {
           "id": "u3-l2",
           "title_he": "למי? הסיומת ‎-ae",
-          "rules_intro": ["dat-sg-1", "dat-pl-1"],
+          "rules_intro": [
+            "dat-sg-1",
+            "dat-pl-1"
+          ],
           "exercises": [
-            { "type": "choice", "direction": "la-he", "prompt": "Fēmina puellae aquam dat.", "answer": "האישה נותנת מים לנערה.", "distractors": ["הנערה נותנת מים לאישה.", "האישה נותנת את הנערה למים."], "rules": ["dat-sg-1"] },
-            { "type": "role", "sentence": "Fēmina puellae aquam dat.", "target": 1, "answer": "indirect", "translation_he": "האישה נותנת מים לנערה.", "rules": ["dat-sg-1"] },
-            { "type": "role", "sentence": "Fīliae dea flammam dat.", "target": 0, "answer": "indirect", "translation_he": "האלה נותנת להבה לבת.", "rules": ["dat-sg-1", "word-order"], "explain_he": "הפועל dat ביחיד, ולכן fīliae לא יכולה להיות נושא ברבים. ‎-ae כאן פירושו 'לבת'." },
-            { "type": "ending", "before": "Fīlia", "stem": "de", "after": "fābulam narrat.", "answer": "ae", "options": ["a", "am", "ae"], "translation_he": "הבת מספרת סיפור לאלה.", "rules": ["dat-sg-1"] },
-            { "type": "build", "prompt_he": "הנערה נותנת להבה לאלה.", "answer": ["puella", "deae", "flammam", "dat"], "any_order": true, "extra": ["dea", "flamma"], "rules": ["dat-sg-1"] },
-            { "type": "ending", "before": "Fēmina", "stem": "puell", "after": "fābulās narrat.", "answer": "īs", "options": ["ae", "īs", "ās"], "translation_he": "האישה מספרת סיפורים לנערות.", "rules": ["dat-pl-1"] },
-            { "type": "choice", "direction": "he-la", "prompt": "הבת נותנת לי מים.", "answer": "Fīlia mihi aquam dat.", "distractors": ["Fīlia tibi aquam dat.", "Fīlia mihi aqua dat."], "rules": ["mihi-tibi"] },
-            { "type": "role", "sentence": "Puella tibi fābulam narrat.", "target": 1, "answer": "indirect", "translation_he": "הנערה מספרת לך סיפור.", "rules": ["mihi-tibi"] }
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Fēmina puellae aquam dat.",
+              "answer": "האישה נותנת מים לנערה.",
+              "distractors": [
+                "הנערה נותנת מים לאישה.",
+                "האישה נותנת את הנערה למים."
+              ],
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Fēmina puellae aquam dat.",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "האישה נותנת מים לנערה.",
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Fīliae dea flammam dat.",
+              "target": 0,
+              "answer": "indirect",
+              "translation_he": "האלה נותנת להבה לבת.",
+              "rules": [
+                "dat-sg-1",
+                "word-order"
+              ],
+              "explain_he": "הפועל dat ביחיד, ולכן fīliae לא יכולה להיות נושא ברבים. ‎-ae כאן פירושו 'לבת'."
+            },
+            {
+              "type": "ending",
+              "before": "Fīlia",
+              "stem": "de",
+              "after": "fābulam narrat.",
+              "answer": "ae",
+              "options": [
+                "a",
+                "am",
+                "ae"
+              ],
+              "translation_he": "הבת מספרת סיפור לאלה.",
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "הנערה נותנת להבה לאלה.",
+              "answer": [
+                "puella",
+                "deae",
+                "flammam",
+                "dat"
+              ],
+              "any_order": true,
+              "extra": [
+                "dea",
+                "flamma"
+              ],
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "puell",
+              "after": "fābulās narrat.",
+              "answer": "īs",
+              "options": [
+                "ae",
+                "īs",
+                "ās"
+              ],
+              "translation_he": "האישה מספרת סיפורים לנערות.",
+              "rules": [
+                "dat-pl-1"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הבת נותנת לי מים.",
+              "answer": "Fīlia mihi aquam dat.",
+              "distractors": [
+                "Fīlia tibi aquam dat.",
+                "Fīlia mihi aqua dat."
+              ],
+              "rules": [
+                "mihi-tibi"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Puella tibi fābulam narrat.",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "הנערה מספרת לך סיפור.",
+              "rules": [
+                "mihi-tibi"
+              ]
+            }
           ]
         },
         {
           "id": "u3-l3",
           "title_he": "פקודות: הציווי",
-          "rules_intro": ["imperative", "neuter"],
+          "rules_intro": [
+            "imperative",
+            "neuter"
+          ],
           "exercises": [
-            { "type": "choice", "direction": "la-he", "prompt": "Aquam mihi dā!", "answer": "תן לי מים!", "distractors": ["הוא נותן לי מים.", "תן לך מים!"], "rules": ["imperative"] },
-            { "type": "ending", "before": "Fābulam", "stem": "narr", "after": "!", "answer": "ā", "options": ["ā", "at", "ant"], "translation_he": "ספר סיפור!", "rules": ["imperative"], "explain_he": "פקודה לאדם אחד נגמרת ב-ā. ‎-at ו-‎-ant מתארים מה מישהו עושה, ולא מצווים." },
-            { "type": "build", "prompt_he": "הבא לי עצים!", "answer": ["lignum", "mihi", "affer"], "any_order": true, "extra": ["tibi", "affert", "lignō"], "rules": ["imperative", "neuter"], "explain_he": "זה הלחש הראשון של השועלה! lignum (מה), mihi (למי), affer (הפעולה)." },
-            { "type": "choice", "direction": "he-la", "prompt": "קראו לנערות! (לכמה אנשים)", "answer": "Puellās vocāte!", "distractors": ["Puellās vocā!", "Puellae vocant."], "rules": ["imperative", "acc-pl-1"] },
-            { "type": "role", "sentence": "Lignum deae portā!", "target": 1, "answer": "indirect", "translation_he": "שא עצים לאלה!", "rules": ["dat-sg-1"] },
-            { "type": "ending", "before": "Aquam", "stem": "fīli", "after": "dā!", "answer": "ae", "options": ["a", "am", "ae"], "translation_he": "תן מים לבת!", "rules": ["dat-sg-1"] },
-            { "type": "build", "prompt_he": "ספר לי סיפור!", "answer": ["fābulam", "mihi", "narrā"], "any_order": true, "extra": ["narrat", "fābula"], "rules": ["imperative", "mihi-tibi"] },
-            { "type": "choice", "direction": "la-he", "prompt": "Lignum mihi affer!", "answer": "הבא לי עצים!", "distractors": ["הוא מביא לי עצים.", "הבא לך עצים!"], "rules": ["imperative"] }
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Aquam mihi dā!",
+              "answer": "תן לי מים!",
+              "distractors": [
+                "הוא נותן לי מים.",
+                "תן לך מים!"
+              ],
+              "rules": [
+                "imperative"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fābulam",
+              "stem": "narr",
+              "after": "!",
+              "answer": "ā",
+              "options": [
+                "ā",
+                "at",
+                "ant"
+              ],
+              "translation_he": "ספר סיפור!",
+              "rules": [
+                "imperative"
+              ],
+              "explain_he": "פקודה לאדם אחד נגמרת ב-ā. ‎-at ו-‎-ant מתארים מה מישהו עושה, ולא מצווים."
+            },
+            {
+              "type": "build",
+              "prompt_he": "הבא לי עצים!",
+              "answer": [
+                "lignum",
+                "mihi",
+                "affer"
+              ],
+              "any_order": true,
+              "extra": [
+                "tibi",
+                "affert",
+                "lignō"
+              ],
+              "rules": [
+                "imperative",
+                "neuter"
+              ],
+              "explain_he": "זה הלחש הראשון של השועלה! lignum (מה), mihi (למי), affer (הפעולה)."
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "קראו לנערות! (לכמה אנשים)",
+              "answer": "Puellās vocāte!",
+              "distractors": [
+                "Puellās vocā!",
+                "Puellae vocant."
+              ],
+              "rules": [
+                "imperative",
+                "acc-pl-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Lignum deae portā!",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "שא עצים לאלה!",
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Aquam",
+              "stem": "fīli",
+              "after": "dā!",
+              "answer": "ae",
+              "options": [
+                "a",
+                "am",
+                "ae"
+              ],
+              "translation_he": "תן מים לבת!",
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "ספר לי סיפור!",
+              "answer": [
+                "fābulam",
+                "mihi",
+                "narrā"
+              ],
+              "any_order": true,
+              "extra": [
+                "narrat",
+                "fābula"
+              ],
+              "rules": [
+                "imperative",
+                "mihi-tibi"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Lignum mihi affer!",
+              "answer": "הבא לי עצים!",
+              "distractors": [
+                "הוא מביא לי עצים.",
+                "הבא לך עצים!"
+              ],
+              "rules": [
+                "imperative"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title_he": "הנטייה השנייה: בונים את המחנה",
+      "subtitle_he": "גינה, אוהל, חבר וספר — והפועל aedificā! שפותח את לחשי הבנייה",
+      "dooge": "Lessons XII–XVI: second declension; adjectives in -us, -a, -um",
+      "words": [
+        "hortus",
+        "tentorium",
+        "aedifico",
+        "donum",
+        "amicus",
+        "deus",
+        "bonus",
+        "novus",
+        "liber"
+      ],
+      "lessons": [
+        {
+          "id": "u4-l1",
+          "title_he": "הגינה והאוהל",
+          "rules_intro": [
+            "nom-sg-2",
+            "neuter-2"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "hortus",
+                "tentorium",
+                "donum",
+                "liber"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "amicus",
+                "deus",
+                "bonus",
+                "novus"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Hortus magnus est.",
+              "answer": "הגינה גדולה.",
+              "distractors": [
+                "האוהל גדול.",
+                "הגינות גדולות."
+              ],
+              "rules": [
+                "nom-sg-2"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "האוהל חדש.",
+              "answer": "Tentōrium novum est.",
+              "distractors": [
+                "Tentōrium novus est.",
+                "Hortus novus est."
+              ],
+              "rules": [
+                "neuter-2",
+                "adj-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Amīc",
+              "after": "bonus est.",
+              "answer": "us",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "החבר טוב.",
+              "rules": [
+                "nom-sg-2"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "הספר חדש.",
+              "answer": [
+                "liber",
+                "novus",
+                "est"
+              ],
+              "extra": [
+                "novum",
+                "librum"
+              ],
+              "any_order": true,
+              "rules": [
+                "nom-sg-2",
+                "adj-2"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "aedifico",
+                "hortus",
+                "amicus",
+                "donum"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Dōnum bonum est.",
+              "answer": "המתנה טובה.",
+              "distractors": [
+                "המתנות טובות.",
+                "החבר טוב."
+              ],
+              "rules": [
+                "neuter-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u4-l2",
+          "title_he": "בנה! הסיומת ‎-um",
+          "rules_intro": [
+            "acc-sg-2",
+            "adj-2"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Puella hortum aedificat.",
+              "answer": "הנערה בונה גינה.",
+              "distractors": [
+                "הגינה בונה נערה.",
+                "הנערה בונה אוהל."
+              ],
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Amīcum puella vocat.",
+              "target": 0,
+              "answer": "object",
+              "translation_he": "הנערה קוראת לחבר.",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "rules": [
+                "acc-sg-2",
+                "word-order"
+              ],
+              "explain_he": "הסיומת ‎-um מסמנת מושא, גם בתחילת המשפט."
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "hort",
+              "after": "amat.",
+              "answer": "um",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "האישה אוהבת את הגינה.",
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "בנה גינה!",
+              "answer": [
+                "hortum",
+                "aedificā"
+              ],
+              "extra": [
+                "hortus",
+                "aedificat"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-2",
+                "imperative"
+              ],
+              "explain_he": "זה לחש הבנייה של הגינה!"
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Tentōri",
+              "after": "aedificā!",
+              "answer": "um",
+              "options": [
+                "um",
+                "ō",
+                "a"
+              ],
+              "translation_he": "בנה אוהל!",
+              "rules": [
+                "neuter-2"
+              ],
+              "explain_he": "tentōrium בסתמי: במושא היא נשארת tentōrium."
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "האישה בונה אוהל חדש.",
+              "answer": "Fēmina tentōrium novum aedificat.",
+              "distractors": [
+                "Fēmina tentōrium novus aedificat.",
+                "Fēminam tentōrium novum aedificat."
+              ],
+              "rules": [
+                "adj-2"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "החבר אוהב את הספר.",
+              "answer": [
+                "amīcus",
+                "librum",
+                "amat"
+              ],
+              "extra": [
+                "liber",
+                "amīcum"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Fīlia deum amat.",
+              "target": 1,
+              "answer": "object",
+              "translation_he": "הבת אוהבת את האל.",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "rules": [
+                "acc-sg-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u4-l3",
+          "title_he": "למי? הסיומת ‎-ō",
+          "rules_intro": [
+            "dat-sg-2"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Puella amīcō dōnum dat.",
+              "answer": "הנערה נותנת מתנה לחבר.",
+              "distractors": [
+                "החבר נותן מתנה לנערה.",
+                "הנערה נותנת את החבר במתנה."
+              ],
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Puella amīcō dōnum dat.",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "הנערה נותנת מתנה לחבר.",
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "de",
+              "after": "dōnum dat.",
+              "answer": "ō",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "האישה נותנת מתנה לאל.",
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "תן לחבר ספר!",
+              "answer": [
+                "librum",
+                "amīcō",
+                "dā"
+              ],
+              "extra": [
+                "liber",
+                "amīcus"
+              ],
+              "any_order": true,
+              "rules": [
+                "dat-sg-2",
+                "imperative"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הבא לי ספר!",
+              "answer": "Librum mihi affer!",
+              "distractors": [
+                "Liber mihi affer!",
+                "Librum tibi affer!"
+              ],
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Hortō aquam dā!",
+              "target": 0,
+              "answer": "indirect",
+              "translation_he": "תן מים לגינה!",
+              "rules": [
+                "dat-sg-2"
+              ],
+              "explain_he": "‎-ō היא נתינה: 'לגינה'."
+            },
+            {
+              "type": "ending",
+              "before": "Aquam",
+              "stem": "hort",
+              "after": "dā!",
+              "answer": "ō",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "תן מים לגינה!",
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "בנה אוהל!",
+              "answer": [
+                "tentōrium",
+                "aedificā"
+              ],
+              "extra": [
+                "tentōriō",
+                "aedificat"
+              ],
+              "any_order": true,
+              "rules": [
+                "neuter-2",
+                "imperative"
+              ],
+              "explain_he": "זה הלחש שמגדיל את האוהל!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title_he": "הנטייה השלישית: אור, מים ומגדל",
+      "subtitle_he": "מעיין, עץ, אור ולילה: מילים שהגזע שלהן מתחבא",
+      "dooge": "Lessons XXXVI–XL: third declension",
+      "words": [
+        "fons",
+        "turris",
+        "arbor",
+        "lux",
+        "ignis",
+        "nox",
+        "facio",
+        "bibliotheca",
+        "cresco"
+      ],
+      "lessons": [
+        {
+          "id": "u5-l1",
+          "title_he": "הגזע המתחבא",
+          "rules_intro": [
+            "decl-3"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "fons",
+                "turris",
+                "arbor",
+                "lux"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "ignis",
+                "nox",
+                "facio",
+                "cresco"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Turris magna est.",
+              "answer": "המגדל גדול.",
+              "distractors": [
+                "המעיין גדול.",
+                "המגדלים גדולים."
+              ],
+              "rules": [
+                "decl-3"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "הספרייה חדשה.",
+              "answer": "Bibliothēca nova est.",
+              "distractors": [
+                "Bibliothēca novus est.",
+                "Bibliothēcae novae sunt."
+              ],
+              "rules": [
+                "adj-agree"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "bibliotheca",
+                "fons",
+                "nox",
+                "lux"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Arbor parva crēscit.",
+              "answer": "העץ הקטן גדל.",
+              "distractors": [
+                "העץ הגדול גדל.",
+                "העצים הקטנים גדלים."
+              ],
+              "rules": [
+                "decl-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "האור גדול.",
+              "answer": [
+                "lūx",
+                "magna",
+                "est"
+              ],
+              "extra": [
+                "lūcem",
+                "magnus"
+              ],
+              "any_order": true,
+              "rules": [
+                "adj-agree"
+              ],
+              "explain_he": "lūx היא נקבה, ולכן magna."
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Fōns parvus est.",
+              "answer": "המעיין קטן.",
+              "distractors": [
+                "המעיין גדול.",
+                "העץ קטן."
+              ],
+              "rules": [
+                "adj-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u5-l2",
+          "title_he": "את מי? ‎-em",
+          "rules_intro": [
+            "acc-sg-3",
+            "imp-e"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Lūcem fac!",
+              "answer": "עשה אור!",
+              "distractors": [
+                "האור עושה.",
+                "הוא עושה אור."
+              ],
+              "rules": [
+                "acc-sg-3",
+                "imp-e"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fēmina",
+              "stem": "arbor",
+              "after": "spectat.",
+              "answer": "em",
+              "options": [
+                "em",
+                "ī",
+                "is"
+              ],
+              "translation_he": "האישה מסתכלת על העץ.",
+              "rules": [
+                "acc-sg-3"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Noctem puella amat.",
+              "target": 0,
+              "answer": "object",
+              "translation_he": "הנערה אוהבת את הלילה.",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "rules": [
+                "acc-sg-3",
+                "word-order"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "בנה מעיין!",
+              "answer": [
+                "fontem",
+                "aedificā"
+              ],
+              "extra": [
+                "fōns",
+                "fontī"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-3"
+              ],
+              "explain_he": "זה לחש הבנייה של המעיין!"
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Turr",
+              "after": "aedificā!",
+              "answer": "im",
+              "options": [
+                "is",
+                "im",
+                "ī"
+              ],
+              "translation_he": "בנה מגדל!",
+              "rules": [
+                "acc-sg-3"
+              ],
+              "explain_he": "turris יוצאת דופן: במושא turrim, ולא turrem."
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "עץ, גדל!",
+              "answer": "Arbor, crēsce!",
+              "distractors": [
+                "Arbor crēscit.",
+                "Arborem crēsce!"
+              ],
+              "rules": [
+                "imp-e"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "עשה אש!",
+              "answer": [
+                "ignem",
+                "fac"
+              ],
+              "extra": [
+                "ignis",
+                "facit"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-3",
+                "imp-e"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Bibliothēcam aedificā!",
+              "answer": "בנה ספרייה!",
+              "distractors": [
+                "הספרייה בונה.",
+                "הוא בונה ספרייה."
+              ],
+              "rules": [
+                "acc-sg-1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u5-l3",
+          "title_he": "למי? ‎-ī",
+          "rules_intro": [
+            "dat-sg-3"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Aquam arborī dā!",
+              "answer": "תן מים לעץ!",
+              "distractors": [
+                "תן את העץ למים!",
+                "העץ נותן מים."
+              ],
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Aquam arborī dā!",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "תן מים לעץ!",
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Aquam",
+              "stem": "arbor",
+              "after": "dā!",
+              "answer": "ī",
+              "options": [
+                "em",
+                "ī",
+                "is"
+              ],
+              "translation_he": "תן מים לעץ!",
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "תן עצים לאש!",
+              "answer": [
+                "lignum",
+                "ignī",
+                "dā"
+              ],
+              "extra": [
+                "ignem",
+                "ignis"
+              ],
+              "any_order": true,
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Fēmina ignī lignum dat.",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "האישה נותנת עצים לאש.",
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Lignum",
+              "stem": "ign",
+              "after": "dā!",
+              "answer": "ī",
+              "options": [
+                "is",
+                "em",
+                "ī"
+              ],
+              "translation_he": "תן עצים לאש!",
+              "rules": [
+                "dat-sg-3"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "בנה מגדל!",
+              "answer": "Turrim aedificā!",
+              "distractors": [
+                "Turris aedificā!",
+                "Turrī aedificā!"
+              ],
+              "rules": [
+                "acc-sg-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "הבא לי אור!",
+              "answer": [
+                "lūcem",
+                "mihi",
+                "affer"
+              ],
+              "extra": [
+                "lūx",
+                "lūcī"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title_he": "הקוסמת משתנה",
+      "subtitle_he": "נפתחת בספרייה: mē (אותי), רבים בסתמי, ושמות האלמנטים",
+      "requires": {
+        "building": "bibliotheca"
+      },
+      "dooge": "Lessons XVII–XIX: neuter plural; personal pronouns",
+      "words": [
+        "muto",
+        "curo",
+        "sol",
+        "vita",
+        "multus",
+        "aer",
+        "aether"
+      ],
+      "lessons": [
+        {
+          "id": "u6-l1",
+          "title_he": "שנה אותי!",
+          "rules_intro": [
+            "me-acc"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "muto",
+                "curo",
+                "sol",
+                "vita"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Mē mūtā!",
+              "answer": "שנה אותי!",
+              "distractors": [
+                "שנה לי!",
+                "הוא משנה אותי."
+              ],
+              "rules": [
+                "me-acc",
+                "imperative"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "קרא לי!",
+              "answer": "Mē vocā!",
+              "distractors": [
+                "Mihi vocā!",
+                "Ego vocā!"
+              ],
+              "rules": [
+                "me-acc"
+              ],
+              "explain_he": "'קרא לי' בעברית, אבל בלטינית vocō לוקח מושא: 'קרא אותי' — mē."
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Sōl arborem cūrat.",
+              "answer": "השמש מטפלת בעץ.",
+              "distractors": [
+                "העץ מטפל בשמש.",
+                "השמש מסתכלת על העץ."
+              ],
+              "rules": [
+                "acc-sg-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "השמש נותנת חיים.",
+              "answer": [
+                "sōl",
+                "vītam",
+                "dat"
+              ],
+              "extra": [
+                "sōlem",
+                "vīta"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-1"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Mē amīcus cūrat.",
+              "target": 0,
+              "answer": "object",
+              "translation_he": "החבר מטפל בי.",
+              "options": [
+                "subject",
+                "object"
+              ],
+              "rules": [
+                "me-acc"
+              ],
+              "explain_he": "mē היא צורת המושא של ego: 'אותי', 'בי'."
+            },
+            {
+              "type": "match",
+              "words": [
+                "aer",
+                "aether",
+                "muto",
+                "sol"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Hort",
+              "after": "cūrā!",
+              "answer": "um",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "טפל בגינה!",
+              "rules": [
+                "acc-sg-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u6-l2",
+          "title_he": "הרבה עצים",
+          "rules_intro": [
+            "pl-neuter"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Multa ligna mihi affer!",
+              "answer": "הבא לי הרבה עצים!",
+              "distractors": [
+                "הבא לי עץ אחד!",
+                "הוא מביא לי הרבה עצים."
+              ],
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Mult",
+              "after": "ligna mihi affer!",
+              "answer": "a",
+              "options": [
+                "a",
+                "um",
+                "us"
+              ],
+              "translation_he": "הבא לי הרבה עצים!",
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "תן לי הרבה מתנות!",
+              "answer": [
+                "multa",
+                "dōna",
+                "mihi",
+                "dā"
+              ],
+              "extra": [
+                "dōnum",
+                "multum"
+              ],
+              "any_order": true,
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "החבר נותן הרבה מתנות.",
+              "answer": "Amīcus multa dōna dat.",
+              "distractors": [
+                "Amīcus multum dōnum dat.",
+                "Amīcum multa dōna dat."
+              ],
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "multus",
+                "aer",
+                "aether",
+                "vita"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Multa dōna dea puellae dat.",
+              "target": 3,
+              "answer": "indirect",
+              "translation_he": "האלה נותנת לנערה הרבה מתנות.",
+              "rules": [
+                "dat-sg-1"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Lign",
+              "after": "multa mihi affer!",
+              "answer": "a",
+              "options": [
+                "um",
+                "a",
+                "ō"
+              ],
+              "translation_he": "הבא לי הרבה עצים!",
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Sōl et lūx vītam dant.",
+              "answer": "השמש והאור נותנים חיים.",
+              "distractors": [
+                "השמש נותנת חיים לאור.",
+                "השמש והאור מסתכלים על החיים."
+              ],
+              "rules": [
+                "verb-3"
+              ]
+            }
           ]
         }
       ]

@@ -24,6 +24,7 @@ export function App() {
   const [tab, setTab] = useState<Tab>('camp');
   const [session, setSession] = useState<Session>(null);
   const [wordId, setWordId] = useState<string | null>(null);
+  const [spellPick, setSpellPick] = useState<string | undefined>(undefined);
 
   // The phone's back button leaves a lesson instead of closing the app.
   useEffect(() => {
@@ -42,10 +43,13 @@ export function App() {
     else setSession(null);
   }, []);
 
-  const go = (target: 'path' | 'review' | 'spells' | { lesson: string }) => {
+  const go = (target: 'path' | 'review' | 'spells' | { lesson: string } | { spell: string }) => {
     if (target === 'review') openSession({ kind: 'review' });
-    else if (typeof target === 'object') openSession({ kind: 'lesson', id: target.lesson });
-    else setTab(target);
+    else if (typeof target === 'object' && 'lesson' in target) openSession({ kind: 'lesson', id: target.lesson });
+    else if (typeof target === 'object') {
+      setSpellPick(target.spell);
+      setTab('spells');
+    } else setTab(target);
   };
 
   let content;
@@ -65,7 +69,7 @@ export function App() {
     content = <ReviewScreen onExit={closeSession} />;
   } else if (tab === 'camp') content = <CampScreen go={go} />;
   else if (tab === 'path') content = <PathScreen openLesson={(id) => openSession({ kind: 'lesson', id })} />;
-  else if (tab === 'spells') content = <SpellScreen key={save.spellbook.join()} />;
+  else if (tab === 'spells') content = <SpellScreen key={`${save.spellbook.join()}|${spellPick}`} initialSpell={spellPick} />;
   else content = <SettingsScreen />;
 
   return (
@@ -75,7 +79,7 @@ export function App() {
         {!session && (
           <nav className="tab-bar" aria-label="ניווט">
             {TABS.map((t) => (
-              <button key={t.id} type="button" className={`tab ${tab === t.id ? 'active' : ''}`} aria-current={tab === t.id ? 'page' : undefined} onClick={() => setTab(t.id)}>
+              <button key={t.id} type="button" className={`tab ${tab === t.id ? 'active' : ''}`} aria-current={tab === t.id ? 'page' : undefined} onClick={() => { setSpellPick(undefined); setTab(t.id); }}>
                 <span className="tab-icon" aria-hidden="true">{t.icon}</span>
                 <span>{t.label}</span>
               </button>

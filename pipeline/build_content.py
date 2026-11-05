@@ -111,13 +111,19 @@ def kaikki_entries(lemma: str, refresh: bool) -> list[dict]:
         return [json.loads(line) for line in handle if line.strip()]
 
 
-def pick_entry(entries: list[dict], pos: str, lemma: str) -> dict:
-    """First entry with the wanted part of speech that is a real lemma (not only 'form of')."""
+def pick_entry(entries: list[dict], pos: str, lemma: str, nth: int = 0) -> dict:
+    """The nth entry with the wanted part of speech that is a real lemma (not only 'form of').
+
+    nth (curated "kaikki_nth") picks between homographs, e.g. liber 'book' vs Līber the god.
+    """
     for entry in entries:
         if entry.get("pos") != pos:
             continue
         senses = entry.get("senses", [])
         if senses and all("form_of" in s or "alt_of" in s for s in senses):
+            continue
+        if nth > 0:
+            nth -= 1
             continue
         return entry
     raise SystemExit(f"kaikki has no '{pos}' lemma entry for '{lemma}'")
@@ -224,7 +230,7 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
             raise SystemExit(f"DCC headword '{headword}' not found. Close matches: {close[:5]}")
 
     kaikki_pos = item.get("kaikki_pos", item["pos"])  # Wiktionary sometimes classifies differently
-    entry = pick_entry(kaikki_entries(item["id"], refresh), kaikki_pos, item["id"])
+    entry = pick_entry(kaikki_entries(item["id"], refresh), kaikki_pos, item["id"], item.get("kaikki_nth", 0))
     # Curated lists win: Wiktionary trees contain archaic and dialect forms, so a
     # language listed in curated/words.json (even as []) replaces the automatic one.
     family = dict(item["family"])

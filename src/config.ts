@@ -34,6 +34,18 @@ export const CONFIG = {
 
   /** כמה כרטיסים לכל היותר בסבב חזרה אחד. */
   REVIEW_SESSION_SIZE: 12,
+
+  // ---- שלב 2: מבנים וייצור ----
+  /** כמה אלמנטים אפשר לקצור מהמבנים בכל יום, בסך הכול (הוחלט: כמו שיעור אחד, בערך 10). */
+  DAILY_HARVEST_CAP: 10,
+  /** כמה כל מבנה צובר לפני שצריך לקצור, לפי רמת האוהל (מקום 1 = רמה 1). */
+  STORAGE_BY_TENT_LEVEL: [0, 3, 5, 8] as readonly number[],
+  /** כל כמה שעות אפשר להשקות את העץ שוב. */
+  TREE_GROW_COOLDOWN_HOURS: 12,
+  /** כמה שלבי גדילה יש לעץ (0 = שתיל). */
+  TREE_MAX_STAGE: 3,
+  /** פי כמה המבנים מייצרים בזמן שלחש האור פועל. */
+  LIGHT_PRODUCTION_MULTIPLIER: 2,
 } as const;
 
 export const HOUR_MS = 60 * 60 * 1000;

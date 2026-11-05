@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import { CONFIG } from '../../config';
 import { downloadBackup, readBackup } from '../../storage/backup';
-import { getSave, replaceSave, useSave } from '../store';
+import { play } from '../feedback/sfx';
+import { getSave, replaceSave, updateSave, useSave } from '../store';
 
 /** Backup, game constants and credits (required by the CC BY-SA sources). */
 export function SettingsScreen() {
@@ -29,6 +30,35 @@ export function SettingsScreen() {
       <h1>הגדרות</h1>
 
       <section className="card">
+        <h2>צלילים ורטט</h2>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={save.settings.sound}
+            onChange={(e) => {
+              const sound = e.target.checked;
+              updateSave((s) => ({ ...s, settings: { ...s.settings, sound } }));
+              if (sound) window.setTimeout(() => play('correct'), 50);
+            }}
+          />
+          <span>צלילים</span>
+        </label>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={save.settings.vibration}
+            onChange={(e) => {
+              const vibration = e.target.checked;
+              updateSave((s) => ({ ...s, settings: { ...s.settings, vibration } }));
+              if (vibration) window.setTimeout(() => play('harvest'), 50);
+            }}
+          />
+          <span>רטט</span>
+        </label>
+        <p className="muted small">רטט עובד באנדרואיד. באייפון דפדפנים לא מאפשרים לאתרים לרטוט.</p>
+      </section>
+
+      <section className="card">
         <h2>גיבוי</h2>
         <p>ההתקדמות נשמרת רק במכשיר הזה. כדי לא לאבד אותה, או כדי לעבור לטלפון אחר, שמרו קובץ גיבוי.</p>
         <p className="muted small">שיעורים שהושלמו: {completed} · מילים בחזרה: {Object.keys(save.cards).filter((c) => c.startsWith('word:')).length}</p>
@@ -51,6 +81,8 @@ export function SettingsScreen() {
           <li>{CONFIG.LESSON_MISTAKES_TO_FAIL} טעויות באותו שיעור מסיימות את הניסיון בלי תגמול.</li>
           <li>אחרי {CONFIG.FAILURES_BEFORE_SUSPENSION} ניסיונות שנכשלו, רק המשימה הזאת נחה {CONFIG.SUSPENSION_HOURS} שעות. כל השאר ממשיך.</li>
           <li>המדורה שורפת יחידת עץ כל {CONFIG.FIRE_BURN_HOURS} שעות, גם כשהאפליקציה סגורה.</li>
+          <li>המבנים מייצרים אלמנטים גם כשהאפליקציה סגורה. אפשר לקצור מהם עד {CONFIG.DAILY_HARVEST_CAP} ביום, כדי שהשיעורים יישארו העיקר.</li>
+          <li>האלמנטים מסומנים בסמלים הקלאסיים: ignis △, aer △ עם קו, aqua ▽, terra ▽ עם קו, aether ★.</li>
         </ul>
       </section>
 
@@ -70,10 +102,10 @@ export function SettingsScreen() {
             חזרה מרווחת: <a href="https://github.com/open-spaced-repetition/ts-fsrs" target="_blank" rel="noreferrer">ts-fsrs</a> (MIT).
           </li>
           <li>גופנים: Frank Ruhl Libre ו-Cinzel (SIL Open Font License).</li>
-          <li>פיקסל-ארט מקורי של שועלינגו.</li>
+          <li>פיקסל-ארט וצלילים מקוריים של שועלינגו.</li>
         </ul>
       </section>
-      <p className="muted small center-text">שועלינגו · שלב 1 · חינמי לגמרי, בלי שרת, בלי חשבונות ובלי פרסומות.</p>
+      <p className="muted small center-text">שועלינגו · שלב 2 · חינמי לגמרי, בלי שרת, בלי חשבונות ובלי פרסומות.</p>
     </div>
   );
 }

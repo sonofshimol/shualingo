@@ -552,7 +552,7 @@
       "exception_reason": null,
       "element": "ignis",
       "forms": {
-        "abl.pl.m": "magnīs",
+        "abl.pl.n": "magnīs",
         "abl.sg.f": "magnā",
         "abl.sg.m": "magnō",
         "abl.sg.n": "magnō",
@@ -562,7 +562,7 @@
         "acc.sg.f": "magnam",
         "acc.sg.m": "magnum",
         "acc.sg.n": "magnum",
-        "dat.pl.m": "magnīs",
+        "dat.pl.n": "magnīs",
         "dat.sg.f": "magnae",
         "dat.sg.m": "magnō",
         "dat.sg.n": "magnō",
@@ -635,7 +635,7 @@
       "exception_reason": null,
       "element": "terra",
       "forms": {
-        "abl.pl.m": "parvīs",
+        "abl.pl.n": "parvīs",
         "abl.sg.f": "parvā",
         "abl.sg.m": "parvō",
         "abl.sg.n": "parvō",
@@ -645,7 +645,7 @@
         "acc.sg.f": "parvam",
         "acc.sg.m": "parvum",
         "acc.sg.n": "parvum",
-        "dat.pl.m": "parvīs",
+        "dat.pl.n": "parvīs",
         "dat.sg.f": "parvae",
         "dat.sg.m": "parvō",
         "dat.sg.n": "parvō",
@@ -2003,6 +2003,1368 @@
         }
       ],
       "etymology_en": "Derived from Ancient Greek αἰθήρ (aithḗr, “sky; ether”)."
+    },
+    {
+      "id": "hortus",
+      "lemma": "hortus",
+      "dictionary_form": "hortus -ī m.",
+      "pos": "noun",
+      "meaning_he": "גינה, גן",
+      "meaning_en": "garden",
+      "ipa": "[ˈhɔr.tʊs]",
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "element": "terra",
+      "forms": {
+        "abl.pl": "hortīs",
+        "abl.sg": "hortō",
+        "acc.pl": "hortōs",
+        "acc.sg": "hortum",
+        "dat.pl": "hortīs",
+        "dat.sg": "hortō",
+        "gen.pl": "hortōrum",
+        "gen.sg": "hortī",
+        "nom.pl": "hortī",
+        "nom.sg": "hortus",
+        "voc.pl": "hortī",
+        "voc.sg": "horte"
+      },
+      "family": {
+        "en": [
+          "horticulture"
+        ],
+        "he": [],
+        "note_he": "horticulture (גננות) היא 'גידול גינות': hortus + cultūra. hortus שייך לנטייה השנייה: hortus, hortum, hortō.",
+        "es": [
+          "huerto",
+          "huerta"
+        ],
+        "it": [
+          "orto"
+        ],
+        "fr": [
+          "hortillonnages",
+          "hortillon",
+          "hortelain"
+        ],
+        "pt": [
+          "horto",
+          "horta"
+        ],
+        "ca": [
+          "hort",
+          "horta"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "hortus conclusus",
+          "meaning_he": "גן נעול — מתוך שיר השירים בתרגום הלטיני: 'גן נעול אחותי כלה'"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *hortos, from Proto-Indo-European *ǵʰórtos. Cognate with Oscan 𐌇𐌞𐌓𐌆 (húrz), Ancient Greek χόρτος (khórtos)."
+    },
+    {
+      "id": "tentorium",
+      "lemma": "tentōrium",
+      "dictionary_form": "tentōrium -ī n.",
+      "pos": "noun",
+      "meaning_he": "אוהל",
+      "meaning_en": "tent",
+      "ipa": null,
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "element": "terra",
+      "forms": {
+        "abl.pl": "tentōriīs",
+        "abl.sg": "tentōriō",
+        "acc.pl": "tentōria",
+        "acc.sg": "tentōrium",
+        "dat.pl": "tentōriīs",
+        "dat.sg": "tentōriō",
+        "gen.pl": "tentōriōrum",
+        "gen.sg": "tentōriī",
+        "nom.pl": "tentōria",
+        "nom.sg": "tentōrium",
+        "voc.pl": "tentōria",
+        "voc.sg": "tentōrium"
+      },
+      "family": {
+        "en": [
+          "tent",
+          "tension",
+          "extend"
+        ],
+        "he": [],
+        "note_he": "tentōrium בא מ-tendō, למתוח: אוהל הוא בד מתוח. מאותו שורש באו tent, tension ו-extend. זו מילה בסתמי, ולכן המושא שלה זהה לנושא: tentōrium."
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nLatin tendō\nProto-Indo-European *-tōr\nProto-Italic *-tōr\nLatin -tor\nProto-Indo-European *-(i)yós\nProto-Italic *-ijos\nProto-Italic *-ios\nOld Latin -ios\nLatin -ius\nLatin -tōrius\nLatin -tōrium\nLatin tentōrium\nFrom tendō (“to stretch out, to spread out”) + -tōrium (suffix forming nouns denoting places or instruments)."
+    },
+    {
+      "id": "aedifico",
+      "lemma": "aedificō",
+      "dictionary_form": "aedificō -āre",
+      "pos": "verb",
+      "meaning_he": "לבנות",
+      "meaning_en": "to build, erect, establish",
+      "ipa": "[ae̯ˈdɪ.fɪ.koː]",
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "element": "ignis",
+      "forms": {
+        "imp.2pl": "aedificāte",
+        "imp.2sg": "aedificā",
+        "inf": "aedificāre",
+        "pres.1pl": "aedificāmus",
+        "pres.1sg": "aedificō",
+        "pres.2pl": "aedificātis",
+        "pres.2sg": "aedificās",
+        "pres.3pl": "aedificant",
+        "pres.3sg": "aedificat"
+      },
+      "family": {
+        "en": [
+          "edifice",
+          "edify"
+        ],
+        "he": [],
+        "note_he": "aedēs (בית) + faciō (לעשות): 'לעשות בית'. edifice באנגלית הוא בניין גדול ומרשים. הציווי aedificā! (בנה!) הוא הלב של כל לחשי הבנייה.",
+        "es": [
+          "edificar"
+        ],
+        "it": [
+          "edificare"
+        ],
+        "fr": [
+          "édifier"
+        ],
+        "pt": [
+          "eiviguar",
+          "edificar"
+        ],
+        "ro": [
+          "edifica"
+        ],
+        "ca": [
+          "edificar"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nLatin aedēs\nProto-Indo-European *dʰeh₁-der.\nProto-Italic *θakos\nProto-Italic *-fakos\nLatin -ficus\nProto-Indo-European *-h₂\nProto-Indo-European *-éh₂\nProto-Indo-European *-yéti\nProto-Indo-European *-eh₂yéti\nProto-Indo-European *-h₂tiinflu.\nProto-Italic *-ājō\nProto-Italic *-āō\nLatin -ō\nLatin -ficō\nLatin aedificō\nFrom aedēs (“building”) + -ficō."
+    },
+    {
+      "id": "donum",
+      "lemma": "dōnum",
+      "dictionary_form": "dōnum -ī n.",
+      "pos": "noun",
+      "meaning_he": "מתנה",
+      "meaning_en": "gift, present",
+      "ipa": "[ˈdoː.nũː]",
+      "dcc_rank": 476,
+      "dcc_group": "Social Life",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "abl.pl": "dōnīs",
+        "abl.sg": "dōnō",
+        "acc.pl": "dōna",
+        "acc.sg": "dōnum",
+        "dat.pl": "dōnīs",
+        "dat.sg": "dōnō",
+        "gen.pl": "dōnōrum",
+        "gen.sg": "dōnī",
+        "nom.pl": "dōna",
+        "nom.sg": "dōnum",
+        "voc.pl": "dōna",
+        "voc.sg": "dōnum"
+      },
+      "family": {
+        "en": [
+          "donate",
+          "donation",
+          "donor"
+        ],
+        "he": [],
+        "note_he": "dōnum היא מילה בסתמי כמו lignum. מכאן donate (לתרום) ו-donor (תורם).",
+        "es": [
+          "don"
+        ],
+        "it": [
+          "dono"
+        ],
+        "fr": [
+          "don"
+        ],
+        "pt": [
+          "dom"
+        ],
+        "ca": [
+          "do"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Timeo Danaos et dona ferentes",
+          "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות — על הסוס הטרויאני, וירגיליוס"
+        }
+      ],
+      "etymology_en": "Inherited from Archaic Latin dōnom, from Proto-Italic *dōnom, from Proto-Indo-European *déh₃nom, from *deh₃-. Cognate to Sanskrit दान (dā́na)."
+    },
+    {
+      "id": "amicus",
+      "lemma": "amīcus",
+      "dictionary_form": "amīcus -ī m.",
+      "pos": "noun",
+      "meaning_he": "חבר, ידיד",
+      "meaning_en": "friendly; (as subst.) friend",
+      "ipa": "[aˈmiː.kʊs]",
+      "dcc_rank": 198,
+      "dcc_group": "Personality Traits/Characteristics",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "amīcīs",
+        "abl.sg": "amīcō",
+        "acc.pl": "amīcōs",
+        "acc.sg": "amīcum",
+        "dat.pl": "amīcīs",
+        "dat.sg": "amīcō",
+        "gen.pl": "amīcōrum",
+        "gen.sg": "amīcī",
+        "nom.pl": "amīcī",
+        "nom.sg": "amīcus",
+        "voc.pl": "amīcī",
+        "voc.sg": "amīce"
+      },
+      "family": {
+        "en": [
+          "amicable",
+          "amiable"
+        ],
+        "he": [],
+        "note_he": "amīcus קרוב ל-amō (לאהוב): חבר הוא מי שאוהבים. בספרדית amigo, באיטלקית amico, בצרפתית ami.",
+        "es": [
+          "amigo"
+        ],
+        "it": [
+          "amico"
+        ],
+        "pt": [
+          "amigo"
+        ],
+        "ro": [
+          "amic"
+        ],
+        "ca": [
+          "amic"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Amicus certus in re incerta cernitur",
+          "meaning_he": "חבר אמת נראה בעת צרה — אניוס"
+        }
+      ],
+      "etymology_en": "From amō (“to love”) + -īcus, with the ending perhaps derived from Proto-Indo-European *-ih₁ (instrumental suffix) + *-kos, as also in pudīcus, mendīcus."
+    },
+    {
+      "id": "deus",
+      "lemma": "deus",
+      "dictionary_form": "deus -ī m.",
+      "pos": "noun",
+      "meaning_he": "אל",
+      "meaning_en": "god; goddess",
+      "ipa": "[ˈde.ʊs]",
+      "dcc_rank": 42,
+      "dcc_group": "Religion",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "dīs",
+        "abl.sg": "deō",
+        "acc.pl": "deōs",
+        "acc.sg": "deum",
+        "dat.pl": "dīs",
+        "dat.sg": "deō",
+        "gen.pl": "deōrum",
+        "gen.sg": "deī",
+        "nom.pl": "dī",
+        "nom.sg": "deus",
+        "voc.pl": "dī",
+        "voc.sg": "deus"
+      },
+      "family": {
+        "en": [
+          "deity",
+          "adieu"
+        ],
+        "he": [],
+        "note_he": "צורת הזכר של dea (אלה). בצרפתית adieu הוא 'לאל' (à Dieu) — ברכת פרידה.",
+        "es": [
+          "dios"
+        ],
+        "it": [
+          "dio",
+          "deo",
+          "deh"
+        ],
+        "fr": [
+          "dieu"
+        ],
+        "pt": [
+          "deus"
+        ],
+        "ro": [
+          "zeu",
+          "zău"
+        ],
+        "ca": [
+          "déu"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Deo gratias",
+          "meaning_he": "תודה לאל"
+        }
+      ],
+      "etymology_en": "From Old Latin deivos, from Proto-Italic *deiwos, from Proto-Indo-European *deywós. An o-stem derivative from *dyew- (“sky, heaven”), from which also diēs and Iuppiter.\nDetails\nDoublet of dīvus: dẹ̄vos, -om, -ōs > dẹ̄os, -om, -ōs with regular loss of -v- before a rounded vowel; it was also lost between identical vowels, followed by contraction: *dẹ̄vẹ̄(s) > dī(s). As a result, the close -ẹ̄- escaped the regular raising to /ī/ of urban (but not dialectal) Latin, instead merging with /ē/, which itself underwent raising. The remaining genitive singular *dī was regularised to deī, while the vocative became part of the paradigm of the newly-reshaped dīvus. de- was later analogically introduced into the plural; the form diī(s) is absent from Plautus, and might have been reincorporated from a contraction of dīvī (with the same condition as before), or even be purely orthographic.\nCognates with Ancient Greek Ζεύς (Zeús), Διεύς (Dieús)—archaic form of Ζεύς, Sanskrit देव (devá), Avestan 𐬛𐬀𐬉𐬎𐬎𐬀 (daēuua), Welsh duw, Lithuanian dievas, Latvian dievs, Persian دیو (div, “demon”).\nDespite its superficial similarity in form and meaning, not related to Ancient Greek θεός (theós) — the Latin cognate of the latter is Latin fānum."
+    },
+    {
+      "id": "bonus",
+      "lemma": "bonus",
+      "dictionary_form": "bonus -a -um",
+      "pos": "adj",
+      "meaning_he": "טוב",
+      "meaning_en": "good",
+      "ipa": "[ˈbɔ.nʊs]",
+      "dcc_rank": 68,
+      "dcc_group": "Personality Traits/Characteristics",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "abl.pl.n": "bonīs",
+        "abl.sg.f": "bonā",
+        "abl.sg.m": "bonō",
+        "abl.sg.n": "bonō",
+        "acc.pl.f": "bonās",
+        "acc.pl.m": "bonōs",
+        "acc.pl.n": "bona",
+        "acc.sg.f": "bonam",
+        "acc.sg.m": "bonum",
+        "acc.sg.n": "bonum",
+        "dat.pl.n": "bonīs",
+        "dat.sg.f": "bonae",
+        "dat.sg.m": "bonō",
+        "dat.sg.n": "bonō",
+        "gen.pl.f": "bonārum",
+        "gen.pl.m": "bonōrum",
+        "gen.pl.n": "bonōrum",
+        "gen.sg.f": "bonae",
+        "gen.sg.m": "bonī",
+        "gen.sg.n": "bonī",
+        "nom.pl.f": "bonae",
+        "nom.pl.m": "bonī",
+        "nom.pl.n": "bona",
+        "nom.sg.f": "bona",
+        "nom.sg.m": "bonus",
+        "nom.sg.n": "bonum",
+        "voc.pl.f": "bonae",
+        "voc.pl.m": "bonī",
+        "voc.pl.n": "bona",
+        "voc.sg.f": "bona",
+        "voc.sg.m": "bone",
+        "voc.sg.n": "bonum"
+      },
+      "family": {
+        "en": [
+          "bonus",
+          "bona fide",
+          "bonanza"
+        ],
+        "he": [
+          "בונוס"
+        ],
+        "note_he": "בונוס הוא פשוט 'טוב' בלטינית: תוספת טובה. שם תואר משנה סיומת: hortus bonus, dōnum bonum.",
+        "es": [
+          "bono",
+          "bonus"
+        ],
+        "it": [
+          "bono",
+          "buono",
+          "bonus"
+        ],
+        "fr": [
+          "bon"
+        ],
+        "pt": [
+          "bom",
+          "bô",
+          "bão"
+        ],
+        "ro": [
+          "bun"
+        ],
+        "ca": [
+          "bo"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "bona fide",
+          "meaning_he": "בתום לב — 'באמונה טובה'"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *dewh₂-der.?\nProto-Italic *dwenos\nArchaic Latin duenos\nOld Latin duonus\nLatin bonus\nInherited from Old Latin duonus, from earlier duenos, from Proto-Italic *dwenos, further etymology uncertain. Possibly cognate with beō (“to bless, gladden”). Possible roots include:\n* Proto-Indo-European *dewh₂- (“to join, fit together”); compare Gothic 𐍄𐌰𐌿𐌾𐌰𐌽 (taujan, “to do, make”) and Ancient Greek δύναμαι (dúnamai, “to be able”).\n* Proto-Indo-European *deh₃-u, from *deh₃- (“to give”).\n* Proto-Indo-European *dew- (“to show favor, revere”)\n* Proto-Indo-European *dwey- (“to fear”), source of Ancient Greek δέος (déos), δεινός (deinós), δειλός (deilós).\nCompare the change from duellum to bellum, and from duis to bis."
+    },
+    {
+      "id": "novus",
+      "lemma": "novus",
+      "dictionary_form": "novus -a -um",
+      "pos": "adj",
+      "meaning_he": "חדש",
+      "meaning_en": "new",
+      "ipa": "[ˈnɔ.wʊs]",
+      "dcc_rank": 139,
+      "dcc_group": "Time",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl.n": "novīs",
+        "abl.sg.f": "novā",
+        "abl.sg.m": "novō",
+        "abl.sg.n": "novō",
+        "acc.pl.f": "novās",
+        "acc.pl.m": "novōs",
+        "acc.pl.n": "nova",
+        "acc.sg.f": "novam",
+        "acc.sg.m": "novum",
+        "acc.sg.n": "novum",
+        "dat.pl.n": "novīs",
+        "dat.sg.f": "novae",
+        "dat.sg.m": "novō",
+        "dat.sg.n": "novō",
+        "gen.pl.f": "novārum",
+        "gen.pl.m": "novōrum",
+        "gen.pl.n": "novōrum",
+        "gen.sg.f": "novae",
+        "gen.sg.m": "novī",
+        "gen.sg.n": "novī",
+        "nom.pl.f": "novae",
+        "nom.pl.m": "novī",
+        "nom.pl.n": "nova",
+        "nom.sg.f": "nova",
+        "nom.sg.m": "novus",
+        "nom.sg.n": "novum",
+        "voc.pl.f": "novae",
+        "voc.pl.m": "novī",
+        "voc.pl.n": "nova",
+        "voc.sg.f": "nova",
+        "voc.sg.m": "nove",
+        "voc.sg.n": "novum"
+      },
+      "family": {
+        "en": [
+          "novel",
+          "novice",
+          "innovation",
+          "renovate",
+          "nova"
+        ],
+        "he": [
+          "אינובציה",
+          "רנובציה"
+        ],
+        "note_he": "nova בשמיים היא 'כוכב חדש' שפתאום מבהיק. novice הוא מתחיל, 'חדש'.",
+        "es": [
+          "nuevo"
+        ],
+        "it": [
+          "novo",
+          "nuovo"
+        ],
+        "pt": [
+          "novo"
+        ],
+        "ro": [
+          "nou"
+        ],
+        "ca": [
+          "nou"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Novus ordo seclorum",
+          "meaning_he": "סדר חדש של הדורות — כתוב על שטר הדולר"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *nowos, from Proto-Indo-European *néwos. Cognates include Old English nīewe (English new), Ancient Greek νέος (néos), Proto-Slavic *novъ, and Sanskrit नव (náva).\nProto-Italic *nowos fails to become Latin *nuus due to specific conditions in the development of Latin, namely -o-(w)- being in the first syllable, whereas *dē nowōd (“anew”) became dēnuō."
+    },
+    {
+      "id": "liber",
+      "lemma": "liber",
+      "dictionary_form": "liber librī m.",
+      "pos": "noun",
+      "meaning_he": "ספר",
+      "meaning_en": "book",
+      "ipa": "[ˈlɪ.bɛr]",
+      "dcc_rank": 901,
+      "dcc_group": "Writing/Poetry",
+      "exception_reason": null,
+      "element": "aer",
+      "forms": {
+        "abl.pl": "librīs",
+        "abl.sg": "librō",
+        "acc.pl": "librōs",
+        "acc.sg": "librum",
+        "dat.pl": "librīs",
+        "dat.sg": "librō",
+        "gen.pl": "librōrum",
+        "gen.sg": "librī",
+        "nom.pl": "librī",
+        "nom.sg": "liber",
+        "voc.pl": "librī",
+        "voc.sg": "liber"
+      },
+      "family": {
+        "en": [
+          "library",
+          "librarian",
+          "libretto"
+        ],
+        "he": [
+          "ליברית"
+        ],
+        "note_he": "library באה מ-liber. אבל ספרייה בלטינית היא דווקא bibliothēca, מיוונית. במקור liber הוא הקליפה הפנימית של העץ, שעליה כתבו פעם. הגזע הוא libr-: librum, librō.",
+        "es": [
+          "libro"
+        ],
+        "it": [
+          "libro"
+        ],
+        "fr": [
+          "liber",
+          "livre"
+        ],
+        "pt": [
+          "livro"
+        ],
+        "ca": [
+          "llibre"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "liber incantationum",
+          "meaning_he": "ספר הלחשים — הספר של השועלה, שאליו נכנסים הלחשים שלה"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *lewbʰ-\nProto-Indo-European *-rós\nProto-Indo-European *lubʰrós\nProto-Italic *luβros\nLatin liber\nInherited from Proto-Italic *luβros, from Proto-Indo-European *lubʰ-ró-s, from *lewbʰ- (“to peel, cut off, harm”), perhaps from *lew- (“to cut off”). Cognate with Old Church Slavonic лꙋбъ (lubŭ, “bark of a tree”), Russian луб (lub, “the inner bark of a tree”), Lithuanian lùpti (“to peel, to shell”). See also English leaf, lobby, lodge, Ancient Greek λυπή (lupḗ, “pain”)."
+    },
+    {
+      "id": "fons",
+      "lemma": "fōns",
+      "dictionary_form": "fōns fontis m.",
+      "pos": "noun",
+      "meaning_he": "מעיין",
+      "meaning_en": "spring, fountain",
+      "ipa": "[ˈfõːs]",
+      "dcc_rank": 706,
+      "dcc_group": "Earth and Water",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "abl.pl": "fontibus",
+        "abl.sg": "fonte",
+        "acc.pl": "fontēs",
+        "acc.sg": "fontem",
+        "dat.pl": "fontibus",
+        "dat.sg": "fontī",
+        "gen.pl": "fontium",
+        "gen.sg": "fontis",
+        "nom.pl": "fontēs",
+        "nom.sg": "fōns",
+        "voc.pl": "fontēs",
+        "voc.sg": "fōns"
+      },
+      "family": {
+        "en": [
+          "fountain",
+          "font"
+        ],
+        "he": [],
+        "note_he": "fountain באה מ-fōns. שימו לב לצורות: fōns, אבל fontem ו-fontī — הגזע האמיתי הוא font-.",
+        "es": [
+          "fuente"
+        ],
+        "it": [
+          "fonte"
+        ],
+        "fr": [
+          "fonts"
+        ],
+        "pt": [
+          "fonte"
+        ],
+        "ca": [
+          "font"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "fons et origo",
+          "meaning_he": "המקור והמוצא של משהו"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *fontis, from earlier *θontis, from a Proto-Indo-European root cognate with Sanskrit धन्वति (dhanvati, “flows, runs”), perhaps from Proto-Indo-European *dʰónh₂-ti-s, from *dʰenh₂- (“to flow”)."
+    },
+    {
+      "id": "turris",
+      "lemma": "turris",
+      "dictionary_form": "turris -is f.",
+      "pos": "noun",
+      "meaning_he": "מגדל",
+      "meaning_en": "tower, especially a military tower for siege, advanced to the walls on wheels, or one on a wall for defense; loosely used of a high building",
+      "ipa": "[ˈtʊr.rɪs]",
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "element": "terra",
+      "forms": {
+        "abl.pl": "turribus",
+        "abl.sg": "turrī",
+        "acc.pl": "turrēs",
+        "acc.sg": "turrim",
+        "dat.pl": "turribus",
+        "dat.sg": "turrī",
+        "gen.pl": "turrium",
+        "gen.sg": "turris",
+        "nom.pl": "turrēs",
+        "nom.sg": "turris",
+        "voc.pl": "turrēs",
+        "voc.sg": "turris"
+      },
+      "family": {
+        "en": [
+          "tower",
+          "turret"
+        ],
+        "he": [],
+        "note_he": "tower ו-turret באים מ-turris. Turris הוא גם שמו של אחד מקלפי הטארוט (המגדל).",
+        "es": [
+          "torre"
+        ],
+        "it": [
+          "torre"
+        ],
+        "fr": [
+          "tour"
+        ],
+        "pt": [
+          "torre"
+        ],
+        "ro": [
+          "turn"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "turris eburnea",
+          "meaning_he": "מגדל השן — מתוך שיר השירים: 'צווארך כמגדל השן'"
+        }
+      ],
+      "etymology_en": "Either borrowed from Ancient Greek τύρρις (túrrhis) (Hesychius), τύρσις (túrsis), itself from a Mediterranean substrate, or directly taken from said substrate language. In either case, borrowed alongside Oscan 𐌕𐌉𐌖𐌓𐌓𐌝 (tiurrí). Compare Ancient Greek Τυρρηνός (Turrhēnós, “Etruscan”) and the tribe Taurini."
+    },
+    {
+      "id": "arbor",
+      "lemma": "arbor",
+      "dictionary_form": "arbor arboris f.",
+      "pos": "noun",
+      "meaning_he": "עץ (חי)",
+      "meaning_en": "tree",
+      "ipa": "[ˈar.bɔr]",
+      "dcc_rank": 468,
+      "dcc_group": "Animals/Plants",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl": "arboribus",
+        "abl.sg": "arbore",
+        "acc.pl": "arborēs",
+        "acc.sg": "arborem",
+        "dat.pl": "arboribus",
+        "dat.sg": "arborī",
+        "gen.pl": "arborum",
+        "gen.sg": "arboris",
+        "nom.pl": "arborēs",
+        "nom.sg": "arbor",
+        "voc.pl": "arborēs",
+        "voc.sg": "arbor"
+      },
+      "family": {
+        "en": [
+          "arbor",
+          "arboretum",
+          "arboreal"
+        ],
+        "he": [],
+        "note_he": "arbor הוא עץ חי שגדל, לעומת lignum, שהוא עץ כחומר. arboretum הוא גן עצים.",
+        "it": [
+          "arbore",
+          "albero",
+          "arbero"
+        ],
+        "ro": [
+          "arbure",
+          "arbore"
+        ],
+        "ca": [
+          "arbre"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "arbor vitae",
+          "meaning_he": "עץ החיים"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *h₃er-\nProto-Indo-European *dʰeh₁-\nProto-Indo-European *-eti\nProto-Indo-European *-dʰh₁eti\nProto-Indo-European *-dʰeti\nProto-Indo-European *h₃érdʰeti?\nProto-Indo-European *h₃erdʰ-\nProto-Indo-European *-os\nProto-Indo-European *-s\nProto-Indo-European *-ōs\nProto-Indo-European *h₃r̥dʰōs\nProto-Italic *arðōs\nOld Latin arbōs\nLatin arbor\nBy rhotacism from Old Latin arbōs, from Proto-Italic *arðōs, from Proto-Indo-European *h₃r̥dʰ-ōs, from *h₃erdʰ- (“high; to grow”), meaning \"high upright plant\". Cognate with arduus (“high”). For whatever reason, Schrijver considers the connection \"doubtful.\""
+    },
+    {
+      "id": "lux",
+      "lemma": "lūx",
+      "dictionary_form": "lūx lūcis f.",
+      "pos": "noun",
+      "meaning_he": "אור",
+      "meaning_en": "light of day",
+      "ipa": "[ˈɫuːks]",
+      "dcc_rank": 299,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "abl.pl": "lūcibus",
+        "abl.sg": "lūce",
+        "acc.pl": "lūcēs",
+        "acc.sg": "lūcem",
+        "dat.pl": "lūcibus",
+        "dat.sg": "lūcī",
+        "gen.pl": "lūcum",
+        "gen.sg": "lūcis",
+        "nom.pl": "lūcēs",
+        "nom.sg": "lūx",
+        "voc.pl": "lūcēs",
+        "voc.sg": "lūx"
+      },
+      "family": {
+        "en": [
+          "lucid",
+          "elucidate",
+          "translucent",
+          "Lucifer"
+        ],
+        "he": [
+          "לוקס",
+          "לוציפר"
+        ],
+        "note_he": "Lucifer הוא 'נושא האור' (lūx + ferō), כינוי עתיק לכוכב השחר. הגזע הוא lūc-: lūcem, lūcī.",
+        "es": [
+          "luz"
+        ],
+        "it": [
+          "luce"
+        ],
+        "pt": [
+          "luz"
+        ],
+        "ro": [
+          "luce"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Fiat lux",
+          "meaning_he": "יהי אור — מתוך ספר בראשית בתרגום הלטיני"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *lewk-\nProto-Indo-European *-s\nProto-Indo-European *léwks\nProto-Italic *louks\nLatin lux\nFrom Proto-Italic *louks, from Proto-Indo-European *léwks. Cognates include Ancient Greek λευκός (leukós, “white, blank, light, bright, clear”), Ancient Greek *λύκη (*lúkē, “light, morning twilight”), Sanskrit रोचते (rocate) and Old English lēoht (English light (noun))."
+    },
+    {
+      "id": "nox",
+      "lemma": "nox",
+      "dictionary_form": "nox noctis f.",
+      "pos": "noun",
+      "meaning_he": "לילה",
+      "meaning_en": "night",
+      "ipa": "[ˈnɔks]",
+      "dcc_rank": 119,
+      "dcc_group": "Lengths of Time",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "abl.pl": "noctibus",
+        "abl.sg": "nocte",
+        "acc.pl": "noctēs",
+        "acc.sg": "noctem",
+        "dat.pl": "noctibus",
+        "dat.sg": "noctī",
+        "gen.pl": "noctium",
+        "gen.sg": "noctis",
+        "nom.pl": "noctēs",
+        "nom.sg": "nox",
+        "voc.pl": "noctēs",
+        "voc.sg": "nox"
+      },
+      "family": {
+        "en": [
+          "nocturnal",
+          "nocturne",
+          "equinox"
+        ],
+        "he": [
+          "נוקטורן"
+        ],
+        "note_he": "equinox הוא 'לילה שווה' (aequus + nox): היום שבו היום והלילה שווים. הגזע הוא noct-: noctem.",
+        "es": [
+          "noche"
+        ],
+        "it": [
+          "notte"
+        ],
+        "pt": [
+          "noite",
+          "noute"
+        ],
+        "ro": [
+          "noapte"
+        ],
+        "ca": [
+          "nit"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "Etymology tree\nProto-Indo-European *nókʷts\nProto-Italic *nok⁽ʷ⁾ts\nLatin nox\nInherited from Proto-Italic *nok⁽ʷ⁾ts, from Proto-Indo-European *nókʷts. Cognate with Ancient Greek νύξ (núx), Sanskrit नक्त् (nákt), Old English niht (whence English night), Proto-Slavic *noťь."
+    },
+    {
+      "id": "facio",
+      "lemma": "faciō",
+      "dictionary_form": "faciō facere fēcī factum",
+      "pos": "verb",
+      "meaning_he": "לעשות",
+      "meaning_en": "do, make",
+      "ipa": "[ˈfa.ki.oː]",
+      "dcc_rank": 32,
+      "dcc_group": "Making/Doing",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "imp.2pl": "facite",
+        "imp.2sg": "fac",
+        "inf": "facere",
+        "pres.1pl": "facimus",
+        "pres.1sg": "faciō",
+        "pres.2pl": "facitis",
+        "pres.2sg": "facis",
+        "pres.3pl": "faciunt",
+        "pres.3sg": "facit"
+      },
+      "family": {
+        "en": [
+          "fact",
+          "factory",
+          "faculty",
+          "manufacture",
+          "effect"
+        ],
+        "he": [
+          "פקטור",
+          "פקולטה"
+        ],
+        "note_he": "הציווי של faciō קצר במיוחד: fac! (עשה!). manufacture הוא 'עשוי ביד' (manus + faciō).",
+        "es": [
+          "hacer"
+        ],
+        "it": [
+          "fare",
+          "facere"
+        ],
+        "pt": [
+          "fazer"
+        ],
+        "ro": [
+          "face",
+          "facere"
+        ],
+        "ca": [
+          "fer"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Facta, non verba",
+          "meaning_he": "מעשים, לא מילים"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *dʰeh₁-\nProto-Indo-European *dʰeh₁k-\nProto-Indo-European *-yéti\nProto-Indo-European *dʰh₁kyéti\nProto-Italic *θakjō\nProto-Italic *fakjō\nLatin faciō\nInherited from Proto-Italic *fakjō, from Proto-Indo-European *dʰh₁k-yé-ti (“to put, place”). Doublet of -ficō.\nThe passive voice is suppletively provided by the etymologically unrelated fīō (“to become”)."
+    },
+    {
+      "id": "bibliotheca",
+      "lemma": "bibliothēca",
+      "dictionary_form": "bibliothēca -ae f.",
+      "pos": "noun",
+      "meaning_he": "ספרייה",
+      "meaning_en": "a library (room for books or collection of books)",
+      "ipa": "[bɪ.bli.ɔˈtʰeː.ka]",
+      "dcc_rank": null,
+      "dcc_group": null,
+      "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
+      "element": "aer",
+      "forms": {
+        "abl.pl": "bibliothēcīs",
+        "abl.sg": "bibliothēcā",
+        "acc.pl": "bibliothēcās",
+        "acc.sg": "bibliothēcam",
+        "dat.pl": "bibliothēcīs",
+        "dat.sg": "bibliothēcae",
+        "gen.pl": "bibliothēcārum",
+        "gen.sg": "bibliothēcae",
+        "nom.pl": "bibliothēcae",
+        "nom.sg": "bibliothēca",
+        "voc.pl": "bibliothēcae",
+        "voc.sg": "bibliothēca"
+      },
+      "family": {
+        "en": [
+          "bibliography",
+          "Bible"
+        ],
+        "he": [
+          "ביבליוגרפיה"
+        ],
+        "note_he": "מילה שהלטינית שאלה מיוונית: biblion (ספר) + thēkē (מקום אחסון). גם Bible, 'הספרים', מאותו שורש.",
+        "es": [
+          "biblioteca"
+        ],
+        "it": [
+          "biblioteca"
+        ],
+        "fr": [
+          "bibliothèque"
+        ],
+        "pt": [
+          "biblioteca"
+        ],
+        "ro": [
+          "bibliotecă"
+        ],
+        "ca": [
+          "biblioteca"
+        ]
+      },
+      "expressions": [],
+      "etymology_en": "From Ancient Greek βῐβλῐοθήκη (bĭblĭothḗkē, “library”), from βῐβλῐ́ον (bĭblĭ́on) + θήκη (thḗkē)."
+    },
+    {
+      "id": "cresco",
+      "lemma": "crēscō",
+      "dictionary_form": "crēscō crēscere crēvī crētum",
+      "pos": "verb",
+      "meaning_he": "לגדול",
+      "meaning_en": "grow, increase",
+      "ipa": "[ˈkreːs.koː]",
+      "dcc_rank": 609,
+      "dcc_group": "Animals/Plants",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "imp.2pl": "crēscite",
+        "imp.2sg": "crēsce",
+        "inf": "crēscere",
+        "pres.1pl": "crēscimus",
+        "pres.1sg": "crēscō",
+        "pres.2pl": "crēscitis",
+        "pres.2sg": "crēscis",
+        "pres.3pl": "crēscunt",
+        "pres.3sg": "crēscit"
+      },
+      "family": {
+        "en": [
+          "crescent",
+          "increase",
+          "crescendo"
+        ],
+        "he": [
+          "קרשנדו",
+          "קרואסון"
+        ],
+        "note_he": "קרואסון נקרא כך בגלל צורת הסהר: ירח 'גדל' (crescent). crescendo במוזיקה הוא 'מתגבר'. הציווי: crēsce! (גדל!).",
+        "es": [
+          "crecer"
+        ],
+        "it": [
+          "crescere",
+          "discrescere"
+        ],
+        "fr": [
+          "décroître"
+        ],
+        "pt": [
+          "crescer"
+        ],
+        "ro": [
+          "crește",
+          "creștere"
+        ],
+        "ca": [
+          "créixer"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Crescit eundo",
+          "meaning_he": "גדל ככל שהוא הולך — לוקרטיוס"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *ḱer-\nProto-Indo-European *-sḱéti\nProto-Indo-European *ḱreh₁-sḱéti\nLatin crēscō\nInherited from Proto-Indo-European *ḱreh₁-sḱéti, from the root *ḱer- (“to grow, become bigger”), whence also Latin creō, as well as perhaps Proto-Slavic *krěti (“to intensify”)."
+    },
+    {
+      "id": "multus",
+      "lemma": "multus",
+      "dictionary_form": "multus -a -um",
+      "pos": "adj",
+      "meaning_he": "הרבה, רב",
+      "meaning_en": "much, many; multō, by far",
+      "ipa": "[ˈmʊɫ.tʊs]",
+      "dcc_rank": 43,
+      "dcc_group": "Measurement",
+      "exception_reason": null,
+      "element": "terra",
+      "forms": {
+        "abl.pl.n": "multīs",
+        "abl.sg.f": "multā",
+        "abl.sg.m": "multō",
+        "abl.sg.n": "multō",
+        "acc.pl.f": "multās",
+        "acc.pl.m": "multōs",
+        "acc.pl.n": "multa",
+        "acc.sg.f": "multam",
+        "acc.sg.m": "multum",
+        "acc.sg.n": "multum",
+        "dat.pl.n": "multīs",
+        "dat.sg.f": "multae",
+        "dat.sg.m": "multō",
+        "dat.sg.n": "multō",
+        "gen.pl.f": "multārum",
+        "gen.pl.m": "multōrum",
+        "gen.pl.n": "multōrum",
+        "gen.sg.f": "multae",
+        "gen.sg.m": "multī",
+        "gen.sg.n": "multī",
+        "nom.pl.f": "multae",
+        "nom.pl.m": "multī",
+        "nom.pl.n": "multa",
+        "nom.sg.f": "multa",
+        "nom.sg.m": "multus",
+        "nom.sg.n": "multum",
+        "voc.pl.f": "multae",
+        "voc.pl.m": "multī",
+        "voc.pl.n": "multa",
+        "voc.sg.f": "multa",
+        "voc.sg.m": "multe",
+        "voc.sg.n": "multum"
+      },
+      "family": {
+        "en": [
+          "multiply",
+          "multitude"
+        ],
+        "he": [
+          "מולטימדיה"
+        ],
+        "note_he": "ברבים: multī, multae, multa. multa ligna = הרבה עצים (ligna היא צורת הרבים של lignum).",
+        "es": [
+          "mucho",
+          "muy"
+        ],
+        "it": [
+          "molto"
+        ],
+        "fr": [
+          "moult"
+        ],
+        "pt": [
+          "muito",
+          "mui"
+        ],
+        "ro": [
+          "mult"
+        ],
+        "ca": [
+          "molt"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Non multa, sed multum",
+          "meaning_he": "לא דברים רבים, אלא הרבה — איכות ולא כמות"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *moltos, with further origin uncertain. According to De Vaan, *moltos has been connected with a possible Proto-Indo-European form *ml̥tós, from the root *melh₃- (“good, big”), which would link it to Ancient Greek μάλα (mála, “very, much”) and perhaps Latvian milns (“very many”). However, this derivation remains speculative and is not universally accepted. Alternatively, the linguist Blanca María Prósper proposes a possible derivation from Proto-Indo-European *ml̥h₃-tόs, from *melh₃-, whence also Ancient Greek βλώσκω (blṓskō). In this scenario, the term could be connected to Venetic names such as Venetic Moltisa. This theory does, however, require an unusual development, as the expected outcome of Proto-Indo-European *ml̥h₃-tόs in Latin would be *mlātus (see lātus). Such an issue, however, can be remedied provided that Prósper's proposal for a diveregent treatment of *ClHC sequences in a labial environment is accepted."
+    },
+    {
+      "id": "muto",
+      "lemma": "mūtō",
+      "dictionary_form": "mūtō -āre",
+      "pos": "verb",
+      "meaning_he": "לשנות",
+      "meaning_en": "change",
+      "ipa": "[ˈmuː.toː]",
+      "dcc_rank": 315,
+      "dcc_group": "Making/Doing",
+      "exception_reason": null,
+      "element": "aether",
+      "forms": {
+        "imp.2pl": "mūtāte",
+        "imp.2sg": "mūtā",
+        "inf": "mūtāre",
+        "pres.1pl": "mūtāmus",
+        "pres.1sg": "mūtō",
+        "pres.2pl": "mūtātis",
+        "pres.2sg": "mūtās",
+        "pres.3pl": "mūtant",
+        "pres.3sg": "mūtat"
+      },
+      "family": {
+        "en": [
+          "mutate",
+          "mutation",
+          "commute"
+        ],
+        "he": [
+          "מוטציה",
+          "מוטנט"
+        ],
+        "note_he": "מוטציה בביולוגיה היא 'שינוי'. בלחש Mē mūtā! השועלה מבקשת: 'שנה אותי!' — וכך היא עולה בדרגה.",
+        "es": [
+          "mudar",
+          "mutar"
+        ],
+        "it": [
+          "mutare"
+        ],
+        "fr": [
+          "muer",
+          "muter"
+        ],
+        "pt": [
+          "mudar",
+          "mutar"
+        ],
+        "ro": [
+          "muta",
+          "mutare"
+        ],
+        "ca": [
+          "mudar",
+          "mutar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Tempora mutantur, et nos mutamur in illis",
+          "meaning_he": "הזמנים משתנים, ואנחנו משתנים בתוכם"
+        }
+      ],
+      "etymology_en": "Etymology tree\nProto-Indo-European *mey-?\nProto-Indo-European *meyth₂-der.\nLatin mūtō\nDerived from Proto-Indo-European *meyth₂- (“to exchange”)."
+    },
+    {
+      "id": "sol",
+      "lemma": "sōl",
+      "dictionary_form": "sōl sōlis m.",
+      "pos": "noun",
+      "meaning_he": "שמש",
+      "meaning_en": "sun",
+      "ipa": "[ˈsoːɫ]",
+      "dcc_rank": 320,
+      "dcc_group": "Air and Fire",
+      "exception_reason": null,
+      "element": "ignis",
+      "forms": {
+        "abl.pl": "sōlibus",
+        "abl.sg": "sōle",
+        "acc.pl": "sōlēs",
+        "acc.sg": "sōlem",
+        "dat.pl": "sōlibus",
+        "dat.sg": "sōlī",
+        "gen.pl": "sōlum",
+        "gen.sg": "sōlis",
+        "nom.pl": "sōlēs",
+        "nom.sg": "sōl",
+        "voc.pl": "sōlēs",
+        "voc.sg": "sōl"
+      },
+      "family": {
+        "en": [
+          "solar",
+          "solstice",
+          "parasol"
+        ],
+        "he": [
+          "סולארי"
+        ],
+        "note_he": "solstice הוא 'השמש עומדת' (sōl + sistō): היום הארוך או הקצר בשנה. Sol הוא גם קלף טארוט.",
+        "es": [
+          "sol"
+        ],
+        "it": [
+          "sole"
+        ],
+        "ro": [
+          "soare"
+        ],
+        "ca": [
+          "sol"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Sol invictus",
+          "meaning_he": "השמש הבלתי מנוצחת"
+        }
+      ],
+      "etymology_en": "Certainly inherited from the Proto-Indo-European word for \"sun,\" which might have had a form like *sóh₂wl̥ (see there for alternative reconstructions). The development of the Latin form and the exact reconstruction of the PIE word is disputed.\nThe only attested cognate within the Italic branch is Oscan 𐌔𐌖𐌋𐌄𐌉𐌔 (suleis) (genitive singular), which may represent underlying *sōl or *sūl. In the former case, the term would be identical to the Latin word and would then support reconstructing the vowel *ō at the Proto-Italic stage. Poccetti 2016, following a suggestion by V. Martzlof, indicates that both words could be derived from Proto-Italic *swōl, from Proto-Indo-European *sh₂wōl. If, however, the Oscan form is taken as *sūl, then it may reflect Proto-Indo-European *sh₂ul and the Latin /ō/ would presumably reflect an independent development.\nDe Vaan and Sihler have both proposed theories regarding the origin of this Latin word and the reconstruction of the PIE term, though they did so prior to the discovery of the Oscan evidence:\n* According to De Vaan, perhaps inherited from Proto-Indo-European *séh₂ul ~ *sh₂wéns. However, per De Vaan, such a PIE term is expected to yield Latin **saul and a zero-grade sequence **sh₂ul should have produced **sūl. To remedy this issue, Frederick Kortlandt and Robert Beekes have suggested that the unusual vocalism is the result of a particular development conditioned by the -l.\n* Sihler suggests that a pre-form of the shape *suh₂el yielded Proto-Italic *suwal, whence Old Latin *suwol and later *suol, which perhaps then contracted to sōl. Sihler compares this development to the shift of *swo- to so- as in soror."
+    },
+    {
+      "id": "vita",
+      "lemma": "vīta",
+      "dictionary_form": "vīta -ae f.",
+      "pos": "noun",
+      "meaning_he": "חיים",
+      "meaning_en": "life",
+      "ipa": "[ˈwiː.ta]",
+      "dcc_rank": 87,
+      "dcc_group": "Life and Being",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "abl.pl": "vītīs",
+        "abl.sg": "vītā",
+        "acc.pl": "vītās",
+        "acc.sg": "vītam",
+        "dat.pl": "vītīs",
+        "dat.sg": "vītae",
+        "gen.pl": "vītārum",
+        "gen.sg": "vītae",
+        "nom.pl": "vītae",
+        "nom.sg": "vīta",
+        "voc.pl": "vītae",
+        "voc.sg": "vīta"
+      },
+      "family": {
+        "en": [
+          "vital",
+          "vitamin",
+          "vitality"
+        ],
+        "he": [
+          "ויטמין",
+          "ויטלי"
+        ],
+        "note_he": "ויטמין הוא 'חומר של חיים'.",
+        "es": [
+          "vida"
+        ],
+        "it": [
+          "vita"
+        ],
+        "fr": [
+          "vie"
+        ],
+        "pt": [
+          "vida"
+        ],
+        "ro": [
+          "vită"
+        ],
+        "ca": [
+          "vida"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "curriculum vitae",
+          "meaning_he": "מהלך החיים — קורות חיים"
+        }
+      ],
+      "etymology_en": "From Proto-Italic *gʷītā. Possibly corresponds to a derivative of Proto-Indo-European *gʷih₃wo-teh₂ (compare Ancient Greek βίοτος (bíotos, “life”), Old Irish bethu, bethad, Irish beatha, Welsh bywyd, Old Church Slavonic животъ (životŭ, “life”), Lithuanian gyvatà (“life”), Sanskrit जीवित (jīvitá), Avestan gayo (accusative ǰyātum) \"life\")), ultimately from *gʷeyh₃- (“to live”)."
+    },
+    {
+      "id": "curo",
+      "lemma": "cūrō",
+      "dictionary_form": "cūrō -āre",
+      "pos": "verb",
+      "meaning_he": "לטפל, לדאוג ל-",
+      "meaning_en": "watch over, look after, care for (+ acc.)",
+      "ipa": "[ˈkuː.roː]",
+      "dcc_rank": 743,
+      "dcc_group": "Love",
+      "exception_reason": null,
+      "element": "aqua",
+      "forms": {
+        "imp.2pl": "cūrāte",
+        "imp.2sg": "cūrā",
+        "inf": "cūrāre",
+        "pres.1pl": "cūrāmus",
+        "pres.1sg": "cūrō",
+        "pres.2pl": "cūrātis",
+        "pres.2sg": "cūrās",
+        "pres.3pl": "cūrant",
+        "pres.3sg": "cūrat"
+      },
+      "family": {
+        "en": [
+          "cure",
+          "curator",
+          "accurate",
+          "secure"
+        ],
+        "he": [
+          "אוצר (קורטור)"
+        ],
+        "note_he": "curator (אוצר במוזיאון) הוא 'מי שמטפל'. secure הוא 'בלי דאגה' (sē + cūra).",
+        "es": [
+          "curar",
+          "curiar"
+        ],
+        "it": [
+          "curare"
+        ],
+        "fr": [
+          "curer"
+        ],
+        "pt": [
+          "curar"
+        ],
+        "ro": [
+          "cura"
+        ],
+        "ca": [
+          "curar"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Cura te ipsum",
+          "meaning_he": "טפל בעצמך — 'רופא, רפא את עצמך'"
+        }
+      ],
+      "etymology_en": "By surface analysis, cūra + -ō, from Proto-italic Proto-Italic *kʷoizā."
     }
   ]
 }

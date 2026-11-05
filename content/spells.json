@@ -5,13 +5,251 @@
       "school": "basic",
       "text": "Lignum mihi affer!",
       "meaning_he": "הבא לי עצים!",
-      "answer": ["lignum", "mihi", "affer"],
+      "answer": [
+        "lignum",
+        "mihi",
+        "affer"
+      ],
       "any_order": true,
-      "extra": ["lignō", "tibi", "affert", "ego", "lignī"],
-      "effect": { "type": "gather", "resource": "fuel", "amount": 3 },
+      "extra": [
+        "lignō",
+        "tibi",
+        "affert",
+        "ego",
+        "lignī"
+      ],
+      "effect": {
+        "type": "gather",
+        "resource": "fuel",
+        "amount": 3
+      },
       "unlocked_by": "u3-l3",
       "explain_he": "lignum במושא (מה להביא), mihi בנתינה (למי), affer בציווי (הפקודה).",
       "effect_he": "ערימת עצים מרחפת אל המדורה, והאש מתלקחת."
+    },
+    {
+      "id": "build-hortus",
+      "school": "aedificium",
+      "text": "Hortum aedificā!",
+      "meaning_he": "בנה גינה!",
+      "answer": [
+        "hortum",
+        "aedificā"
+      ],
+      "any_order": true,
+      "extra": [
+        "hortus",
+        "hortō",
+        "aedificat"
+      ],
+      "effect": {
+        "type": "build",
+        "building": "hortus"
+      },
+      "unlocked_by": "u4-l2",
+      "explain_he": "hortum במושא (מה לבנות), aedificā בציווי (הפקודה).",
+      "effect_he": "ערוגות צומחות מהאדמה, ובהן צמחי מרפא ראשונים."
+    },
+    {
+      "id": "build-tentorium",
+      "school": "aedificium",
+      "text": "Tentōrium aedificā!",
+      "meaning_he": "בנה אוהל!",
+      "answer": [
+        "tentōrium",
+        "aedificā"
+      ],
+      "any_order": true,
+      "extra": [
+        "tentōriō",
+        "tentōria",
+        "aedificat"
+      ],
+      "effect": {
+        "type": "build",
+        "building": "tentorium"
+      },
+      "unlocked_by": "u4-l3",
+      "explain_he": "tentōrium בסתמי: במושא נשאר tentōrium. aedificā בציווי.",
+      "effect_he": "האוהל מתרחב ונהיה גדול יותר. המחסן גדל."
+    },
+    {
+      "id": "build-fons",
+      "school": "aedificium",
+      "text": "Fontem aedificā!",
+      "meaning_he": "בנה מעיין!",
+      "answer": [
+        "fontem",
+        "aedificā"
+      ],
+      "any_order": true,
+      "extra": [
+        "fōns",
+        "fontī",
+        "aedificant"
+      ],
+      "effect": {
+        "type": "build",
+        "building": "fons"
+      },
+      "unlocked_by": "u5-l2",
+      "explain_he": "fontem במושא: הגזע font- + em. aedificā בציווי.",
+      "effect_he": "אבנים מסתדרות במעגל, ומים צלולים מבעבעים מתוכן."
+    },
+    {
+      "id": "build-bibliotheca",
+      "school": "aedificium",
+      "text": "Bibliothēcam aedificā!",
+      "meaning_he": "בנה ספרייה!",
+      "answer": [
+        "bibliothēcam",
+        "aedificā"
+      ],
+      "any_order": true,
+      "extra": [
+        "bibliothēca",
+        "bibliothēcae",
+        "aedificat"
+      ],
+      "effect": {
+        "type": "build",
+        "building": "bibliotheca"
+      },
+      "unlocked_by": "u5-l2",
+      "explain_he": "bibliothēcam במושא: נטייה ראשונה, ‎-am. aedificā בציווי.",
+      "effect_he": "בקתה קטנה מתמלאת מדפים וספרים. יחידה 6 נפתחה!"
+    },
+    {
+      "id": "build-turris",
+      "school": "aedificium",
+      "text": "Turrim aedificā!",
+      "meaning_he": "בנה מגדל!",
+      "answer": [
+        "turrim",
+        "aedificā"
+      ],
+      "any_order": true,
+      "extra": [
+        "turris",
+        "turrī",
+        "aedificat"
+      ],
+      "effect": {
+        "type": "build",
+        "building": "turris"
+      },
+      "unlocked_by": "u5-l3",
+      "explain_he": "turrim במושא: turris יוצאת דופן, ‎-im ולא ‎-em. aedificā בציווי.",
+      "effect_he": "מגדל אבן מתרומם מעל העצים, ובראשו אור סגול."
+    },
+    {
+      "id": "grow-tree",
+      "school": "crescentia",
+      "text": "Aquam arborī dā!",
+      "meaning_he": "תן מים לעץ!",
+      "answer": [
+        "aquam",
+        "arborī",
+        "dā"
+      ],
+      "any_order": true,
+      "extra": [
+        "arborem",
+        "arbor",
+        "aqua"
+      ],
+      "effect": {
+        "type": "grow",
+        "reward": {
+          "terra": 2
+        },
+        "final_reward": {
+          "aether": 2
+        }
+      },
+      "unlocked_by": "u5-l3",
+      "explain_he": "aquam במושא (מה לתת), arborī בנתינה (למי), dā בציווי.",
+      "effect_he": "העץ שותה וגדל מול העיניים."
+    },
+    {
+      "id": "make-light",
+      "school": "lux",
+      "text": "Lūcem fac!",
+      "meaning_he": "עשה אור!",
+      "answer": [
+        "lūcem",
+        "fac"
+      ],
+      "any_order": true,
+      "extra": [
+        "lūx",
+        "lūcī",
+        "facit"
+      ],
+      "effect": {
+        "type": "light",
+        "hours": 12
+      },
+      "unlocked_by": "u5-l2",
+      "explain_he": "lūcem במושא: הגזע lūc- + em. fac הוא הציווי הקצר של faciō.",
+      "effect_he": "פנסי אור צפים מעל המחנה. במשך 12 שעות המבנים מייצרים פי שניים.",
+      "requires": {
+        "rank": "maga"
+      }
+    },
+    {
+      "id": "rank-up",
+      "school": "mutatio",
+      "text": "Mē mūtā!",
+      "meaning_he": "שנה אותי!",
+      "answer": [
+        "mē",
+        "mūtā"
+      ],
+      "any_order": true,
+      "extra": [
+        "mihi",
+        "ego",
+        "mūtat"
+      ],
+      "effect": {
+        "type": "rank"
+      },
+      "unlocked_by": "u6-l1",
+      "explain_he": "mē במושא (אותי), mūtā בציווי (שנה!).",
+      "effect_he": "אור עוטף את השועלה, והיא עולה בדרגה!",
+      "requires": {
+        "building": "turris"
+      }
+    },
+    {
+      "id": "gather-more",
+      "school": "basic",
+      "text": "Multa ligna mihi affer!",
+      "meaning_he": "הבא לי הרבה עצים!",
+      "answer": [
+        "multa",
+        "ligna",
+        "mihi",
+        "affer"
+      ],
+      "any_order": true,
+      "extra": [
+        "multum",
+        "lignum",
+        "tibi"
+      ],
+      "effect": {
+        "type": "gather",
+        "resource": "fuel",
+        "amount": 6
+      },
+      "unlocked_by": "u6-l2",
+      "explain_he": "multa ligna ברבים בסתמי (‎-a), mihi בנתינה, affer בציווי.",
+      "effect_he": "ערימה גדולה של עצים מרחפת אל המדורה.",
+      "requires": {
+        "rank": "magistra"
+      }
     }
   ]
 }

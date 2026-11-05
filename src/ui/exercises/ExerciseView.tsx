@@ -10,6 +10,7 @@ import type {
 import { choiceMatches, ROLE_LABEL_HE, shuffle, tilesMatch } from '../../learning/exercises';
 import { La } from '../components/La';
 import { TileBuilder } from './TileBuilder';
+import { play } from '../feedback/sfx';
 
 interface Props<E> {
   exercise: E;
@@ -45,10 +46,12 @@ function MatchView({ exercise, locked, onSubmit }: Props<MatchExercise>) {
     if (picked.id === id) {
       const next = [...matched, id];
       setMatched(next);
+      if (next.length < items.length) play('tap');
       setPicked(null);
       if (next.length === items.length) onSubmit(!hadError);
     } else {
       setHadError(true);
+      play('wrong');
       setWrong([picked.id, id]);
       setPicked(null);
       window.setTimeout(() => setWrong([]), 600);

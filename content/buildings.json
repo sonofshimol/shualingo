@@ -1,11 +1,115 @@
 {
   "buildings": [
-    { "id": "focus", "name_la": "focus", "name_he": "אח המחנה", "description_he": "המדורה, הלב של המחנה. היא דועכת לאט, ולחש האיסוף מחזיר אותה לבעור.", "stage": 1, "initial": true },
-    { "id": "tentorium", "name_la": "tentorium", "name_he": "אוהל", "description_he": "האוהל של השועלה. בהמשך הגדלה שלו תגדיל את האחסון.", "stage": 1, "initial": true },
-    { "id": "circulus", "name_la": "circulus", "name_he": "מעגל הלחשים", "description_he": "כאן השועלה מרכיבה לחשים מאריחי מילים.", "stage": 1, "initial": true, "unlocked_by": "u3-l3" },
-    { "id": "hortus", "name_la": "hortus", "name_he": "גינת צמחי מרפא", "description_he": "גינה שמייצרת צמחי מרפא.", "stage": 2, "initial": false },
-    { "id": "fons", "name_la": "fons", "name_he": "מעיין", "description_he": "מקור מים קבוע למחנה.", "stage": 2, "initial": false },
-    { "id": "bibliotheca", "name_la": "bibliotheca", "name_he": "ספרייה", "description_he": "פותחת יחידות לימוד חדשות.", "stage": 2, "initial": false },
-    { "id": "turris", "name_la": "turris", "name_he": "מגדל הקוסמת", "description_he": "פותח לחשים חדשים.", "stage": 2, "initial": false }
+    {
+      "id": "focus",
+      "name_la": "focus",
+      "name_he": "אח המחנה",
+      "description_he": "המדורה, הלב של המחנה. כל עוד היא בוערת היא מייצרת ignis. לחשי האיסוף מוסיפים לה עצים.",
+      "stage": 1,
+      "initial": true,
+      "produces": {
+        "element": "ignis",
+        "every_hours": 3,
+        "needs_fire": true
+      }
+    },
+    {
+      "id": "tentorium",
+      "name_la": "tentōrium",
+      "name_he": "אוהל",
+      "description_he": "האוהל של השועלה. כל שדרוג (Tentōrium aedificā!) מגדיל את המחסן: כמה אלמנטים כל מבנה צובר לפני שצריך לקצור.",
+      "stage": 1,
+      "initial": true,
+      "upgrade_costs": [
+        {
+          "terra": 3,
+          "aer": 2
+        },
+        {
+          "terra": 5,
+          "aer": 3,
+          "aether": 1
+        }
+      ]
+    },
+    {
+      "id": "circulus",
+      "name_la": "circulus",
+      "name_he": "מעגל הלחשים",
+      "description_he": "כאן השועלה מרכיבה לחשים מאריחי מילים.",
+      "stage": 1,
+      "initial": true,
+      "unlocked_by": "u3-l3"
+    },
+    {
+      "id": "hortus",
+      "name_la": "hortus",
+      "name_he": "גינה",
+      "description_he": "גינת צמחי מרפא. מייצרת terra לאט.",
+      "stage": 2,
+      "initial": false,
+      "produces": {
+        "element": "terra",
+        "every_hours": 2
+      },
+      "build_cost": {
+        "terra": 3,
+        "aer": 2
+      }
+    },
+    {
+      "id": "fons",
+      "name_la": "fōns",
+      "name_he": "מעיין",
+      "description_he": "מעיין קטן ליד המחנה. מייצר aqua.",
+      "stage": 2,
+      "initial": false,
+      "produces": {
+        "element": "aqua",
+        "every_hours": 2
+      },
+      "build_cost": {
+        "terra": 3,
+        "aer": 2,
+        "ignis": 2
+      }
+    },
+    {
+      "id": "bibliotheca",
+      "name_la": "bibliothēca",
+      "name_he": "ספרייה",
+      "description_he": "ספרייה קטנה ביער. פותחת את יחידה 6 ומייצרת aer.",
+      "stage": 2,
+      "initial": false,
+      "produces": {
+        "element": "aer",
+        "every_hours": 3
+      },
+      "build_cost": {
+        "terra": 4,
+        "aer": 3,
+        "aether": 1
+      },
+      "unlocks": {
+        "unit": "u6"
+      }
+    },
+    {
+      "id": "turris",
+      "name_la": "turris",
+      "name_he": "מגדל הקוסמת",
+      "description_he": "מגדל אבן גבוה. מייצר aether, ובו השועלה עולה בדרגה (Mē mūtā!).",
+      "stage": 2,
+      "initial": false,
+      "produces": {
+        "element": "aether",
+        "every_hours": 8
+      },
+      "build_cost": {
+        "terra": 5,
+        "ignis": 4,
+        "aether": 2
+      }
+    }
   ]
 }
