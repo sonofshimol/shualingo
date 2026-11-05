@@ -6,6 +6,7 @@ import { nextDue } from '../../learning/srs';
 import { FOX } from '../../art/sprites';
 import { SpriteView } from '../../art/CampScene';
 import { Countdown, ElementList } from '../components/common';
+import { play } from '../feedback/sfx';
 import { getSave, updateSave, useNow, useSave } from '../store';
 import { ExerciseView } from '../exercises/ExerciseView';
 import { Feedback } from './Feedback';
@@ -25,7 +26,7 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
     const due = nextDue(save.cards);
     return (
       <div className="screen center">
-        <SpriteView sprite={FOX} scale={5} label="השועלה" />
+        <SpriteView sprite={FOX} scale={5} label="השועלה" rank={save.rank} />
         <h2>אין מה לחזור עליו כרגע</h2>
         {Object.keys(save.cards).length === 0 ? (
           <p>המילים נכנסות לחזרה אחרי השיעור הראשון.</p>
@@ -41,10 +42,10 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
     const correct = results.filter((r) => r.correct).length;
     return (
       <div className="screen session end-screen">
-        <SpriteView sprite={FOX} scale={5} label="השועלה" />
+        <SpriteView sprite={FOX} scale={5} label="השועלה" rank={save.rank} />
         <h2>החזרה הושלמה</h2>
         <p>{correct} מתוך {results.length} נכונות.</p>
-        <p>הרווחת: <ElementList delta={earned} /></p>
+        <p>הרווחת: <ElementList delta={earned} pop /></p>
         <button type="button" className="primary" onClick={onExit}>חזרה למחנה</button>
       </div>
     );
@@ -62,6 +63,7 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
       const outcome = finishReview(getSave(), nextResults, Date.now());
       updateSave(() => outcome.save);
       setEarned(outcome.earned);
+      play('complete');
     }
   };
   const exit = () => {
@@ -72,7 +74,7 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
     <div className="screen session">
       <SessionHeader progress={position / items.length} onExit={exit} />
       <p className="session-sub">חזרה על מילים וכללים חלשים</p>
-      <ExerciseView key={position} exercise={item.exercise} locked={feedback !== null} onSubmit={setFeedback} />
+      <ExerciseView key={position} exercise={item.exercise} locked={feedback !== null} onSubmit={(ok) => { play(ok ? 'correct' : 'wrong'); setFeedback(ok); }} />
       {feedback !== null && <Feedback correct={feedback} exercise={item.exercise} onContinue={proceed} requeued={false} />}
     </div>
   );

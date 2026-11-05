@@ -1,12 +1,84 @@
 {
   "elements": [
-    { "id": "terra", "name_he": "אדמה", "mystic": false, "stage": 1, "color": "#8a5a2b", "source_he": "תרגילי אוצר מילים (התאמה ובחירה)", "use_he": "יסודות, גינות, חומות" },
-    { "id": "aqua", "name_he": "מים", "mystic": false, "stage": 1, "color": "#3d7cc9", "source_he": "חזרה על מילים חלשות", "use_he": "גידול צמחים, ריפוי" },
-    { "id": "aer", "name_he": "אוויר", "mystic": false, "stage": 1, "color": "#8fb8c9", "source_he": "תרגילי בניית משפט", "use_he": "תנועה, מסחר עם יצורי היער" },
-    { "id": "ignis", "name_he": "אש", "mystic": false, "stage": 1, "color": "#d9572b", "source_he": "תרגילי דקדוק וסיומות", "use_he": "אור, מלאכה, הגנה" },
-    { "id": "aether", "name_he": "אתר", "mystic": false, "stage": 1, "color": "#b58ce0", "source_he": "השיעור הראשון שמסיימים בכל יום", "use_he": "לחשים גדולים ועליית דרגה" },
-    { "id": "lux", "name_he": "אור", "mystic": true, "stage": 3, "color": "#f2d65c", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" },
-    { "id": "umbra", "name_he": "צל", "mystic": true, "stage": 3, "color": "#4b3f72", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" },
-    { "id": "spiritus", "name_he": "רוח", "mystic": true, "stage": 3, "color": "#e6e6f0", "source_he": "נפתח בדרגות מתקדמות", "use_he": "אסכולת לחשים חדשה" }
+    {
+      "id": "terra",
+      "name_he": "אדמה",
+      "mystic": false,
+      "stage": 1,
+      "color": "#79c447",
+      "source_he": "תרגילי אוצר מילים (התאמה ובחירה), והגינה (hortus)",
+      "use_he": "כמעט כל מבנה: יסודות, קירות, גינות",
+      "symbol_he": "▽ עם קו"
+    },
+    {
+      "id": "aqua",
+      "name_he": "מים",
+      "mystic": false,
+      "stage": 1,
+      "color": "#3fa0ff",
+      "source_he": "חזרה על מילים חלשות, והמעיין (fōns)",
+      "use_he": "השקיית העץ, מתנות, גידול",
+      "symbol_he": "▽"
+    },
+    {
+      "id": "aer",
+      "name_he": "אוויר",
+      "mystic": false,
+      "stage": 1,
+      "color": "#ffd84d",
+      "source_he": "תרגילי בניית משפט, והספרייה (bibliothēca)",
+      "use_he": "לחשים של תנועה ודיבור, שדרוג האוהל",
+      "symbol_he": "△ עם קו"
+    },
+    {
+      "id": "ignis",
+      "name_he": "אש",
+      "mystic": false,
+      "stage": 1,
+      "color": "#ff5a36",
+      "source_he": "תרגילי דקדוק וסיומות, והמדורה כשהיא בוערת",
+      "use_he": "אור, מלאכה, בניית המגדל",
+      "symbol_he": "△"
+    },
+    {
+      "id": "aether",
+      "name_he": "אתר",
+      "mystic": false,
+      "stage": 1,
+      "color": "#c77dff",
+      "source_he": "השיעור הראשון של כל יום, המגדל (turris) והעץ כשגדל עד הסוף",
+      "use_he": "לחשים גדולים ועליית דרגה",
+      "symbol_he": "כוכב בעל חמישה קודקודים"
+    },
+    {
+      "id": "lux",
+      "name_he": "אור",
+      "mystic": true,
+      "stage": 3,
+      "color": "#fff2a8",
+      "source_he": "נפתח בדרגות מתקדמות",
+      "use_he": "אסכולת לחשים חדשה",
+      "symbol_he": "☉"
+    },
+    {
+      "id": "umbra",
+      "name_he": "צל",
+      "mystic": true,
+      "stage": 3,
+      "color": "#6a5acd",
+      "source_he": "נפתח בדרגות מתקדמות",
+      "use_he": "אסכולת לחשים חדשה",
+      "symbol_he": "☾"
+    },
+    {
+      "id": "spiritus",
+      "name_he": "רוח",
+      "mystic": true,
+      "stage": 3,
+      "color": "#e8e8ff",
+      "source_he": "נפתח בדרגות מתקדמות",
+      "use_he": "אסכולת לחשים חדשה",
+      "symbol_he": "☿"
+    }
   ]
 }

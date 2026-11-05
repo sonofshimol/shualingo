@@ -1,5 +1,5 @@
-import { units, wordById } from '../../content';
-import { lessonState } from '../../game/actions';
+import { buildingById, units, wordById } from '../../content';
+import { lessonState, unitBlockedBy } from '../../game/actions';
 import { Countdown } from '../components/common';
 import { useOpenWord } from '../components/La';
 import { useNow, useSave } from '../store';
@@ -14,11 +14,18 @@ export function PathScreen({ openLesson }: { openLesson: (id: string) => void })
   return (
     <div className="screen path">
       <h1>מסלול הלימוד</h1>
-      {units.map((unit, u) => (
-        <section key={unit.id} className="card unit">
+      {units.map((unit, u) => {
+        const blockedBy = unitBlockedBy(save, unit.id);
+        return (
+        <section key={unit.id} className={`card unit unit-${u + 1}`}>
           <p className="eyebrow">יחידה {u + 1}</p>
           <h2>{unit.title_he}</h2>
           <p className="muted">{unit.subtitle_he}</p>
+          {blockedBy && (
+            <p className="locked-note">
+              🔒 היחידה נפתחת כשבונים במחנה את <span lang="la" dir="ltr">{buildingById.get(blockedBy)?.name_la}</span> ({buildingById.get(blockedBy)?.name_he}).
+            </p>
+          )}
           <div className="word-chips" dir="ltr" aria-label="המילים של היחידה (הקישו לכרטיס המילה)">
             {unit.words.map((id) => (
               <button key={id} type="button" className="chip la-tile" lang="la" onClick={() => openWord(id)}>
@@ -54,7 +61,8 @@ export function PathScreen({ openLesson }: { openLesson: (id: string) => void })
             })}
           </ol>
         </section>
-      ))}
+        );
+      })}
       <p className="muted small center-text">יחידות נוספות ייפתחו בשלבים הבאים.</p>
     </div>
   );

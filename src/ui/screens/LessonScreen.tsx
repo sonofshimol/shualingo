@@ -8,6 +8,7 @@ import { FOX } from '../../art/sprites';
 import { SpriteView } from '../../art/CampScene';
 import { Countdown, ElementList, ProgressBar } from '../components/common';
 import { La } from '../components/La';
+import { play } from '../feedback/sfx';
 import { getSave, updateSave, useNow, useSave } from '../store';
 import { Feedback } from './Feedback';
 import { ExerciseView } from '../exercises/ExerciseView';
@@ -93,6 +94,7 @@ export function LessonScreen({ lessonId, onExit, onOpenLesson }: { lessonId: str
       updateSave(() => result.save);
       setOutcome(result.outcome);
       setPhase('end');
+      play(result.outcome.passed ? 'complete' : 'fizzle');
     }
   };
 
@@ -119,11 +121,11 @@ export function LessonScreen({ lessonId, onExit, onOpenLesson }: { lessonId: str
     const task = save.tasks[`lesson:${lessonId}`];
     return (
       <div className="screen session end-screen">
-        <SpriteView sprite={FOX} scale={5} label="השועלה" />
+        <SpriteView sprite={FOX} scale={5} label="השועלה" rank={save.rank} />
         {outcome.passed ? (
           <>
             <h2>כל הכבוד! סיימת את השיעור</h2>
-            <p>הרווחת: <ElementList delta={outcome.earned} /></p>
+            <p>הרווחת: <ElementList delta={outcome.earned} pop /></p>
             {outcome.dailyBonus && <p className="muted">כולל בונוס aether על השיעור הראשון של היום.</p>}
             {outcome.newSpells.map((id) => (
               <div key={id} className="new-spell">
@@ -179,7 +181,7 @@ export function LessonScreen({ lessonId, onExit, onOpenLesson }: { lessonId: str
     <div className="screen session">
       <SessionHeader progress={lessonProgress(run, lesson)} onExit={exit} mistakes={run.mistakes} />
       <p className="session-sub">{unit.title_he} · {lesson.title_he}</p>
-      <ExerciseView key={`${index}-${attempt}`} exercise={exercise} locked={feedback !== null} onSubmit={setFeedback} />
+      <ExerciseView key={`${index}-${attempt}`} exercise={exercise} locked={feedback !== null} onSubmit={(ok) => { play(ok ? 'correct' : 'wrong'); setFeedback(ok); }} />
       {feedback !== null && <Feedback correct={feedback} exercise={exercise} onContinue={proceed} />}
     </div>
   );

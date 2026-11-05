@@ -9,7 +9,7 @@ export function Feedback({ correct, exercise, onContinue, requeued = true }: { c
   const explanation = explanationFor(exercise);
   return (
     <div className={`feedback ${correct ? 'good' : 'bad'}`} role="status" aria-live="assertive">
-      <h3>{correct ? 'נכון!' : 'לא בדיוק'}</h3>
+      <h3>{correct ? '✓ נכון!' : '✗ לא בדיוק'}</h3>
       {correct ? (
         <SolvedSentence exercise={exercise} />
       ) : (

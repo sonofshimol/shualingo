@@ -168,6 +168,8 @@ export interface ElementDef {
   mystic: boolean;
   stage: number;
   color: string;
+  /** The classical alchemical symbol, described in words. */
+  symbol_he: string;
   source_he: string;
   use_he: string;
 }
