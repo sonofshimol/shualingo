@@ -2165,6 +2165,774 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u7",
+      "title_he": "במה? באיזה כוח?",
+      "subtitle_he": "יחסת האמצעי: סלע, זהב, אבן — ו-magnā vī שמחזק כל לחש",
+      "dooge": "Lessons XX–XXII: ablative of means; cum with the ablative",
+      "words": [
+        "vis",
+        "cum",
+        "ars",
+        "fortis",
+        "saxum",
+        "aurum",
+        "lapis"
+      ],
+      "lessons": [
+        {
+          "id": "u7-l1",
+          "title_he": "יחסת האמצעי",
+          "rules_intro": [
+            "abl-sg"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "saxum",
+                "aurum",
+                "lapis",
+                "ars"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "vis",
+                "cum",
+                "fortis",
+                "saxum"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Turrim saxō aedificā!",
+              "answer": "בנה מגדל מסלע!",
+              "distractors": [
+                "בנה סלע במגדל!",
+                "המגדל בונה סלע."
+              ],
+              "rules": [
+                "abl-sg"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Turrim saxō aedificā!",
+              "target": 1,
+              "answer": "means",
+              "translation_he": "בנה מגדל מסלע!",
+              "options": [
+                "object",
+                "indirect",
+                "means"
+              ],
+              "rules": [
+                "abl-sg"
+              ],
+              "explain_he": "saxō נגמרת ב-ō: יחסת האמצעי, 'בעזרת סלע'."
+            },
+            {
+              "type": "ending",
+              "before": "Hortum",
+              "stem": "aqu",
+              "after": "cūrā!",
+              "answer": "ā",
+              "options": [
+                "am",
+                "ā",
+                "ae"
+              ],
+              "translation_he": "טפל בגינה במים!",
+              "rules": [
+                "abl-sg"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "בנה מעיין מאבן!",
+              "answer": [
+                "fontem",
+                "lapide",
+                "aedificā"
+              ],
+              "extra": [
+                "lapidem",
+                "lapis"
+              ],
+              "any_order": true,
+              "rules": [
+                "abl-sg"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "תן לי זהב!",
+              "answer": "Aurum mihi dā!",
+              "distractors": [
+                "Aurō mihi dā!",
+                "Aurum mē dā!"
+              ],
+              "rules": [
+                "neuter-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Ignem",
+              "stem": "flamm",
+              "after": "fac!",
+              "answer": "ā",
+              "options": [
+                "am",
+                "ā",
+                "ae"
+              ],
+              "translation_he": "עשה אש בעזרת להבה!",
+              "rules": [
+                "abl-sg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u7-l2",
+          "title_he": "בכוח רב, ועם חבר",
+          "rules_intro": [
+            "magna-vi",
+            "cum-abl"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Lignum mihi magnā vī affer!",
+              "answer": "הבא לי עצים בכוח רב!",
+              "distractors": [
+                "הבא לי עצים גדולים!",
+                "הכוח הגדול מביא לי עצים."
+              ],
+              "rules": [
+                "magna-vi"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Lignum mihi",
+              "stem": "magn",
+              "after": "vī affer!",
+              "answer": "ā",
+              "options": [
+                "a",
+                "ā",
+                "am"
+              ],
+              "translation_he": "הבא לי עצים בכוח רב!",
+              "rules": [
+                "magna-vi",
+                "adj-agree"
+              ],
+              "explain_he": "vī היא יחסת אמצעי, נקבה, יחיד — ולכן גם magnā."
+            },
+            {
+              "type": "role",
+              "sentence": "Puella cum amīcō hortum cūrat.",
+              "target": 2,
+              "answer": "means",
+              "translation_he": "הנערה מטפלת בגינה עם חבר.",
+              "options": [
+                "object",
+                "indirect",
+                "means"
+              ],
+              "rules": [
+                "cum-abl"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "האישה האמיצה בונה מגדל.",
+              "answer": [
+                "fēmina",
+                "fortis",
+                "turrim",
+                "aedificat"
+              ],
+              "extra": [
+                "turris",
+                "forte"
+              ],
+              "any_order": true,
+              "rules": [
+                "acc-sg-3"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "עם חבר",
+              "answer": "cum amīcō",
+              "distractors": [
+                "cum amīcum",
+                "cum amīcus"
+              ],
+              "rules": [
+                "cum-abl"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Fīlia cum",
+              "stem": "amīc",
+              "after": "fābulam narrat.",
+              "answer": "ō",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "הבת מספרת סיפור עם חבר.",
+              "rules": [
+                "cum-abl"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Fēmina artem amat.",
+              "answer": "האישה אוהבת את האומנות.",
+              "distractors": [
+                "האומנות אוהבת את האישה.",
+                "האישה אוהבת את הזהב."
+              ],
+              "rules": [
+                "acc-sg-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "תן לי זהב בכוח רב!",
+              "answer": [
+                "aurum",
+                "mihi",
+                "magnā",
+                "vī",
+                "dā"
+              ],
+              "extra": [
+                "magna",
+                "vim"
+              ],
+              "any_order": true,
+              "rules": [
+                "magna-vi"
+              ],
+              "explain_he": "זה לחש מחוזק: magnā vī מכפיל את הכוח."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "title_he": "קול, מילה ושיר",
+      "subtitle_he": "שיר-קסם (carmen), קול ומילה — ופקודות חדשות: cane!, mitte!, audī!",
+      "dooge": "Lessons XXIII–XXV: third conjugation imperatives; third-declension neuters",
+      "words": [
+        "vox",
+        "verbum",
+        "nomen",
+        "carmen",
+        "ventus",
+        "cano",
+        "mitto",
+        "audio"
+      ],
+      "lessons": [
+        {
+          "id": "u8-l1",
+          "title_he": "שיר, שלח, שמע",
+          "rules_intro": [
+            "imp-3-4",
+            "neuter-3"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "vox",
+                "verbum",
+                "nomen",
+                "carmen"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "ventus",
+                "cano",
+                "mitto",
+                "audio"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Carmen cane!",
+              "answer": "שיר שיר-קסם!",
+              "distractors": [
+                "השיר שר!",
+                "הוא שר שיר."
+              ],
+              "rules": [
+                "imp-3-4"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Vōcem",
+              "stem": "aud",
+              "after": "!",
+              "answer": "ī",
+              "options": [
+                "ī",
+                "it",
+                "īte"
+              ],
+              "translation_he": "שמע את הקול!",
+              "rules": [
+                "imp-3-4"
+              ],
+              "explain_he": "פקודה לאדם אחד: audī! ‎-it מתאר, ‎-īte היא פקודה לכמה."
+            },
+            {
+              "type": "build",
+              "prompt_he": "שלח לי מילה!",
+              "answer": [
+                "verbum",
+                "mihi",
+                "mitte"
+              ],
+              "extra": [
+                "verbō",
+                "mittit"
+              ],
+              "any_order": true,
+              "rules": [
+                "imp-3-4",
+                "neuter-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Puella amīcō carmen canit.",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "הנערה שרה שיר לחבר.",
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "שמע את הרוח!",
+              "answer": "Ventum audī!",
+              "distractors": [
+                "Ventus audī!",
+                "Ventō audī!"
+              ],
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Carm",
+              "after": "mihi cane!",
+              "answer": "en",
+              "options": [
+                "en",
+                "inī",
+                "ine"
+              ],
+              "translation_he": "שיר לי שיר!",
+              "rules": [
+                "neuter-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u8-l2",
+          "title_he": "מה הרוח אומרת?",
+          "rules_intro": [],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Ventus verba portat.",
+              "answer": "הרוח נושאת מילים.",
+              "distractors": [
+                "המילים נושאות את הרוח.",
+                "הרוח נושאת מילה אחת."
+              ],
+              "rules": [
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Verba ventō mitte!",
+              "target": 1,
+              "answer": "indirect",
+              "translation_he": "שלח מילים לרוח!",
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "Puella",
+              "stem": "nōm",
+              "after": "amat.",
+              "answer": "en",
+              "options": [
+                "en",
+                "ine",
+                "inī"
+              ],
+              "translation_he": "הנערה אוהבת את השם.",
+              "rules": [
+                "neuter-3"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "שירו שירים! (לכמה אנשים)",
+              "answer": [
+                "carmina",
+                "canite"
+              ],
+              "extra": [
+                "carmen",
+                "cane"
+              ],
+              "any_order": true,
+              "rules": [
+                "imp-3-4",
+                "pl-neuter"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "שלח לחבר שיר!",
+              "answer": "Carmen amīcō mitte!",
+              "distractors": [
+                "Carmen amīcum mitte!",
+                "Carmine amīcō mitte!"
+              ],
+              "rules": [
+                "dat-sg-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Vent",
+              "after": "audī!",
+              "answer": "um",
+              "options": [
+                "us",
+                "um",
+                "ō"
+              ],
+              "translation_he": "שמע את הרוח!",
+              "rules": [
+                "acc-sg-2"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "carmen",
+                "vox",
+                "mitto",
+                "ventus"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Puella vōcem audit.",
+              "answer": "הנערה שומעת קול.",
+              "distractors": [
+                "הקול שומע את הנערה.",
+                "הנערה שולחת קול."
+              ],
+              "rules": [
+                "acc-sg-3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9",
+      "title_he": "רוח, יד ושמיים",
+      "subtitle_he": "הנטייה הרביעית (spīritus, manus), אור וחושך — המילים של האסכולות המיסטיות",
+      "dooge": "Lessons LXIV–LXV: fourth declension",
+      "words": [
+        "spiritus",
+        "manus",
+        "caelum",
+        "lumen",
+        "somnus",
+        "mundus",
+        "tenebrae"
+      ],
+      "lessons": [
+        {
+          "id": "u9-l1",
+          "title_he": "הנטייה הרביעית",
+          "rules_intro": [
+            "decl-4"
+          ],
+          "exercises": [
+            {
+              "type": "match",
+              "words": [
+                "spiritus",
+                "manus",
+                "caelum",
+                "lumen"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "somnus",
+                "mundus",
+                "tenebrae",
+                "spiritus"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Spīritum vocā!",
+              "answer": "קרא לרוח!",
+              "distractors": [
+                "הרוח קוראת לך!",
+                "קראו לרוחות!"
+              ],
+              "rules": [
+                "decl-4"
+              ],
+              "explain_he": "זה הלחש של אסכולת הרוח!"
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Spīrit",
+              "after": "vocā!",
+              "answer": "um",
+              "options": [
+                "us",
+                "um",
+                "uī"
+              ],
+              "translation_he": "קרא לרוח!",
+              "rules": [
+                "decl-4"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Spīrituī lūmen dā!",
+              "target": 0,
+              "answer": "indirect",
+              "translation_he": "תן אור לרוח!",
+              "rules": [
+                "decl-4"
+              ]
+            },
+            {
+              "type": "build",
+              "prompt_he": "בנה מגדל ביד!",
+              "answer": [
+                "turrim",
+                "manū",
+                "aedificā"
+              ],
+              "extra": [
+                "manum",
+                "manus"
+              ],
+              "any_order": true,
+              "rules": [
+                "decl-4",
+                "abl-sg"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "השמיים גדולים.",
+              "answer": "Caelum magnum est.",
+              "distractors": [
+                "Caelum magnus est.",
+                "Mundus magnus est."
+              ],
+              "rules": [
+                "adj-2"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Lūm",
+              "after": "mihi affer!",
+              "answer": "en",
+              "options": [
+                "en",
+                "ine",
+                "inī"
+              ],
+              "translation_he": "הבא לי אור!",
+              "rules": [
+                "neuter-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u9-l2",
+          "title_he": "האור והחושך",
+          "rules_intro": [
+            "plural-only"
+          ],
+          "exercises": [
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Tenebrās mūtā!",
+              "answer": "שנה את החושך!",
+              "distractors": [
+                "החושך משנה!",
+                "שנה את האור!"
+              ],
+              "rules": [
+                "plural-only"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Tenebr",
+              "after": "mūtā!",
+              "answer": "ās",
+              "options": [
+                "ae",
+                "ās",
+                "īs"
+              ],
+              "translation_he": "שנה את החושך!",
+              "rules": [
+                "plural-only"
+              ]
+            },
+            {
+              "type": "choice",
+              "direction": "he-la",
+              "prompt": "תן אור ליער!",
+              "answer": "Lūcem silvae dā!",
+              "distractors": [
+                "Lūcem silvam dā!",
+                "Lūx silvae dā!"
+              ],
+              "rules": [
+                "dat-sg-1"
+              ],
+              "explain_he": "זה הלחש של אסכולת האור: הוא חושף את שולי היער החשוכים."
+            },
+            {
+              "type": "build",
+              "prompt_he": "השינה טובה.",
+              "answer": [
+                "somnus",
+                "bonus",
+                "est"
+              ],
+              "extra": [
+                "somnum",
+                "bona"
+              ],
+              "any_order": true,
+              "rules": [
+                "adj-2"
+              ]
+            },
+            {
+              "type": "role",
+              "sentence": "Mundō lūmen sōl dat.",
+              "target": 0,
+              "answer": "indirect",
+              "translation_he": "השמש נותנת אור לעולם.",
+              "rules": [
+                "dat-sg-2",
+                "word-order"
+              ]
+            },
+            {
+              "type": "match",
+              "words": [
+                "mundus",
+                "somnus",
+                "tenebrae",
+                "caelum"
+              ]
+            },
+            {
+              "type": "ending",
+              "before": "",
+              "stem": "Umbr",
+              "after": "fac!",
+              "answer": "am",
+              "options": [
+                "a",
+                "am",
+                "ā"
+              ],
+              "translation_he": "עשה צל!",
+              "rules": [
+                "acc-sg-1"
+              ],
+              "explain_he": "זה הלחש של אסכולת הצל!"
+            },
+            {
+              "type": "choice",
+              "direction": "la-he",
+              "prompt": "Spīritus mundum cūrat.",
+              "answer": "הרוח שומרת על העולם.",
+              "distractors": [
+                "העולם שומר על הרוח.",
+                "הרוח משנה את העולם."
+              ],
+              "rules": [
+                "decl-4"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

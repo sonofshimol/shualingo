@@ -61,7 +61,7 @@ export interface Rule {
   drill?: { form: string; prompt_he: string };
 }
 
-export type Role = 'subject' | 'object' | 'indirect';
+export type Role = 'subject' | 'object' | 'indirect' | 'means';
 
 interface ExerciseBase {
   rules?: string[];
