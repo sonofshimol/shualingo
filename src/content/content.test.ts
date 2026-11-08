@@ -24,6 +24,19 @@ describe('words.json', () => {
   });
 });
 
+describe('word card extras', () => {
+  it('every word has a Hebrew pronunciation; quotes name their author', () => {
+    for (const w of words) {
+      expect(w.pron_he?.length, w.id).toBeGreaterThan(0);
+      expect(w.pron_he!.some((s) => s.stress), `${w.id} has a stressed syllable`).toBe(true);
+      for (const q of w.quotes ?? []) {
+        expect(q.text && q.author_he && q.meaning_he, w.id).toBeTruthy();
+      }
+    }
+    expect(words.filter((w) => w.origin).length).toBeGreaterThan(words.length * 0.9);
+  });
+});
+
 describe('units.json', () => {
   it('has 9 units of about 10 words each', () => {
     expect(units).toHaveLength(9);

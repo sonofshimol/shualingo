@@ -596,3 +596,25 @@ button.element-chip { cursor: pointer; }
 
 .element-bar.mystic { grid-template-columns: repeat(3, 1fr); margin-top: 5px; }
 .effect-line { color: var(--magic); margin: 2px 0; }
+
+.segmented.two { grid-template-columns: 1fr 1fr; }
+.picker-word { direction: rtl; }
+
+/* ------------------------------------------------------------- word card: pronunciation, origin, quotes */
+.pron { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; font-size: 1.15rem; }
+.pron-label { color: var(--muted); font-size: 0.85rem; }
+.pron-syllables { direction: rtl; }
+.pron-dot { color: var(--muted); padding: 0 3px; }
+.pron-syl.stress { font-weight: 700; color: var(--gold); }
+/* The line above = a long vowel, exactly like the macron in ā. Shape, not colour, so it reads in black and white. */
+.pron-syl.long { text-decoration: overline; text-decoration-thickness: 2px; }
+.pron-help-btn { min-width: 30px; min-height: 30px; border-radius: 50%; }
+.pron-help { flex-basis: 100%; text-align: right; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
+.pron-help p { margin: 0 0 4px; }
+.origin-chain { list-style: none; padding: 0; margin: 0 0 6px; display: flex; flex-direction: column; gap: 4px; }
+.origin-lang { color: var(--magic); font-weight: 700; }
+.origin-arrow { color: var(--muted); }
+.etymology-full { background: var(--surface); border-radius: 8px; padding: 8px; white-space: pre-wrap; text-align: left; }
+.quotes { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.quotes li { display: flex; flex-direction: column; gap: 2px; border-inline-start: 3px solid var(--gold); padding-inline-start: 8px; }
+.quote-text { font-family: var(--font-body); font-size: 1.05rem; }

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { CONFIG } from '../config';
 import { deckWords, decks } from '../content';
 import { newSave } from '../game/state';
-import { buildRound, deckProgress, finishRound, verbaLeftToday } from './verba';
+import { buildRound, deckProgress, finishRound } from './verba';
 
 const T0 = Date.parse('2026-11-08T10:00:00');
 
@@ -30,7 +30,7 @@ describe('Verba word game', () => {
     }
   });
 
-  it("rewards the word's own element, up to a daily cap, and remembers words", () => {
+  it("rewards the word's own element with no daily cap, and remembers words", () => {
     let save = newSave(T0);
     const words = deckWords('natura');
     const results = words.map((w) => ({ wordId: w.id, correct: true }));
@@ -39,10 +39,9 @@ describe('Verba word game', () => {
     save = first.save;
     expect(Object.keys(save.cards)).toContain('word:mare');
     const total = Object.values(first.earned).reduce((a, b) => a + (b ?? 0), 0);
-    expect(total).toBe(Math.min(words.length, CONFIG.VERBA_DAILY_CAP));
+    expect(total).toBe(words.length);
     const second = finishRound(save, results, T0 + 1000);
-    expect(Object.values(second.earned).reduce((a, b) => a + (b ?? 0), 0)).toBe(Math.max(0, CONFIG.VERBA_DAILY_CAP - total));
-    expect(verbaLeftToday(second.save, T0 + 1000)).toBe(0);
+    expect(Object.values(second.earned).reduce((a, b) => a + (b ?? 0), 0)).toBe(words.length); // no daily cap
     expect(deckProgress(second.save, 'natura').seen).toBe(words.length);
   });
 });

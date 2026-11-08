@@ -21,6 +21,13 @@
       "expressions": [],
       "tags": [
         "place"
+      ],
+      "quotes": [
+        {
+          "text": "Inter silvas Academi quaerere verum",
+          "author_he": "הורטיוס, איגרות",
+          "meaning_he": "לחפש את האמת בין עצי האקדמיה"
+        }
       ]
     },
     {
@@ -65,6 +72,13 @@
       ],
       "tags": [
         "element"
+      ],
+      "quotes": [
+        {
+          "text": "Sit tibi terra levis",
+          "author_he": "כתובת קבורה רומית נפוצה",
+          "meaning_he": "תהי האדמה קלה עליך"
+        }
       ]
     },
     {
@@ -99,6 +113,13 @@
       "tags": [
         "resource",
         "element"
+      ],
+      "quotes": [
+        {
+          "text": "Aquam a pumice nunc postulas",
+          "author_he": "פלאוטוס, המחזה \"הפרסי\"",
+          "meaning_he": "אתה מבקש עכשיו מים מאבן ספוג — כלומר, את הבלתי אפשרי"
+        }
       ]
     },
     {
@@ -117,6 +138,13 @@
       "expressions": [],
       "tags": [
         "person"
+      ],
+      "quotes": [
+        {
+          "text": "Vale, puella",
+          "author_he": "קטולוס, שיר 8",
+          "meaning_he": "שלום לך, נערה"
+        }
       ]
     },
     {
@@ -203,6 +231,13 @@
       "expressions": [],
       "tags": [
         "element"
+      ],
+      "quotes": [
+        {
+          "text": "Pulvis et umbra sumus",
+          "author_he": "הורטיוס, אודות 4.7",
+          "meaning_he": "אבק וצל אנחנו"
+        }
       ]
     },
     {
@@ -243,6 +278,13 @@
         {
           "text": "Cogito, ergo sum",
           "meaning_he": "אני חושב, משמע אני קיים — דקארט"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Homo sum, humani nihil a me alienum puto",
+          "author_he": "טרנטיוס, המחזה \"המעניש את עצמו\"",
+          "meaning_he": "אדם אני, ושום דבר אנושי אינו זר לי"
         }
       ]
     },
@@ -323,6 +365,13 @@
           "text": "Magna Carta",
           "meaning_he": "המגילה הגדולה — מסמך זכויות מאנגליה של 1215"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Magna est veritas, et praevalet",
+          "author_he": "ספר עזרא השלישי, בתרגום הלטיני (הוולגטה)",
+          "meaning_he": "גדולה האמת, והיא גוברת"
+        }
       ]
     },
     {
@@ -342,6 +391,13 @@
         {
           "text": "multum in parvo",
           "meaning_he": "הרבה בתוך מעט"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Parva leves capiunt animos",
+          "author_he": "אובידיוס, אמנות האהבה",
+          "meaning_he": "דברים קטנים שובים נפשות קלות"
         }
       ]
     },
@@ -381,6 +437,13 @@
       "expressions": [],
       "tags": [
         "person"
+      ],
+      "quotes": [
+        {
+          "text": "Dux femina facti",
+          "author_he": "וירגיליוס, האנאיד (על המלכה דידו)",
+          "meaning_he": "אישה הנהיגה את המעשה"
+        }
       ]
     },
     {
@@ -450,6 +513,13 @@
       "expressions": [],
       "tags": [
         "resource"
+      ],
+      "quotes": [
+        {
+          "text": "Agnosco veteris vestigia flammae",
+          "author_he": "וירגיליוס, האנאיד (דידו)",
+          "meaning_he": "אני מזהה את עקבות הלהבה הישנה"
+        }
       ]
     },
     {
@@ -472,7 +542,14 @@
         ],
         "note_he": "פורטפוליו הוא 'נושא דפים' (portare + foglio באיטלקית). transport הוא 'לשאת אל מעבר'."
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Omnia mea mecum porto",
+          "author_he": "ביאס החכם, בציטוט של קיקרו",
+          "meaning_he": "את כל אשר לי אני נושא איתי"
+        }
+      ]
     },
     {
       "id": "amo",
@@ -493,6 +570,13 @@
         {
           "text": "Omnia vincit Amor",
           "meaning_he": "האהבה מנצחת הכול — וירגיליוס (amor, 'אהבה', מאותו שורש)"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Odi et amo",
+          "author_he": "קטולוס, שיר 85",
+          "meaning_he": "אני שונא ואוהב"
         }
       ]
     },
@@ -534,6 +618,13 @@
           "text": "advocatus diaboli",
           "meaning_he": "פרקליט השטן — מי שטוען בכוונה את העמדה ההפוכה"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Vocatus atque non vocatus deus aderit",
+          "author_he": "אורקל דלפי בתרגום ארסמוס — חקוק על פתח ביתו של קרל יונג",
+          "meaning_he": "נקרא ושלא נקרא — האל יהיה נוכח"
+        }
       ]
     },
     {
@@ -569,7 +660,14 @@
           "espectador"
         ]
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Spectatum veniunt, veniunt spectentur ut ipsae",
+          "author_he": "אובידיוס, אמנות האהבה",
+          "meaning_he": "הן באות לראות, ובאות כדי שיראו אותן"
+        }
+      ]
     },
     {
       "id": "paro",
@@ -628,7 +726,14 @@
         ],
         "ro": []
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Aequam memento rebus in arduis servare mentem",
+          "author_he": "הורטיוס, אודות 2.3",
+          "meaning_he": "זכור לשמור על נפש שקולה בזמנים קשים"
+        }
+      ]
     },
     {
       "id": "non",
@@ -656,6 +761,13 @@
         {
           "text": "sine qua non",
           "meaning_he": "תנאי שבלעדיו אין — דבר הכרחי לגמרי"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Non vitae, sed scholae discimus",
+          "author_he": "סנקה, איגרות 106 (כתלונה; מאוחר יותר הפכו אותה לסיסמה ההפוכה)",
+          "meaning_he": "איננו לומדים לחיים, אלא לבית הספר"
         }
       ]
     },
@@ -732,6 +844,13 @@
       ],
       "tags": [
         "self"
+      ],
+      "quotes": [
+        {
+          "text": "Ego sum qui sum",
+          "author_he": "שמות ג 14, בתרגום הלטיני (הוולגטה)",
+          "meaning_he": "אהיה אשר אהיה"
+        }
       ]
     },
     {
@@ -753,6 +872,13 @@
       ],
       "tags": [
         "person"
+      ],
+      "quotes": [
+        {
+          "text": "Tu ne quaesieris, scire nefas",
+          "author_he": "הורטיוס, אודות 1.11",
+          "meaning_he": "אל תשאל — אסור לדעת"
+        }
       ]
     },
     {
@@ -845,6 +971,13 @@
           "text": "De te fabula narratur",
           "meaning_he": "הסיפור מסופר עליך — הורטיוס"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Acta est fabula, plaudite!",
+          "author_he": "מיוחס לקיסר אוגוסטוס על ערש דווי",
+          "meaning_he": "ההצגה הסתיימה — מחאו כפיים!"
+        }
       ]
     },
     {
@@ -918,6 +1051,13 @@
       ],
       "tags": [
         "element"
+      ],
+      "quotes": [
+        {
+          "text": "Ignis aurum probat, miseria fortes viros",
+          "author_he": "סנקה, על ההשגחה",
+          "meaning_he": "האש בוחנת את הזהב, והסבל — את האמיצים"
+        }
       ]
     },
     {
@@ -1019,7 +1159,8 @@
       "dictionary_form": "tentōrium -ī n.",
       "tags": [
         "building"
-      ]
+      ],
+      "ipa": "[tɛnˈtoː.ri.ũː]"
     },
     {
       "id": "aedifico",
@@ -1062,6 +1203,13 @@
       ],
       "tags": [
         "gift"
+      ],
+      "quotes": [
+        {
+          "text": "Timeo Danaos et dona ferentes",
+          "author_he": "וירגיליוס, האנאיד 2",
+          "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות"
+        }
       ]
     },
     {
@@ -1088,6 +1236,13 @@
       "dictionary_form": "amīcus -ī m.",
       "tags": [
         "person"
+      ],
+      "quotes": [
+        {
+          "text": "Amicus Plato, sed magis amica veritas",
+          "author_he": "ניסוח לטיני מימי הביניים לדברי אריסטו",
+          "meaning_he": "אפלטון ידיד, אבל האמת ידידה גדולה יותר"
+        }
       ]
     },
     {
@@ -1113,6 +1268,13 @@
       "dictionary_form": "deus -ī m.",
       "tags": [
         "divine"
+      ],
+      "quotes": [
+        {
+          "text": "Deus sive Natura",
+          "author_he": "ברוך שפינוזה, האתיקה",
+          "meaning_he": "אלוהים, כלומר הטבע"
+        }
       ]
     },
     {
@@ -1164,6 +1326,13 @@
           "text": "Novus ordo seclorum",
           "meaning_he": "סדר חדש של הדורות — כתוב על שטר הדולר"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Nihil sub sole novum",
+          "author_he": "קהלת א 9, בתרגום הלטיני (הוולגטה)",
+          "meaning_he": "אין כל חדש תחת השמש"
+        }
       ]
     },
     {
@@ -1193,6 +1362,13 @@
       "dictionary_form": "liber librī m.",
       "tags": [
         "resource"
+      ],
+      "quotes": [
+        {
+          "text": "Nullum esse librum tam malum, ut non aliqua parte prodesset",
+          "author_he": "פליניוס הזקן, כפי שסיפר אחיינו פליניוס הצעיר",
+          "meaning_he": "אין ספר כל כך גרוע שאין בו תועלת כלשהי"
+        }
       ]
     },
     {
@@ -1217,6 +1393,13 @@
       ],
       "tags": [
         "building"
+      ],
+      "quotes": [
+        {
+          "text": "Ad fontes",
+          "author_he": "סיסמת ההומניסטים בתקופת הרנסנס",
+          "meaning_he": "אל המקורות"
+        }
       ]
     },
     {
@@ -1298,6 +1481,13 @@
       "tags": [
         "element",
         "light"
+      ],
+      "quotes": [
+        {
+          "text": "Historia vero testis temporum, lux veritatis, vita memoriae, magistra vitae",
+          "author_he": "קיקרו, על הנואם",
+          "meaning_he": "ההיסטוריה היא עדת הזמנים, אור האמת, חיי הזיכרון ומורת החיים"
+        }
       ]
     },
     {
@@ -1320,6 +1510,13 @@
       "expressions": [],
       "tags": [
         "dark"
+      ],
+      "quotes": [
+        {
+          "text": "Nox est perpetua una dormienda",
+          "author_he": "קטולוס, שיר 5",
+          "meaning_he": "לילה נצחי אחד נצטרך לישון"
+        }
       ]
     },
     {
@@ -1346,6 +1543,13 @@
         {
           "text": "Facta, non verba",
           "meaning_he": "מעשים, לא מילים"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Feci quod potui, faciant meliora potentes",
+          "author_he": "נוסחה רומית מסורתית לסיום כהונה",
+          "meaning_he": "עשיתי מה שיכולתי; יעשו טוב יותר מי שיכולים"
         }
       ]
     },
@@ -1418,6 +1622,13 @@
           "text": "Non multa, sed multum",
           "meaning_he": "לא דברים רבים, אלא הרבה — איכות ולא כמות"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Multum legendum esse, non multa",
+          "author_he": "פליניוס הצעיר, איגרות 7.9",
+          "meaning_he": "צריך לקרוא הרבה, ולא דברים רבים"
+        }
       ]
     },
     {
@@ -1470,6 +1681,13 @@
       ],
       "tags": [
         "light"
+      ],
+      "quotes": [
+        {
+          "text": "Nihil sub sole novum",
+          "author_he": "קהלת א 9, בתרגום הלטיני (הוולגטה)",
+          "meaning_he": "אין כל חדש תחת השמש"
+        }
       ]
     },
     {
@@ -1494,6 +1712,13 @@
         {
           "text": "curriculum vitae",
           "meaning_he": "מהלך החיים — קורות חיים"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Historia magistra vitae",
+          "author_he": "קיקרו, על הנואם",
+          "meaning_he": "ההיסטוריה היא מורת החיים"
         }
       ]
     },
@@ -1544,6 +1769,13 @@
       ],
       "tags": [
         "force"
+      ],
+      "quotes": [
+        {
+          "text": "Vis consili expers mole ruit sua",
+          "author_he": "הורטיוס, אודות 3.4",
+          "meaning_he": "כוח בלי תבונה קורס תחת משקלו"
+        }
       ]
     },
     {
@@ -1589,6 +1821,13 @@
           "text": "ars longa, vita brevis",
           "meaning_he": "האומנות ארוכה, החיים קצרים"
         }
+      ],
+      "quotes": [
+        {
+          "text": "Ars adeo latet arte sua",
+          "author_he": "אובידיוס, מטמורפוזות (פיגמליון)",
+          "meaning_he": "עד כדי כך האמנות מסתתרת בתוך האמנות שלה"
+        }
       ]
     },
     {
@@ -1611,6 +1850,13 @@
       "expressions": [
         {
           "text": "Fortes fortuna adiuvat",
+          "meaning_he": "המזל עוזר לאמיצים"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Fortes fortuna adiuvat",
+          "author_he": "טרנטיוס, פורמיו",
           "meaning_he": "המזל עוזר לאמיצים"
         }
       ]
@@ -1652,6 +1898,18 @@
       ],
       "tags": [
         "resource"
+      ],
+      "quotes": [
+        {
+          "text": "Auri sacra fames",
+          "author_he": "וירגיליוס, האנאיד 3",
+          "meaning_he": "תאוות הזהב הארורה"
+        },
+        {
+          "text": "Ignis aurum probat, miseria fortes viros",
+          "author_he": "סנקה, על ההשגחה",
+          "meaning_he": "האש בוחנת את הזהב, והסבל — את האמיצים"
+        }
       ]
     },
     {
@@ -1676,6 +1934,13 @@
       ],
       "tags": [
         "resource"
+      ],
+      "quotes": [
+        {
+          "text": "Gutta cavat lapidem",
+          "author_he": "אובידיוס, מכתבים מהים השחור",
+          "meaning_he": "טיפה חוצבת את האבן"
+        }
       ]
     },
     {
@@ -1703,6 +1968,13 @@
       ],
       "tags": [
         "song"
+      ],
+      "quotes": [
+        {
+          "text": "Vox clamantis in deserto",
+          "author_he": "ישעיהו מ 3, בתרגום הלטיני (וגם בבשורות)",
+          "meaning_he": "קול קורא במדבר"
+        }
       ]
     },
     {
@@ -1730,6 +2002,13 @@
       ],
       "tags": [
         "song"
+      ],
+      "quotes": [
+        {
+          "text": "In principio erat Verbum",
+          "author_he": "הבשורה על-פי יוחנן א 1, בתרגום הלטיני",
+          "meaning_he": "בראשית היה הדבר"
+        }
       ]
     },
     {
@@ -1779,6 +2058,13 @@
       ],
       "tags": [
         "song"
+      ],
+      "quotes": [
+        {
+          "text": "Carmina morte carent",
+          "author_he": "אובידיוס",
+          "meaning_he": "שירים אינם יודעים מוות"
+        }
       ]
     },
     {
@@ -1798,7 +2084,14 @@
         ],
         "note_he": "ונטה הוא פתח לאוויר. שימו לב: ventus היא רוח שנושבת, ו-spīritus היא רוח במובן של נשמה."
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Ignoranti quem portum petat nullus suus ventus est",
+          "author_he": "סנקה, איגרות 71",
+          "meaning_he": "למי שאינו יודע לאיזה נמל הוא שט — אין רוח שמתאימה לו"
+        }
+      ]
     },
     {
       "id": "cano",
@@ -1822,6 +2115,13 @@
         {
           "text": "Arma virumque cano",
           "meaning_he": "את הנשק ואת האיש אני שר — שורת הפתיחה של האנאיד"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Arma virumque cano",
+          "author_he": "וירגיליוס, פתיחת האנאיד",
+          "meaning_he": "את הנשק ואת האיש אני שר"
         }
       ]
     },
@@ -1863,7 +2163,14 @@
         ],
         "note_he": "אודיו = \"אני שומע\". הציווי: audī! (שמע!)."
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Audi alteram partem",
+          "author_he": "עיקרון משפטי רומי",
+          "meaning_he": "שמע גם את הצד השני"
+        }
+      ]
     },
     {
       "id": "spiritus",
@@ -1890,6 +2197,13 @@
       ],
       "tags": [
         "spirit"
+      ],
+      "quotes": [
+        {
+          "text": "Spiritus ubi vult spirat",
+          "author_he": "הבשורה על-פי יוחנן ג 8, בתרגום הלטיני",
+          "meaning_he": "הרוח נושבת אל אשר תחפוץ"
+        }
       ]
     },
     {
@@ -1918,6 +2232,13 @@
       ],
       "tags": [
         "force"
+      ],
+      "quotes": [
+        {
+          "text": "Manus manum lavat",
+          "author_he": "סנקה ופטרוניוס",
+          "meaning_he": "יד רוחצת יד"
+        }
       ]
     },
     {
@@ -1936,7 +2257,14 @@
         ],
         "note_he": "celestial = שמימי. ceiling (תקרה) מאותו שורש — \"השמיים של החדר\"."
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Caelum non animum mutant qui trans mare currunt",
+          "author_he": "הורטיוס, איגרות 1.11",
+          "meaning_he": "את השמיים הם מחליפים, לא את הנפש — מי שחוצים את הים"
+        }
+      ]
     },
     {
       "id": "lumen",
@@ -1981,7 +2309,14 @@
         ],
         "note_he": "insomnia היא \"בלי שינה\". Somnus היה גם אל השינה."
       },
-      "expressions": []
+      "expressions": [],
+      "quotes": [
+        {
+          "text": "Somne, quies rerum",
+          "author_he": "אובידיוס, מטמורפוזות 11",
+          "meaning_he": "שינה, מנוחת כל הדברים"
+        }
+      ]
     },
     {
       "id": "mundus",
@@ -2005,7 +2340,8 @@
           "text": "Sic transit gloria mundi",
           "meaning_he": "כך חולפת תהילת העולם"
         }
-      ]
+      ],
+      "ipa": "[ˈmʊn.dʊs]"
     },
     {
       "id": "tenebrae",
@@ -2023,6 +2359,13 @@
       "expressions": [],
       "tags": [
         "dark"
+      ],
+      "quotes": [
+        {
+          "text": "Lux in tenebris lucet",
+          "author_he": "הבשורה על-פי יוחנן א 5, בתרגום הלטיני",
+          "meaning_he": "האור זורח בחושך"
+        }
       ]
     },
     {
@@ -2052,7 +2395,14 @@
           "meaning_he": "שיהיה לך הגוף — הזכות לא להיעצר בלי משפט"
         }
       ],
-      "deck": "corpus"
+      "deck": "corpus",
+      "quotes": [
+        {
+          "text": "Orandum est ut sit mens sana in corpore sano",
+          "author_he": "יובנאליס, סאטירות 10",
+          "meaning_he": "צריך להתפלל לנפש בריאה בגוף בריא"
+        }
+      ]
     },
     {
       "id": "caput",
@@ -2092,7 +2442,14 @@
         "note_he": "binoculars = \"שתי עיניים\"."
       },
       "expressions": [],
-      "deck": "corpus"
+      "deck": "corpus",
+      "quotes": [
+        {
+          "text": "Imago animi vultus est, indices oculi",
+          "author_he": "קיקרו, על הנואם",
+          "meaning_he": "הפנים הן דמות הנפש, והעיניים מגלות אותה"
+        }
+      ]
     },
     {
       "id": "pes",
@@ -2177,7 +2534,14 @@
         "note_he": "הנטייה הרביעית, כמו manus."
       },
       "expressions": [],
-      "deck": "corpus"
+      "deck": "corpus",
+      "quotes": [
+        {
+          "text": "Imago animi vultus est, indices oculi",
+          "author_he": "קיקרו, על הנואם",
+          "meaning_he": "הפנים הן דמות הנפש, והעיניים מגלות אותה"
+        }
+      ]
     },
     {
       "id": "mens",
@@ -2202,7 +2566,14 @@
           "meaning_he": "נפש בריאה בגוף בריא"
         }
       ],
-      "deck": "corpus"
+      "deck": "corpus",
+      "quotes": [
+        {
+          "text": "Orandum est ut sit mens sana in corpore sano",
+          "author_he": "יובנאליס, סאטירות 10",
+          "meaning_he": "צריך להתפלל לנפש בריאה בגוף בריא"
+        }
+      ]
     },
     {
       "id": "pater",
@@ -2271,7 +2642,14 @@
         ]
       },
       "expressions": [],
-      "deck": "familia"
+      "deck": "familia",
+      "quotes": [
+        {
+          "text": "Atque in perpetuum, frater, ave atque vale",
+          "author_he": "קטולוס, שיר 101 (על קבר אחיו)",
+          "meaning_he": "ולעולם, אחי, שלום ולהתראות"
+        }
+      ]
     },
     {
       "id": "soror",
@@ -2321,7 +2699,14 @@
         "note_he": "virtūs (אומץ, מעלה) בא מ-vir."
       },
       "expressions": [],
-      "deck": "familia"
+      "deck": "familia",
+      "quotes": [
+        {
+          "text": "Arma virumque cano",
+          "author_he": "וירגיליוס, פתיחת האנאיד",
+          "meaning_he": "את הנשק ואת האיש אני שר"
+        }
+      ]
     },
     {
       "id": "homo",
@@ -2346,7 +2731,14 @@
           "meaning_he": "אדם לאדם זאב"
         }
       ],
-      "deck": "familia"
+      "deck": "familia",
+      "quotes": [
+        {
+          "text": "Homo sum, humani nihil a me alienum puto",
+          "author_he": "טרנטיוס",
+          "meaning_he": "אדם אני, ושום דבר אנושי אינו זר לי"
+        }
+      ]
     },
     {
       "id": "rex",
@@ -2427,7 +2819,14 @@
           "meaning_he": "הים שלנו — השם הרומי לים התיכון"
         }
       ],
-      "deck": "natura"
+      "deck": "natura",
+      "quotes": [
+        {
+          "text": "Caelum non animum mutant qui trans mare currunt",
+          "author_he": "הורטיוס, איגרות 1.11",
+          "meaning_he": "את השמיים הם מחליפים, לא את הנפש — מי שחוצים את הים"
+        }
+      ]
     },
     {
       "id": "flumen",
@@ -2462,7 +2861,14 @@
         "note_he": "הגזע: mont-. Montana = \"ארץ ההרים\"."
       },
       "expressions": [],
-      "deck": "natura"
+      "deck": "natura",
+      "quotes": [
+        {
+          "text": "Parturient montes, nascetur ridiculus mus",
+          "author_he": "הורטיוס, אמנות השירה",
+          "meaning_he": "ההרים יחולו, ועכבר מגוחך ייוולד"
+        }
+      ]
     },
     {
       "id": "campus",
@@ -2591,7 +2997,14 @@
         "he": []
       },
       "expressions": [],
-      "deck": "animalia"
+      "deck": "animalia",
+      "quotes": [
+        {
+          "text": "Equo ne credite, Teucri",
+          "author_he": "וירגיליוס, האנאיד 2",
+          "meaning_he": "אל תבטחו בסוס, טרויאנים"
+        }
+      ]
     },
     {
       "id": "canis",
@@ -2648,7 +3061,19 @@
         "note_he": "animal הוא \"יצור שיש בו anima (נשימה)\"."
       },
       "expressions": [],
-      "deck": "animalia"
+      "deck": "animalia",
+      "origin": {
+        "hedge_he": null,
+        "unknown": false,
+        "steps": [
+          {
+            "lang": "Latin",
+            "lang_he": "לטינית",
+            "term": "anima",
+            "gloss_en": "breath"
+          }
+        ]
+      }
     },
     {
       "id": "domus",
@@ -2732,7 +3157,14 @@
           "meaning_he": "ביין — האמת"
         }
       ],
-      "deck": "animalia"
+      "deck": "animalia",
+      "quotes": [
+        {
+          "text": "In vino veritas",
+          "author_he": "פתגם לטיני, ברוח דברי פליניוס הזקן",
+          "meaning_he": "ביין — האמת"
+        }
+      ]
     },
     {
       "id": "navis",
@@ -2774,7 +3206,14 @@
           "meaning_he": "קטוף את היום — נצל את היום"
         }
       ],
-      "deck": "tempus"
+      "deck": "tempus",
+      "quotes": [
+        {
+          "text": "Carpe diem, quam minimum credula postero",
+          "author_he": "הורטיוס, אודות 1.11",
+          "meaning_he": "קטוף את היום, ובטח כמה שפחות במחר"
+        }
+      ]
     },
     {
       "id": "annus",
@@ -2814,7 +3253,14 @@
         "note_he": "horoscope = \"צופה בשעה\" (של הלידה)."
       },
       "expressions": [],
-      "deck": "tempus"
+      "deck": "tempus",
+      "quotes": [
+        {
+          "text": "Omnes vulnerant, ultima necat",
+          "author_he": "כתובת נפוצה על שעוני שמש (על השעות)",
+          "meaning_he": "כולן פוצעות; האחרונה הורגת"
+        }
+      ]
     },
     {
       "id": "tempus",
@@ -2840,7 +3286,14 @@
           "meaning_he": "הזמן בורח"
         }
       ],
-      "deck": "tempus"
+      "deck": "tempus",
+      "quotes": [
+        {
+          "text": "Sed fugit interea, fugit irreparabile tempus",
+          "author_he": "וירגיליוס, הגאורגיקה 3",
+          "meaning_he": "ובינתיים בורח הזמן, בורח ולא ישוב"
+        }
+      ]
     },
     {
       "id": "hiems",
@@ -2895,7 +3348,14 @@
           "meaning_he": "ראשון בין שווים"
         }
       ],
-      "deck": "tempus"
+      "deck": "tempus",
+      "quotes": [
+        {
+          "text": "Malo hic esse primus quam Romae secundus",
+          "author_he": "מיוחס ליוליוס קיסר (לפי פלוטרכוס)",
+          "meaning_he": "מוטב להיות ראשון כאן מאשר שני ברומא"
+        }
+      ]
     },
     {
       "id": "vetus",
@@ -2976,7 +3436,14 @@
           "meaning_he": "אהבת הגורל"
         }
       ],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Omnia vincit Amor: et nos cedamus Amori",
+          "author_he": "וירגיליוס, אקלוגות 10",
+          "meaning_he": "האהבה מנצחת הכול; גם אנחנו ניכנע לאהבה"
+        }
+      ]
     },
     {
       "id": "spes",
@@ -3018,7 +3485,14 @@
           "meaning_he": "יום הזעם"
         }
       ],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Ira furor brevis est",
+          "author_he": "הורטיוס, איגרות 1.2",
+          "meaning_he": "הכעס הוא טירוף קצר"
+        }
+      ]
     },
     {
       "id": "metus",
@@ -3048,7 +3522,14 @@
         "note_he": "Via Dolorosa = \"דרך הייסורים\" בירושלים."
       },
       "expressions": [],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Perfer et obdura; dolor hic tibi proderit olim",
+          "author_he": "אובידיוס, אמורס",
+          "meaning_he": "סבול והחזק מעמד; הכאב הזה יועיל לך יום אחד"
+        }
+      ]
     },
     {
       "id": "laetus",
@@ -3101,7 +3582,14 @@
           "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות"
         }
       ],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Timeo Danaos et dona ferentes",
+          "author_he": "וירגיליוס, האנאיד 2",
+          "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות"
+        }
+      ]
     },
     {
       "id": "gaudeo",
@@ -3144,7 +3632,14 @@
         "note_he": "credit הוא \"אמון\". credo = \"אני מאמין\"."
       },
       "expressions": [],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Credo ut intelligam",
+          "author_he": "אנסלם מקנטרברי",
+          "meaning_he": "אני מאמין כדי שאבין"
+        }
+      ]
     },
     {
       "id": "scio",
@@ -3163,7 +3658,14 @@
         "note_he": "science היא \"ידיעה\" (scientia)."
       },
       "expressions": [],
-      "deck": "animus"
+      "deck": "animus",
+      "quotes": [
+        {
+          "text": "Scio me nihil scire",
+          "author_he": "ניסוח לטיני לדברי סוקרטס",
+          "meaning_he": "אני יודע שאיני יודע דבר"
+        }
+      ]
     },
     {
       "id": "video",
@@ -3189,7 +3691,14 @@
           "meaning_he": "באתי, ראיתי, ניצחתי — יוליוס קיסר"
         }
       ],
-      "deck": "facta"
+      "deck": "facta",
+      "quotes": [
+        {
+          "text": "Video meliora proboque, deteriora sequor",
+          "author_he": "אובידיוס, מטמורפוזות 7 (מדיאה)",
+          "meaning_he": "אני רואה את הטוב ומסכימה לו — והולכת אחרי הרע"
+        }
+      ]
     },
     {
       "id": "habeo",
@@ -3232,7 +3741,14 @@
         "note_he": "טנור הוא הקול \"שמחזיק\" את המנגינה."
       },
       "expressions": [],
-      "deck": "facta"
+      "deck": "facta",
+      "quotes": [
+        {
+          "text": "Rem tene, verba sequentur",
+          "author_he": "מיוחס לקאטו הזקן",
+          "meaning_he": "החזק בעניין, והמילים יבואו"
+        }
+      ]
     },
     {
       "id": "venio",
@@ -3257,7 +3773,14 @@
           "meaning_he": "באתי, ראיתי, ניצחתי"
         }
       ],
-      "deck": "facta"
+      "deck": "facta",
+      "quotes": [
+        {
+          "text": "Veni, vidi, vici",
+          "author_he": "יוליוס קיסר, לפי סווטוניוס ופלוטרכוס",
+          "meaning_he": "באתי, ראיתי, ניצחתי"
+        }
+      ]
     },
     {
       "id": "dico",
@@ -3324,7 +3847,14 @@
         "note_he": "legend הוא \"מה שצריך לקרוא\". המשמעות המקורית: לאסוף."
       },
       "expressions": [],
-      "deck": "facta"
+      "deck": "facta",
+      "quotes": [
+        {
+          "text": "Tolle, lege",
+          "author_he": "אוגוסטינוס, וידויים 8",
+          "meaning_he": "קח, קרא"
+        }
+      ]
     },
     {
       "id": "curro",
@@ -3483,7 +4013,14 @@
         "note_he": "levitation = ריחוף, \"להפוך לקל\"."
       },
       "expressions": [],
-      "deck": "qualitates"
+      "deck": "qualitates",
+      "quotes": [
+        {
+          "text": "Sit tibi terra levis",
+          "author_he": "כתובת קבורה רומית נפוצה",
+          "meaning_he": "תהי האדמה קלה עליך"
+        }
+      ]
     },
     {
       "id": "dulcis",
@@ -3505,7 +4042,14 @@
           "meaning_he": "מתוק והולם הוא — הורטיוס"
         }
       ],
-      "deck": "qualitates"
+      "deck": "qualitates",
+      "quotes": [
+        {
+          "text": "Dulce et decorum est pro patria mori",
+          "author_he": "הורטיוס, אודות 3.2",
+          "meaning_he": "מתוק והולם למות למען המולדת"
+        }
+      ]
     },
     {
       "id": "pulcher",
@@ -3581,7 +4125,14 @@
           "meaning_he": "אמת, בלי שקר — פתיחת לוח הברקת"
         }
       ],
-      "deck": "qualitates"
+      "deck": "qualitates",
+      "quotes": [
+        {
+          "text": "Verum, sine mendacio, certum et verissimum",
+          "author_he": "לוח הברקת (Tabula Smaragdina)",
+          "meaning_he": "אמת, בלי שקר, ודאי ואמיתי ביותר"
+        }
+      ]
     }
   ]
 }

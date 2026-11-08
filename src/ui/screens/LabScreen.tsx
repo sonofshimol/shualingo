@@ -6,7 +6,7 @@
 import { unlockedMystic } from '../../game/ranks';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { CONFIG } from '../../config';
-import { wordById, words } from '../../content';
+import { stripMacrons, wordById, words } from '../../content';
 import type { Word } from '../../content/types';
 import { canAfford, subtractElements } from '../../game/elements';
 import { analyze, sentenceText, verbFrameById, wheelForms, type LabSentence, type SlotFill, type SlotRole } from '../../magic/grammar';
@@ -45,6 +45,12 @@ function candidates(role: SlotRole | 'modifier', known: Set<string>): Word[] {
   return [...nouns.filter((w) => w.tags?.length), ...nouns.filter((w) => !w.tags?.length)];
 }
 
+/** A–Z by Latin dictionary form (macrons ignored), or keep the "magic first" order of `candidates`. */
+export function sortWords(list: Word[], sortBy: 'az' | 'magic'): Word[] {
+  if (sortBy === 'magic') return list;
+  return [...list].sort((a, b) => stripMacrons(a.lemma).toLowerCase().localeCompare(stripMacrons(b.lemma).toLowerCase(), 'en'));
+}
+
 function defaultForm(word: Word): string {
   if (word.pos === 'verb') return word.forms['pres.3sg'] ?? wheelForms(word)[0];
   return wheelForms(word)[0] ?? word.lemma;
@@ -73,6 +79,8 @@ export function LabScreen() {
   const [picker, setPicker] = useState<{ role: SlotRole; modifier?: boolean } | null>(null);
   const [result, setResult] = useState<Omit<LabResult, 'save'> | null>(null);
   const [hint, setHint] = useState(false);
+  /** Word picker order: alphabetical (A–Z, ignoring macrons) or "magic first" (words spells can touch). */
+  const [sortBy, setSortBy] = useState<'az' | 'magic'>('az');
   const castCard = useRef<HTMLElement>(null);
   useEffect(() => {
     if (result) castCard.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -212,8 +220,16 @@ export function LabScreen() {
       {picker && (
         <Sheet title={picker.modifier ? 'בחרו שם תואר' : `${SLOT_INFO[picker.role].q} — בחרו מילה`} onClose={() => setPicker(null)}>
           <p className="muted small">מוצגות רק מילים שכבר פגשתם (בשיעורים, בחזרה או במשחק המילים).</p>
-          <div className="picker">
-            {candidates(picker.modifier ? 'modifier' : picker.role, known).map((w) => (
+          <div className="segmented two" role="radiogroup" aria-label="סדר המילים">
+            <button type="button" role="radio" aria-checked={sortBy === 'az'} className={sortBy === 'az' ? 'active' : ''} onClick={() => setSortBy('az')}>
+              לפי א-ב (A–Z)
+            </button>
+            <button type="button" role="radio" aria-checked={sortBy === 'magic'} className={sortBy === 'magic' ? 'active' : ''} onClick={() => setSortBy('magic')}>
+              קודם מילים של קסם
+            </button>
+          </div>
+          <div className="picker" dir="ltr">
+            {sortWords(candidates(picker.modifier ? 'modifier' : picker.role, known), sortBy).map((w) => (
               <button key={w.id} type="button" className="picker-word" onClick={() => pick(w)}>
                 <span lang="la" dir="ltr">{w.lemma}</span>
                 <span className="small muted">{w.meaning_he}</span>

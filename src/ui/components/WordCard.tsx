@@ -3,6 +3,7 @@ import { elementById, wordById } from '../../content';
 import type { Word } from '../../content/types';
 import { Ltr } from './La';
 import { Sheet } from './Sheet';
+import { Origin, Pronunciation, Quotes } from './WordExtras';
 
 const LANGS: { code: string; name: string }[] = [
   { code: 'en', name: 'אנגלית' },
@@ -87,6 +88,7 @@ export function WordCard({ wordId, onClose }: { wordId: string; onClose: () => v
         <div className="word-head">
           <div className="word-lemma" dir="ltr" lang="la">{word.lemma}</div>
           <div className="word-meaning">{word.meaning_he}</div>
+          <Pronunciation word={word} />
           <div className="word-meta">
             <Ltr lang="la">{word.dictionary_form}</Ltr> · {POS_HE[word.pos]}
             {word.ipa && <> · <Ltr>{word.ipa}</Ltr></>}
@@ -125,6 +127,10 @@ export function WordCard({ wordId, onClose }: { wordId: string; onClose: () => v
             </ul>
           </section>
         )}
+
+        <Quotes word={word} />
+
+        <Origin word={word} />
 
         {word.family.note_he && (
           <section>

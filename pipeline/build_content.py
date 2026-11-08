@@ -24,6 +24,9 @@ import unicodedata
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from word_extras import origin, pron_he  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "pipeline" / "sources"
 CURATED = ROOT / "pipeline" / "curated" / "words.json"
@@ -272,7 +275,7 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
         "pos": item["pos"],
         "meaning_he": item["meaning_he"],
         "meaning_en": row["Definition"].strip() if row else first_gloss(entry),
-        "ipa": extract_ipa(entry),
+        "ipa": extract_ipa(entry) or item.get("ipa"),  # curated ipa only when Wiktionary has none
         "dcc_rank": int(row["Frequency Rank"]) if row else None,
         "dcc_group": row["Semantic Group"].strip() if row else None,
         "exception_reason": item.get("exception_reason"),
@@ -285,6 +288,10 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
     if item["pos"] == "noun":
         record["gender"] = gender
         record["declension"] = declension
+    # Word card extras (stage 3 feedback): lineage, Hebrew pronunciation, famous quotes.
+    record["origin"] = item.get("origin") or origin(entry)   # curated "origin" overrides the parser
+    record["pron_he"] = pron_he(record["ipa"], lemma)
+    record["quotes"] = item.get("quotes", [])
     if item.get("deck"):
         record["deck"] = item["deck"]
     if item.get("tags"):

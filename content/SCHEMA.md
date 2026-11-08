@@ -50,6 +50,9 @@
 | `etymology_en` | מחרוזת או null | kaikki | האטימולוגיה המלאה מוויקימילון (באנגלית, לשימוש עתידי) |
 | `gender`, `declension` | `m`/`f`/`n`, 1–5 | kaikki | לשמות עצם בלבד: מין ונטייה (המעבדה בודקת התאמת שם תואר) |
 | `deck` | מחרוזת | curated | חפיסה במשחק המילים (`decks.json`); בלי `deck` המילה שייכת ליחידות |
+| `origin` | אובייקט או null | kaikki (או curated) | שרשרת המקור: `{hedge_he, unknown, steps: [{lang, lang_he, term, gloss_en}]}`, מהחדש לישן |
+| `pron_he` | מערך | נגזר מ-IPA | הגייה בעברית לפי הברות: `{t, stress, long}` (t = אותיות עם ניקוד) |
+| `quotes` | מערך | curated | ציטוטים מפורסמים: `{text, author_he, meaning_he}` |
 | `tags` | מערך | curated | תגיות משמעות למעבדה: `resource`, `plant`, `building`, `person`, `divine`, `self`, `element`, `light`, `dark`, `spirit`, `song`, `force`, `gift`, `place` |
 
 **מפתחות ב-`forms`:**
@@ -61,7 +64,7 @@
 **`family`:** מפתח לכל שפה, וערכו רשימת מילים: `en` אנגלית, `he` עברית, `es` ספרדית, `it` איטלקית, `fr` צרפתית, `pt` פורטוגזית, `ro` רומנית, `ca` קטלאנית. בנוסף `note_he`, הערה קצרה על הקשר בין המילים.
 אנגלית ועברית נכתבות ביד. השפות הרומאניות נלקחות אוטומטית מוויקימילון, אלא אם נכתבו ביד ב-curated (רשימה שנכתבה ביד, גם ריקה `[]`, גוברת על האוטומטית).
 
-**שדות נוספים ב-`pipeline/curated/words.json` בלבד:** `dcc_headword` (הערך המדויק ברשימת DCC, או null), `kaikki_pos` (כשוויקימילון מסווג אחרת, למשל `particle` ל-`nōn`), `kaikki_nth` (איזה ערך לקחת כשיש כמה מילים זהות באותו חלק דיבר), `respell` (תיקון כתיב לספרי לימוד, למשל `[["stēll", "stell"]]`).
+**שדות נוספים ב-`pipeline/curated/words.json` בלבד:** `origin` (עוקף את המקור האוטומטי), `ipa` (רק כשאין בוויקימילון), `dcc_headword` (הערך המדויק ברשימת DCC, או null), `kaikki_pos` (כשוויקימילון מסווג אחרת, למשל `particle` ל-`nōn`), `kaikki_nth` (איזה ערך לקחת כשיש כמה מילים זהות באותו חלק דיבר), `respell` (תיקון כתיב לספרי לימוד, למשל `[["stēll", "stell"]]`).
 
 ---
 

@@ -15,7 +15,8 @@ import { play } from '../feedback/sfx';
 interface Props<E> {
   exercise: E;
   locked: boolean;
-  onSubmit: (correct: boolean) => void;
+  /** `given` is the player's answer (tiles, chosen option or ending) — used to explain mistakes. */
+  onSubmit: (correct: boolean, given?: string | string[]) => void;
 }
 
 function CheckButton({ disabled, onClick, locked }: { disabled: boolean; onClick: () => void; locked: boolean }) {
@@ -126,7 +127,7 @@ function ChoiceView({ exercise, locked, onSubmit }: Props<ChoiceExercise>) {
           );
         })}
       </div>
-      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(choiceMatches(exercise.answer, picked))} />
+      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(choiceMatches(exercise.answer, picked), picked)} />
     </div>
   );
 }
@@ -151,7 +152,7 @@ function BuildView({ exercise, locked, onSubmit }: Props<BuildExercise>) {
       <CheckButton
         locked={locked}
         disabled={placed.length === 0}
-        onClick={() => onSubmit(tilesMatch(exercise, placed.map((i) => bank[i])))}
+        onClick={() => onSubmit(tilesMatch(exercise, placed.map((i) => bank[i])), placed.map((i) => bank[i]))}
       />
     </div>
   );
@@ -187,7 +188,7 @@ function RoleView({ exercise, locked, onSubmit }: Props<RoleExercise>) {
           );
         })}
       </div>
-      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(picked === exercise.answer)} />
+      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(picked === exercise.answer, picked)} />
     </div>
   );
 }
@@ -222,7 +223,7 @@ function EndingView({ exercise, locked, onSubmit }: Props<EndingExercise>) {
           );
         })}
       </div>
-      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(picked === exercise.answer)} />
+      <CheckButton locked={locked} disabled={!picked} onClick={() => picked && onSubmit(picked === exercise.answer, picked)} />
     </div>
   );
 }

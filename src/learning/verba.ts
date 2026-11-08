@@ -1,8 +1,8 @@
 /**
  * Verba — the word mini-game. Themed decks of common DCC words.
  * A new word is first introduced (meaning + familiar relatives), then quizzed later in the round.
- * Known words come back through FSRS. Each first-try correct answer earns the word's own element,
- * up to a daily cap.
+ * Known words come back through FSRS. Each correct answer earns one of the word's own element
+ * (no daily cap — the user asked for none).
  */
 import { CONFIG } from '../config';
 import { deckWords, wordById } from '../content';
@@ -73,12 +73,7 @@ export function buildRound(save: SaveState, deckId: string, now: number, random:
   return cards;
 }
 
-export function verbaLeftToday(save: SaveState, now: number): number {
-  const earned = save.daily.verbaDay === dayKey(now) ? save.daily.verbaEarned : 0;
-  return Math.max(0, CONFIG.VERBA_DAILY_CAP - earned);
-}
-
-/** Applies a finished round: spaced repetition for every word, and elements within today's cap. */
+/** Applies a finished round: spaced repetition for every word, and one element per correct answer. */
 export function finishRound(
   save: SaveState,
   results: { wordId: string; correct: boolean }[],
@@ -86,13 +81,11 @@ export function finishRound(
 ): { save: SaveState; earned: ElementDelta } {
   const ratings: Record<string, boolean> = {};
   for (const r of results) ratings[wordCard(r.wordId)] = (ratings[wordCard(r.wordId)] ?? true) && r.correct;
-  let left = verbaLeftToday(save, now);
   const earned: ElementDelta = {};
   for (const r of results) {
-    if (!r.correct || left <= 0) continue;
+    if (!r.correct) continue;
     const element = (wordById.get(r.wordId)?.element ?? 'terra') as ElementId;
     earned[element] = (earned[element] ?? 0) + 1;
-    left -= 1;
   }
   const gained = Object.values(earned).reduce((a, b) => a + (b ?? 0), 0);
   const today = dayKey(now);
