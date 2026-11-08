@@ -40,6 +40,13 @@ export interface Word {
   family: WordFamily;
   expressions: Expression[];
   etymology_en: string | null;
+  /** Nouns: grammatical gender and declension (from Wiktionary). */
+  gender?: 'm' | 'f' | 'n' | null;
+  declension?: number | null;
+  /** Themed deck for the word mini-game (Verba). Words without a deck belong to the units. */
+  deck?: string;
+  /** Meaning tags the spell lab uses (resource, plant, person, building…). */
+  tags?: string[];
 }
 
 export interface Rule {

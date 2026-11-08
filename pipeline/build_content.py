@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 import json
 import sys
 import time
@@ -198,6 +199,25 @@ def extract_descendants(entry: dict) -> dict[str, list[str]]:
     return {lang: words for lang, words in found.items() if words}
 
 
+DECLENSION_WORDS = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5}
+
+
+def extract_gender_declension(entry: dict) -> tuple[str | None, int | None]:
+    """Gender (m/f/n) and declension (1-5) from Wiktionary's headword line, e.g.
+    'fēmina f (genitive fēminae); first declension'."""
+    expansion = " ".join(t.get("expansion", "") for t in entry.get("head_templates", []))
+    gender = None
+    match = re.search(r"\s(m|f|n)(?:\s|$|\()", expansion)
+    if match:
+        gender = match.group(1)
+    declension = None
+    for word, number in DECLENSION_WORDS.items():
+        if f"{word} declension" in expansion or f"{word}-declension" in expansion:
+            declension = number
+            break
+    return gender, declension
+
+
 def first_gloss(entry: dict) -> str:
     for sense in entry.get("senses", []):
         if sense.get("glosses"):
@@ -244,7 +264,8 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
         lemma = lemma.replace(old, new)
         forms = {key: value.replace(old, new) for key, value in forms.items()}
 
-    return {
+    gender, declension = extract_gender_declension(entry)
+    record = {
         "id": item["id"],
         "lemma": lemma,
         "dictionary_form": item.get("dictionary_form") or headword,
@@ -261,6 +282,14 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
         "expressions": item.get("expressions", []),
         "etymology_en": entry.get("etymology_text"),
     }
+    if item["pos"] == "noun":
+        record["gender"] = gender
+        record["declension"] = declension
+    if item.get("deck"):
+        record["deck"] = item["deck"]
+    if item.get("tags"):
+        record["tags"] = item["tags"]
+    return record
 
 
 def main() -> None:

@@ -18,7 +18,10 @@
         ],
         "note_he": "Pennsylvania היא 'היער של פן', ו-Transylvania היא 'הארץ שמעבר ליער'. סילבסטר (ערב השנה החדשה) נקרא על שם האפיפיור Silvester, שפירוש שמו 'איש היער'."
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "place"
+      ]
     },
     {
       "id": "terra",
@@ -59,6 +62,9 @@
           "text": "terra firma",
           "meaning_he": "קרקע מוצקה, אדמה יציבה (בניגוד לים)"
         }
+      ],
+      "tags": [
+        "element"
       ]
     },
     {
@@ -89,6 +95,10 @@
           "text": "aqua vitae",
           "meaning_he": "מי חיים — כינוי עתיק למשקאות חריפים מזוקקים"
         }
+      ],
+      "tags": [
+        "resource",
+        "element"
       ]
     },
     {
@@ -104,7 +114,10 @@
         "he": [],
         "note_he": "puella היא צורת הקטנה של puer (ילד, נער). מ-puer הגיעה המילה האנגלית puerile, ילדותי."
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "person"
+      ]
     },
     {
       "id": "stella",
@@ -138,6 +151,9 @@
           "stēll",
           "stell"
         ]
+      ],
+      "tags": [
+        "light"
       ]
     },
     {
@@ -164,6 +180,9 @@
           "text": "Luna",
           "meaning_he": "הירח — גם שמו של אחד מקלפי הטארוט"
         }
+      ],
+      "tags": [
+        "light"
       ]
     },
     {
@@ -181,7 +200,10 @@
         "he": [],
         "note_he": "umbrella (מטרייה) הגיעה מאיטלקית ופירושה 'צל קטן'. penumbra היא 'כמעט-צל', חצי-הצל בליקוי ירח."
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "element"
+      ]
     },
     {
       "id": "sum",
@@ -356,7 +378,10 @@
         "ro": [],
         "ca": []
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "person"
+      ]
     },
     {
       "id": "anima",
@@ -422,7 +447,10 @@
           "flamme"
         ]
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "resource"
+      ]
     },
     {
       "id": "porto",
@@ -701,6 +729,9 @@
           "text": "alter ego",
           "meaning_he": "אני אחר — זהות שנייה של אותו אדם"
         }
+      ],
+      "tags": [
+        "self"
       ]
     },
     {
@@ -719,6 +750,9 @@
           "text": "Et tu, Brute?",
           "meaning_he": "גם אתה, ברוטוס? — מילותיו של יוליוס קיסר במחזה של שייקספיר"
         }
+      ],
+      "tags": [
+        "person"
       ]
     },
     {
@@ -744,6 +778,9 @@
           "text": "lignum vitae",
           "meaning_he": "עץ החיים — גם שמו של עץ טרופי קשה במיוחד"
         }
+      ],
+      "tags": [
+        "resource"
       ]
     },
     {
@@ -778,6 +815,9 @@
           "text": "deus ex machina",
           "meaning_he": "האל מן המכונה — פתרון פתאומי ומלאכותי בעלילה"
         }
+      ],
+      "tags": [
+        "divine"
       ]
     },
     {
@@ -849,7 +889,10 @@
           "fiică"
         ]
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "person"
+      ]
     },
     {
       "id": "ignis",
@@ -872,6 +915,9 @@
           "text": "ignis fatuus",
           "meaning_he": "אש שוטה — אור מרצד ומטעה שנראה בביצות"
         }
+      ],
+      "tags": [
+        "element"
       ]
     },
     {
@@ -894,7 +940,10 @@
         ],
         "note_he": "גם המילה העברית 'אוויר' הגיעה מהיוונית ἀήρ, בדיוק כמו הלטינית āēr. אחד מחמשת האלמנטים במשחק."
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "element"
+      ]
     },
     {
       "id": "aether",
@@ -919,6 +968,9 @@
           "text": "quinta essentia",
           "meaning_he": "המהות החמישית — האלמנט שמעל אדמה, מים, אוויר ואש"
         }
+      ],
+      "tags": [
+        "element"
       ]
     },
     {
@@ -941,7 +993,11 @@
         }
       ],
       "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
-      "dictionary_form": "hortus -ī m."
+      "dictionary_form": "hortus -ī m.",
+      "tags": [
+        "plant",
+        "building"
+      ]
     },
     {
       "id": "tentorium",
@@ -960,7 +1016,10 @@
       },
       "expressions": [],
       "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
-      "dictionary_form": "tentōrium -ī n."
+      "dictionary_form": "tentōrium -ī n.",
+      "tags": [
+        "building"
+      ]
     },
     {
       "id": "aedifico",
@@ -1000,6 +1059,9 @@
           "text": "Timeo Danaos et dona ferentes",
           "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות — על הסוס הטרויאני, וירגיליוס"
         }
+      ],
+      "tags": [
+        "gift"
       ]
     },
     {
@@ -1023,7 +1085,10 @@
         }
       ],
       "kaikki_pos": "noun",
-      "dictionary_form": "amīcus -ī m."
+      "dictionary_form": "amīcus -ī m.",
+      "tags": [
+        "person"
+      ]
     },
     {
       "id": "deus",
@@ -1045,7 +1110,10 @@
           "meaning_he": "תודה לאל"
         }
       ],
-      "dictionary_form": "deus -ī m."
+      "dictionary_form": "deus -ī m.",
+      "tags": [
+        "divine"
+      ]
     },
     {
       "id": "bonus",
@@ -1122,7 +1190,10 @@
         }
       ],
       "kaikki_nth": 0,
-      "dictionary_form": "liber librī m."
+      "dictionary_form": "liber librī m.",
+      "tags": [
+        "resource"
+      ]
     },
     {
       "id": "fons",
@@ -1143,6 +1214,9 @@
           "text": "fons et origo",
           "meaning_he": "המקור והמוצא של משהו"
         }
+      ],
+      "tags": [
+        "building"
       ]
     },
     {
@@ -1166,7 +1240,10 @@
         }
       ],
       "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
-      "dictionary_form": "turris -is f."
+      "dictionary_form": "turris -is f.",
+      "tags": [
+        "building"
+      ]
     },
     {
       "id": "arbor",
@@ -1188,6 +1265,9 @@
           "text": "arbor vitae",
           "meaning_he": "עץ החיים"
         }
+      ],
+      "tags": [
+        "plant"
       ]
     },
     {
@@ -1214,6 +1294,10 @@
           "text": "Fiat lux",
           "meaning_he": "יהי אור — מתוך ספר בראשית בתרגום הלטיני"
         }
+      ],
+      "tags": [
+        "element",
+        "light"
       ]
     },
     {
@@ -1233,7 +1317,10 @@
         ],
         "note_he": "equinox הוא 'לילה שווה' (aequus + nox): היום שבו היום והלילה שווים. הגזע הוא noct-: noctem."
       },
-      "expressions": []
+      "expressions": [],
+      "tags": [
+        "dark"
+      ]
     },
     {
       "id": "facio",
@@ -1280,7 +1367,10 @@
       },
       "expressions": [],
       "exception_reason": "Building or spell word from SPEC.md stage 2; not in the DCC core list (approved by the user as a documented exception).",
-      "dictionary_form": "bibliothēca -ae f."
+      "dictionary_form": "bibliothēca -ae f.",
+      "tags": [
+        "building"
+      ]
     },
     {
       "id": "cresco",
@@ -1377,6 +1467,9 @@
           "text": "Sol invictus",
           "meaning_he": "השמש הבלתי מנוצחת"
         }
+      ],
+      "tags": [
+        "light"
       ]
     },
     {
@@ -1428,6 +1521,2067 @@
           "meaning_he": "טפל בעצמך — 'רופא, רפא את עצמך'"
         }
       ]
+    },
+    {
+      "id": "vis",
+      "pos": "noun",
+      "dcc_headword": "vīs f.",
+      "meaning_he": "כוח",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "violent",
+          "vim"
+        ],
+        "he": [],
+        "note_he": "מילה יוצאת דופן: vīs (כוח), vim (את הכוח), vī (בכוח). magnā vī = בכוח רב — התוספת שמחזקת לחשים."
+      },
+      "expressions": [
+        {
+          "text": "magna vi",
+          "meaning_he": "בכוח רב"
+        }
+      ],
+      "tags": [
+        "force"
+      ]
+    },
+    {
+      "id": "cum",
+      "pos": "prep",
+      "dcc_headword": "cum",
+      "meaning_he": "עם",
+      "element": "aer",
+      "family": {
+        "en": [
+          "combine",
+          "company"
+        ],
+        "he": [],
+        "note_he": "cum בא לפני מילה ביחסת האמצעי: cum amīcō = עם חבר. הרבה מילים באנגלית מתחילות בו בצורה con- או com-."
+      },
+      "expressions": [
+        {
+          "text": "magna cum laude",
+          "meaning_he": "בשבח רב — בתעודות סיום"
+        }
+      ]
+    },
+    {
+      "id": "ars",
+      "pos": "noun",
+      "dcc_headword": "ars artis f.",
+      "meaning_he": "אומנות, מיומנות",
+      "element": "aer",
+      "family": {
+        "en": [
+          "art",
+          "artist",
+          "artificial"
+        ],
+        "he": [
+          "ארט"
+        ],
+        "note_he": "הגזע הוא art-: artem, arte. בעולם של השועלה, קסם הוא ars — אומנות שלומדים."
+      },
+      "expressions": [
+        {
+          "text": "ars longa, vita brevis",
+          "meaning_he": "האומנות ארוכה, החיים קצרים"
+        }
+      ]
+    },
+    {
+      "id": "fortis",
+      "pos": "adj",
+      "dcc_headword": "fortis -e",
+      "meaning_he": "אמיץ, חזק",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "fort",
+          "fortress",
+          "fortitude"
+        ],
+        "he": [
+          "פורטה"
+        ],
+        "note_he": "פורטה במוזיקה = חזק. שם תואר מהנטייה השלישית: fortis לזכר ולנקבה, forte לסתמי."
+      },
+      "expressions": [
+        {
+          "text": "Fortes fortuna adiuvat",
+          "meaning_he": "המזל עוזר לאמיצים"
+        }
+      ]
+    },
+    {
+      "id": "saxum",
+      "pos": "noun",
+      "dcc_headword": "saxum -ī n.",
+      "meaning_he": "סלע",
+      "element": "terra",
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "מילה בסתמי כמו lignum: saxum, saxō (בסלע)."
+      },
+      "expressions": [],
+      "tags": [
+        "resource"
+      ]
+    },
+    {
+      "id": "aurum",
+      "pos": "noun",
+      "dcc_headword": "aurum -ī n.",
+      "meaning_he": "זהב",
+      "element": "aether",
+      "family": {
+        "en": [
+          "auriferous"
+        ],
+        "he": [],
+        "note_he": "הסמל הכימי של זהב, Au, בא מ-aurum. אלכימאים ניסו להפוך מתכות פשוטות לזהב."
+      },
+      "expressions": [
+        {
+          "text": "aurea mediocritas",
+          "meaning_he": "שביל הזהב — הדרך הממוצעת"
+        }
+      ],
+      "tags": [
+        "resource"
+      ]
+    },
+    {
+      "id": "lapis",
+      "pos": "noun",
+      "dcc_headword": "lapis lapidis m.",
+      "meaning_he": "אבן",
+      "element": "terra",
+      "family": {
+        "en": [
+          "lapidary",
+          "lapis lazuli"
+        ],
+        "he": [],
+        "note_he": "הגזע הוא lapid-: lapidem, lapide."
+      },
+      "expressions": [
+        {
+          "text": "lapis philosophorum",
+          "meaning_he": "אבן החכמים — החומר האגדי של האלכימאים"
+        }
+      ],
+      "tags": [
+        "resource"
+      ]
+    },
+    {
+      "id": "vox",
+      "pos": "noun",
+      "dcc_headword": "vōx vōcis f.",
+      "meaning_he": "קול",
+      "element": "aer",
+      "family": {
+        "en": [
+          "voice",
+          "vocal",
+          "vowel"
+        ],
+        "he": [
+          "ווקאלי"
+        ],
+        "note_he": "הגזע הוא vōc-: vōcem. קרוב ל-vocō (לקרוא)."
+      },
+      "expressions": [
+        {
+          "text": "vox populi",
+          "meaning_he": "קול העם"
+        }
+      ],
+      "tags": [
+        "song"
+      ]
+    },
+    {
+      "id": "verbum",
+      "pos": "noun",
+      "dcc_headword": "verbum -ī n.",
+      "meaning_he": "מילה",
+      "element": "aer",
+      "family": {
+        "en": [
+          "verb",
+          "verbal",
+          "verbatim"
+        ],
+        "he": [
+          "ורבלי"
+        ],
+        "note_he": "verb (פועל) באנגלית הוא בעצם \"המילה\" — המילה החשובה במשפט."
+      },
+      "expressions": [
+        {
+          "text": "Verba volant, scripta manent",
+          "meaning_he": "מילים עפות, הכתוב נשאר"
+        }
+      ],
+      "tags": [
+        "song"
+      ]
+    },
+    {
+      "id": "nomen",
+      "pos": "noun",
+      "dcc_headword": "nōmen -inis n.",
+      "meaning_he": "שם",
+      "element": "aer",
+      "family": {
+        "en": [
+          "name",
+          "noun",
+          "nominate"
+        ],
+        "he": [
+          "נומינלי"
+        ],
+        "note_he": "noun (שם עצם) בא מ-nōmen. הגזע הוא nōmin-: nōmine."
+      },
+      "expressions": [
+        {
+          "text": "nomen est omen",
+          "meaning_he": "השם הוא סימן"
+        }
+      ]
+    },
+    {
+      "id": "carmen",
+      "pos": "noun",
+      "dcc_headword": "carmen -inis n.",
+      "meaning_he": "שיר, לחש",
+      "element": "aether",
+      "family": {
+        "en": [
+          "charm"
+        ],
+        "he": [
+          "כרמן"
+        ],
+        "note_he": "carmen הוא גם שיר וגם לחש קסם — ברומא העתיקה קסמים נאמרו בשירה. charm באנגלית בא ממנו."
+      },
+      "expressions": [
+        {
+          "text": "Carmina Burana",
+          "meaning_he": "שירי בוירן — יצירה מוזיקלית מפורסמת"
+        }
+      ],
+      "tags": [
+        "song"
+      ]
+    },
+    {
+      "id": "ventus",
+      "pos": "noun",
+      "dcc_headword": "ventus -ī m.",
+      "meaning_he": "רוח (נושבת)",
+      "element": "aer",
+      "family": {
+        "en": [
+          "vent",
+          "ventilate"
+        ],
+        "he": [
+          "ונטה",
+          "ונטילציה"
+        ],
+        "note_he": "ונטה הוא פתח לאוויר. שימו לב: ventus היא רוח שנושבת, ו-spīritus היא רוח במובן של נשמה."
+      },
+      "expressions": []
+    },
+    {
+      "id": "cano",
+      "pos": "verb",
+      "dcc_headword": "canō canere cecinī cantum",
+      "meaning_he": "לשיר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "chant",
+          "cantor",
+          "incantation"
+        ],
+        "he": [
+          "קנטטה",
+          "קנטור"
+        ],
+        "note_he": "incantation (לחש) הוא \"לשיר אל\" — הלחשים של השועלה הם incantātiōnēs. הציווי: cane! (שיר!)."
+      },
+      "expressions": [
+        {
+          "text": "Arma virumque cano",
+          "meaning_he": "את הנשק ואת האיש אני שר — שורת הפתיחה של האנאיד"
+        }
+      ]
+    },
+    {
+      "id": "mitto",
+      "pos": "verb",
+      "dcc_headword": "mittō mittere mīsī missum",
+      "meaning_he": "לשלוח",
+      "element": "aer",
+      "family": {
+        "en": [
+          "mission",
+          "missile",
+          "transmit"
+        ],
+        "he": [
+          "מיסיה",
+          "מיסיונר"
+        ],
+        "note_he": "missile הוא \"משהו שנשלח\". הציווי: mitte! (שלח!)."
+      },
+      "expressions": []
+    },
+    {
+      "id": "audio",
+      "pos": "verb",
+      "dcc_headword": "audiō -īre -īvī/-iī -ītum",
+      "meaning_he": "לשמוע",
+      "element": "aer",
+      "family": {
+        "en": [
+          "audio",
+          "audience",
+          "audition"
+        ],
+        "he": [
+          "אודיו",
+          "אודיטוריום"
+        ],
+        "note_he": "אודיו = \"אני שומע\". הציווי: audī! (שמע!)."
+      },
+      "expressions": []
+    },
+    {
+      "id": "spiritus",
+      "pos": "noun",
+      "dcc_headword": "spīritus -ūs m.",
+      "meaning_he": "רוח, נשמה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "spirit",
+          "inspire",
+          "respiration"
+        ],
+        "he": [
+          "ספיריטואלי"
+        ],
+        "note_he": "הנטייה הרביעית: spīritus, spīritum (את), spīrituī (ל-). מאותו שורש spīrō, לנשום — inspire הוא \"לנשוף פנימה\"."
+      },
+      "expressions": [
+        {
+          "text": "Spiritus mundi",
+          "meaning_he": "רוח העולם"
+        }
+      ],
+      "tags": [
+        "spirit"
+      ]
+    },
+    {
+      "id": "manus",
+      "pos": "noun",
+      "dcc_headword": "manus -ūs f.",
+      "meaning_he": "יד",
+      "element": "terra",
+      "family": {
+        "en": [
+          "manual",
+          "manuscript",
+          "manufacture"
+        ],
+        "he": [
+          "מניפולציה",
+          "מניקור"
+        ],
+        "note_he": "מניקור הוא \"טיפול ביד\". הנטייה הרביעית: manum, manuī, manū (ביד)."
+      },
+      "expressions": [
+        {
+          "text": "manu propria",
+          "meaning_he": "בכתב ידו"
+        }
+      ],
+      "tags": [
+        "force"
+      ]
+    },
+    {
+      "id": "caelum",
+      "pos": "noun",
+      "dcc_headword": "caelum -ī n.",
+      "meaning_he": "שמיים",
+      "element": "aether",
+      "family": {
+        "en": [
+          "celestial",
+          "ceiling"
+        ],
+        "he": [
+          "צ'לסטה"
+        ],
+        "note_he": "celestial = שמימי. ceiling (תקרה) מאותו שורש — \"השמיים של החדר\"."
+      },
+      "expressions": []
+    },
+    {
+      "id": "lumen",
+      "pos": "noun",
+      "dcc_headword": "lūmen luminis n.",
+      "meaning_he": "אור (מנורה, נר)",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "luminous",
+          "illuminate",
+          "lumen"
+        ],
+        "he": [
+          "לומן"
+        ],
+        "note_he": "lūmen הוא אור שמאיר מתוך משהו — נר, עין, כוכב. קרוב ל-lūx. הגזע: lūmin-."
+      },
+      "expressions": [
+        {
+          "text": "Lumen gentium",
+          "meaning_he": "אור לגויים"
+        }
+      ],
+      "tags": [
+        "light"
+      ]
+    },
+    {
+      "id": "somnus",
+      "pos": "noun",
+      "dcc_headword": "somnus -ī m.",
+      "meaning_he": "שינה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "insomnia",
+          "somnambulist"
+        ],
+        "he": [
+          "סומנמבול"
+        ],
+        "note_he": "insomnia היא \"בלי שינה\". Somnus היה גם אל השינה."
+      },
+      "expressions": []
+    },
+    {
+      "id": "mundus",
+      "pos": "noun",
+      "dcc_headword": "mundus -ī m.",
+      "meaning_he": "עולם",
+      "element": "terra",
+      "family": {
+        "en": [
+          "mundane"
+        ],
+        "he": [],
+        "note_he": "mundane (יומיומי) הוא \"של העולם הזה\"."
+      },
+      "expressions": [
+        {
+          "text": "anima mundi",
+          "meaning_he": "נשמת העולם"
+        },
+        {
+          "text": "Sic transit gloria mundi",
+          "meaning_he": "כך חולפת תהילת העולם"
+        }
+      ]
+    },
+    {
+      "id": "tenebrae",
+      "pos": "noun",
+      "dcc_headword": "tenebrae -brārum f. pl.",
+      "meaning_he": "חושך",
+      "element": "aether",
+      "family": {
+        "en": [
+          "tenebrous"
+        ],
+        "he": [],
+        "note_he": "מילה שבאה רק ברבים: tenebrae, tenebrās. השועלה מגרשת אותן בלחשי האור."
+      },
+      "expressions": [],
+      "tags": [
+        "dark"
+      ]
+    },
+    {
+      "id": "corpus",
+      "pos": "noun",
+      "dcc_headword": "corpus corporis n.",
+      "meaning_he": "גוף",
+      "element": "terra",
+      "family": {
+        "en": [
+          "corpse",
+          "corporal",
+          "corps"
+        ],
+        "he": [
+          "קורפוס"
+        ],
+        "note_he": "הגזע הוא corpor-."
+      },
+      "expressions": [
+        {
+          "text": "Mens sana in corpore sano",
+          "meaning_he": "נפש בריאה בגוף בריא"
+        },
+        {
+          "text": "habeas corpus",
+          "meaning_he": "שיהיה לך הגוף — הזכות לא להיעצר בלי משפט"
+        }
+      ],
+      "deck": "corpus"
+    },
+    {
+      "id": "caput",
+      "pos": "noun",
+      "dcc_headword": "caput capitis n.",
+      "meaning_he": "ראש",
+      "element": "terra",
+      "family": {
+        "en": [
+          "capital",
+          "captain",
+          "chapter"
+        ],
+        "he": [
+          "קפיטל",
+          "קפיטליזם"
+        ],
+        "note_he": "capital (בירה) היא \"הראש\" של המדינה. הגזע: capit-."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "oculus",
+      "pos": "noun",
+      "dcc_headword": "oculus -ī m.",
+      "meaning_he": "עין",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "ocular",
+          "binoculars"
+        ],
+        "he": [
+          "אוקוליסט"
+        ],
+        "note_he": "binoculars = \"שתי עיניים\"."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "pes",
+      "pos": "noun",
+      "dcc_headword": "pēs pedis m.",
+      "meaning_he": "רגל, כף רגל",
+      "element": "terra",
+      "family": {
+        "en": [
+          "pedal",
+          "pedestrian",
+          "pedicure"
+        ],
+        "he": [
+          "פדיקור",
+          "פדל"
+        ],
+        "note_he": "הגזע הוא ped-: pedem."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "pectus",
+      "pos": "noun",
+      "dcc_headword": "pectus -oris n.",
+      "meaning_he": "חזה, לב",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "pectoral"
+        ],
+        "he": [],
+        "note_he": "pectoral muscles הם שרירי החזה."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "auris",
+      "pos": "noun",
+      "dcc_headword": "auris -is f.",
+      "meaning_he": "אוזן",
+      "element": "aer",
+      "family": {
+        "en": [
+          "aural"
+        ],
+        "he": [
+          "אוראלי"
+        ],
+        "note_he": "aural = של השמיעה."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "sanguis",
+      "pos": "noun",
+      "dcc_headword": "sanguis -inis m.",
+      "meaning_he": "דם",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "sanguine"
+        ],
+        "he": [],
+        "note_he": "הגזע: sanguin-."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "vultus",
+      "pos": "noun",
+      "dcc_headword": "vultus -ūs m.",
+      "meaning_he": "פנים, מבט",
+      "element": "aer",
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "הנטייה הרביעית, כמו manus."
+      },
+      "expressions": [],
+      "deck": "corpus"
+    },
+    {
+      "id": "mens",
+      "pos": "noun",
+      "dcc_headword": "mēns mentis f.",
+      "meaning_he": "שכל, מחשבה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "mental",
+          "mention"
+        ],
+        "he": [
+          "מנטלי",
+          "מנטליות"
+        ],
+        "note_he": "הגזע: ment-."
+      },
+      "expressions": [
+        {
+          "text": "Mens sana in corpore sano",
+          "meaning_he": "נפש בריאה בגוף בריא"
+        }
+      ],
+      "deck": "corpus"
+    },
+    {
+      "id": "pater",
+      "pos": "noun",
+      "dcc_headword": "pater patris m.",
+      "meaning_he": "אבא",
+      "element": "terra",
+      "family": {
+        "en": [
+          "paternal",
+          "patron",
+          "patriot"
+        ],
+        "he": [
+          "פטרון",
+          "פטריוט"
+        ],
+        "note_he": "patriot הוא מי שאוהב את \"ארץ האבות\". הגזע: patr-."
+      },
+      "expressions": [
+        {
+          "text": "pater familias",
+          "meaning_he": "אבי המשפחה"
+        }
+      ],
+      "deck": "familia"
+    },
+    {
+      "id": "mater",
+      "pos": "noun",
+      "dcc_headword": "māter mātris f.",
+      "meaning_he": "אמא",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "maternal",
+          "matrix",
+          "matter"
+        ],
+        "he": [
+          "מטריצה"
+        ],
+        "note_he": "matrix היה במקור \"רחם\" — מקום שממנו משהו נוצר."
+      },
+      "expressions": [
+        {
+          "text": "alma mater",
+          "meaning_he": "האם המיניקה — כינוי לאוניברסיטה"
+        }
+      ],
+      "deck": "familia"
+    },
+    {
+      "id": "frater",
+      "pos": "noun",
+      "dcc_headword": "frāter frātris m.",
+      "meaning_he": "אח",
+      "element": "aer",
+      "family": {
+        "en": [
+          "fraternal",
+          "fraternity"
+        ],
+        "he": [
+          "פרטרניזציה"
+        ]
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "soror",
+      "pos": "noun",
+      "dcc_headword": "soror -ōris f.",
+      "meaning_he": "אחות",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "sorority"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "puer",
+      "pos": "noun",
+      "dcc_headword": "puer puerī m.",
+      "meaning_he": "ילד, נער",
+      "element": "terra",
+      "family": {
+        "en": [
+          "puerile"
+        ],
+        "he": [],
+        "note_he": "puella היא \"ילדה קטנה\" — צורת ההקטנה מ-puer."
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "vir",
+      "pos": "noun",
+      "dcc_headword": "vir virī m.",
+      "meaning_he": "גבר, איש",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "virile",
+          "virtue"
+        ],
+        "he": [
+          "וירטואוז"
+        ],
+        "note_he": "virtūs (אומץ, מעלה) בא מ-vir."
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "homo",
+      "pos": "noun",
+      "dcc_headword": "homō hominis m.",
+      "meaning_he": "אדם",
+      "element": "terra",
+      "family": {
+        "en": [
+          "human",
+          "homicide"
+        ],
+        "he": [
+          "הומניזם",
+          "הומניטרי"
+        ],
+        "note_he": "Homo sapiens = \"האדם החכם\". הגזע: homin-."
+      },
+      "expressions": [
+        {
+          "text": "Homo homini lupus",
+          "meaning_he": "אדם לאדם זאב"
+        }
+      ],
+      "deck": "familia"
+    },
+    {
+      "id": "rex",
+      "pos": "noun",
+      "dcc_headword": "rēx rēgis m.",
+      "meaning_he": "מלך",
+      "element": "aether",
+      "family": {
+        "en": [
+          "regal",
+          "royal",
+          "reign"
+        ],
+        "he": [
+          "רגליה"
+        ],
+        "note_he": "הגזע: rēg-. Tyrannosaurus rex = \"הלטאה המלך העריץ\"."
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "senex",
+      "pos": "noun",
+      "dcc_headword": "senex -is m.",
+      "meaning_he": "זקן",
+      "element": "aether",
+      "family": {
+        "en": [
+          "senior",
+          "senate",
+          "senile"
+        ],
+        "he": [
+          "סנאט"
+        ],
+        "note_he": "הסנאט ברומא היה \"מועצת הזקנים\"."
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "iuvenis",
+      "pos": "noun",
+      "dcc_headword": "iuvenis -is m.",
+      "meaning_he": "צעיר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "juvenile",
+          "junior"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "familia"
+    },
+    {
+      "id": "mare",
+      "pos": "noun",
+      "dcc_headword": "mare -is n.",
+      "meaning_he": "ים",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "marine",
+          "maritime",
+          "submarine"
+        ],
+        "he": [
+          "מרינה"
+        ],
+        "note_he": "מרינה היא נמל לסירות, \"של הים\"."
+      },
+      "expressions": [
+        {
+          "text": "Mare Nostrum",
+          "meaning_he": "הים שלנו — השם הרומי לים התיכון"
+        }
+      ],
+      "deck": "natura"
+    },
+    {
+      "id": "flumen",
+      "pos": "noun",
+      "dcc_headword": "flūmen -inis n.",
+      "meaning_he": "נהר",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "flume",
+          "fluid"
+        ],
+        "he": [],
+        "note_he": "קרוב ל-fluō, לזרום. הגזע: flūmin-."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "mons",
+      "pos": "noun",
+      "dcc_headword": "mōns montis m.",
+      "meaning_he": "הר",
+      "element": "terra",
+      "family": {
+        "en": [
+          "mountain",
+          "mount",
+          "Montana"
+        ],
+        "he": [],
+        "note_he": "הגזע: mont-. Montana = \"ארץ ההרים\"."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "campus",
+      "pos": "noun",
+      "dcc_headword": "campus -ī m.",
+      "meaning_he": "מישור, שדה",
+      "element": "terra",
+      "family": {
+        "en": [
+          "campus",
+          "camp",
+          "champion"
+        ],
+        "he": [
+          "קמפוס",
+          "קמפינג"
+        ],
+        "note_he": "קמפוס הוא במקור \"השדה\". גם camp ו-champion באים מכאן."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "ager",
+      "pos": "noun",
+      "dcc_headword": "ager agrī m.",
+      "meaning_he": "שדה",
+      "element": "terra",
+      "family": {
+        "en": [
+          "agriculture",
+          "agrarian"
+        ],
+        "he": [
+          "אגרונום",
+          "אגרו-"
+        ],
+        "note_he": "agriculture = \"עיבוד השדה\". הגזע: agr-."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "flos",
+      "pos": "noun",
+      "dcc_headword": "flōs flōris m.",
+      "meaning_he": "פרח",
+      "element": "terra",
+      "family": {
+        "en": [
+          "flower",
+          "flora",
+          "florist"
+        ],
+        "he": [
+          "פלורה",
+          "פלורנטין"
+        ],
+        "note_he": "פירנצה (Florentia) היא \"העיר הפורחת\". הגזע: flōr-."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "sidus",
+      "pos": "noun",
+      "dcc_headword": "sīdus -eris n.",
+      "meaning_he": "כוכב, מזל",
+      "element": "aether",
+      "family": {
+        "en": [
+          "sidereal",
+          "consider"
+        ],
+        "he": [],
+        "note_he": "consider היה במקור \"להתבונן בכוכבים\". הגזע: sīder-."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "unda",
+      "pos": "noun",
+      "dcc_headword": "unda -ae f.",
+      "meaning_he": "גל",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "undulate",
+          "abundant",
+          "inundate"
+        ],
+        "he": [],
+        "note_he": "abundant הוא \"גולש כמו גלים\"."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "litus",
+      "pos": "noun",
+      "dcc_headword": "lītus -oris n.",
+      "meaning_he": "חוף",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "littoral"
+        ],
+        "he": [],
+        "note_he": "הגזע: lītor-."
+      },
+      "expressions": [],
+      "deck": "natura"
+    },
+    {
+      "id": "equus",
+      "pos": "noun",
+      "dcc_headword": "equus -ī m.",
+      "meaning_he": "סוס",
+      "element": "terra",
+      "family": {
+        "en": [
+          "equestrian",
+          "equine"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "canis",
+      "pos": "noun",
+      "dcc_headword": "canis -is m./f.",
+      "meaning_he": "כלב",
+      "element": "terra",
+      "family": {
+        "en": [
+          "canine",
+          "Canary Islands"
+        ],
+        "he": [],
+        "note_he": "האיים הקנריים נקראו על שם הכלבים הגדולים שהיו בהם."
+      },
+      "expressions": [
+        {
+          "text": "Cave canem",
+          "meaning_he": "היזהר מהכלב — כתוב על פתח בית בפומפיי"
+        }
+      ],
+      "deck": "animalia"
+    },
+    {
+      "id": "bos",
+      "pos": "noun",
+      "dcc_headword": "bōs bovis m.",
+      "meaning_he": "שור",
+      "element": "terra",
+      "family": {
+        "en": [
+          "bovine",
+          "beef"
+        ],
+        "he": [],
+        "note_he": "beef הגיעה לאנגלית דרך הצרפתית boeuf, מ-bōs. הגזע: bov-."
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "animal",
+      "pos": "noun",
+      "dcc_headword": "animal -ālis n.",
+      "meaning_he": "בעל חיים",
+      "element": "aer",
+      "family": {
+        "en": [
+          "animal"
+        ],
+        "he": [
+          "אנימלי"
+        ],
+        "note_he": "animal הוא \"יצור שיש בו anima (נשימה)\"."
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "domus",
+      "pos": "noun",
+      "dcc_headword": "domus -ūs f.",
+      "meaning_he": "בית",
+      "element": "terra",
+      "family": {
+        "en": [
+          "domestic",
+          "dome"
+        ],
+        "he": [
+          "דומסטי"
+        ],
+        "note_he": "domestic = ביתי. dome (כיפה) בא מהשם האיטלקי לכנסייה הראשית, \"הבית\"."
+      },
+      "expressions": [
+        {
+          "text": "Domus aurea",
+          "meaning_he": "בית הזהב — הארמון של נירון"
+        }
+      ],
+      "deck": "animalia"
+    },
+    {
+      "id": "murus",
+      "pos": "noun",
+      "dcc_headword": "mūrus -ī m.",
+      "meaning_he": "חומה, קיר",
+      "element": "terra",
+      "family": {
+        "en": [
+          "mural",
+          "intramural"
+        ],
+        "he": [
+          "מורל"
+        ],
+        "note_he": "mural הוא ציור על קיר."
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "mensa",
+      "pos": "noun",
+      "dcc_headword": "mēnsa -ae f.",
+      "meaning_he": "שולחן",
+      "element": "terra",
+      "family": {
+        "en": [
+          "mesa"
+        ],
+        "he": [],
+        "note_he": "mesa (רמה שטוחה) היא \"שולחן\" בספרדית."
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "vinum",
+      "pos": "noun",
+      "dcc_headword": "vīnum -ī n.",
+      "meaning_he": "יין",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "wine",
+          "vine",
+          "vinegar"
+        ],
+        "he": [
+          "וינטג'"
+        ],
+        "note_he": "vinegar הוא \"יין חמוץ\" (vin aigre)."
+      },
+      "expressions": [
+        {
+          "text": "In vino veritas",
+          "meaning_he": "ביין — האמת"
+        }
+      ],
+      "deck": "animalia"
+    },
+    {
+      "id": "navis",
+      "pos": "noun",
+      "dcc_headword": "nāvis -is f.",
+      "meaning_he": "ספינה",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "navy",
+          "naval",
+          "navigate"
+        ],
+        "he": [
+          "ניווט"
+        ],
+        "note_he": "navigate = \"להוביל ספינה\"."
+      },
+      "expressions": [],
+      "deck": "animalia"
+    },
+    {
+      "id": "dies",
+      "pos": "noun",
+      "dcc_headword": "diēs diēī m./f.",
+      "meaning_he": "יום",
+      "element": "aether",
+      "family": {
+        "en": [
+          "diary",
+          "diurnal"
+        ],
+        "he": [],
+        "note_he": "הנטייה החמישית: diēs, diem."
+      },
+      "expressions": [
+        {
+          "text": "Carpe diem",
+          "meaning_he": "קטוף את היום — נצל את היום"
+        }
+      ],
+      "deck": "tempus"
+    },
+    {
+      "id": "annus",
+      "pos": "noun",
+      "dcc_headword": "annus -ī m.",
+      "meaning_he": "שנה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "annual",
+          "anniversary"
+        ],
+        "he": []
+      },
+      "expressions": [
+        {
+          "text": "Anno Domini",
+          "meaning_he": "בשנת האדון — מאיפה בא הקיצור AD"
+        }
+      ],
+      "deck": "tempus"
+    },
+    {
+      "id": "hora",
+      "pos": "noun",
+      "dcc_headword": "hōra -ae f.",
+      "meaning_he": "שעה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "hour",
+          "horoscope"
+        ],
+        "he": [
+          "הורוסקופ"
+        ],
+        "note_he": "horoscope = \"צופה בשעה\" (של הלידה)."
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "tempus",
+      "pos": "noun",
+      "dcc_headword": "tempus -oris n.",
+      "meaning_he": "זמן",
+      "element": "aether",
+      "family": {
+        "en": [
+          "temporary",
+          "tempo",
+          "contemporary"
+        ],
+        "he": [
+          "טמפו",
+          "טמפרמנט"
+        ],
+        "note_he": "הגזע: tempor-."
+      },
+      "expressions": [
+        {
+          "text": "Tempus fugit",
+          "meaning_he": "הזמן בורח"
+        }
+      ],
+      "deck": "tempus"
+    },
+    {
+      "id": "hiems",
+      "pos": "noun",
+      "dcc_headword": "hiems hiemis f.",
+      "meaning_he": "חורף",
+      "element": "aqua",
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "הגזע: hiem-. מאותו שורש קדום כמו הימלאיה, \"בית השלג\" בסנסקריט."
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "aetas",
+      "pos": "noun",
+      "dcc_headword": "aetās -tātis f.",
+      "meaning_he": "גיל, תקופה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "age"
+        ],
+        "he": [],
+        "note_he": "age באנגלית בא מ-aetās דרך הצרפתית."
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "primus",
+      "pos": "adj",
+      "dcc_headword": "prīmus -a -um",
+      "meaning_he": "ראשון",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "prime",
+          "primary",
+          "primitive"
+        ],
+        "he": [
+          "פרימיטיבי",
+          "פרמיירה"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "primus inter pares",
+          "meaning_he": "ראשון בין שווים"
+        }
+      ],
+      "deck": "tempus"
+    },
+    {
+      "id": "vetus",
+      "pos": "adj",
+      "dcc_headword": "vetus veteris",
+      "meaning_he": "ישן, זקן",
+      "element": "terra",
+      "family": {
+        "en": [
+          "veteran"
+        ],
+        "he": [
+          "וטרן"
+        ],
+        "note_he": "veteran = \"ותיק\". הגזע: veter-."
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "celer",
+      "pos": "adj",
+      "dcc_headword": "celer -is -e",
+      "meaning_he": "מהיר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "accelerate",
+          "celerity"
+        ],
+        "he": [
+          "אקסלרטור"
+        ],
+        "note_he": "אקסלרטור (מאיץ) מאותו שורש."
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "tardus",
+      "pos": "adj",
+      "dcc_headword": "tardus -a -um",
+      "meaning_he": "איטי",
+      "element": "terra",
+      "family": {
+        "en": [
+          "tardy",
+          "retard"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "tempus"
+    },
+    {
+      "id": "amor",
+      "pos": "noun",
+      "dcc_headword": "amor -ōris m.",
+      "meaning_he": "אהבה",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "amorous",
+          "enamored"
+        ],
+        "he": [
+          "אמור"
+        ],
+        "note_he": "Amor הוא גם אל האהבה. קרוב ל-amō."
+      },
+      "expressions": [
+        {
+          "text": "Amor vincit omnia",
+          "meaning_he": "האהבה מנצחת הכול"
+        },
+        {
+          "text": "amor fati",
+          "meaning_he": "אהבת הגורל"
+        }
+      ],
+      "deck": "animus"
+    },
+    {
+      "id": "spes",
+      "pos": "noun",
+      "dcc_headword": "spēs speī f.",
+      "meaning_he": "תקווה",
+      "element": "aether",
+      "family": {
+        "en": [
+          "desperate"
+        ],
+        "he": [],
+        "note_he": "desperate הוא \"בלי תקווה\"."
+      },
+      "expressions": [
+        {
+          "text": "Dum spiro, spero",
+          "meaning_he": "כל עוד אני נושם, אני מקווה"
+        }
+      ],
+      "deck": "animus"
+    },
+    {
+      "id": "ira",
+      "pos": "noun",
+      "dcc_headword": "īra irae f.",
+      "meaning_he": "כעס, זעם",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "ire",
+          "irate"
+        ],
+        "he": []
+      },
+      "expressions": [
+        {
+          "text": "Dies irae",
+          "meaning_he": "יום הזעם"
+        }
+      ],
+      "deck": "animus"
+    },
+    {
+      "id": "metus",
+      "pos": "noun",
+      "dcc_headword": "metus -ūs m.",
+      "meaning_he": "פחד",
+      "element": "aether",
+      "family": {
+        "en": [],
+        "he": [],
+        "note_he": "הנטייה הרביעית."
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "dolor",
+      "pos": "noun",
+      "dcc_headword": "dolor -ōris m.",
+      "meaning_he": "כאב, צער",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "dolorous"
+        ],
+        "he": [],
+        "note_he": "Via Dolorosa = \"דרך הייסורים\" בירושלים."
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "laetus",
+      "pos": "adj",
+      "dcc_headword": "laetus -a -um",
+      "meaning_he": "שמח",
+      "element": "aer",
+      "family": {
+        "en": [],
+        "he": [
+          "לטיציה (שם)"
+        ],
+        "note_he": "השם Letizia/Laetitia פירושו \"שמחה\"."
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "tristis",
+      "pos": "adj",
+      "dcc_headword": "trīstis -e",
+      "meaning_he": "עצוב",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "triste"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "timeo",
+      "pos": "verb",
+      "dcc_headword": "timeō -ēre -uī",
+      "meaning_he": "לפחד",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "timid",
+          "intimidate"
+        ],
+        "he": [],
+        "note_he": "timid = ביישן, פחדן."
+      },
+      "expressions": [
+        {
+          "text": "Timeo Danaos et dona ferentes",
+          "meaning_he": "אני חושש מהיוונים גם כשהם מביאים מתנות"
+        }
+      ],
+      "deck": "animus"
+    },
+    {
+      "id": "gaudeo",
+      "pos": "verb",
+      "dcc_headword": "gaudeō gaudēre gāvīsus sum",
+      "meaning_he": "לשמוח",
+      "element": "aer",
+      "family": {
+        "en": [
+          "joy",
+          "gaudy"
+        ],
+        "he": [],
+        "note_he": "joy באנגלית הגיעה דרך הצרפתית joie, מ-gaudium."
+      },
+      "expressions": [
+        {
+          "text": "Gaudeamus igitur",
+          "meaning_he": "הבה נשמח אפוא — שיר סטודנטים עתיק"
+        }
+      ],
+      "deck": "animus"
+    },
+    {
+      "id": "credo",
+      "pos": "verb",
+      "dcc_headword": "crēdō crēdere crēdidī crēditum",
+      "meaning_he": "להאמין",
+      "element": "aether",
+      "family": {
+        "en": [
+          "credible",
+          "credit",
+          "creed"
+        ],
+        "he": [
+          "קרדיט",
+          "קרדו"
+        ],
+        "note_he": "credit הוא \"אמון\". credo = \"אני מאמין\"."
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "scio",
+      "pos": "verb",
+      "dcc_headword": "sciō -īre -īvī/-iī -ītum",
+      "meaning_he": "לדעת",
+      "element": "aether",
+      "family": {
+        "en": [
+          "science",
+          "conscious"
+        ],
+        "he": [
+          "סיינס-פיקשן"
+        ],
+        "note_he": "science היא \"ידיעה\" (scientia)."
+      },
+      "expressions": [],
+      "deck": "animus"
+    },
+    {
+      "id": "video",
+      "pos": "verb",
+      "dcc_headword": "videō vidēre vīdī vīsum",
+      "meaning_he": "לראות",
+      "element": "aer",
+      "family": {
+        "en": [
+          "video",
+          "vision",
+          "evident"
+        ],
+        "he": [
+          "וידאו",
+          "ויזואלי"
+        ],
+        "note_he": "video = \"אני רואה\"."
+      },
+      "expressions": [
+        {
+          "text": "Veni, vidi, vici",
+          "meaning_he": "באתי, ראיתי, ניצחתי — יוליוס קיסר"
+        }
+      ],
+      "deck": "facta"
+    },
+    {
+      "id": "habeo",
+      "pos": "verb",
+      "dcc_headword": "habeō habēre habuī habitum",
+      "meaning_he": "שיש לי, להחזיק",
+      "element": "terra",
+      "family": {
+        "en": [
+          "habit",
+          "exhibit",
+          "inhabit"
+        ],
+        "he": [],
+        "note_he": "habit הוא משהו ש\"מחזיקים\" בו."
+      },
+      "expressions": [
+        {
+          "text": "habeas corpus",
+          "meaning_he": "שיהיה לך הגוף"
+        }
+      ],
+      "deck": "facta"
+    },
+    {
+      "id": "teneo",
+      "pos": "verb",
+      "dcc_headword": "teneō -ēre -uī tentum",
+      "meaning_he": "להחזיק",
+      "element": "terra",
+      "family": {
+        "en": [
+          "tenant",
+          "tenacious",
+          "contain"
+        ],
+        "he": [
+          "טנור"
+        ],
+        "note_he": "טנור הוא הקול \"שמחזיק\" את המנגינה."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "venio",
+      "pos": "verb",
+      "dcc_headword": "veniō venīre vēnī ventum",
+      "meaning_he": "לבוא",
+      "element": "aer",
+      "family": {
+        "en": [
+          "venue",
+          "adventure",
+          "event"
+        ],
+        "he": [
+          "ונטורה"
+        ],
+        "note_he": "adventure = \"מה שבא\"."
+      },
+      "expressions": [
+        {
+          "text": "Veni, vidi, vici",
+          "meaning_he": "באתי, ראיתי, ניצחתי"
+        }
+      ],
+      "deck": "facta"
+    },
+    {
+      "id": "dico",
+      "pos": "verb",
+      "dcc_headword": "dīcō dīcere dīxī dictum",
+      "meaning_he": "לומר",
+      "element": "aer",
+      "family": {
+        "en": [
+          "dictate",
+          "dictionary",
+          "predict"
+        ],
+        "he": [
+          "דיקטטור",
+          "דיקציה"
+        ],
+        "note_he": "dictionary הוא \"ספר של אמירות\". הציווי: dīc! (אמור!)."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "scribo",
+      "pos": "verb",
+      "dcc_headword": "scrībō scrībere scrīpsī scrīptum",
+      "meaning_he": "לכתוב",
+      "element": "aer",
+      "family": {
+        "en": [
+          "scribe",
+          "script",
+          "describe"
+        ],
+        "he": [
+          "סקריפט",
+          "מנוסקריפט"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Verba volant, scripta manent",
+          "meaning_he": "מילים עפות, הכתוב נשאר"
+        }
+      ],
+      "deck": "facta"
+    },
+    {
+      "id": "lego",
+      "pos": "verb",
+      "dcc_headword": "legō legere lēgī lēctum",
+      "meaning_he": "לקרוא (טקסט), לאסוף",
+      "element": "aer",
+      "family": {
+        "en": [
+          "legible",
+          "lecture",
+          "legend"
+        ],
+        "he": [
+          "לגנדה",
+          "לקטור"
+        ],
+        "note_he": "legend הוא \"מה שצריך לקרוא\". המשמעות המקורית: לאסוף."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "curro",
+      "pos": "verb",
+      "dcc_headword": "currō currere cucurrī cursum",
+      "meaning_he": "לרוץ",
+      "element": "aer",
+      "family": {
+        "en": [
+          "current",
+          "course",
+          "courier"
+        ],
+        "he": [
+          "קורס",
+          "קוריקולום"
+        ],
+        "note_he": "current (זרם) הוא מה \"שרץ\". curriculum = \"מסלול ריצה\"."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "sedeo",
+      "pos": "verb",
+      "dcc_headword": "sedeō sedēre sēdī sessum",
+      "meaning_he": "לשבת",
+      "element": "terra",
+      "family": {
+        "en": [
+          "sedentary",
+          "session",
+          "preside"
+        ],
+        "he": [
+          "סשן"
+        ],
+        "note_he": "session (מושב) הוא \"ישיבה\"."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "capio",
+      "pos": "verb",
+      "dcc_headword": "capiō capere cēpī captum",
+      "meaning_he": "לתפוס, לקחת",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "capture",
+          "capable",
+          "capacity"
+        ],
+        "he": [
+          "קפסולה"
+        ],
+        "note_he": "capacity = כמה אפשר \"לקחת\"."
+      },
+      "expressions": [],
+      "deck": "facta"
+    },
+    {
+      "id": "malus",
+      "pos": "adj",
+      "dcc_headword": "malus -a -um",
+      "meaning_he": "רע",
+      "element": "ignis",
+      "family": {
+        "en": [
+          "malice",
+          "malware",
+          "malaria"
+        ],
+        "he": [
+          "מלריה"
+        ],
+        "note_he": "malaria = \"אוויר רע\" באיטלקית."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "longus",
+      "pos": "adj",
+      "dcc_headword": "longus -a -um",
+      "meaning_he": "ארוך",
+      "element": "terra",
+      "family": {
+        "en": [
+          "long",
+          "longitude"
+        ],
+        "he": []
+      },
+      "expressions": [
+        {
+          "text": "ars longa, vita brevis",
+          "meaning_he": "האומנות ארוכה, החיים קצרים"
+        }
+      ],
+      "deck": "qualitates"
+    },
+    {
+      "id": "altus",
+      "pos": "adj",
+      "dcc_headword": "altus -a -um",
+      "meaning_he": "גבוה, עמוק",
+      "element": "aer",
+      "family": {
+        "en": [
+          "altitude",
+          "alto"
+        ],
+        "he": [
+          "אלט"
+        ],
+        "note_he": "אלט במוזיקה הוא הקול \"הגבוה\"."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "gravis",
+      "pos": "adj",
+      "dcc_headword": "gravis -e",
+      "meaning_he": "כבד, רציני",
+      "element": "terra",
+      "family": {
+        "en": [
+          "grave",
+          "gravity"
+        ],
+        "he": [
+          "גרביטציה"
+        ],
+        "note_he": "gravity = \"כבדות\"."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "levis",
+      "pos": "adj",
+      "dcc_headword": "levis -e",
+      "meaning_he": "קל",
+      "element": "aer",
+      "family": {
+        "en": [
+          "levity",
+          "levitate"
+        ],
+        "he": [
+          "לוויטציה"
+        ],
+        "note_he": "levitation = ריחוף, \"להפוך לקל\"."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "dulcis",
+      "pos": "adj",
+      "dcc_headword": "dulcis -e",
+      "meaning_he": "מתוק",
+      "element": "aqua",
+      "family": {
+        "en": [
+          "dulcet"
+        ],
+        "he": [
+          "דולצ'ה"
+        ]
+      },
+      "expressions": [
+        {
+          "text": "Dulce et decorum est",
+          "meaning_he": "מתוק והולם הוא — הורטיוס"
+        }
+      ],
+      "deck": "qualitates"
+    },
+    {
+      "id": "pulcher",
+      "pos": "adj",
+      "dcc_headword": "pulcher -chra -chrum",
+      "meaning_he": "יפה",
+      "element": "aer",
+      "family": {
+        "en": [
+          "pulchritude"
+        ],
+        "he": []
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "niger",
+      "pos": "adj",
+      "dcc_headword": "niger nigra nigrum",
+      "meaning_he": "שחור",
+      "element": "aether",
+      "family": {
+        "en": [
+          "denigrate"
+        ],
+        "he": [],
+        "note_he": "הנהר ניז'ר (Niger) והמדינה ניגריה נקראו בשם הזה."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "candidus",
+      "pos": "adj",
+      "dcc_headword": "candidus -a -um",
+      "meaning_he": "לבן, בוהק",
+      "element": "aether",
+      "family": {
+        "en": [
+          "candid",
+          "candidate",
+          "candle"
+        ],
+        "he": [
+          "קנדידט"
+        ],
+        "note_he": "ברומא מועמדים לבשו גלימה לבנה, toga candida — מכאן candidate."
+      },
+      "expressions": [],
+      "deck": "qualitates"
+    },
+    {
+      "id": "verus",
+      "pos": "adj",
+      "dcc_headword": "vērus -a -um",
+      "meaning_he": "אמיתי",
+      "element": "aether",
+      "family": {
+        "en": [
+          "very",
+          "verify",
+          "verdict"
+        ],
+        "he": [
+          "ורדיקט"
+        ],
+        "note_he": "verdict = \"אמירה אמיתית\"."
+      },
+      "expressions": [
+        {
+          "text": "Verum, sine mendacio",
+          "meaning_he": "אמת, בלי שקר — פתיחת לוח הברקת"
+        }
+      ],
+      "deck": "qualitates"
     }
   ]
 }
