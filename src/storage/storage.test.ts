@@ -16,7 +16,7 @@ describe('storage', () => {
   });
 
   it('round-trips a backup file', () => {
-    const save = { ...newSave(T0), elements: { terra: 3, aqua: 1, aer: 0, ignis: 2, aether: 1 } };
+    const save = { ...newSave(T0), elements: { ...newSave(T0).elements, terra: 3, aqua: 1, ignis: 2, aether: 1 } };
     const text = JSON.stringify(makeBackup(save, T0));
     expect(readBackup(text)).toEqual(save);
   });

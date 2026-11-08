@@ -8,8 +8,8 @@ import type { RankId } from '../content/types';
 import type { FireLevel } from '../game/camp';
 import type { CampState } from '../game/state';
 import {
-  drawGarden, drawLanterns, drawLibrary, drawPlot, drawRankGear, drawSpring, drawTentExtras, drawTower, drawTree,
-  px, RANK_PALETTE,
+  drawDarkArea, drawEffects, drawFind, drawGarden, drawLanterns, drawLibrary, drawPlot, drawRankGear, drawSpring,
+  drawTentExtras, drawTower, drawTree, px, RANK_PALETTE,
 } from './buildingsArt';
 import { drawSprite, ellipsePoints, seeded, spriteSize } from './draw';
 import { FIRE, FOX, LOG_PILE, PALETTE, PINE, TENT } from './sprites';
@@ -28,7 +28,12 @@ export const SPOTS = {
   fons: { x: 142, y: 96, w: 20, h: 9 },
   hortus: { x: 128, y: 120, w: 28, h: 13 },
   circulus: { x: 22, y: 112, w: 48, h: 16 },
+  // stage 3: the dark corners of the forest
+  west: { x: 0, y: 82, w: 22, h: 22 },
+  spring: { x: 92, y: 58, w: 22, h: 10 },
+  tablet: { x: 172, y: 76, w: 20, h: 22 },
 } as const;
+export const FOREST_SPOTS = ['west', 'spring', 'tablet'] as const;
 export type SpotId = keyof typeof SPOTS;
 
 const CIRCLE = { cx: 46, cy: 120, rx: 22, ry: 7 };
@@ -129,6 +134,14 @@ function drawScene(ctx: CanvasRenderingContext2D, props: SceneProps, frame: numb
   drawRankGear(ctx, SPOTS.fox.x, SPOTS.fox.y, rank, frame);
   drawSprite(ctx, fox, SPOTS.fox.x, SPOTS.fox.y, { flip: true, palette: { ...PALETTE, ...RANK_PALETTE[rank] } });
 
+  // The dark corners: darkness until the light school reveals what hides there.
+  for (const id of FOREST_SPOTS) {
+    const a = SPOTS[id];
+    if (camp.forest?.revealed.includes(id)) drawFind(ctx, id, a.x, a.y, a.w, a.h, frame);
+    else drawDarkArea(ctx, a.x, a.y, a.w, a.h, frame);
+  }
+  drawEffects(ctx, props.effects, SPOTS.focus, SPOTS.hortus, frame);
+
   if (lit) drawLanterns(ctx, frame);
 
   // Front pines frame the scene
@@ -148,6 +161,8 @@ export interface SceneProps {
   rank: RankId;
   circleActive: boolean;
   lit: boolean;
+  /** Stage 3 timed effects to show. */
+  effects: { shade: boolean; fireGuard: boolean; gardenBoost: boolean };
   /** Clickable things and their labels. */
   targets: { id: SpotId; label: string }[];
   onTarget: (id: SpotId) => void;

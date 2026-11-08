@@ -1,7 +1,10 @@
 /** Types for the JSON files in /content. Documented for humans in content/SCHEMA.md. */
 
-export type ElementId = 'terra' | 'aqua' | 'aer' | 'ignis' | 'aether';
+export type ElementId = 'terra' | 'aqua' | 'aer' | 'ignis' | 'aether' | 'lux' | 'umbra' | 'spiritus';
 export const BASE_ELEMENTS: ElementId[] = ['terra', 'aqua', 'aer', 'ignis', 'aether'];
+/** Stage 3: the mystic elements, each opening a school of spells. */
+export const MYSTIC_ELEMENTS: ElementId[] = ['lux', 'umbra', 'spiritus'];
+export const ALL_ELEMENTS: ElementId[] = [...BASE_ELEMENTS, ...MYSTIC_ELEMENTS];
 
 export type PartOfSpeech = 'noun' | 'verb' | 'adj' | 'pron' | 'conj' | 'adv' | 'prep';
 
@@ -40,6 +43,13 @@ export interface Word {
   family: WordFamily;
   expressions: Expression[];
   etymology_en: string | null;
+  /** Nouns: grammatical gender and declension (from Wiktionary). */
+  gender?: 'm' | 'f' | 'n' | null;
+  declension?: number | null;
+  /** Themed deck for the word mini-game (Verba). Words without a deck belong to the units. */
+  deck?: string;
+  /** Meaning tags the spell lab uses (resource, plant, person, building…). */
+  tags?: string[];
 }
 
 export interface Rule {
@@ -51,7 +61,7 @@ export interface Rule {
   drill?: { form: string; prompt_he: string };
 }
 
-export type Role = 'subject' | 'object' | 'indirect';
+export type Role = 'subject' | 'object' | 'indirect' | 'means';
 
 interface ExerciseBase {
   rules?: string[];
@@ -131,7 +141,45 @@ export type SpellEffect =
   | { type: 'build'; building: string }
   | { type: 'grow'; reward: ElementCost; final_reward: ElementCost }
   | { type: 'light'; hours: number }
-  | { type: 'rank' };
+  | { type: 'rank' }
+  // stage 3 (spell lab)
+  | { type: 'timed'; kind: 'shade' | 'garden-boost' | 'fire-guard'; hours: number }
+  | { type: 'conjure'; element: ElementId; amount: number }
+  | { type: 'offering'; reward: ElementCost }
+  | { type: 'friend' }
+  | { type: 'song' }
+  | { type: 'hint' }
+  | { type: 'reveal' };
+
+/** A spell-lab rule: which analysed sentence produces which effect (content/lab_effects.json). */
+export interface LabEffectRule {
+  id: string;
+  verb: string;
+  object: { word?: string; tag?: string } | null;
+  /** null = must be empty, "any" = anything or nothing. */
+  recipient: { word?: string; tag?: string } | null | 'any';
+  effect: SpellEffect;
+  name_he: string;
+  hint_he: string;
+  requires?: { rank?: RankId; building?: string };
+  extra_cost?: ElementCost;
+}
+
+export interface ForestArea {
+  id: string;
+  name_he: string;
+  find_he: string;
+  reward: ElementCost;
+}
+
+export interface GarbleDef {
+  id: string;
+  rule: string;
+  animation: 'steam' | 'puddle' | 'sparks' | 'float' | 'narrator' | 'echo' | 'giant';
+  title_he: string;
+  effect_he: string;
+  explain_he: string;
+}
 
 export type RankId = 'discipula' | 'maga' | 'magistra';
 
@@ -190,4 +238,11 @@ export interface Building {
   upgrade_costs?: ElementCost[];
   /** Content this building opens. */
   unlocks?: { unit?: string };
+}
+
+export interface Deck {
+  id: string;
+  name_la: string;
+  name_he: string;
+  element: ElementId;
 }

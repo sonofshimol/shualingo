@@ -1,0 +1,117 @@
+{
+  "_about": "Garbled spells: what happens in the camp and what it teaches. {word} = the word used, {right} = the right form, {wrong} = the wrong form.",
+  "garbles": [
+    {
+      "id": "recipient-acc",
+      "rule": "dat-sg-1",
+      "animation": "steam",
+      "title_he": "הלחש השתבש: \"את\" במקום \"ל\"",
+      "effect_he": "{word} לא קיבל את מה ששלחת. הלחש נתן את {word} עצמו — והוא נעלם בענן אדים, וחזר אחרי רגע.",
+      "explain_he": "{wrong} היא צורת המושא (את מי?). כדי לתת למישהו צריך יחסת נתינה: {right}."
+    },
+    {
+      "id": "recipient-nom",
+      "rule": "nom-sg-1",
+      "animation": "puddle",
+      "title_he": "הלחש השתבש: \"מי עושה\" במקום \"ל\"",
+      "effect_he": "{word} חשב שהוא זה שעושה את הפעולה, ובלבל את הקסם לגמרי.",
+      "explain_he": "{wrong} היא צורת הנושא (מי עושה?). למי? = {right}."
+    },
+    {
+      "id": "recipient-abl",
+      "rule": "dat-sg-1",
+      "animation": "sparks",
+      "title_he": "הלחש השתבש: \"במה\" במקום \"ל\"",
+      "effect_he": "הקסם השתמש ב-{word} ככלי, במקום לתת לו.",
+      "explain_he": "{wrong} היא יחסת האמצעי (במה?). למי? = {right}."
+    },
+    {
+      "id": "object-nom",
+      "rule": "acc-sg-1",
+      "animation": "puddle",
+      "title_he": "הלחש השתבש: \"מי עושה\" במקום \"את מה\"",
+      "effect_he": "{word} חשב שהוא זה שעושה — והתחיל לזחול לבד ביער.",
+      "explain_he": "{wrong} היא צורת הנושא. את מה? = {right}."
+    },
+    {
+      "id": "object-dat",
+      "rule": "acc-sg-1",
+      "animation": "sparks",
+      "title_he": "הלחש השתבש: \"ל\" במקום \"את מה\"",
+      "effect_he": "הקסם ניסה לתת משהו ל-{word}, אבל לא היה מה לתת.",
+      "explain_he": "{wrong} היא יחסת הנתינה (למי?). את מה? = {right}."
+    },
+    {
+      "id": "object-abl",
+      "rule": "acc-sg-1",
+      "animation": "sparks",
+      "title_he": "הלחש השתבש: \"במה\" במקום \"את מה\"",
+      "effect_he": "הקסם עשה משהו בעזרת {word}, אבל לא ידע מה.",
+      "explain_he": "{wrong} היא יחסת האמצעי. את מה? = {right}."
+    },
+    {
+      "id": "object-acc-self",
+      "rule": "me-acc",
+      "animation": "float",
+      "title_he": "הלחש השתבש: \"אותי\" במקום \"לי\"",
+      "effect_he": "השועלה עצמה הורמה באוויר והונחה בעדינות על הערימה.",
+      "explain_he": "{wrong} = אותי (מושא). לי = {right}."
+    },
+    {
+      "id": "means-wrong",
+      "rule": "abl-sg",
+      "animation": "sparks",
+      "title_he": "הלחש השתבש: חסרה יחסת האמצעי",
+      "effect_he": "הכוח נשפך לכל הכיוונים, כי לא היה ברור במה להשתמש.",
+      "explain_he": "כדי לומר \"במה\" או \"באיזה כוח\" צריך יחסת אמצעי: {right}."
+    },
+    {
+      "id": "verb-not-imperative",
+      "rule": "imperative",
+      "animation": "narrator",
+      "title_he": "הלחש לא הופעל",
+      "effect_he": "קול שקט ביער סיפר מה קורה — ושום דבר לא קרה.",
+      "explain_he": "{wrong} מתאר מה מישהו עושה. לחש צריך פקודה: {right}."
+    },
+    {
+      "id": "verb-plural",
+      "rule": "imperative",
+      "animation": "echo",
+      "title_he": "הלחש השתבש: פקודה לרבים",
+      "effect_he": "הד מתגלגל ביער… אבל חוץ מהשועלה אין כאן אף אחד.",
+      "explain_he": "{wrong} היא פקודה לכמה אנשים. השועלה לבד: {right}."
+    },
+    {
+      "id": "adjective-agreement",
+      "rule": "adj-agree",
+      "animation": "giant",
+      "title_he": "הלחש השתבש: שם התואר לא מתאים",
+      "effect_he": "במקום הרבה פריטים קטנים הגיע אחד ענק ומשונה.",
+      "explain_he": "{wrong} לא מתאים ל-{word}. שם התואר צריך את אותה יחסה, מספר ומין: {right}."
+    },
+    {
+      "id": "object-missing",
+      "rule": "acc-sg-1",
+      "animation": "sparks",
+      "title_he": "חסר \"את מה?\"",
+      "effect_he": "הקסם חיפש מה לעשות — ולא מצא.",
+      "explain_he": "הפקודה הזאת צריכה מושא: את מה?"
+    },
+    {
+      "id": "recipient-not-allowed",
+      "rule": "dat-sg-1",
+      "animation": "sparks",
+      "title_he": "יותר מדי חלקים",
+      "effect_he": "הקסם לא ידע מה לעשות עם {word}.",
+      "explain_he": "עם הפקודה הזאת לא צריך \"למי?\"."
+    },
+    {
+      "id": "no-verb",
+      "rule": "imperative",
+      "animation": "sparks",
+      "title_he": "אין פקודה",
+      "effect_he": "ניצוצות התפזרו בלי כיוון.",
+      "explain_he": "כל לחש צריך פקודה אחת בציווי."
+    }
+  ]
+}

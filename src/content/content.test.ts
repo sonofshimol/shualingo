@@ -25,8 +25,8 @@ describe('words.json', () => {
 });
 
 describe('units.json', () => {
-  it('has 6 units of about 10 words each', () => {
-    expect(units).toHaveLength(6);
+  it('has 9 units of about 10 words each', () => {
+    expect(units).toHaveLength(9);
     for (const u of units) {
       expect(u.words.length).toBeGreaterThanOrEqual(7);
       expect(u.words.length).toBeLessThanOrEqual(12);
@@ -92,6 +92,21 @@ describe('units.json', () => {
           for (const t of ex.extra) expect(ex.answer, `${where}: extra tile "${t}" is also in the answer`).not.toContain(t);
         }
       }
+    }
+  });
+});
+
+describe('stage 3 content', () => {
+  it('garbles point at real rules, lab rules at real words', async () => {
+    const { garbles } = await import('../magic/lab');
+    const { labRules } = await import('../magic/effects');
+    const { verbFrameById } = await import('../magic/grammar');
+    for (const g of garbles) expect(ruleById.has(g.rule), g.id).toBe(true);
+    for (const r of labRules) {
+      expect(wordById.has(r.verb), r.id).toBe(true);
+      expect(verbFrameById.has(r.verb), r.id).toBe(true);
+      if (r.object?.word) expect(wordById.has(r.object.word), r.id).toBe(true);
+      if (r.recipient && r.recipient !== 'any' && r.recipient.word) expect(wordById.has(r.recipient.word), r.id).toBe(true);
     }
   });
 });

@@ -338,6 +338,99 @@
           "he": "הבא לי הרבה עצים!"
         }
       ]
+    },
+    {
+      "id": "abl-sg",
+      "title_he": "במה? יחסת האמצעי",
+      "explain_he": "יחסת האמצעי עונה על 'במה?' או 'באיזה כוח?'. נטייה ראשונה: ‎-ā (aquā), שנייה: ‎-ō (saxō), שלישית: ‎-e (igne, lapide). בלחש היא מחזקת את הקסם.",
+      "examples": [
+        {
+          "la": "Turrim saxō aedificā!",
+          "he": "בנה מגדל מסלע!"
+        },
+        {
+          "la": "Hortum aquā cūrā!",
+          "he": "טפל בגינה במים!"
+        }
+      ],
+      "drill": {
+        "form": "abl.sg",
+        "prompt_he": "במה? (אמצעי, יחיד)"
+      }
+    },
+    {
+      "id": "magna-vi",
+      "title_he": "magnā vī — בכוח רב",
+      "explain_he": "vīs (כוח) יוצאת דופן: vīs, vim (את הכוח), vī (בכוח). magnā מתאימה לה: נקבה, יחיד, יחסת אמצעי. כל לחש עם magnā vī חזק פי שניים — ועולה aether.",
+      "examples": [
+        {
+          "la": "Lignum mihi magnā vī affer!",
+          "he": "הבא לי עצים בכוח רב!"
+        }
+      ]
+    },
+    {
+      "id": "cum-abl",
+      "title_he": "cum — עם",
+      "explain_he": "cum בא לפני מילה ביחסת האמצעי: cum amīcō = עם חבר, cum fīliā = עם הבת.",
+      "examples": [
+        {
+          "la": "Puella cum amīcō hortum cūrat.",
+          "he": "הנערה מטפלת בגינה עם חבר."
+        }
+      ]
+    },
+    {
+      "id": "imp-3-4",
+      "title_he": "ציווי: cane!, mitte!, audī!",
+      "explain_he": "פעלים מהקבוצות השלישית והרביעית: הציווי נגמר ב-e (cane! שיר!, mitte! שלח!) או ב-ī (audī! שמע!). לרבים: canite!, audīte!.",
+      "examples": [
+        {
+          "la": "Carmen cane!",
+          "he": "שיר שיר-קסם!"
+        },
+        {
+          "la": "Vōcem audī!",
+          "he": "שמע את הקול!"
+        }
+      ]
+    },
+    {
+      "id": "neuter-3",
+      "title_he": "סתמי בנטייה השלישית",
+      "explain_he": "carmen, nōmen, lūmen הן מילים בסתמי: המושא זהה לנושא (carmen), ובשאר היחסות הגזע מתארך: carminī, lūmine. ברבים: carmina.",
+      "examples": [
+        {
+          "la": "Carmen mihi cane!",
+          "he": "שיר לי שיר!"
+        }
+      ]
+    },
+    {
+      "id": "decl-4",
+      "title_he": "הנטייה הרביעית: ‎-us, ‎-um, ‎-uī, ‎-ū",
+      "explain_he": "spīritus (מי?), spīritum (את מי?), spīrituī (למי?), spīritū (במה?). גם manus כך: manū = ביד.",
+      "examples": [
+        {
+          "la": "Spīritum vocā!",
+          "he": "קרא לרוח!"
+        },
+        {
+          "la": "Turrim manū aedificā!",
+          "he": "בנה מגדל ביד!"
+        }
+      ]
+    },
+    {
+      "id": "plural-only",
+      "title_he": "מילה שיש לה רק רבים",
+      "explain_he": "tenebrae (חושך) באה תמיד ברבים: tenebrae, tenebrās (את החושך), tenebrīs.",
+      "examples": [
+        {
+          "la": "Tenebrās mūtā!",
+          "he": "שנה את החושך!"
+        }
+      ]
     }
   ]
 }

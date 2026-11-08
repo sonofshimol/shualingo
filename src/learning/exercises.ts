@@ -32,6 +32,7 @@ export const ROLE_LABEL_HE: Record<Role, string> = {
   subject: 'מי עושה? (נושא)',
   object: 'את מי / את מה? (מושא)',
   indirect: 'למי? (נתינה)',
+  means: 'במה? / עם מה? (אמצעי)',
 };
 
 /** Exact match for choice answers (Latin options compare without case). */

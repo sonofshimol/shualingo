@@ -9,7 +9,7 @@ import { CONFIG, HOUR_MS } from '../config';
 import { buildingById, buildings } from '../content';
 import type { Building, ElementCost } from '../content/types';
 import type { ElementDelta } from './elements';
-import { dayKey, type CampState } from './state';
+import { dayKey, type CampState, type EffectKind } from './state';
 
 const BURN_MS = CONFIG.FIRE_BURN_HOURS * HOUR_MS;
 
@@ -25,11 +25,25 @@ export function maxLevel(building: Building): number {
   return 1 + (building.upgrade_costs?.length ?? 0);
 }
 
-/** How much each producing building can hold before it stops (bigger tent = more). */
-export function storageCap(camp: CampState): number {
+function effectWindow(camp: CampState, kind: EffectKind, now: number): boolean {
+  return (camp.effects ?? []).some((e) => e.kind === kind && e.from <= now && now < e.until);
+}
+
+/** How much each producing building can hold before it stops (bigger tent = more; shade doubles it). */
+export function storageCap(camp: CampState, now?: number): number {
   const level = Math.max(1, buildingLevel(camp, 'tentorium'));
   const table = CONFIG.STORAGE_BY_TENT_LEVEL;
-  return table[Math.min(level, table.length - 1)];
+  const base = table[Math.min(level, table.length - 1)];
+  return now !== undefined && effectWindow(camp, 'shade', now) ? base * 2 : base;
+}
+
+/** Fire-guard and shade pause the fire: move its clock forward by the protected time. */
+export function pauseFire(camp: CampState, now: number): CampState {
+  let shift = 0;
+  for (const e of camp.effects ?? []) {
+    if (e.kind === 'fire-guard' || e.kind === 'shade') shift = Math.max(shift, overlap(camp.lastBurnAt, now, e.from, e.until));
+  }
+  return shift > 0 && camp.fuel > 0 ? { ...camp, lastBurnAt: camp.lastBurnAt + shift } : camp;
 }
 
 /** Materials needed to build a building, or to raise it to the next level. Null when maxed. */
@@ -50,7 +64,7 @@ function overlap(a0: number, a1: number, b0: number, b1: number): number {
 export function accrueProduction(camp: CampState, now: number): CampState {
   const from = camp.lastProductionAt;
   if (now <= from) return camp;
-  const cap = storageCap(camp);
+  const cap = storageCap(camp, now);
   const fireOutAt = camp.fuel > 0 ? camp.lastBurnAt + camp.fuel * BURN_MS : from;
   const pending = { ...camp.pending };
 
@@ -60,11 +74,20 @@ export function accrueProduction(camp: CampState, now: number): CampState {
     if (end <= from) continue;
     let ms = end - from;
     if (camp.light) ms += overlap(from, end, camp.light.from, camp.light.until) * (CONFIG.LIGHT_PRODUCTION_MULTIPLIER - 1);
+    if (building.id === 'hortus') {
+      for (const e of camp.effects ?? []) if (e.kind === 'garden-boost') ms += overlap(from, end, e.from, e.until);
+    }
     const made = ms / (building.produces.every_hours * HOUR_MS);
     pending[building.id] = Math.min(cap, (pending[building.id] ?? 0) + made);
   }
   const light = camp.light && camp.light.until <= now ? null : camp.light;
   return { ...camp, pending, lastProductionAt: now, light };
+}
+
+/** Drops timed effects that are over (after production and the fire have used them). */
+export function dropExpiredEffects(camp: CampState, now: number): CampState {
+  const effects = (camp.effects ?? []).filter((e) => e.until > now);
+  return effects.length === (camp.effects ?? []).length ? camp : { ...camp, effects };
 }
 
 /** Whole units ready to collect at a building. */

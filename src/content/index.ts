@@ -8,8 +8,9 @@ import spellsJson from '../../content/spells.json';
 import elementsJson from '../../content/elements.json';
 import buildingsJson from '../../content/buildings.json';
 import ranksJson from '../../content/ranks.json';
+import decksJson from '../../content/decks.json';
 import type {
-  Building, ElementDef, Exercise, Lesson, Rank, Rule, Spell, Unit, Word,
+  Building, Deck, ElementDef, Exercise, Lesson, Rank, Rule, Spell, Unit, Word,
 } from './types';
 
 export const words = wordsJson.words as unknown as Word[];
@@ -27,6 +28,8 @@ export const elementById = new Map(elementDefs.map((e) => [e.id, e]));
 export const buildingById = new Map(buildings.map((b) => [b.id, b]));
 export const rankById = new Map(ranks.map((r) => [r.id, r]));
 export const unitById = new Map(units.map((u) => [u.id, u]));
+export const decks = decksJson.decks as Deck[];
+export const deckWords = (deckId: string) => words.filter((w) => w.deck === deckId);
 
 /** Every lesson in course order. */
 export const lessons: Lesson[] = units.flatMap((u) => u.lessons);

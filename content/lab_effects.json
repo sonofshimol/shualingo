@@ -1,0 +1,323 @@
+{
+  "_about": "Spell-lab effects: the first rule that matches the analysed sentence wins. object/recipient: {word} or {tag}; recipient null = must be empty. A means phrase (ablative) doubles the effect and costs one aether more.",
+  "effects": [
+    {
+      "id": "gather-wood",
+      "verb": "affero",
+      "object": {
+        "word": "lignum"
+      },
+      "recipient": {
+        "word": "ego"
+      },
+      "effect": {
+        "type": "gather",
+        "resource": "fuel",
+        "amount": 3
+      },
+      "name_he": "איסוף עצים",
+      "hint_he": "מה המדורה אוכלת? בקשי שיביאו לך את זה."
+    },
+    {
+      "id": "feed-fire",
+      "verb": "do",
+      "object": {
+        "word": "lignum"
+      },
+      "recipient": {
+        "word": "ignis"
+      },
+      "effect": {
+        "type": "gather",
+        "resource": "fuel",
+        "amount": 2
+      },
+      "name_he": "להאכיל את האש",
+      "hint_he": "אפשר לתת משהו ישר לאש עצמה."
+    },
+    {
+      "id": "relight",
+      "verb": "facio",
+      "object": {
+        "word": "ignis"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "gather",
+        "resource": "fuel",
+        "amount": 1
+      },
+      "name_he": "להדליק אש",
+      "hint_he": "אם המדורה כבתה — פשוט עשי אש."
+    },
+    {
+      "id": "guard-fire",
+      "verb": "servo",
+      "object": {
+        "word": "ignis"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "timed",
+        "kind": "fire-guard",
+        "hours": 12
+      },
+      "name_he": "לשמור על האש",
+      "hint_he": "מה שומרים כדי שלא ייכבה?"
+    },
+    {
+      "id": "water-tree",
+      "verb": "do",
+      "object": {
+        "word": "aqua"
+      },
+      "recipient": {
+        "word": "arbor"
+      },
+      "effect": {
+        "type": "grow",
+        "reward": {
+          "terra": 2
+        },
+        "final_reward": {
+          "aether": 2
+        }
+      },
+      "name_he": "להשקות את העץ",
+      "hint_he": "העץ צמא."
+    },
+    {
+      "id": "water-garden",
+      "verb": "do",
+      "object": {
+        "word": "aqua"
+      },
+      "recipient": {
+        "word": "hortus"
+      },
+      "effect": {
+        "type": "timed",
+        "kind": "garden-boost",
+        "hours": 6
+      },
+      "name_he": "להשקות את הגינה",
+      "hint_he": "גם לגינה אפשר לתת לשתות."
+    },
+    {
+      "id": "tend-garden",
+      "verb": "curo",
+      "object": {
+        "word": "hortus"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "timed",
+        "kind": "garden-boost",
+        "hours": 4
+      },
+      "name_he": "לטפל בגינה",
+      "hint_he": "מה צריך טיפול ב-hortus?"
+    },
+    {
+      "id": "bring-water",
+      "verb": "affero",
+      "object": {
+        "word": "aqua"
+      },
+      "recipient": {
+        "word": "ego"
+      },
+      "effect": {
+        "type": "conjure",
+        "element": "aqua",
+        "amount": 2
+      },
+      "name_he": "להביא מים",
+      "hint_he": "מה שותים? בקשי שיביאו לך."
+    },
+    {
+      "id": "bring-light",
+      "verb": "affero",
+      "object": {
+        "word": "lux"
+      },
+      "recipient": {
+        "word": "ego"
+      },
+      "effect": {
+        "type": "conjure",
+        "element": "ignis",
+        "amount": 2
+      },
+      "name_he": "להביא אור",
+      "hint_he": "אפשר להביא גם אור."
+    },
+    {
+      "id": "offering",
+      "verb": "do",
+      "object": {
+        "word": "donum"
+      },
+      "recipient": {
+        "tag": "divine"
+      },
+      "effect": {
+        "type": "offering",
+        "reward": {
+          "aether": 1
+        }
+      },
+      "name_he": "מתנה לאלים",
+      "hint_he": "האלים אוהבים מתנות — פעם ביום."
+    },
+    {
+      "id": "call-friend",
+      "verb": "voco",
+      "object": {
+        "word": "amicus"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "friend"
+      },
+      "name_he": "לקרוא לחבר",
+      "hint_he": "בודדה ביער? קראי למישהו."
+    },
+    {
+      "id": "sing",
+      "verb": "cano",
+      "object": {
+        "word": "carmen"
+      },
+      "recipient": "any",
+      "effect": {
+        "type": "song"
+      },
+      "name_he": "שיר-קסם",
+      "hint_he": "carmen הוא גם שיר וגם לחש. שירי אותו."
+    },
+    {
+      "id": "book-hint",
+      "verb": "affero",
+      "object": {
+        "word": "liber"
+      },
+      "recipient": {
+        "word": "ego"
+      },
+      "effect": {
+        "type": "hint"
+      },
+      "name_he": "ספר עם רמז",
+      "hint_he": "בספרים יש סודות."
+    },
+    {
+      "id": "make-light",
+      "verb": "facio",
+      "object": {
+        "word": "lux"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "light",
+        "hours": 12
+      },
+      "name_he": "עשה אור",
+      "hint_he": "Fiat lux…",
+      "requires": {
+        "rank": "maga"
+      }
+    },
+    {
+      "id": "reveal-forest",
+      "verb": "do",
+      "object": {
+        "word": "lux"
+      },
+      "recipient": {
+        "word": "silva"
+      },
+      "effect": {
+        "type": "reveal"
+      },
+      "name_he": "אור ליער",
+      "hint_he": "היער חשוך בשוליו. תני לו אור.",
+      "requires": {
+        "rank": "maga"
+      },
+      "extra_cost": {
+        "lux": 1
+      }
+    },
+    {
+      "id": "shade",
+      "verb": "facio",
+      "object": {
+        "word": "umbra"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "timed",
+        "kind": "shade",
+        "hours": 12
+      },
+      "name_he": "עשה צל",
+      "hint_he": "מה ההפך מ-lūx?",
+      "requires": {
+        "rank": "magistra"
+      },
+      "extra_cost": {
+        "umbra": 1
+      }
+    },
+    {
+      "id": "call-spirit",
+      "verb": "voco",
+      "object": {
+        "word": "spiritus"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "hint"
+      },
+      "name_he": "לקרוא לרוח",
+      "hint_he": "מי יודע את כל סודות היער?",
+      "requires": {
+        "rank": "magistra"
+      },
+      "extra_cost": {
+        "spiritus": 1
+      }
+    },
+    {
+      "id": "build",
+      "verb": "aedifico",
+      "object": {
+        "tag": "building"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "build",
+        "building": "$object"
+      },
+      "name_he": "בנייה",
+      "hint_he": "מה אפשר לבנות במחנה?"
+    },
+    {
+      "id": "rank-up",
+      "verb": "muto",
+      "object": {
+        "word": "ego"
+      },
+      "recipient": null,
+      "effect": {
+        "type": "rank"
+      },
+      "name_he": "עלייה בדרגה",
+      "hint_he": "שני את עצמך.",
+      "requires": {
+        "building": "turris"
+      }
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import { newSave, type SaveState } from './state';
 import { spellById } from '../content';
 
 const T0 = Date.parse('2026-11-05T09:00:00');
-const RICH = { terra: 99, aqua: 99, aer: 99, ignis: 99, aether: 99 };
+const RICH = { terra: 99, aqua: 99, aer: 99, ignis: 99, aether: 99, lux: 0, umbra: 0, spiritus: 0 };
 
 function passAll(save: SaveState, upTo: number, now: number): SaveState {
   for (const lesson of lessons.slice(0, upTo)) {
@@ -125,7 +125,11 @@ describe('save migration', () => {
       tasks: {}, spellbook: ['gather-wood'], daily: { lastLessonDay: null }, stats: { spellsCast: 1, reviewsDone: 0, lessonsFailed: 0 },
     };
     const save = migrate(v1);
-    expect(save.saveVersion).toBe(2);
+    expect(save.saveVersion).toBe(3);
+    expect(save.elements.lux).toBe(0);
+    expect(save.lab.discoveries).toEqual({});
+    expect(save.camp.forest.revealed).toEqual([]);
+    expect(save.daily.verbaEarned).toBe(0);
     expect(save.lessons['u1-l1']).toBeDefined();
     expect(save.elements.terra).toBe(4);
     expect(save.camp.fuel).toBe(2);

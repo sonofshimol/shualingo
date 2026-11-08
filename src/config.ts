@@ -46,6 +46,23 @@ export const CONFIG = {
   TREE_MAX_STAGE: 3,
   /** פי כמה המבנים מייצרים בזמן שלחש האור פועל. */
   LIGHT_PRODUCTION_MULTIPLIER: 2,
+
+  // ---- שלב 3: משחק המילים Verba ----
+  /** כמה שאלות בסבב אחד. */
+  VERBA_ROUND_SIZE: 10,
+  /** כמה מילים חדשות לכל היותר בסבב. */
+  VERBA_NEW_PER_ROUND: 4,
+  /** כמה אלמנטים אפשר להרוויח ממשחק המילים ביום (כדי שהשיעורים יישארו העיקר). */
+  VERBA_DAILY_CAP: 10,
+
+  // ---- שלב 3: מעבדת הלחשים ----
+  /** אחרי שלחש מהמעבדה פעל, כמה שעות עד שאותו לחש בדיוק יפעל שוב. */
+  LAB_COOLDOWN_HOURS: 8,
+  /** תוספת ביחסת אמצעי (magnā vī) מכפילה את הכוח, ועולה aether נוסף. */
+  MEANS_POWER: 2,
+  MEANS_EXTRA_COST: { aether: 1 } as Partial<Record<ElementId, number>>,
+  /** כמה דקות אחרי לחש משובש אפשר לתקן אותו ולקבל umbra. */
+  FIX_GARBLE_MINUTES: 10,
 } as const;
 
 export const HOUR_MS = 60 * 60 * 1000;

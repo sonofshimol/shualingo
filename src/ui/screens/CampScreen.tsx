@@ -1,3 +1,4 @@
+import { unlockedMystic } from '../../game/ranks';
 import { useMemo, useState } from 'react';
 import { CONFIG, HOUR_MS } from '../../config';
 import { buildingById, lessons, rankById, ruleById, spellById, spells } from '../../content';
@@ -8,7 +9,8 @@ import { FIRE_TEXT_HE, fireLevel } from '../../game/camp';
 import { nextRank } from '../../game/ranks';
 import { spellStatus } from '../../game/spells';
 import { dueCards } from '../../learning/srs';
-import { CampScene, type SpotId } from '../../art/CampScene';
+import { CampScene, FOREST_SPOTS, type SpotId } from '../../art/CampScene';
+import { effectActive, forestAreas } from '../../magic/effects';
 import { Countdown, ElementBar } from '../components/common';
 import { ElementIcon } from '../components/ElementIcon';
 import { La } from '../components/La';
@@ -52,6 +54,11 @@ export function CampScreen({ go }: { go: CampGo }) {
   const [note, setNote] = useState<string | null>(null);
   const phrases = useMemo(() => foxPhrases(save.spellbook, Object.keys(save.lessons)), [save.spellbook, save.lessons]);
   const leftToday = harvestLeftToday(camp, now);
+  const effects = {
+    shade: effectActive(state, 'shade', now),
+    fireGuard: effectActive(state, 'fire-guard', now),
+    gardenBoost: effectActive(state, 'garden-boost', now),
+  };
 
   const doHarvest = (id: SpotId) => {
     const result = harvestBuilding(getSave(), id, Date.now());
@@ -85,6 +92,13 @@ export function CampScreen({ go }: { go: CampGo }) {
     if (id === 'tree') {
       if (save.spellbook.includes('grow-tree')) go({ spell: 'grow-tree' });
       else setNote(`זה עץ צעיר (arbor). ביחידה 5 תלמדו להשקות אותו בלחש: Aquam arborī dā!`);
+      return;
+    }
+    if ((FOREST_SPOTS as readonly string[]).includes(id)) {
+      const area = forestAreas.find((a) => a.id === id)!;
+      setNote(camp.forest.revealed.includes(id)
+        ? `${area.name_he}: ${area.find_he}`
+        : 'אזור חשוך (tenebrae). משהו מסתתר שם… לחש אסכולת האור, Lūcem silvae dā!, יחשוף אותו (מדרגת maga).');
       return;
     }
     if (readyAt(camp, id) >= 1) {
@@ -162,12 +176,13 @@ export function CampScreen({ go }: { go: CampGo }) {
     { id: 'circulus', label: 'מעגל הלחשים' },
     { id: 'tree', label: 'העץ (arbor)' },
     ...BUILDING_SPOTS.filter((id) => camp.buildings[id]).map((id) => ({ id: id as SpotId, label: `${buildingById.get(id)!.name_he} (${buildingById.get(id)!.name_la})` })),
+    ...FOREST_SPOTS.map((id) => ({ id: id as SpotId, label: camp.forest.revealed.includes(id) ? forestAreas.find((a) => a.id === id)!.name_he : 'אזור חשוך ביער' })),
   ];
 
   return (
     <div className="screen camp">
-      <ElementBar elements={save.elements} pulse={pulse} />
-      <CampScene camp={camp} fire={level} rank={save.rank} circleActive={circleActive} lit={lit} targets={targets} onTarget={onTarget} overlays={overlays} />
+      <ElementBar mystic={unlockedMystic(save.rank)} elements={save.elements} pulse={pulse} />
+      <CampScene camp={camp} fire={level} rank={save.rank} circleActive={circleActive} lit={lit} effects={effects} targets={targets} onTarget={onTarget} overlays={overlays} />
       {note && (
         <button type="button" className="scene-note" onClick={() => setNote(null)}>
           {note}
@@ -232,6 +247,11 @@ export function CampScreen({ go }: { go: CampGo }) {
           </p>
         )}
         <p className="muted small">קציר מהמבנים היום: {CONFIG.DAILY_HARVEST_CAP - leftToday} מתוך {CONFIG.DAILY_HARVEST_CAP}.</p>
+        {camp.effects.filter((e) => e.until > now).map((e) => (
+          <p key={e.kind} className="small effect-line">
+            {{ 'fire-guard': '🛡 האש שמורה', 'garden-boost': '💧 הגינה מושקית ומייצרת פי 2', shade: '☾ צל על המחנה: האש לא נשרפת, המחסנים כפולים' }[e.kind]} — עוד <Countdown until={e.until} now={now} />
+          </p>
+        ))}
       </section>
 
       {sheet && <BuildingSheet id={sheet} onClose={() => setSheet(null)} go={go} onHarvest={doHarvest} />}

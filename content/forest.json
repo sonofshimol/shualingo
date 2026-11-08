@@ -1,0 +1,8 @@
+{
+  "_about": "Dark areas at the edge of the forest (tenebrae). Each 'Lūcem silvae dā!' reveals the next one.",
+  "areas": [
+    { "id": "west", "name_he": "הקרחת המערבית", "find_he": "באור נחשפת קרחת עם פטריות זוהרות וערימת אבנים חלקות.", "reward": { "terra": 6, "aqua": 4 } },
+    { "id": "spring", "name_he": "המעיין החבוי", "find_he": "מתחת לשורשים מתגלה מעיין קטן שמימיו מנצנצים בצבע סגול.", "reward": { "aether": 3, "umbra": 1 } },
+    { "id": "tablet", "name_he": "לוח האבן הירוק", "find_he": "בין השרכים מסתתר לוח אבן ירקרק, ועליו חרוטה שורה: Verum, sine mendacio… (אמת, בלי שקר). השועלה עוד לא יודעת לקרוא את כולו.", "reward": { "spiritus": 2, "lux": 2 } }
+  ]
+}
