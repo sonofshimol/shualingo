@@ -141,7 +141,45 @@ export type SpellEffect =
   | { type: 'build'; building: string }
   | { type: 'grow'; reward: ElementCost; final_reward: ElementCost }
   | { type: 'light'; hours: number }
-  | { type: 'rank' };
+  | { type: 'rank' }
+  // stage 3 (spell lab)
+  | { type: 'timed'; kind: 'shade' | 'garden-boost' | 'fire-guard'; hours: number }
+  | { type: 'conjure'; element: ElementId; amount: number }
+  | { type: 'offering'; reward: ElementCost }
+  | { type: 'friend' }
+  | { type: 'song' }
+  | { type: 'hint' }
+  | { type: 'reveal' };
+
+/** A spell-lab rule: which analysed sentence produces which effect (content/lab_effects.json). */
+export interface LabEffectRule {
+  id: string;
+  verb: string;
+  object: { word?: string; tag?: string } | null;
+  /** null = must be empty, "any" = anything or nothing. */
+  recipient: { word?: string; tag?: string } | null | 'any';
+  effect: SpellEffect;
+  name_he: string;
+  hint_he: string;
+  requires?: { rank?: RankId; building?: string };
+  extra_cost?: ElementCost;
+}
+
+export interface ForestArea {
+  id: string;
+  name_he: string;
+  find_he: string;
+  reward: ElementCost;
+}
+
+export interface GarbleDef {
+  id: string;
+  rule: string;
+  animation: 'steam' | 'puddle' | 'sparks' | 'float' | 'narrator' | 'echo' | 'giant';
+  title_he: string;
+  effect_he: string;
+  explain_he: string;
+}
 
 export type RankId = 'discipula' | 'maga' | 'magistra';
 

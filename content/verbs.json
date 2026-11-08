@@ -1,0 +1,101 @@
+{
+  "_about": "What each command verb needs in the spell lab: object (את מה?), recipient (למי?), means (במה?). required | optional | none.",
+  "verbs": [
+    {
+      "id": "affero",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "הביא"
+    },
+    {
+      "id": "do",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "תן"
+    },
+    {
+      "id": "porto",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "שא"
+    },
+    {
+      "id": "facio",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "עשה"
+    },
+    {
+      "id": "aedifico",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "בנה"
+    },
+    {
+      "id": "muto",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "שנה"
+    },
+    {
+      "id": "voco",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "קרא ל-"
+    },
+    {
+      "id": "servo",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "שמור על"
+    },
+    {
+      "id": "curo",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "טפל ב-"
+    },
+    {
+      "id": "specto",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "הסתכל על"
+    },
+    {
+      "id": "amo",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "אהב את"
+    },
+    {
+      "id": "paro",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "הכן"
+    },
+    {
+      "id": "narro",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "ספר"
+    },
+    {
+      "id": "cano",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "שיר"
+    },
+    {
+      "id": "mitto",
+      "object": "required",
+      "recipient": "optional",
+      "verb_he": "שלח"
+    },
+    {
+      "id": "audio",
+      "object": "required",
+      "recipient": "none",
+      "verb_he": "שמע"
+    }
+  ]
+}

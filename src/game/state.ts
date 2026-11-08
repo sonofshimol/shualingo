@@ -61,7 +61,7 @@ export interface TimedEffect {
 /** Stage 3: the spell lab. */
 export interface LabState {
   /** Every grammatical combination ever cast, by signature. */
-  discoveries: Record<string, { firstAt: number; casts: number; text: string }>;
+  discoveries: Record<string, { firstAt: number; lastAt: number; casts: number; text: string; rule: string | null }>;
   /** The last garbled cast (to reward fixing it with umbra). */
   lastGarble: { verb: string; at: number } | null;
 }

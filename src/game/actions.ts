@@ -2,17 +2,18 @@
  * Everything that changes the saved game. Each function takes the current save and the time,
  * and returns a new save (never mutates), so it is easy to test and to undo.
  */
-import { CONFIG, HOUR_MS } from '../config';
-import { buildingById, lessonById, lessons, spellById, spells, unitOfLesson } from '../content';
+import { CONFIG } from '../config';
+import { lessonById, lessons, spellById, spells, unitOfLesson } from '../content';
 import type { Lesson } from '../content/types';
 import type { LessonRun } from '../learning/lessonRun';
 import { lessonRatings } from '../learning/lessonRun';
 import { applyRatings, wordCard } from '../learning/srs';
-import { accrueProduction, constructBuilding, harvest, isBuilt } from './buildings';
-import { addFuel, burnFire } from './camp';
+import { accrueProduction, dropExpiredEffects, harvest, isBuilt, pauseFire } from './buildings';
+import { burnFire } from './camp';
 import { addElements, canAfford, type ElementDelta, subtractElements, sumDeltas } from './elements';
-import { nextRank } from './ranks';
+import { rankOrder } from './ranks';
 import { spellIsCorrect, spellStatus, spellTotalCost, spellWords } from './spells';
+import { applyEffect } from '../magic/effects';
 import { dayKey, type SaveState } from './state';
 import { lessonTask, recordFailure, recordSuccess, spellTask, taskStatus } from './tasks';
 
@@ -20,7 +21,7 @@ import { lessonTask, recordFailure, recordSuccess, spellTask, taskStatus } from 
 
 /** Brings time-based state up to date: buildings produce and the fire burns while the app is closed. */
 export function tick(save: SaveState, now: number): SaveState {
-  const camp = burnFire(accrueProduction(save.camp, now), now);
+  const camp = dropExpiredEffects(burnFire(pauseFire(accrueProduction(save.camp, now), now), now), now);
   return camp === save.camp ? save : { ...save, camp };
 }
 
@@ -98,7 +99,10 @@ export function finishLesson(save: SaveState, run: LessonRun, now: number): { sa
 
   const today = dayKey(now);
   const dailyBonus = save.daily.lastLessonDay !== today;
-  const earned = dailyBonus ? sumDeltas(run.earned, CONFIG.DAILY_LESSON_REWARD) : run.earned;
+  let earned = dailyBonus ? sumDeltas(run.earned, CONFIG.DAILY_LESSON_REWARD) : run.earned;
+  // Stage 3: a perfect lesson (no mistakes) gives lux once the fox is a maga.
+  const perfect = run.mistakes === 0 && rankOrder(save.rank) >= rankOrder('maga');
+  if (perfect) earned = sumDeltas(earned, { lux: 1 });
   const previous = save.lessons[lesson.id];
   const newSpells = spells.filter((s) => s.unlocked_by === lesson.id && !save.spellbook.includes(s.id)).map((s) => s.id);
 
@@ -188,40 +192,8 @@ export function castSpell(save: SaveState, spellId: string, tiles: string[], now
     tasks: recordSuccess(current.tasks, taskId),
     stats: { ...current.stats, spellsCast: current.stats.spellsCast + 1 },
   };
-  let gained: ElementDelta | undefined;
-  let note_he: string | undefined;
-  const effect = spell.effect;
-  switch (effect.type) {
-    case 'gather':
-      next = { ...next, camp: addFuel(next.camp, effect.amount, now) };
-      break;
-    case 'build': {
-      const camp = constructBuilding(next.camp, effect.building, now);
-      next = { ...next, camp };
-      const building = buildingById.get(effect.building)!;
-      const level = camp.buildings[effect.building].level;
-      note_he = level > 1 ? `${building.name_la} עלה לרמה ${level}.` : `${building.name_la} (${building.name_he}) נבנה!`;
-      break;
-    }
-    case 'grow': {
-      const stage = next.camp.tree.stage + 1;
-      const final = stage >= CONFIG.TREE_MAX_STAGE;
-      gained = final ? sumDeltas(effect.reward, effect.final_reward) : effect.reward;
-      next = { ...next, elements: addElements(next.elements, gained), camp: { ...next.camp, tree: { stage, lastWateredAt: now } } };
-      note_he = final ? 'העץ גדל עד הסוף! הוא נותן aether מיוחד.' : `העץ גדל (שלב ${stage} מתוך ${CONFIG.TREE_MAX_STAGE}).`;
-      break;
-    }
-    case 'light': {
-      const until = now + effect.hours * HOUR_MS;
-      next = { ...next, camp: { ...next.camp, light: { from: now, until } } };
-      break;
-    }
-    case 'rank': {
-      const rank = nextRank(current)!;
-      next = { ...next, rank: rank.id };
-      note_he = `השועלה היא עכשיו ${rank.id} (${rank.name_he})! ${rank.unlocks_he ? `נפתח: ${rank.unlocks_he}` : ''}`.trim();
-      break;
-    }
-  }
+  const applied = applyEffect(next, spell.effect, now);
+  next = applied.save;
+  const { gained, note_he } = applied;
   return { save: next, outcome: 'cast', lockedNow: false, gained, note_he };
 }
