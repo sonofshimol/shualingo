@@ -1,7 +1,10 @@
 /** Types for the JSON files in /content. Documented for humans in content/SCHEMA.md. */
 
-export type ElementId = 'terra' | 'aqua' | 'aer' | 'ignis' | 'aether';
+export type ElementId = 'terra' | 'aqua' | 'aer' | 'ignis' | 'aether' | 'lux' | 'umbra' | 'spiritus';
 export const BASE_ELEMENTS: ElementId[] = ['terra', 'aqua', 'aer', 'ignis', 'aether'];
+/** Stage 3: the mystic elements, each opening a school of spells. */
+export const MYSTIC_ELEMENTS: ElementId[] = ['lux', 'umbra', 'spiritus'];
+export const ALL_ELEMENTS: ElementId[] = [...BASE_ELEMENTS, ...MYSTIC_ELEMENTS];
 
 export type PartOfSpeech = 'noun' | 'verb' | 'adj' | 'pron' | 'conj' | 'adv' | 'prep';
 
@@ -197,4 +200,11 @@ export interface Building {
   upgrade_costs?: ElementCost[];
   /** Content this building opens. */
   unlocks?: { unit?: string };
+}
+
+export interface Deck {
+  id: string;
+  name_la: string;
+  name_he: string;
+  element: ElementId;
 }

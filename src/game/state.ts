@@ -6,7 +6,7 @@ import { CONFIG } from '../config';
 import type { ElementId, RankId } from '../content/types';
 import type { StoredCard } from '../learning/srs';
 
-export const SAVE_VERSION = 2;
+export const SAVE_VERSION = 3;
 
 export type ElementBag = Record<ElementId, number>;
 
@@ -44,6 +44,26 @@ export interface CampState {
   tree: { stage: number; lastWateredAt: number | null };
   /** Active light spell (Lūcem fac!), or null. */
   light: { from: number; until: number } | null;
+  /** Stage 3: timed effects from discovered spells (shade, watered garden, guarded fire…). */
+  effects: TimedEffect[];
+  /** Stage 3: dark areas of the forest revealed by the light school. */
+  forest: { revealed: string[] };
+}
+
+export type EffectKind = 'shade' | 'garden-boost' | 'fire-guard';
+
+export interface TimedEffect {
+  kind: EffectKind;
+  from: number;
+  until: number;
+}
+
+/** Stage 3: the spell lab. */
+export interface LabState {
+  /** Every grammatical combination ever cast, by signature. */
+  discoveries: Record<string, { firstAt: number; casts: number; text: string }>;
+  /** The last garbled cast (to reward fixing it with umbra). */
+  lastGarble: { verb: string; at: number } | null;
 }
 
 export interface SaveState {
@@ -59,13 +79,28 @@ export interface SaveState {
   /** Spell ids the fox knows (liber incantationum). */
   spellbook: string[];
   rank: RankId;
-  daily: { lastLessonDay: string | null };
-  stats: { spellsCast: number; reviewsDone: number; lessonsFailed: number; harvested: number };
+  lab: LabState;
+  daily: {
+    lastLessonDay: string | null;
+    /** The word mini-game's daily reward cap. */
+    verbaDay: string | null;
+    verbaEarned: number;
+    /** Dōnum deae dā! works once a day. */
+    offeringDay: string | null;
+  };
+  stats: {
+    spellsCast: number;
+    reviewsDone: number;
+    lessonsFailed: number;
+    harvested: number;
+    garbles: number;
+    verbaCorrect: number;
+  };
   settings: { sound: boolean; vibration: boolean };
 }
 
 export function emptyElements(): ElementBag {
-  return { terra: 0, aqua: 0, aer: 0, ignis: 0, aether: 0 };
+  return { terra: 0, aqua: 0, aer: 0, ignis: 0, aether: 0, lux: 0, umbra: 0, spiritus: 0 };
 }
 
 export const INITIAL_BUILDINGS = ['focus', 'tentorium', 'circulus'];
@@ -80,6 +115,8 @@ export function newCamp(now: number): CampState {
     harvest: { day: null, amount: 0 },
     tree: { stage: 0, lastWateredAt: null },
     light: null,
+    effects: [],
+    forest: { revealed: [] },
   };
 }
 
@@ -94,8 +131,9 @@ export function newSave(now: number): SaveState {
     tasks: {},
     spellbook: [],
     rank: 'discipula',
-    daily: { lastLessonDay: null },
-    stats: { spellsCast: 0, reviewsDone: 0, lessonsFailed: 0, harvested: 0 },
+    lab: { discoveries: {}, lastGarble: null },
+    daily: { lastLessonDay: null, verbaDay: null, verbaEarned: 0, offeringDay: null },
+    stats: { spellsCast: 0, reviewsDone: 0, lessonsFailed: 0, harvested: 0, garbles: 0, verbaCorrect: 0 },
     settings: { sound: true, vibration: true },
   };
 }

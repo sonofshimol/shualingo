@@ -23,6 +23,19 @@ const MIGRATIONS: Record<number, Migration> = {
       stats: { harvested: 0, ...(save.stats as Raw) },
     };
   },
+  /** Stage 3: mystic elements, spell lab, timed effects, dark forest, word mini-game. */
+  2: (save) => {
+    const camp = (save.camp ?? {}) as Raw;
+    return {
+      ...save,
+      saveVersion: 3,
+      elements: { lux: 0, umbra: 0, spiritus: 0, ...(save.elements as Raw) },
+      camp: { effects: [], forest: { revealed: [] }, ...camp },
+      lab: { discoveries: {}, lastGarble: null },
+      daily: { verbaDay: null, verbaEarned: 0, offeringDay: null, ...(save.daily as Raw) },
+      stats: { garbles: 0, verbaCorrect: 0, ...(save.stats as Raw) },
+    };
+  },
 };
 
 export class SaveFormatError extends Error {}
@@ -50,5 +63,6 @@ export function migrate(raw: unknown): SaveState {
     daily: { ...defaults.daily, ...(save.daily as object) },
     stats: { ...defaults.stats, ...(save.stats as object) },
     settings: { ...defaults.settings, ...(save.settings as object) },
+    lab: { ...defaults.lab, ...(save.lab as object) },
   } as SaveState;
 }

@@ -7,14 +7,16 @@ import { PathScreen } from './screens/PathScreen';
 import { ReviewScreen } from './screens/ReviewScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { SpellScreen } from './screens/SpellScreen';
+import { VerbaScreen } from './screens/VerbaScreen';
 import { useSave } from './store';
 
-type Tab = 'camp' | 'path' | 'spells' | 'settings';
+type Tab = 'camp' | 'path' | 'words' | 'spells' | 'settings';
 type Session = { kind: 'lesson'; id: string } | { kind: 'review' } | null;
 
 const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: 'camp', label: 'מחנה', icon: '🔥' },
   { id: 'path', label: 'מסלול', icon: '📜' },
+  { id: 'words', label: 'מילים', icon: '📖' },
   { id: 'spells', label: 'לחשים', icon: '✨' },
   { id: 'settings', label: 'הגדרות', icon: '⚙' },
 ];
@@ -69,6 +71,7 @@ export function App() {
     content = <ReviewScreen onExit={closeSession} />;
   } else if (tab === 'camp') content = <CampScreen go={go} />;
   else if (tab === 'path') content = <PathScreen openLesson={(id) => openSession({ kind: 'lesson', id })} />;
+  else if (tab === 'words') content = <VerbaScreen />;
   else if (tab === 'spells') content = <SpellScreen key={`${save.spellbook.join()}|${spellPick}`} initialSpell={spellPick} />;
   else content = <SettingsScreen />;
 

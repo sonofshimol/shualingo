@@ -117,7 +117,7 @@ export function finishLesson(save: SaveState, run: LessonRun, now: number): { sa
         },
       },
       spellbook: [...save.spellbook, ...newSpells],
-      daily: { lastLessonDay: today },
+      daily: { ...save.daily, lastLessonDay: today },
     },
     outcome: { passed: true, earned, dailyBonus, lockedNow: false, newSpells },
   };

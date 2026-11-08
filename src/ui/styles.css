@@ -86,7 +86,7 @@ p { margin: 0 0 0.6rem; }
   width: 100%;
   max-width: 480px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background: var(--bg-deep);
   border-top: 1px solid var(--border);
   padding-bottom: env(safe-area-inset-bottom);
@@ -520,3 +520,33 @@ button.element-chip { cursor: pointer; }
 .toggle { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 1.05rem; }
 .toggle input { width: 24px; height: 24px; accent-color: var(--accent); }
 .nowrap { white-space: nowrap; unicode-bidi: isolate; }
+
+/* ------------------------------------------------------------- stage 3: Verba word game */
+.deck-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.deck-card {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 140px;
+}
+.deck-card:active { transform: scale(0.98); }
+.deck-name { font-family: var(--font-latin); font-weight: 700; color: var(--latin); font-size: 1.05rem; text-align: center; }
+.deck-he { font-size: 0.85rem; text-align: center; }
+.deck-card .progress { width: 100%; height: 8px; flex: none; }
+.verba-card { display: flex; flex-direction: column; gap: 12px; text-align: center; }
+.verba-card.intro { background: var(--surface); border: 2px solid var(--gold); border-radius: var(--radius); padding: 16px; }
+.verba-lemma { font-family: var(--font-latin); font-size: 2.1rem; font-weight: 700; color: var(--latin); }
+.verba-lemma .la-word { border-bottom-width: 2px; }
+.verba-meaning { font-family: var(--font-body); font-size: 1.5rem; font-weight: 700; color: var(--text); }
+.anchors { color: var(--magic); font-size: 0.95rem; margin: 0; }
+.verba-after { border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 6px; }
+.verba-after.good { background: var(--good-bg); border: 3px solid var(--good); }
+.verba-after.bad { background: var(--bad-bg); border: 3px dashed var(--bad); }
+.streak { font-weight: 700; min-width: 36px; text-align: center; border: 2px solid var(--border); border-radius: 999px; padding: 0 6px; }
+.streak.hot { border-color: var(--gold); color: var(--gold); animation: pulse 0.6s; }
+.streak.hot::after { content: ' 🔥'; }
