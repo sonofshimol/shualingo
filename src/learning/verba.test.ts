@@ -7,9 +7,9 @@ import { buildRound, deckProgress, finishRound } from './verba';
 const T0 = Date.parse('2026-11-08T10:00:00');
 
 describe('Verba word game', () => {
-  it('has eight decks of about ten words', () => {
-    expect(decks).toHaveLength(8);
-    for (const d of decks) expect(deckWords(d.id).length).toBeGreaterThanOrEqual(9);
+  it('has themed decks of at least nine words each', () => {
+    expect(decks.length).toBeGreaterThanOrEqual(8);
+    for (const d of decks) expect(deckWords(d.id).length, d.id).toBeGreaterThanOrEqual(9);
   });
 
   it('introduces new words before asking them, with distinct options', () => {

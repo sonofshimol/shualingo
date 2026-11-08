@@ -253,7 +253,8 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
             raise SystemExit(f"DCC headword '{headword}' not found. Close matches: {close[:5]}")
 
     kaikki_pos = item.get("kaikki_pos", item["pos"])  # Wiktionary sometimes classifies differently
-    entry = pick_entry(kaikki_entries(item["id"], refresh), kaikki_pos, item["id"], item.get("kaikki_nth", 0))
+    lookup = item.get("kaikki_word", item["id"])  # differs from id only when two words share a spelling
+    entry = pick_entry(kaikki_entries(lookup, refresh), kaikki_pos, lookup, item.get("kaikki_nth", 0))
     # Curated lists win: Wiktionary trees contain archaic and dialect forms, so a
     # language listed in curated/words.json (even as []) replaces the automatic one.
     family = dict(item["family"])
@@ -275,7 +276,7 @@ def build_word(item: dict, dcc: dict[str, dict], refresh: bool) -> dict:
         "pos": item["pos"],
         "meaning_he": item["meaning_he"],
         "meaning_en": row["Definition"].strip() if row else first_gloss(entry),
-        "ipa": extract_ipa(entry) or item.get("ipa"),  # curated ipa only when Wiktionary has none
+        "ipa": item.get("ipa") or extract_ipa(entry),  # curated ipa fixes a missing or broken Wiktionary IPA
         "dcc_rank": int(row["Frequency Rank"]) if row else None,
         "dcc_group": row["Semantic Group"].strip() if row else None,
         "exception_reason": item.get("exception_reason"),
@@ -312,9 +313,19 @@ def main() -> None:
     print(f"DCC core list ...")
     dcc = load_dcc(args.refresh)
     words = []
+    skipped = []
     for item in curated:
         print(f"  {item['id']}")
-        words.append(build_word(item, dcc, args.refresh))
+        try:
+            words.append(build_word(item, dcc, args.refresh))
+        except SystemExit as problem:
+            # Deck words (the word game) are optional: skip them with a warning instead of failing the build.
+            # Unit words are required by lessons, so a problem there still stops the build.
+            if not item.get("deck"):
+                raise
+            skipped.append(f"{item['id']}: {problem}")
+    for note in skipped:
+        print(f"  ! skipped deck word {note}", file=sys.stderr)
 
     output = {
         "_meta": {

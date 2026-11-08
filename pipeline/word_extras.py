@@ -212,7 +212,7 @@ def pron_he(ipa: str | None, lemma: str) -> list[dict] | None:
     """Hebrew transliteration of the classical IPA: [{"t": text, "stress": bool, "long": bool}, ...]."""
     if not ipa:
         return None
-    body = ipa.strip("[]/ ")
+    body = re.sub(r"\(.\)", "", ipa.strip("[]/ "))   # drop optional marks like (ː)
     # Syllables are separated by "." and the stress mark starts a syllable.
     pieces = re.split(r"(?=[ˈˌ])|\.", body)
     syllables = [p for p in pieces if p.strip("ˈˌ")]
@@ -229,6 +229,9 @@ def pron_he(ipa: str | None, lemma: str) -> list[dict] | None:
                 if text.endswith(plain):
                     text = text[: -len(plain)] + final
         out.append({"t": text, "stress": syl.startswith("ˈ") or (len(syllables) == 1), "long": long_})
+    if out and not any(s["stress"] for s in out):
+        # No stress mark in the source: Latin stresses the second-to-last syllable by default.
+        out[max(0, len(out) - 2)]["stress"] = True
     return out or None
 
 
