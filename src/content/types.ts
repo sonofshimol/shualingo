@@ -275,3 +275,20 @@ export interface Deck {
   name_he: string;
   element: ElementId;
 }
+
+/** Reading library (content/texts.json): famous texts, songs, poems, jokes and wordplay. */
+export type TextKind = 'canon' | 'poem' | 'song' | 'quote' | 'joke' | 'wordplay';
+
+export interface ReadingText {
+  id: string;
+  kind: TextKind;
+  /** 1 = easy, 3 = hard. */
+  level: 1 | 2 | 3;
+  title_la: string;
+  title_he: string;
+  author_he: string;
+  intro_he: string;
+  lines: { la: string; he: string; notes: { la: string; he: string }[] }[];
+  /** What the text teaches about the language. */
+  lesson_he: string[];
+}

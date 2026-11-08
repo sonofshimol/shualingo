@@ -9,8 +9,9 @@ import elementsJson from '../../content/elements.json';
 import buildingsJson from '../../content/buildings.json';
 import ranksJson from '../../content/ranks.json';
 import decksJson from '../../content/decks.json';
+import textsJson from '../../content/texts.json';
 import type {
-  Building, Deck, ElementDef, Exercise, Lesson, Rank, Rule, Spell, Unit, Word,
+  Building, Deck, ElementDef, ReadingText, Exercise, Lesson, Rank, Rule, Spell, Unit, Word,
 } from './types';
 
 export const words = wordsJson.words as unknown as Word[];
@@ -29,6 +30,7 @@ export const buildingById = new Map(buildings.map((b) => [b.id, b]));
 export const rankById = new Map(ranks.map((r) => [r.id, r]));
 export const unitById = new Map(units.map((u) => [u.id, u]));
 export const decks = decksJson.decks as Deck[];
+export const readingTexts = textsJson.texts as unknown as ReadingText[];
 export const deckWords = (deckId: string) => words.filter((w) => w.deck === deckId);
 
 /** Every lesson in course order. */

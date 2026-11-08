@@ -618,3 +618,20 @@ button.element-chip { cursor: pointer; }
 .quotes { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .quotes li { display: flex; flex-direction: column; gap: 2px; border-inline-start: 3px solid var(--gold); padding-inline-start: 8px; }
 .quote-text { font-family: var(--font-body); font-size: 1.05rem; }
+
+/* ------------------------------------------------------------- reading library */
+.text-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.text-item { width: 100%; background: var(--surface-2); border: 2px solid var(--border); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; text-align: right; }
+.text-la { font-family: var(--font-latin); color: var(--latin); font-weight: 700; text-align: left; }
+.reader-title { font-family: var(--font-latin); color: var(--latin); text-align: left; }
+.reader-lines { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.reader-line { display: flex; flex-direction: column; gap: 8px; }
+.reader-la { font-size: 1.25rem; line-height: 1.7; text-align: left; display: block; }
+.reveal { align-self: flex-start; }
+.reveal.open { border-style: double; border-width: 3px; }
+.reader-he { border-top: 1px dashed var(--border); padding-top: 8px; }
+.reader-notes { margin: 6px 0 0; display: flex; flex-direction: column; gap: 4px; }
+.reader-notes div { display: grid; grid-template-columns: minmax(80px, auto) 1fr; gap: 8px; }
+.reader-notes dt { color: var(--latin); font-weight: 700; text-align: left; }
+.reader-notes dd { margin: 0; }
+.lesson-box { border: 2px solid var(--gold); }
