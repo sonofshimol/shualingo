@@ -12,6 +12,11 @@
 | `elements.json` | ביד | האלמנטים |
 | `buildings.json` | ביד | המבנים במחנה |
 | `ranks.json` | ביד | הדרגות של השועלה |
+| `decks.json` | ביד | חפיסות משחק המילים (שלב 3) |
+| `verbs.json` | ביד | מה כל פועל צריך במעבדה (שלב 3) |
+| `lab_effects.json` | ביד | מה כל צירוף במעבדה עושה (שלב 3) |
+| `garbles.json` | ביד | לחשים משובשים: מה קורה ומה ההסבר (שלב 3) |
+| `forest.json` | ביד | האזורים החשוכים ביער (שלב 3) |
 
 כדי לשנות מילה (פירוש בעברית, מילים קרובות, ביטויים) עורכים את `pipeline/curated/words.json` ומריצים `npm run content`.
 
@@ -43,6 +48,9 @@
 | `family` | אובייקט | curated + kaikki | מילים קרובות לפי שפה, והערה (ראו למטה) |
 | `expressions` | מערך | curated | ביטויים מוכרים: `{ "text", "meaning_he" }` |
 | `etymology_en` | מחרוזת או null | kaikki | האטימולוגיה המלאה מוויקימילון (באנגלית, לשימוש עתידי) |
+| `gender`, `declension` | `m`/`f`/`n`, 1–5 | kaikki | לשמות עצם בלבד: מין ונטייה (המעבדה בודקת התאמת שם תואר) |
+| `deck` | מחרוזת | curated | חפיסה במשחק המילים (`decks.json`); בלי `deck` המילה שייכת ליחידות |
+| `tags` | מערך | curated | תגיות משמעות למעבדה: `resource`, `plant`, `building`, `person`, `divine`, `self`, `element`, `light`, `dark`, `spirit`, `song`, `force`, `gift`, `place` |
 
 **מפתחות ב-`forms`:**
 
@@ -106,7 +114,7 @@
 { "type": "role", "sentence": "Fēmina puellae aquam dat.", "target": 1,
   "answer": "indirect", "translation_he": "האישה נותנת מים לנערה." }
 ```
-`target` הוא מספר המילה במשפט (מתחילים מ-0). `answer`: `subject` (מי עושה), `object` (את מי), `indirect` (למי). `options` (רשות) מגביל את האפשרויות, למשל לפני שלמדו נתינה.
+`target` הוא מספר המילה במשפט (מתחילים מ-0). `answer`: `subject` (מי עושה), `object` (את מי), `indirect` (למי), `means` (במה / עם מה — יחסת האמצעי). `options` (רשות) מגביל את האפשרויות, למשל לפני שלמדו נתינה.
 
 ### 5. השלמת סיומת — `ending`
 ```json
@@ -170,3 +178,42 @@
   "cost": { "aether": 3 }, "requires": { "buildings": ["turris"], "all_lessons": false } }
 ```
 עולים בדרגה בלחש `Mē mūtā!`. `cost` מתווסף למחיר הלחש. `requires` הם תנאים שחייבים להתקיים.
+
+---
+
+## שלב 3: משחק המילים ומעבדת הלחשים
+
+### decks.json
+```json
+{ "id": "natura", "name_la": "Natura", "name_he": "טבע ונוף", "element": "aqua" }
+```
+המילים של חפיסה הן כל המילים ב-`words.json` עם `"deck": "natura"`.
+
+### verbs.json
+```json
+{ "id": "do", "object": "required", "recipient": "optional", "verb_he": "תן" }
+```
+`object` / `recipient`: `required`, `optional` או `none`. רק פעלים שמופיעים כאן זמינים במעבדה.
+
+### lab_effects.json
+```json
+{ "id": "water-tree", "verb": "do", "object": { "word": "aqua" }, "recipient": { "word": "arbor" },
+  "effect": { "type": "grow", "reward": { "terra": 2 }, "final_reward": { "aether": 2 } },
+  "name_he": "להשקות את העץ", "hint_he": "העץ צמא.", "requires": { "rank": "maga" }, "extra_cost": { "lux": 1 } }
+```
+הכלל הראשון שמתאים מנצח. `object` ו-`recipient` הם `{ "word": … }` או `{ "tag": … }`; `recipient: null` = חייב להיות ריק; `"any"` = לא משנה. `effect.building: "$object"` = לבנות את המבנה שבמשבצת "את מה?".
+
+סוגי `effect` נוספים בשלב 3: `timed` (`kind`: `fire-guard`, `garden-boost`, `shade`; `hours`), `conjure` (`element`, `amount`), `offering` (`reward`, פעם ביום), `friend`, `song`, `hint`, `reveal`.
+
+### garbles.json
+```json
+{ "id": "recipient-acc", "rule": "dat-sg-1", "animation": "steam",
+  "title_he": "…", "effect_he": "…{word}…", "explain_he": "{wrong} … {right}" }
+```
+`id` הוא סוג השגיאה שהמנוע מזהה. `rule` נכנס לחזרה (Again). בטקסטים: `{word}` המילה, `{wrong}` הצורה שנכתבה, `{right}` הצורה הנכונה.
+
+### forest.json
+```json
+{ "id": "west", "name_he": "…", "find_he": "…", "reward": { "terra": 6, "aqua": 4 } }
+```
+כל `Lūcem silvae dā!` חושף את האזור הבא ברשימה.

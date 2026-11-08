@@ -56,8 +56,8 @@
       "mystic": true,
       "stage": 3,
       "color": "#fff2a8",
-      "source_he": "נפתח בדרגות מתקדמות",
-      "use_he": "אסכולת לחשים חדשה",
+      "source_he": "שיעור מושלם, בלי אף טעות (מדרגת maga)",
+      "use_he": "אסכולת האור: Lūcem silvae dā! חושף את שולי היער החשוכים",
       "symbol_he": "☉"
     },
     {
@@ -66,8 +66,8 @@
       "mystic": true,
       "stage": 3,
       "color": "#6a5acd",
-      "source_he": "נפתח בדרגות מתקדמות",
-      "use_he": "אסכולת לחשים חדשה",
+      "source_he": "תיקון לחש משובש תוך כמה דקות (מדרגת magistra)",
+      "use_he": "אסכולת הצל: Umbram fac! עוצר את המדורה ומכפיל את המחסנים",
       "symbol_he": "☾"
     },
     {
@@ -76,8 +76,8 @@
       "mystic": true,
       "stage": 3,
       "color": "#e8e8ff",
-      "source_he": "נפתח בדרגות מתקדמות",
-      "use_he": "אסכולת לחשים חדשה",
+      "source_he": "כל גילוי חדש במעבדה (מדרגת magistra)",
+      "use_he": "אסכולת הרוח: Spīritum vocā! — רוח היער לוחשת רמז",
       "symbol_he": "☿"
     }
   ]

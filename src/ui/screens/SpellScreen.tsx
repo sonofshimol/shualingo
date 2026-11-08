@@ -1,7 +1,9 @@
+import { unlockedMystic } from '../../game/ranks';
 import { useMemo, useState } from 'react';
 import { CONFIG } from '../../config';
 import { sentenceFromTiles, spellById } from '../../content';
 import { castSpell, type CastResult } from '../../game/actions';
+import { diagnoseSpell, type Garble } from '../../magic/lab';
 import { canAfford } from '../../game/elements';
 import { spellStatus, spellTotalCost } from '../../game/spells';
 import { spellTask, taskStatus } from '../../game/tasks';
@@ -29,7 +31,7 @@ export function SpellScreen({ initialSpell }: { initialSpell?: string }) {
   const [round, setRound] = useState(0);
   const bank = useMemo(() => (spell ? shuffle([...spell.answer, ...spell.extra]) : []), [spell, round]);
   const [placed, setPlaced] = useState<number[]>([]);
-  const [result, setResult] = useState<Omit<CastResult, 'save'> | null>(null);
+  const [result, setResult] = useState<(Omit<CastResult, 'save'> & { garble?: Garble | null }) | null>(null);
 
   if (!spell) {
     return (
@@ -46,10 +48,11 @@ export function SpellScreen({ initialSpell }: { initialSpell?: string }) {
   const status = spellStatus(save, spell, now);
 
   const cast = () => {
-    const outcome = castSpell(getSave(), spell.id, placed.map((i) => bank[i]), Date.now());
+    const tiles = placed.map((i) => bank[i]);
+    const outcome = castSpell(getSave(), spell.id, tiles, Date.now());
     updateSave(() => outcome.save);
     const { save: _ignored, ...rest } = outcome;
-    setResult(rest);
+    setResult({ ...rest, garble: outcome.outcome === 'wrong' ? diagnoseSpell(spell, tiles) : null });
     if (outcome.outcome === 'cast') {
       const effect = spell.effect.type;
       play(effect === 'rank' ? 'rank' : effect === 'build' ? 'build' : 'cast');
@@ -71,7 +74,7 @@ export function SpellScreen({ initialSpell }: { initialSpell?: string }) {
   return (
     <div className="screen spells">
       <h1>מעגל הלחשים</h1>
-      <ElementBar elements={save.elements} />
+      <ElementBar mystic={unlockedMystic(save.rank)} elements={save.elements} />
 
       <section className={`card circle-card ${result?.outcome === 'cast' ? 'casting' : ''}`}>
         <h2>{spell.meaning_he}</h2>
@@ -95,7 +98,9 @@ export function SpellScreen({ initialSpell }: { initialSpell?: string }) {
             )}
             {result.outcome === 'wrong' && (
               <>
-                <h3>✗ הלחש השתבש</h3>
+                <h3>✗ {result.garble ? result.garble.def.title_he : 'הלחש השתבש'}</h3>
+                {result.garble && <p>{result.garble.effect_he}</p>}
+                {result.garble && <p className="strong">{result.garble.explain_he}</p>}
                 <p>הנוסח הנכון:</p>
                 <La text={spell.text} className="spell-text" />
                 <p>{spell.explain_he}</p>

@@ -6,7 +6,7 @@ import { LessonScreen } from './screens/LessonScreen';
 import { PathScreen } from './screens/PathScreen';
 import { ReviewScreen } from './screens/ReviewScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
-import { SpellScreen } from './screens/SpellScreen';
+import { MagicTab } from './screens/MagicTab';
 import { VerbaScreen } from './screens/VerbaScreen';
 import { useSave } from './store';
 
@@ -72,7 +72,7 @@ export function App() {
   } else if (tab === 'camp') content = <CampScreen go={go} />;
   else if (tab === 'path') content = <PathScreen openLesson={(id) => openSession({ kind: 'lesson', id })} />;
   else if (tab === 'words') content = <VerbaScreen />;
-  else if (tab === 'spells') content = <SpellScreen key={`${save.spellbook.join()}|${spellPick}`} initialSpell={spellPick} />;
+  else if (tab === 'spells') content = <MagicTab key={`${save.spellbook.join()}|${spellPick}`} initialSpell={spellPick} />;
   else content = <SettingsScreen />;
 
   return (

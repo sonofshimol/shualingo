@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { elementById } from '../../content';
-import { BASE_ELEMENTS, type ElementId } from '../../content/types';
+import { BASE_ELEMENTS, MYSTIC_ELEMENTS, type ElementId } from '../../content/types';
 import type { ElementDelta } from '../../game/elements';
 import type { ElementBag } from '../../game/state';
 import { ElementIcon } from './ElementIcon';
@@ -55,8 +55,9 @@ export function ElementSheet({ id, onClose }: { id: ElementId; onClose: () => vo
   );
 }
 
-export function ElementBar({ elements, pulse = [] }: { elements: ElementBag; pulse?: ElementId[] }) {
+export function ElementBar({ elements, pulse = [], mystic }: { elements: ElementBag; pulse?: ElementId[]; mystic?: ElementId[] }) {
   const [open, setOpen] = useState<ElementId | null>(null);
+  const shownMystic = MYSTIC_ELEMENTS.filter((id) => mystic?.includes(id) || (elements[id] ?? 0) > 0);
   return (
     <>
       <div className="element-bar" aria-label="האלמנטים שלך (הקישו להסבר)">
@@ -64,6 +65,13 @@ export function ElementBar({ elements, pulse = [] }: { elements: ElementBag; pul
           <ElementChip key={id} id={id} amount={elements[id]} onClick={() => setOpen(id)} pulse={pulse.includes(id)} />
         ))}
       </div>
+      {shownMystic.length > 0 && (
+        <div className="element-bar mystic" aria-label="האלמנטים המיסטיים">
+          {shownMystic.map((id) => (
+            <ElementChip key={id} id={id} amount={elements[id] ?? 0} onClick={() => setOpen(id)} pulse={pulse.includes(id)} />
+          ))}
+        </div>
+      )}
       {open && <ElementSheet id={open} onClose={() => setOpen(null)} />}
     </>
   );

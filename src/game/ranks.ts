@@ -21,3 +21,9 @@ export function missingForRank(save: SaveState, rank: Rank): string[] {
   if (rank.requires.all_lessons && lessons.some((l) => !save.lessons[l.id])) missing.push('להשלים את כל השיעורים');
   return missing;
 }
+
+/** Mystic elements open with rank: lux at maga, umbra and spiritus at magistra. */
+export function unlockedMystic(rank: RankId): ('lux' | 'umbra' | 'spiritus')[] {
+  const order = rankOrder(rank);
+  return [...(order >= 1 ? (['lux'] as const) : []), ...(order >= 2 ? (['umbra', 'spiritus'] as const) : [])];
+}

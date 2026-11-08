@@ -152,3 +152,51 @@ export function drawRankGear(ctx: Ctx, fx: number, fy: number, rank: RankId, fra
     px(ctx, frame % 2 ? '#c77dff' : '#e2b6ff', fx + 15, fy + 3, 3, 3); // orb
   }
 }
+
+/** A dark corner of the forest (tenebrae): dithered darkness with two curious eyes. */
+export function drawDarkArea(ctx: Ctx, x: number, y: number, w: number, h: number, frame: number) {
+  for (let r = 0; r < h; r += 1) {
+    for (let c = 0; c < w; c += 1) {
+      const edge = Math.min(r, c, h - 1 - r, w - 1 - c);
+      if (edge < 2 && (r + c) % 2 === 1) continue;
+      px(ctx, edge < 2 ? 'rgba(4,5,14,0.75)' : 'rgba(4,5,14,0.92)', x + c, y + r);
+    }
+  }
+  if (frame % 9 !== 0) {
+    px(ctx, '#ffd84d', x + Math.floor(w / 2) - 2, y + Math.floor(h / 2));
+    px(ctx, '#ffd84d', x + Math.floor(w / 2) + 1, y + Math.floor(h / 2));
+  }
+}
+
+/** What the light revealed in each dark area. */
+export function drawFind(ctx: Ctx, id: string, x: number, y: number, w: number, h: number, frame: number) {
+  if (id === 'west') {
+    [[3, h - 6], [8, h - 4], [13, h - 7], [17, h - 3]].forEach(([dx, dy], i) => {
+      px(ctx, '#f6efe2', x + dx, y + dy + 1, 1, 2);
+      px(ctx, (frame + i) % 2 ? '#6fd3ff' : '#c77dff', x + dx - 1, y + dy, 3, 1);
+    });
+    px(ctx, '#8b8fa3', x + 6, y + h - 2, 5, 2);
+  } else if (id === 'spring') {
+    for (let c = 2; c < w - 2; c += 1) px(ctx, (c + frame) % 5 === 0 ? '#e2b6ff' : '#9b6be0', x + c, y + h - 4, 1, 3);
+    px(ctx, '#6d7187', x + 1, y + h - 4, 1, 3);
+    px(ctx, '#6d7187', x + w - 2, y + h - 4, 1, 3);
+  } else if (id === 'tablet') {
+    px(ctx, '#2f7a5a', x + 5, y + 4, 9, 14);
+    px(ctx, '#3fae7a', x + 5, y + 4, 9, 1);
+    for (let r = 7; r < 16; r += 3) px(ctx, frame % 3 === 0 ? '#b8ffd8' : '#7fe0b0', x + 7, y + r, 5, 1);
+  }
+}
+
+/** Visual hints for timed effects. */
+export function drawEffects(ctx: Ctx, flags: { shade: boolean; fireGuard: boolean; gardenBoost: boolean }, fire: { x: number; y: number }, garden: { x: number; y: number }, frame: number) {
+  if (flags.shade) {
+    for (let y = 0; y < 144; y += 2) for (let x = (y / 2) % 2; x < 192; x += 2) px(ctx, 'rgba(60,40,110,0.22)', x, y);
+  }
+  if (flags.fireGuard) {
+    const ring = [[-2, 6], [16, 6], [7, -4], [-1, 14], [15, 14]];
+    ring.forEach(([dx, dy], i) => { if ((frame + i) % 2) px(ctx, '#8fd3ff', fire.x + dx, fire.y + dy, 1, 1); });
+  }
+  if (flags.gardenBoost) {
+    for (let i = 0; i < 5; i += 1) px(ctx, '#3fa0ff', garden.x + 3 + i * 5, garden.y - 2 + ((frame + i) % 3), 1, 2);
+  }
+}
