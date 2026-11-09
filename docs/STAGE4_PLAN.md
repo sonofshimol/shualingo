@@ -104,6 +104,8 @@ DCC status (checked against `pipeline/sources/dcc_core.csv`):
 | semper, numquam, hodiē, satis, magis | as in DCC | lessons, trade talk |
 | mercātor, vulpēs, ursus, lupus, nix, frīgus | **not in DCC** → `dcc_headword: null` + `exception_reason` (only if D1 = yes) | visitors, events |
 
+**Update (after the vocabulary expansion, Nov 2026):** the dictionary now has 872 words. These are **already in `content/words.json`** (most with a Verba `deck`): `volō, accipiō, habeō, dō, ūnus, duo, trēs, pretium, avis, canis, equus, tempestās, hiems, lūna, plēnus, semper, numquam, hodiē, satis, magis`. Do **not** add them again; only add `"deck"`-less curated tweaks if needed. Still missing: `prō` (DCC preposition — add as a normal DCC word) and the six non-DCC words of D1. A word that is in a Verba deck must still be listed in a unit's `words` before a lesson exercise uses it (the "introduced before used" test checks `unit.words`, not decks). There is also a reading library (`content/texts.json`, see `content/SCHEMA.md`); adding a trade-themed text there is optional.
+
 Notes:
 - `duo`/`trēs` may come from kaikki with unusual form keys (numerals). Inspect `content/words.json` after the build. If keys like `nom.pl.n` are present, the grammar engine can use them; if not, add the needed forms to the counter-offer number table in `src/world/numbers.ts` (section 6.4) rather than editing generated JSON.
 - Assign `element` (spell cost) by meaning, as before. Add `tags`: visitors `["person"]` or `["creature"]`.
