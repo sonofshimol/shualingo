@@ -1,0 +1,1228 @@
+{
+  "_about": "Reading library: famous texts, songs, poems, jokes and wordplay. Each line: Latin, Hebrew, notes. See content/SCHEMA.md.",
+  "texts": [
+    {
+      "id": "genesis",
+      "kind": "canon",
+      "level": 1,
+      "title_la": "In principio",
+      "title_he": "בראשית",
+      "author_he": "ספר בראשית, בתרגום הלטיני (הוולגטה, המאה ה-4)",
+      "intro_he": "הפסוקים הראשונים של התנ\"ך, כפי שקראו אותם באירופה במשך יותר מאלף שנה. כמעט כל המילים החשובות כאן כבר מוכרות לך מהלחשים.",
+      "lines": [
+        {
+          "la": "In principio creavit Deus caelum et terram.",
+          "he": "בראשית ברא אלוהים את השמיים ואת הארץ.",
+          "notes": [
+            {
+              "la": "in principiō",
+              "he": "בהתחלה — in עם יחסת האמצעי"
+            },
+            {
+              "la": "creāvit",
+              "he": "ברא (עבר של creō)"
+            },
+            {
+              "la": "caelum et terram",
+              "he": "מושא: terram נגמרת ב-am"
+            }
+          ]
+        },
+        {
+          "la": "Terra autem erat inanis et vacua,",
+          "he": "והארץ הייתה תוהו ובוהו,",
+          "notes": [
+            {
+              "la": "autem",
+              "he": "ו-, אבל"
+            },
+            {
+              "la": "erat",
+              "he": "הייתה (עבר של sum)"
+            },
+            {
+              "la": "inānis et vacua",
+              "he": "ריקה וחלולה — 'תוהו ובוהו'"
+            }
+          ]
+        },
+        {
+          "la": "et tenebrae erant super faciem abyssi,",
+          "he": "וחושך על פני תהום,",
+          "notes": [
+            {
+              "la": "tenebrae erant",
+              "he": "החושך היה — tenebrae ברבים, ולכן גם erant ברבים"
+            },
+            {
+              "la": "super faciem",
+              "he": "על פני"
+            },
+            {
+              "la": "abyssī",
+              "he": "של התהום (צורת השייכות)"
+            }
+          ]
+        },
+        {
+          "la": "et spiritus Dei ferebatur super aquas.",
+          "he": "ורוח אלוהים מרחפת על פני המים.",
+          "notes": [
+            {
+              "la": "spīritus Deī",
+              "he": "רוח (של) אלוהים"
+            },
+            {
+              "la": "ferēbātur",
+              "he": "ריחפה, נישאה (מ-ferō)"
+            },
+            {
+              "la": "aquās",
+              "he": "מים — ברבים, בדיוק כמו בעברית"
+            }
+          ]
+        },
+        {
+          "la": "Dixitque Deus: Fiat lux. Et facta est lux.",
+          "he": "ויאמר אלוהים: יהי אור. ויהי אור.",
+          "notes": [
+            {
+              "la": "dīxitque",
+              "he": "ויאמר — ‎-que מוצמדת לסוף מילה ופירושה 'ו-'"
+            },
+            {
+              "la": "fīat lūx",
+              "he": "יהי אור"
+            },
+            {
+              "la": "facta est",
+              "he": "נהייתה"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "terra, tenebrae, spīritus, aqua, lūx — המילים מהלחשים שלך מופיעות כאן בטקסט העתיק ביותר שיש.",
+        "‎-que היא דרך נוספת לומר 'ו-': מדביקים אותה לסוף המילה (dīxitque = וַיֹּאמֶר).",
+        "בעברית 'מים' תמיד ברבים — וגם המתרגם הלטיני בחר כאן ברבים: aquās."
+      ]
+    },
+    {
+      "id": "hinneh",
+      "kind": "song",
+      "level": 1,
+      "title_la": "Ecce quam bonum",
+      "title_he": "הנה מה טוב",
+      "author_he": "תהלים קלג 1, בתרגום הלטיני",
+      "intro_he": "השיר המוכר 'הנה מה טוב ומה נעים' — בלטינית. אפשר לשיר אותו באותה מנגינה!",
+      "lines": [
+        {
+          "la": "Ecce quam bonum et quam iucundum",
+          "he": "הנה מה טוב ומה נעים",
+          "notes": [
+            {
+              "la": "ecce",
+              "he": "הנה!"
+            },
+            {
+              "la": "quam",
+              "he": "כמה, מה (בקריאה)"
+            },
+            {
+              "la": "bonum",
+              "he": "טוב (bonus בסתמי)"
+            },
+            {
+              "la": "iūcundum",
+              "he": "נעים"
+            }
+          ]
+        },
+        {
+          "la": "habitare fratres in unum!",
+          "he": "שבת אחים גם יחד!",
+          "notes": [
+            {
+              "la": "habitāre",
+              "he": "לשבת, לגור — ‎-āre היא סיומת שם הפועל"
+            },
+            {
+              "la": "frātrēs",
+              "he": "אחים (רבים של frāter)"
+            },
+            {
+              "la": "in ūnum",
+              "he": "יחד — מילולית 'לאחד'"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-āre בסוף פועל = 'ל...': habitāre = לגור, amāre = לאהוב, dare = לתת.",
+        "frāter → frātrēs: ברבים בנטייה השלישית הסיומת היא ‎-ēs."
+      ]
+    },
+    {
+      "id": "o-fortuna",
+      "kind": "song",
+      "level": 1,
+      "title_la": "O Fortuna",
+      "title_he": "הו, מזל",
+      "author_he": "כרמינה בוראנה — שירי נוודים מימי הביניים (מוזיקה: קרל אורף, 1936)",
+      "intro_he": "הפתיחה המפורסמת ביותר בעולם למקהלה — שמעת אותה בסרטים ובפרסומות. המילים מדברות על המזל שמשתנה כמו הירח.",
+      "lines": [
+        {
+          "la": "O Fortuna, velut luna",
+          "he": "הו, מזל, כמו הירח",
+          "notes": [
+            {
+              "la": "Fortūna",
+              "he": "אלת המזל — fortūna, מזל"
+            },
+            {
+              "la": "velut",
+              "he": "כמו"
+            },
+            {
+              "la": "lūna",
+              "he": "ירח — מוכרת מיחידה 1"
+            }
+          ]
+        },
+        {
+          "la": "statu variabilis,",
+          "he": "משתנה במצבך,",
+          "notes": [
+            {
+              "la": "statū",
+              "he": "במצב (יחסת האמצעי, הנטייה הרביעית — כמו manū)"
+            },
+            {
+              "la": "variābilis",
+              "he": "משתנה — variable באנגלית"
+            }
+          ]
+        },
+        {
+          "la": "semper crescis aut decrescis;",
+          "he": "תמיד את גדלה או קטנה;",
+          "notes": [
+            {
+              "la": "semper",
+              "he": "תמיד"
+            },
+            {
+              "la": "crēscis",
+              "he": "את גדלה — crēscō מהלחשים; ‎-is = את/אתה"
+            },
+            {
+              "la": "aut",
+              "he": "או"
+            },
+            {
+              "la": "dēcrēscis",
+              "he": "קטנה — dē- הופך את המשמעות"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-ō = אני (crēscō), ‎-is = אתה/את (crēscis), ‎-it = הוא/היא (crēscit) — כך הפועל מספר מי עושה.",
+        "dē- בתחילת פועל הופך כיוון: crēscere לגדול, dēcrēscere לקטון."
+      ]
+    },
+    {
+      "id": "sententiae",
+      "kind": "quote",
+      "level": 1,
+      "title_la": "Sententiae",
+      "title_he": "משפטים מפורסמים",
+      "author_he": "מקורות שונים",
+      "intro_he": "משפטים קצרים בלטינית שעדיין מצטטים היום. כל שורה — משפט אחר.",
+      "lines": [
+        {
+          "la": "Veni, vidi, vici.",
+          "he": "באתי, ראיתי, ניצחתי.",
+          "notes": [
+            {
+              "la": "vēnī",
+              "he": "באתי (עבר, גוף אני: ‎-ī)"
+            },
+            {
+              "la": "vīdī",
+              "he": "ראיתי"
+            },
+            {
+              "la": "vīcī",
+              "he": "ניצחתי — יוליוס קיסר, לפי פלוטרכוס וסווטוניוס"
+            }
+          ]
+        },
+        {
+          "la": "Alea iacta est.",
+          "he": "הקובייה הוטלה.",
+          "notes": [
+            {
+              "la": "ālea",
+              "he": "קובייה"
+            },
+            {
+              "la": "iacta est",
+              "he": "הוטלה (מ-iaciō, לזרוק) — קיסר כשחצה את הרוביקון"
+            }
+          ]
+        },
+        {
+          "la": "O tempora, o mores!",
+          "he": "הו זמנים, הו מנהגים!",
+          "notes": [
+            {
+              "la": "tempora",
+              "he": "זמנים — רבים של tempus"
+            },
+            {
+              "la": "mōrēs",
+              "he": "מנהגים — רבים של mōs; קיקרו"
+            }
+          ]
+        },
+        {
+          "la": "Quis custodiet ipsos custodes?",
+          "he": "מי ישמור על השומרים עצמם?",
+          "notes": [
+            {
+              "la": "quis",
+              "he": "מי?"
+            },
+            {
+              "la": "custōdiet",
+              "he": "ישמור (עתיד)"
+            },
+            {
+              "la": "custōdēs",
+              "he": "שומרים — רבים של custōs; יובנאליס"
+            }
+          ]
+        },
+        {
+          "la": "Festina lente.",
+          "he": "מהר לאט.",
+          "notes": [
+            {
+              "la": "festīnā",
+              "he": "מהר! (ציווי ‎-ā)"
+            },
+            {
+              "la": "lentē",
+              "he": "לאט — סיסמתו של הקיסר אוגוסטוס"
+            }
+          ]
+        },
+        {
+          "la": "Memento mori.",
+          "he": "זכור שתמות.",
+          "notes": [
+            {
+              "la": "mementō",
+              "he": "זכור!"
+            },
+            {
+              "la": "morī",
+              "he": "למות (morior)"
+            }
+          ]
+        },
+        {
+          "la": "Quidquid Latine dictum sit, altum videtur.",
+          "he": "כל מה שנאמר בלטינית — נשמע עמוק.",
+          "notes": [
+            {
+              "la": "quidquid",
+              "he": "כל מה ש-"
+            },
+            {
+              "la": "Latīnē",
+              "he": "בלטינית"
+            },
+            {
+              "la": "altum",
+              "he": "עמוק, גבוה (altus)"
+            },
+            {
+              "la": "vidētur",
+              "he": "נראה — בדיחה עתיקה על לומדי לטינית"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "vēnī, vīdī, vīcī: ‎-ī בסוף פועל = 'אני' בעבר.",
+        "הרבה משפטים מפורסמים קצרים מאוד — הלטינית אוהבת לומר הרבה במעט מילים."
+      ]
+    },
+    {
+      "id": "malo",
+      "kind": "joke",
+      "level": 1,
+      "title_la": "Malo malo malo malo",
+      "title_he": "תפוח, רע, מעדיף",
+      "author_he": "משחק מילים מסורתי של תלמידי לטינית",
+      "intro_he": "ארבע פעמים אותה מילה — וזה משפט שלם! הסוד: הקו מעל האות (תנועה ארוכה) והיחסות.",
+      "lines": [
+        {
+          "la": "Mālō",
+          "he": "אני מעדיף",
+          "notes": [
+            {
+              "la": "mālō",
+              "he": "אני מעדיף — מהפועל mālle, קיצור של magis velle ('לרצות יותר'); ā ארוכה"
+            }
+          ]
+        },
+        {
+          "la": "mālō",
+          "he": "להיות בעץ תפוח",
+          "notes": [
+            {
+              "la": "mālō",
+              "he": "בעץ התפוח — mālus (עץ תפוח), ā ארוכה"
+            }
+          ]
+        },
+        {
+          "la": "malō",
+          "he": "מאשר (להיות) אדם רע",
+          "notes": [
+            {
+              "la": "malō",
+              "he": "מאשר רע — malus (רע), a קצרה"
+            }
+          ]
+        },
+        {
+          "la": "malō.",
+          "he": "בצרה.",
+          "notes": [
+            {
+              "la": "malō",
+              "he": "בצרה — malum (רוע, צרה), a קצרה"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "כל המשפט: 'הייתי מעדיף להיות בעץ תפוח מאשר אדם רע בצרה'.",
+        "כאן רואים למה הקו מעל ā חשוב: mālum (תפוח) ו-malum (רע) הן מילים שונות. בהגייה, ā מחזיקים כפליים זמן."
+      ]
+    },
+    {
+      "id": "mea-mater",
+      "kind": "joke",
+      "level": 1,
+      "title_la": "Mea mater mala sus est",
+      "title_he": "אמא שלי… חזירה?",
+      "author_he": "בדיחה קלאסית של תלמידי לטינית",
+      "intro_he": "אותן חמש מילים — שני משפטים שונים לגמרי, תלוי איך קוראים אותן.",
+      "lines": [
+        {
+          "la": "Mea mater mala sus est.",
+          "he": "קריאה א: אמא שלי היא חזירה רעה.",
+          "notes": [
+            {
+              "la": "mea",
+              "he": "שלי"
+            },
+            {
+              "la": "māter",
+              "he": "אמא"
+            },
+            {
+              "la": "mala",
+              "he": "רעה (malus בנקבה)"
+            },
+            {
+              "la": "sūs",
+              "he": "חזיר"
+            },
+            {
+              "la": "est",
+              "he": "היא (sum)"
+            }
+          ]
+        },
+        {
+          "la": "Mea, mater! Mala sus est!",
+          "he": "קריאה ב: לכי, אמא! החזיר אוכל את התפוחים!",
+          "notes": [
+            {
+              "la": "meā",
+              "he": "לכי! — ציווי של meō, ללכת"
+            },
+            {
+              "la": "māla",
+              "he": "תפוחים — רבים של mālum (ā ארוכה!)"
+            },
+            {
+              "la": "est",
+              "he": "אוכל — מ-edō, לאכול (est = הוא אוכל!)"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "מילה אחת יכולה להיות כמה צורות: est היא גם 'הוא' (sum) וגם 'הוא אוכל' (edō).",
+        "שוב הקו מעל ā: mala = רעה, māla = תפוחים."
+      ]
+    },
+    {
+      "id": "palindrome",
+      "kind": "wordplay",
+      "level": 2,
+      "title_la": "In girum imus nocte",
+      "title_he": "הפלינדרום של העשים",
+      "author_he": "כתובת לטינית עתיקה",
+      "intro_he": "פלינדרום: קוראים מהסוף להתחלה — ומקבלים בדיוק את אותן אותיות! המשפט מתאר עשים שמסתובבים סביב להבה.",
+      "lines": [
+        {
+          "la": "In girum imus nocte et consumimur igni.",
+          "he": "אנחנו מסתובבים במעגל בלילה, ואש מכלה אותנו.",
+          "notes": [
+            {
+              "la": "in gīrum",
+              "he": "במעגל, סביב"
+            },
+            {
+              "la": "īmus",
+              "he": "אנחנו הולכים (eō, ללכת; ‎-mus = אנחנו)"
+            },
+            {
+              "la": "nocte",
+              "he": "בלילה — nox ביחסת האמצעי (זמן)"
+            },
+            {
+              "la": "cōnsūmimur",
+              "he": "אנחנו נאכלים, מתכלים"
+            },
+            {
+              "la": "ignī",
+              "he": "באש — ignis ביחסת האמצעי!"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-mus = אנחנו: īmus (הולכים), sumus (אנחנו).",
+        "יחסת האמצעי עונה גם על 'מתי?': nocte = בלילה."
+      ]
+    },
+    {
+      "id": "sator",
+      "kind": "wordplay",
+      "level": 2,
+      "title_la": "Sator arepo",
+      "title_he": "ריבוע הקסם",
+      "author_he": "ריבוע חרוט שנמצא בפומפיי ובמקומות רבים באימפריה",
+      "intro_he": "חמש מילים בנות חמש אותיות. כתובים אותן בריבוע — וקוראים אותן בארבעה כיוונים: מימין, משמאל, מלמעלה ומלמטה! המשמעות המדויקת שנויה במחלוקת.",
+      "lines": [
+        {
+          "la": "SATOR AREPO TENET OPERA ROTAS",
+          "he": "הזורע אָרֶפּוֹ מחזיק את הגלגלים בעמל (תרגום אפשרי)",
+          "notes": [
+            {
+              "la": "sator",
+              "he": "זורע (מ-serō, לזרוע)"
+            },
+            {
+              "la": "arepō",
+              "he": "כנראה שם — אף אחד לא יודע בטוח"
+            },
+            {
+              "la": "tenet",
+              "he": "מחזיק (teneō)"
+            },
+            {
+              "la": "operā",
+              "he": "בעמל, במאמץ (יחסת האמצעי)"
+            },
+            {
+              "la": "rotās",
+              "he": "גלגלים — מושא ברבים ‎-ās"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-ās = מושא ברבים בנטייה הראשונה: rotās, stellās, puellās.",
+        "בימי הביניים חשבו שלריבוע יש כוח קסם — הוא נחקק על בתים להגנה."
+      ]
+    },
+    {
+      "id": "dog-latin",
+      "kind": "joke",
+      "level": 1,
+      "title_la": "Semper ubi sub ubi",
+      "title_he": "לטינית של כלבים",
+      "author_he": "בדיחות של דוברי אנגלית",
+      "intro_he": "'לטינית של כלבים' היא לטינית מזויפת שנשמעת מצחיק באנגלית. זה לא באמת לטינית — אבל לומדים ממנה מילים אמיתיות.",
+      "lines": [
+        {
+          "la": "Semper ubi sub ubi.",
+          "he": "תמיד איפה מתחת איפה = always where under where = always wear underwear (תמיד ללבוש תחתונים).",
+          "notes": [
+            {
+              "la": "semper",
+              "he": "תמיד"
+            },
+            {
+              "la": "ubi",
+              "he": "איפה"
+            },
+            {
+              "la": "sub",
+              "he": "מתחת"
+            }
+          ]
+        },
+        {
+          "la": "Caesar adsum iam forte, Brutus aderat.",
+          "he": "בלטינית: 'קיסר, אני כבר כאן במקרה; ברוטוס היה נוכח'. באנגלית: Caesar had some jam for tea, Brutus had a rat.",
+          "notes": [
+            {
+              "la": "adsum",
+              "he": "אני נוכח (ad + sum)"
+            },
+            {
+              "la": "iam",
+              "he": "כבר"
+            },
+            {
+              "la": "forte",
+              "he": "במקרה"
+            },
+            {
+              "la": "aderat",
+              "he": "היה נוכח"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "sub = מתחת: מכאן submarine (מתחת לים) ו-subway.",
+        "adsum = 'אני כאן!' — כך עונים בבתי ספר באיטליה כשקוראים בשמות."
+      ]
+    },
+    {
+      "id": "gaudeamus",
+      "kind": "song",
+      "level": 2,
+      "title_la": "Gaudeamus igitur",
+      "title_he": "הבה נשמח אפוא",
+      "author_he": "שיר סטודנטים מימי הביניים (המנון אוניברסיטאות עד היום)",
+      "intro_he": "שרים אותו בטקסי סיום באוניברסיטאות. הוא אומר: שמחו כל עוד אתם צעירים.",
+      "lines": [
+        {
+          "la": "Gaudeamus igitur,",
+          "he": "הבה נשמח אפוא,",
+          "notes": [
+            {
+              "la": "gaudeāmus",
+              "he": "הבה נשמח (gaudeō)"
+            },
+            {
+              "la": "igitur",
+              "he": "אפוא"
+            }
+          ]
+        },
+        {
+          "la": "iuvenes dum sumus;",
+          "he": "כל עוד אנחנו צעירים;",
+          "notes": [
+            {
+              "la": "iuvenēs",
+              "he": "צעירים (iuvenis)"
+            },
+            {
+              "la": "dum",
+              "he": "כל עוד"
+            },
+            {
+              "la": "sumus",
+              "he": "אנחנו (sum)"
+            }
+          ]
+        },
+        {
+          "la": "post iucundam iuventutem,",
+          "he": "אחרי נעורים נעימים,",
+          "notes": [
+            {
+              "la": "post",
+              "he": "אחרי (+ מושא)"
+            },
+            {
+              "la": "iūcundam iuventūtem",
+              "he": "נעורים נעימים — שתי המילים במושא ‎-am/‎-em"
+            }
+          ]
+        },
+        {
+          "la": "post molestam senectutem",
+          "he": "אחרי זקנה מטרידה",
+          "notes": [
+            {
+              "la": "molestam",
+              "he": "מטרידה"
+            },
+            {
+              "la": "senectūtem",
+              "he": "זקנה — קרוב ל-senex"
+            }
+          ]
+        },
+        {
+          "la": "nos habebit humus.",
+          "he": "אותנו תחזיק האדמה.",
+          "notes": [
+            {
+              "la": "nōs",
+              "he": "אותנו"
+            },
+            {
+              "la": "habēbit",
+              "he": "תחזיק (עתיד של habeō)"
+            },
+            {
+              "la": "humus",
+              "he": "אדמה"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "post עם מושא = אחרי. כך גם post mortem (אחרי המוות).",
+        "‎-bit בסוף פועל = עתיד: habēbit = יחזיק."
+      ]
+    },
+    {
+      "id": "tabula",
+      "kind": "canon",
+      "level": 2,
+      "title_la": "Tabula Smaragdina",
+      "title_he": "לוח הברקת",
+      "author_he": "טקסט הרמטי מימי הביניים, מיוחס להרמס טריסמגיסטוס",
+      "intro_he": "הטקסט שהאפיון של שועלינגו מזכיר: 'מה שלמטה הוא כמו מה שלמעלה'. זה גם הלוח שהשועלה מצאה ביער!",
+      "lines": [
+        {
+          "la": "Verum, sine mendacio, certum et verissimum:",
+          "he": "אמת, בלי שקר, ודאי ואמיתי ביותר:",
+          "notes": [
+            {
+              "la": "vērum",
+              "he": "אמת (vērus בסתמי)"
+            },
+            {
+              "la": "sine mendāciō",
+              "he": "בלי שקר — sine עם יחסת האמצעי"
+            },
+            {
+              "la": "vērissimum",
+              "he": "אמיתי ביותר — ‎-issimus = הכי"
+            }
+          ]
+        },
+        {
+          "la": "quod est inferius est sicut quod est superius,",
+          "he": "מה שלמטה הוא כמו מה שלמעלה,",
+          "notes": [
+            {
+              "la": "quod est",
+              "he": "מה שהוא"
+            },
+            {
+              "la": "īnferius",
+              "he": "נמוך יותר, למטה"
+            },
+            {
+              "la": "sīcut",
+              "he": "כמו"
+            },
+            {
+              "la": "superius",
+              "he": "גבוה יותר, למעלה"
+            }
+          ]
+        },
+        {
+          "la": "et quod est superius est sicut quod est inferius,",
+          "he": "ומה שלמעלה הוא כמו מה שלמטה,",
+          "notes": [
+            {
+              "la": "et",
+              "he": "ו-"
+            }
+          ]
+        },
+        {
+          "la": "ad perpetranda miracula rei unius.",
+          "he": "כדי לחולל את הפלאות של הדבר האחד.",
+          "notes": [
+            {
+              "la": "ad",
+              "he": "כדי, אל"
+            },
+            {
+              "la": "mīrācula",
+              "he": "פלאות (סתמי רבים ‎-a)"
+            },
+            {
+              "la": "reī ūnīus",
+              "he": "של הדבר האחד — rēs, ūnus"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-issimus = 'הכי': vērissimum = הכי אמיתי, altissimus = הכי גבוה.",
+        "‎-ius = 'יותר': īnferius = נמוך יותר, superius = גבוה יותר."
+      ]
+    },
+    {
+      "id": "gallia",
+      "kind": "canon",
+      "level": 2,
+      "title_la": "Gallia est omnis divisa",
+      "title_he": "גאליה כולה מחולקת",
+      "author_he": "יוליוס קיסר, מלחמת גאליה (ספר 1)",
+      "intro_he": "משפט הפתיחה המפורסם ביותר של פרוזה לטינית. קיסר מתאר את גאליה (צרפת של היום) שכבש.",
+      "lines": [
+        {
+          "la": "Gallia est omnis divisa in partes tres,",
+          "he": "גאליה כולה מחולקת לשלושה חלקים,",
+          "notes": [
+            {
+              "la": "omnis",
+              "he": "כולה"
+            },
+            {
+              "la": "dīvīsa",
+              "he": "מחולקת (dīvidō)"
+            },
+            {
+              "la": "in partēs trēs",
+              "he": "לשלושה חלקים — in + מושא = אל, ל-"
+            }
+          ]
+        },
+        {
+          "la": "quarum unam incolunt Belgae, aliam Aquitani,",
+          "he": "באחד מהם יושבים הבלגים, בשני האקוויטנים,",
+          "notes": [
+            {
+              "la": "ūnam … aliam",
+              "he": "אחד … אחר — בנקבה, כי pars נקבה"
+            },
+            {
+              "la": "incolunt",
+              "he": "יושבים, גרים"
+            }
+          ]
+        },
+        {
+          "la": "tertiam qui ipsorum lingua Celtae, nostra Galli appellantur.",
+          "he": "ובשלישי אלה שבשפתם נקראים קלטים, ובשפתנו — גאלים.",
+          "notes": [
+            {
+              "la": "tertiam",
+              "he": "השלישי"
+            },
+            {
+              "la": "linguā",
+              "he": "בשפה (יחסת האמצעי)"
+            },
+            {
+              "la": "appellantur",
+              "he": "נקראים (appellō)"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "in עם מושא = 'אל, לתוך' (in partēs), in עם אמצעי = 'בתוך' (in principiō).",
+        "ūnam, aliam, tertiam — מספרים מתאימים את עצמם למין של המילה שהם סופרים."
+      ]
+    },
+    {
+      "id": "odi-et-amo",
+      "kind": "poem",
+      "level": 3,
+      "title_la": "Odi et amo",
+      "title_he": "אני שונא ואוהב",
+      "author_he": "קטולוס, שיר 85 (המאה ה-1 לפנה\"ס)",
+      "intro_he": "השיר הקצר והמפורסם ביותר על אהבה ושנאה — שתי שורות בלבד. כמעט כל הפעלים כאן בגוף 'אני'.",
+      "lines": [
+        {
+          "la": "Odi et amo. Quare id faciam, fortasse requiris.",
+          "he": "אני שונא ואוהב. מדוע אני עושה זאת, אולי תשאל.",
+          "notes": [
+            {
+              "la": "ōdī",
+              "he": "אני שונא (צורת עבר עם משמעות הווה)"
+            },
+            {
+              "la": "amō",
+              "he": "אני אוהב — ‎-ō = אני"
+            },
+            {
+              "la": "quārē",
+              "he": "מדוע"
+            },
+            {
+              "la": "fortasse",
+              "he": "אולי"
+            },
+            {
+              "la": "requīris",
+              "he": "אתה שואל — ‎-s = אתה"
+            }
+          ]
+        },
+        {
+          "la": "Nescio, sed fieri sentio et excrucior.",
+          "he": "איני יודע — אבל אני מרגיש שזה קורה, ומתייסר.",
+          "notes": [
+            {
+              "la": "nesciō",
+              "he": "איני יודע (ne + sciō)"
+            },
+            {
+              "la": "fierī",
+              "he": "שזה נעשה, קורה"
+            },
+            {
+              "la": "sentiō",
+              "he": "אני מרגיש"
+            },
+            {
+              "la": "excrucior",
+              "he": "אני מתייסר — מכאן excruciating באנגלית"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-ō = אני: amō, nesciō, sentiō.",
+        "nesciō = ne (לא) + sciō (יודע). כך גם nōlō = לא רוצה."
+      ]
+    },
+    {
+      "id": "vivamus",
+      "kind": "poem",
+      "level": 3,
+      "title_la": "Vivamus, mea Lesbia",
+      "title_he": "בואי נחיה, לסביה שלי",
+      "author_he": "קטולוס, שיר 5",
+      "intro_he": "שיר אהבה: החיים קצרים, אז בואי נאהב ולא נתייחס למה שהזקנים אומרים.",
+      "lines": [
+        {
+          "la": "Vivamus, mea Lesbia, atque amemus,",
+          "he": "בואי נחיה, לסביה שלי, ונאהב,",
+          "notes": [
+            {
+              "la": "vīvāmus",
+              "he": "הבה נחיה"
+            },
+            {
+              "la": "mea",
+              "he": "שלי"
+            },
+            {
+              "la": "atque",
+              "he": "וגם"
+            },
+            {
+              "la": "amēmus",
+              "he": "הבה נאהב"
+            }
+          ]
+        },
+        {
+          "la": "rumoresque senum severiorum",
+          "he": "ואת כל רכילות הזקנים החמורים",
+          "notes": [
+            {
+              "la": "rūmōrēs",
+              "he": "שמועות"
+            },
+            {
+              "la": "senum",
+              "he": "של הזקנים (senex)"
+            },
+            {
+              "la": "sevēriōrum",
+              "he": "החמורים יותר"
+            }
+          ]
+        },
+        {
+          "la": "omnes unius aestimemus assis!",
+          "he": "נעריך בפרוטה אחת!",
+          "notes": [
+            {
+              "la": "omnēs",
+              "he": "כולן"
+            },
+            {
+              "la": "ūnīus assis",
+              "he": "בשווי מטבע אחד — as היה מטבע קטן"
+            }
+          ]
+        },
+        {
+          "la": "Soles occidere et redire possunt:",
+          "he": "שמשות יכולות לשקוע ולחזור:",
+          "notes": [
+            {
+              "la": "sōlēs",
+              "he": "שמשות — רבים של sōl!"
+            },
+            {
+              "la": "occidere",
+              "he": "לשקוע"
+            },
+            {
+              "la": "redīre",
+              "he": "לחזור"
+            },
+            {
+              "la": "possunt",
+              "he": "יכולות"
+            }
+          ]
+        },
+        {
+          "la": "nobis cum semel occidit brevis lux,",
+          "he": "לנו — כשפעם אחת שוקע האור הקצר —",
+          "notes": [
+            {
+              "la": "nōbīs",
+              "he": "לנו (נתינה)"
+            },
+            {
+              "la": "cum",
+              "he": "כאשר — אותה מילה כמו 'עם', משמעות אחרת"
+            },
+            {
+              "la": "semel",
+              "he": "פעם אחת"
+            },
+            {
+              "la": "brevis lūx",
+              "he": "האור הקצר"
+            }
+          ]
+        },
+        {
+          "la": "nox est perpetua una dormienda.",
+          "he": "לילה נצחי אחד שבו נצטרך לישון.",
+          "notes": [
+            {
+              "la": "nox perpetua ūna",
+              "he": "לילה נצחי אחד"
+            },
+            {
+              "la": "dormienda",
+              "he": "שצריך לישון"
+            }
+          ]
+        },
+        {
+          "la": "Da mi basia mille, deinde centum,",
+          "he": "תני לי אלף נשיקות, ואחר כך מאה,",
+          "notes": [
+            {
+              "la": "dā mī",
+              "he": "תן לי — mī הוא mihi בקיצור שירי, בדיוק כמו בלחשים!"
+            },
+            {
+              "la": "bāsia",
+              "he": "נשיקות (סתמי רבים ‎-a)"
+            },
+            {
+              "la": "mīlle … centum",
+              "he": "אלף … מאה"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "‎-āmus/‎-ēmus בפועל = 'הבה נ...': vīvāmus, amēmus.",
+        "dā mihi — אותו מבנה של לחשי השועלה: פקודה + למי."
+      ]
+    },
+    {
+      "id": "carpe-diem",
+      "kind": "poem",
+      "level": 3,
+      "title_la": "Carpe diem",
+      "title_he": "קטוף את היום",
+      "author_he": "הורטיוס, אודות 1.11",
+      "intro_he": "השיר שממנו יצא הביטוי 'קרפה דיאם'. המשורר אומר לאישה בשם לאוקונואה: אל תנסי לדעת את העתיד, תהני מהיום.",
+      "lines": [
+        {
+          "la": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+          "he": "אל תשאלי — אסור לדעת — איזה סוף לי, איזה לך",
+          "notes": [
+            {
+              "la": "tū",
+              "he": "את"
+            },
+            {
+              "la": "nē quaesieris",
+              "he": "אל תשאלי"
+            },
+            {
+              "la": "scīre nefās",
+              "he": "אסור לדעת"
+            },
+            {
+              "la": "mihi … tibi",
+              "he": "לי … לך — מוכרות מהלחשים!"
+            }
+          ]
+        },
+        {
+          "la": "finem di dederint, Leuconoe.",
+          "he": "נתנו האלים, לאוקונואה.",
+          "notes": [
+            {
+              "la": "fīnem",
+              "he": "סוף (מושא)"
+            },
+            {
+              "la": "dī",
+              "he": "האלים (deus ברבים)"
+            },
+            {
+              "la": "dederint",
+              "he": "נתנו (dō)"
+            }
+          ]
+        },
+        {
+          "la": "Dum loquimur, fugerit invida aetas:",
+          "he": "בזמן שאנחנו מדברים, הזמן הקנאי כבר יברח:",
+          "notes": [
+            {
+              "la": "dum",
+              "he": "בזמן ש"
+            },
+            {
+              "la": "loquimur",
+              "he": "אנחנו מדברים"
+            },
+            {
+              "la": "invida aetās",
+              "he": "הזמן הקנאי"
+            }
+          ]
+        },
+        {
+          "la": "carpe diem, quam minimum credula postero.",
+          "he": "קטפי את היום, ובטחי כמה שפחות במחר.",
+          "notes": [
+            {
+              "la": "carpe",
+              "he": "קטוף! (ציווי ‎-e, כמו cane!)"
+            },
+            {
+              "la": "diem",
+              "he": "את היום (diēs)"
+            },
+            {
+              "la": "crēdula",
+              "he": "בוטחת — בנקבה, כי הוא פונה לאישה"
+            },
+            {
+              "la": "posterō",
+              "he": "במחר"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "carpe! cane! mitte! — ציווי ב-‎-e.",
+        "crēdula בנקבה מראה שהמשורר פונה לאישה: שם התואר מתאים את עצמו גם למי שמדברים אליו."
+      ]
+    },
+    {
+      "id": "arma",
+      "kind": "canon",
+      "level": 3,
+      "title_la": "Arma virumque cano",
+      "title_he": "את הנשק ואת האיש אני שר",
+      "author_he": "וירגיליוס, האנאיד — השורות הראשונות",
+      "intro_he": "האפוס הלאומי של רומא: סיפורו של אֶנֵאָס, שנמלט מטרויה הבוערת והגיע לאיטליה.",
+      "lines": [
+        {
+          "la": "Arma virumque cano, Troiae qui primus ab oris",
+          "he": "את הנשק ואת האיש אני שר, אשר ראשון מחופי טרויה",
+          "notes": [
+            {
+              "la": "arma",
+              "he": "נשק (רבים סתמי ‎-a)"
+            },
+            {
+              "la": "virumque",
+              "he": "ואת האיש — vir במושא + ‎-que"
+            },
+            {
+              "la": "canō",
+              "he": "אני שר — ‎-ō = אני!"
+            },
+            {
+              "la": "prīmus",
+              "he": "ראשון"
+            },
+            {
+              "la": "ab ōrīs",
+              "he": "מהחופים"
+            }
+          ]
+        },
+        {
+          "la": "Italiam, fato profugus, Laviniaque venit",
+          "he": "הגיע לאיטליה, נמלט בגזרת הגורל, ולחופי לאוויניום",
+          "notes": [
+            {
+              "la": "fātō",
+              "he": "בגורל — יחסת האמצעי ‎-ō"
+            },
+            {
+              "la": "profugus",
+              "he": "פליט, נמלט"
+            },
+            {
+              "la": "vēnit",
+              "he": "הגיע (veniō)"
+            }
+          ]
+        },
+        {
+          "la": "litora.",
+          "he": "(לחופים).",
+          "notes": [
+            {
+              "la": "lītora",
+              "he": "חופים — רבים של lītus"
+            }
+          ]
+        }
+      ],
+      "lesson_he": [
+        "canō, cane! — אותו פועל: 'אני שר' ו'שיר!'.",
+        "‎-que + מילה = 'ו': virumque = ואת האיש."
+      ]
+    }
+  ]
+}

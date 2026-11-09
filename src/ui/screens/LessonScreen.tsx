@@ -65,6 +65,7 @@ export function LessonScreen({ lessonId, onExit, onOpenLesson }: { lessonId: str
   const [phase, setPhase] = useState<'intro' | 'exercise' | 'end'>(introRules.length ? 'intro' : 'exercise');
   const [run, setRun] = useState<LessonRun>(() => startLesson(lesson));
   const [feedback, setFeedback] = useState<boolean | null>(null);
+  const [given, setGiven] = useState<string | string[] | undefined>(undefined);
   const [attempt, setAttempt] = useState(0);
   const [outcome, setOutcome] = useState<LessonOutcome | null>(null);
 
@@ -181,8 +182,8 @@ export function LessonScreen({ lessonId, onExit, onOpenLesson }: { lessonId: str
     <div className="screen session">
       <SessionHeader progress={lessonProgress(run, lesson)} onExit={exit} mistakes={run.mistakes} />
       <p className="session-sub">{unit.title_he} · {lesson.title_he}</p>
-      <ExerciseView key={`${index}-${attempt}`} exercise={exercise} locked={feedback !== null} onSubmit={(ok) => { play(ok ? 'correct' : 'wrong'); setFeedback(ok); }} />
-      {feedback !== null && <Feedback correct={feedback} exercise={exercise} onContinue={proceed} />}
+      <ExerciseView key={`${index}-${attempt}`} exercise={exercise} locked={feedback !== null} onSubmit={(ok, ans) => { play(ok ? 'correct' : 'wrong'); setGiven(ans); setFeedback(ok); }} />
+      {feedback !== null && <Feedback correct={feedback} exercise={exercise} onContinue={proceed} given={given} />}
     </div>
   );
 }

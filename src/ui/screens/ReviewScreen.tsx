@@ -20,6 +20,7 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
   const [position, setPosition] = useState(0);
   const [results, setResults] = useState<{ cards: string[]; correct: boolean }[]>([]);
   const [feedback, setFeedback] = useState<boolean | null>(null);
+  const [given, setGiven] = useState<string | string[] | undefined>(undefined);
   const [earned, setEarned] = useState<ElementDelta | null>(null);
 
   if (items.length === 0) {
@@ -74,8 +75,8 @@ export function ReviewScreen({ onExit }: { onExit: () => void }) {
     <div className="screen session">
       <SessionHeader progress={position / items.length} onExit={exit} />
       <p className="session-sub">חזרה על מילים וכללים חלשים</p>
-      <ExerciseView key={position} exercise={item.exercise} locked={feedback !== null} onSubmit={(ok) => { play(ok ? 'correct' : 'wrong'); setFeedback(ok); }} />
-      {feedback !== null && <Feedback correct={feedback} exercise={item.exercise} onContinue={proceed} requeued={false} />}
+      <ExerciseView key={position} exercise={item.exercise} locked={feedback !== null} onSubmit={(ok, ans) => { play(ok ? 'correct' : 'wrong'); setGiven(ans); setFeedback(ok); }} />
+      {feedback !== null && <Feedback correct={feedback} exercise={item.exercise} onContinue={proceed} requeued={false} given={given} />}
     </div>
   );
 }

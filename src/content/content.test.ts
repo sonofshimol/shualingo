@@ -24,6 +24,32 @@ describe('words.json', () => {
   });
 });
 
+describe('word card extras', () => {
+  it('every word has a Hebrew pronunciation; quotes name their author', () => {
+    for (const w of words) {
+      expect(w.pron_he?.length, w.id).toBeGreaterThan(0);
+      expect(w.pron_he!.some((s) => s.stress), `${w.id} has a stressed syllable`).toBe(true);
+      for (const q of w.quotes ?? []) {
+        expect(q.text && q.author_he && q.meaning_he, w.id).toBeTruthy();
+      }
+    }
+    expect(words.filter((w) => w.origin).length).toBeGreaterThan(words.length * 0.9);
+  });
+});
+
+describe('texts.json (reading library)', () => {
+  it('every text has lines with Latin, Hebrew and notes, and a lesson', async () => {
+    const { readingTexts } = await import('./index');
+    expect(readingTexts.length).toBeGreaterThanOrEqual(10);
+    expect(new Set(readingTexts.map((t) => t.id)).size).toBe(readingTexts.length);
+    for (const t of readingTexts) {
+      expect(t.lines.length, t.id).toBeGreaterThan(0);
+      expect(t.lesson_he.length, t.id).toBeGreaterThan(0);
+      for (const l of t.lines) expect(l.la && l.he, t.id).toBeTruthy();
+    }
+  });
+});
+
 describe('units.json', () => {
   it('has 9 units of about 10 words each', () => {
     expect(units).toHaveLength(9);

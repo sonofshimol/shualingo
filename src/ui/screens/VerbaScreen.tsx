@@ -1,14 +1,14 @@
 /** Verba — the word mini-game: themed decks, quick rounds, words anchored to familiar ones. */
 import { useEffect, useRef, useState } from 'react';
-import { CONFIG } from '../../config';
 import { decks, wordById } from '../../content';
 import type { ElementDelta } from '../../game/elements';
-import { buildRound, deckProgress, finishRound, verbaLeftToday, type VerbaCard } from '../../learning/verba';
+import { buildRound, deckProgress, finishRound, type VerbaCard } from '../../learning/verba';
 import { ElementList, ProgressBar } from '../components/common';
 import { ElementIcon } from '../components/ElementIcon';
 import { La, Ltr } from '../components/La';
+import { Pronunciation } from '../components/WordExtras';
 import { play } from '../feedback/sfx';
-import { getSave, updateSave, useNow, useSave } from '../store';
+import { getSave, updateSave, useSave } from '../store';
 
 /** A short line that ties the word to words the player already knows. */
 function Anchors({ wordId }: { wordId: string }) {
@@ -33,7 +33,7 @@ function IntroCard({ wordId, onNext }: { wordId: string; onNext: () => void }) {
     <div className="verba-card intro" style={{ '--el': undefined } as React.CSSProperties}>
       <p className="eyebrow">מילה חדשה</p>
       <div className="verba-lemma"><La text={word.lemma} /></div>
-      {word.ipa && <p className="muted small"><Ltr>{word.ipa}</Ltr></p>}
+      <Pronunciation word={word} compact />
       <p className="verba-meaning">{word.meaning_he}</p>
       <Anchors wordId={wordId} />
       {expression && (
@@ -103,7 +103,6 @@ function QuizCard({ card, onAnswer }: { card: Extract<VerbaCard, { kind: 'quiz' 
 
 export function VerbaScreen() {
   const save = useSave();
-  const now = useNow(30000);
   const [deckId, setDeckId] = useState<string | null>(null);
   const [cards, setCards] = useState<VerbaCard[]>([]);
   const [index, setIndex] = useState(0);
@@ -152,7 +151,6 @@ export function VerbaScreen() {
 
   // ---- deck list
   if (!deckId) {
-    const left = verbaLeftToday(save, now);
     return (
       <div className="screen verba">
         <h1><span lang="la" dir="ltr" className="la-title">Verba</span> · משחק המילים</h1>
@@ -160,7 +158,7 @@ export function VerbaScreen() {
           חפיסות של מילים נפוצות. כל מילה חדשה מוצגת קודם עם מילים מוכרות שקרובות אליה, ואחר כך חוזרת כשאלה. מילים שלמדת חוזרות גם במסך החזרה.
         </p>
         <p className="small">
-          כל תשובה נכונה נותנת את האלמנט של המילה עצמה. היום אפשר להרוויח עוד {left} מתוך {CONFIG.VERBA_DAILY_CAP}.
+          כל תשובה נכונה נותנת את האלמנט של המילה עצמה (למשל mare נותנת aqua), בלי הגבלה.
         </p>
         <div className="deck-grid">
           {decks.map((deck) => {

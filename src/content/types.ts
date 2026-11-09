@@ -50,6 +50,35 @@ export interface Word {
   deck?: string;
   /** Meaning tags the spell lab uses (resource, plant, person, building…). */
   tags?: string[];
+  /** Lineage from Wiktionary, e.g. aqua <- Proto-Italic *akʷā <- PIE *h₂ékʷeh₂ (pipeline/word_extras.py). */
+  origin?: WordOrigin | null;
+  /** Hebrew transliteration of the classical pronunciation, by syllable. */
+  pron_he?: PronSyllable[] | null;
+  /** Famous Latin quotes with the word (hand-written in pipeline/curated/words.json). */
+  quotes?: Quote[];
+}
+
+export interface WordOrigin {
+  /** "אולי", "כנראה"… when Wiktionary hedges; null when it states the origin plainly. */
+  hedge_he: string | null;
+  unknown: boolean;
+  /** Newest first: the step the Latin word came from, then where that came from. */
+  steps: { lang: string; lang_he: string; term: string; gloss_en: string | null }[];
+}
+
+export interface PronSyllable {
+  /** Hebrew letters with vowel points, e.g. "לוּ". */
+  t: string;
+  /** Carries the word stress (show in bold). */
+  stress: boolean;
+  /** Has a long vowel (ā ē ī ō ū) — show with a line above, like the Latin macron. */
+  long: boolean;
+}
+
+export interface Quote {
+  text: string;
+  author_he: string;
+  meaning_he: string;
 }
 
 export interface Rule {
@@ -245,4 +274,21 @@ export interface Deck {
   name_la: string;
   name_he: string;
   element: ElementId;
+}
+
+/** Reading library (content/texts.json): famous texts, songs, poems, jokes and wordplay. */
+export type TextKind = 'canon' | 'poem' | 'song' | 'quote' | 'joke' | 'wordplay';
+
+export interface ReadingText {
+  id: string;
+  kind: TextKind;
+  /** 1 = easy, 3 = hard. */
+  level: 1 | 2 | 3;
+  title_la: string;
+  title_he: string;
+  author_he: string;
+  intro_he: string;
+  lines: { la: string; he: string; notes: { la: string; he: string }[] }[];
+  /** What the text teaches about the language. */
+  lesson_he: string[];
 }

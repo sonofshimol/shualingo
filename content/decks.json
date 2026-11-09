@@ -1,12 +1,118 @@
 {
   "decks": [
-    { "id": "corpus", "name_la": "Corpus", "name_he": "הגוף", "element": "terra" },
-    { "id": "familia", "name_la": "Familia", "name_he": "משפחה ואנשים", "element": "aer" },
-    { "id": "natura", "name_la": "Natura", "name_he": "טבע ונוף", "element": "aqua" },
-    { "id": "animalia", "name_la": "Animalia et domus", "name_he": "חיות ובית", "element": "terra" },
-    { "id": "tempus", "name_la": "Tempus", "name_he": "זמן", "element": "aether" },
-    { "id": "animus", "name_la": "Animus", "name_he": "רגשות ומחשבות", "element": "ignis" },
-    { "id": "facta", "name_la": "Facta", "name_he": "פעלים שימושיים", "element": "ignis" },
-    { "id": "qualitates", "name_la": "Qualitates", "name_he": "איך זה נראה? (תארים)", "element": "aqua" }
+    {
+      "id": "corpus",
+      "name_la": "Corpus",
+      "name_he": "הגוף",
+      "element": "terra"
+    },
+    {
+      "id": "familia",
+      "name_la": "Familia",
+      "name_he": "משפחה ואנשים",
+      "element": "aer"
+    },
+    {
+      "id": "natura",
+      "name_la": "Natura",
+      "name_he": "טבע ונוף",
+      "element": "aqua"
+    },
+    {
+      "id": "animalia",
+      "name_la": "Animalia et domus",
+      "name_he": "חיות ובית",
+      "element": "terra"
+    },
+    {
+      "id": "tempus",
+      "name_la": "Tempus",
+      "name_he": "זמן",
+      "element": "aether"
+    },
+    {
+      "id": "animus",
+      "name_la": "Animus",
+      "name_he": "רגשות ומחשבות",
+      "element": "ignis"
+    },
+    {
+      "id": "facta",
+      "name_la": "Facta",
+      "name_he": "פעלים שימושיים",
+      "element": "ignis"
+    },
+    {
+      "id": "qualitates",
+      "name_la": "Qualitates",
+      "name_he": "איך זה נראה? (תארים)",
+      "element": "aqua"
+    },
+    {
+      "id": "bellum",
+      "name_la": "Bellum et pax",
+      "name_he": "מלחמה ושלום",
+      "element": "ignis"
+    },
+    {
+      "id": "mensura",
+      "name_la": "Mensura",
+      "name_he": "כמה וכמה גדול",
+      "element": "terra"
+    },
+    {
+      "id": "mores",
+      "name_la": "Mores",
+      "name_he": "אופי ותכונות",
+      "element": "aer"
+    },
+    {
+      "id": "scientia",
+      "name_la": "Scientia et litterae",
+      "name_he": "ידע וכתיבה",
+      "element": "aether"
+    },
+    {
+      "id": "civitas",
+      "name_la": "Civitas",
+      "name_he": "חברה, עיר ומשפט",
+      "element": "aer"
+    },
+    {
+      "id": "sermo",
+      "name_la": "Sermo",
+      "name_he": "דיבור",
+      "element": "aer"
+    },
+    {
+      "id": "iter",
+      "name_la": "Iter",
+      "name_he": "תנועה ומסע",
+      "element": "aer"
+    },
+    {
+      "id": "vita",
+      "name_la": "Vita et dei",
+      "name_he": "חיים ואמונה",
+      "element": "aether"
+    },
+    {
+      "id": "pecunia",
+      "name_la": "Pecunia",
+      "name_he": "כסף ועבודה",
+      "element": "terra"
+    },
+    {
+      "id": "sensus",
+      "name_la": "Sensus",
+      "name_he": "ראייה וחושים",
+      "element": "aer"
+    },
+    {
+      "id": "parva",
+      "name_la": "Verba parva",
+      "name_he": "מילים קטנות (מתי? איפה? איך?)",
+      "element": "aer"
+    }
   ]
 }
